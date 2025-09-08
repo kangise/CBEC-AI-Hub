@@ -27,26 +27,25 @@
 
 #### 核心挑战
 
-**物流与履约瓶颈**
-- 高昂成本和漫长运输时间
-- 不可预测的最后一公里配送
-- 复杂的路径优化需求
+**规模化运营难题**
+- 多平台商品信息同步与管理
+- 库存预测与补货决策复杂性
+- 客服响应的多语言和时区挑战
 
-**海关与法规复杂性**
-- 动态关税和复杂进口税
-- 各国不同的产品标准
-- HS编码分类要求
-- 数据隐私法规
+**合规与风控压力**
+- HS编码分类的准确性要求
+- 各国税务和法规的动态变化
+- 跨境支付的欺诈识别与防范
 
-**本地化与文化障碍**
-- 多种支付方式和货币
-- 文化偏好和营销渠道
-- 语言和沟通差异
+**用户体验本地化**
+- 多语言内容的质量与一致性
+- 文化差异导致的转化率差异
+- 个性化推荐在不同市场的适应性
 
-**支付与欺诈风险**
-- 多币种交易复杂性
-- 汇率波动
-- 复杂的跨境欺诈模式
+**成本与效率平衡**
+- 营销投放的ROI优化
+- 物流路径与成本的动态平衡
+- 人工智能替代人工的投入产出比
 
 #### AI解决方案的范式转变
 
@@ -63,126 +62,84 @@ AI从支持工具转变为核心竞争优势
 
 ### 数据管理与版本控制
 
-**DVC** - [GitHub](https://github.com/iterative/dvc)
-- 功能：数据版本控制
-- 特性：类Git工作流，支持大型文件，与Git无缝集成
-- 适用场景：大规模数据集管理，实验可复现性
+**DVC** - [GitHub](https://github.com/iterative/dvc)  
+为机器学习项目提供Git风格的数据版本控制，支持大文件管理和实验复现。
 
 ### 工作流编排与自动化
 
-**Kubeflow** - [GitHub](https://github.com/kubeflow/kubeflow)
-- 功能：工作流编排
-- 特性：Kubernetes原生，模块化设计，多框架支持
-- 适用场景：复杂ML管道，云原生部署
+**Kubeflow** - [GitHub](https://github.com/kubeflow/kubeflow)  
+基于Kubernetes的机器学习工作流编排平台，支持端到端ML管道部署。
 
-**ZenML** - [GitHub](https://github.com/zenml-io/zenml)
-- 功能：MLOps框架
-- 特性：可复现管道，元数据自动跟踪，缓存机制
-- 适用场景：端到端ML生命周期管理
+**ZenML** - [GitHub](https://github.com/zenml-io/zenml)  
+提供可复现ML管道的开源MLOps框架，具备自动元数据跟踪和缓存功能。
 
-**n8n** - [GitHub](https://github.com/n8n-io/n8n)
-- 功能：工作流自动化
-- 特性：可视化编辑器，500+集成，可自托管
-- 适用场景：业务流程自动化，数据集成
+**n8n** - [GitHub](https://github.com/n8n-io/n8n)  
+可视化工作流自动化工具，支持500+应用集成和自托管部署。
 
-**Activepieces** - [GitHub](https://github.com/activepieces/activepieces)
-- 功能：工作流自动化
-- 特性：低代码平台，丰富的集成选项
-- 适用场景：快速原型开发，业务流程优化
+**Activepieces** - [GitHub](https://github.com/activepieces/activepieces)  
+低代码工作流自动化平台，提供丰富的第三方服务集成能力。
 
 ### 模型部署、服务与监控
 
-**Seldon Core** - [GitHub](https://github.com/SeldonIO/seldon-core)
-- 功能：模型服务
-- 特性：Kubernetes原生，A/B测试，金丝雀部署
-- 适用场景：生产环境模型部署，高可用服务
+**Seldon Core** - [GitHub](https://github.com/SeldonIO/seldon-core)  
+Kubernetes原生的机器学习模型服务平台，支持A/B测试和金丝雀部署。
 
-**MLflow** - [GitHub](https://github.com/mlflow/mlflow)
-- 功能：ML生命周期管理
-- 特性：实验跟踪，模型注册，项目打包
-- 适用场景：实验管理，模型版本控制
+**MLflow** - [GitHub](https://github.com/mlflow/mlflow)  
+开源机器学习生命周期管理平台，提供实验跟踪、模型注册和部署功能。
 
-**Deepchecks** - [GitHub](https://github.com/deepchecks/deepchecks)
-- 功能：模型与数据验证
-- 特性：预定义检查套件，覆盖研究到生产全流程
-- 适用场景：数据质量监控，模型性能验证
+**Deepchecks** - [GitHub](https://github.com/deepchecks/deepchecks)  
+机器学习模型和数据验证工具，提供从研究到生产的全流程质量检查。
 
 ### 专用数据存储
 
-**Weaviate** - [GitHub](https://github.com/weaviate/weaviate)
-- 功能：向量数据库
-- 特性：开源，云原生，支持混合搜索
-- 适用场景：语义搜索，推荐系统
+**Weaviate** - [GitHub](https://github.com/weaviate/weaviate)  
+开源向量数据库，支持语义搜索和混合查询，适用于AI驱动的搜索应用。
 
-**Milvus** - [GitHub](https://github.com/milvus-io/milvus)
-- 功能：向量数据库
-- 特性：为大规模AI设计，支持多种索引
-- 适用场景：大规模相似性搜索，多模态检索
+**Milvus** - [GitHub](https://github.com/milvus-io/milvus)  
+专为大规模向量相似性搜索设计的开源数据库，支持多种索引算法。
 
 ## 核心算法与库
 
 ### 推荐与个性化引擎
 
-**LightFM** - [GitHub](https://github.com/lyst/lightfm)
-- 主要任务：推荐系统
-- 核心优势：处理冷启动问题，支持隐式/显式反馈
-- 适用场景：电商产品推荐，内容个性化
+**LightFM** - [GitHub](https://github.com/lyst/lightfm)  
+混合推荐系统库，擅长处理冷启动问题和稀疏数据场景。
 
-**Implicit** - [GitHub](https://github.com/benfred/implicit)
-- 主要任务：推荐系统
-- 核心优势：专为隐式反馈设计，速度快，可扩展
-- 适用场景：大规模用户行为分析，协同过滤
+**Implicit** - [GitHub](https://github.com/benfred/implicit)  
+专为隐式反馈数据设计的快速协同过滤推荐算法库。
 
-**TensorRec** - [GitHub](https://github.com/jfkirk/tensorrec)
-- 主要任务：推荐系统
-- 核心优势：基于TensorFlow，灵活的推荐框架
-- 适用场景：深度学习推荐，复杂特征工程
+**TensorRec** - [GitHub](https://github.com/jfkirk/tensorrec)  
+基于TensorFlow的灵活推荐系统框架，支持复杂特征工程。
 
 ### 时间序列预测
 
-**Prophet** - [GitHub](https://github.com/facebook/prophet)
-- 主要任务：时间序列预测
-- 核心优势：易于使用，自动处理季节性与节假日
-- 适用场景：销售预测，需求规划
+**Prophet** - [GitHub](https://github.com/facebook/prophet)  
+Facebook开源的时间序列预测工具，自动处理季节性和节假日效应。
 
-**Darts** - [GitHub](https://github.com/unit8co/darts)
-- 主要任务：时间序列预测
-- 核心优势：模型选择丰富，支持多变量预测
-- 适用场景：复杂时序建模，多因子预测
+**Darts** - [GitHub](https://github.com/unit8co/darts)  
+Python时间序列预测库，提供统一API支持多种预测模型。
 
-**frePPLe** - [GitHub](https://github.com/frePPLe/frepple)
-- 主要任务：供应链规划
-- 核心优势：完整的供应链规划工具，集成预测算法
-- 适用场景：生产计划，库存优化
+**frePPLe** - [GitHub](https://github.com/frePPLe/frepple)  
+开源供应链规划软件，集成需求预测和生产计划优化功能。
 
-**OpenSTEF** - [GitHub](https://github.com/OpenSTEF/openstef)
-- 主要任务：自动化预测
-- 核心优势：自动化ML管道，外部预测因子整合
-- 适用场景：能源预测，负载预测
+**OpenSTEF** - [GitHub](https://github.com/OpenSTEF/openstef)  
+自动化短期预测框架，支持外部因子集成和ML管道自动化。
 
 ### 多语言自然语言处理
 
-**spaCy** - [GitHub](https://github.com/explosion/spaCy)
-- 主要任务：多语言NLP
-- 核心优势：生产级性能，预训练多语言管道
-- 适用场景：文本分析，实体识别
+**spaCy** - [GitHub](https://github.com/explosion/spaCy)  
+工业级自然语言处理库，提供多语言文本分析和实体识别功能。
 
-**Lingua** - [GitHub](https://github.com/pemistahl/lingua-py)
-- 主要任务：语言检测
-- 核心优势：高精度的自然语言检测
-- 适用场景：多语言内容分类，自动翻译
+**Lingua** - [GitHub](https://github.com/pemistahl/lingua-py)  
+高精度语言检测库，支持75+语言的准确识别。
 
-**Transformers** - [GitHub](https://github.com/huggingface/transformers)
-- 主要任务：多语言/多模态NLP
-- 核心优势：访问SOTA模型，社区庞大
-- 适用场景：文本生成，情感分析，机器翻译
+**Transformers** - [GitHub](https://github.com/huggingface/transformers)  
+Hugging Face的预训练模型库，提供最新的NLP和多模态AI模型。
 
 ### 电商计算机视觉
 
-**CLIP + Faiss** - [CLIP](https://github.com/openai/CLIP) / [Faiss](https://github.com/facebookresearch/faiss)
-- 主要任务：多模态搜索
-- 核心优势：文本与图像的联合语义搜索
-- 适用场景：商品图像搜索，视觉推荐
+**CLIP + Faiss** - [CLIP](https://github.com/openai/CLIP) / [Faiss](https://github.com/facebookresearch/faiss)  
+结合OpenAI的多模态模型和Facebook的相似性搜索引擎，实现图文联合检索。
 
 ## 应用层解决方案
 
@@ -190,182 +147,120 @@ AI从支持工具转变为核心竞争优势
 
 #### 物流与路径优化
 
-**PyVRP** - [GitHub](https://github.com/PyVRP/PyVRP)
-- 应用领域：车辆路径问题求解
-- 技术特点：高性能，支持复杂约束
-- 适用场景：配送路线优化，物流成本控制
+**PyVRP** - [GitHub](https://github.com/PyVRP/PyVRP)  
+高性能车辆路径问题求解器，支持复杂约束的配送路线优化。
 
-**Timefold** - [GitHub](https://github.com/TimefoldAI/timefold-solver)
-- 应用领域：AI约束求解
-- 技术特点：Java/Python实现，多种规划优化
-- 适用场景：资源调度，生产排程
+**Timefold** - [GitHub](https://github.com/TimefoldAI/timefold-solver)  
+AI驱动的约束求解引擎，用于资源调度和生产排程优化。
 
 #### 库存与仓库管理
 
-**Stockpyl** - [GitHub](https://github.com/LarrySnyder/stockpyl)
-- 应用领域：库存优化
-- 技术特点：Python库存优化库，多种经典模型
-- 适用场景：库存策略制定，补货决策
+**Stockpyl** - [GitHub](https://github.com/LarrySnyder/stockpyl)  
+Python库存优化库，实现多种经典库存管理模型和补货策略。
 
 #### 海关、关税与合规自动化
 
-**HS Code Classification API** - [GitHub](https://github.com/Muhammad-Talha4k/hs_code_classification_api_with_fast-flask)
-- 应用领域：HS编码分类
-- 技术方法：机器学习，FastAPI/Flask实现
-- 适用场景：商品自动分类，海关申报
+**HS Code Classification API** - [GitHub](https://github.com/Muhammad-Talha4k/hs_code_classification_api_with_fast-flask)  
+基于机器学习的HS编码自动分类API，支持FastAPI和Flask部署。
 
-**HS Codes Prediction** - [GitHub](https://github.com/mayank6255/hs_codes_prediction)
-- 应用领域：HS编码分类
-- 技术方法：深度学习，孪生网络，MiniLM
-- 适用场景：高精度商品分类，合规自动化
+**HS Codes Prediction** - [GitHub](https://github.com/mayank6255/hs_codes_prediction)  
+使用深度学习和孪生网络的高精度HS编码预测系统。
 
-**LangChain + RAG** - [GitHub](https://github.com/langchain-ai/langchain)
-- 应用领域：贸易法分析
-- 技术方法：大型语言模型，检索增强生成
-- 适用场景：法规查询，合规咨询
+**LangChain + RAG** - [GitHub](https://github.com/langchain-ai/langchain)  
+结合大语言模型和检索增强生成的贸易法规智能问答框架。
 
 #### 支付安全与欺诈检测
 
-**PyOD** - [GitHub](https://github.com/yzhao062/pyod)
-- 应用领域：异常检测
-- 技术特点：40+算法，适用于交易欺诈检测
-- 适用场景：实时风控，异常交易识别
+**PyOD** - [GitHub](https://github.com/yzhao062/pyod)  
+综合异常检测库，提供40+算法用于交易欺诈和异常行为识别。
 
 #### 自主代理框架
 
-**CrewAI** - [GitHub](https://github.com/joaomdmoura/crewAI)
-- 应用领域：多代理系统
-- 技术特点：协作AI代理，角色定义
-- 适用场景：复杂任务自动化，团队协作
+**CrewAI** - [GitHub](https://github.com/joaomdmoura/crewAI)  
+多AI代理协作框架，支持角色定义和复杂任务的自动化执行。
 
-**AutoGen** - [GitHub](https://github.com/microsoft/autogen)
-- 应用领域：多代理对话
-- 技术特点：微软开发，多代理协作框架
-- 适用场景：智能对话系统，决策支持
+**AutoGen** - [GitHub](https://github.com/microsoft/autogen)  
+微软开源的多代理对话系统，支持AI代理间的智能协作。
 
-**LangGraph** - [GitHub](https://github.com/langchain-ai/langgraph)
-- 应用领域：代理工作流
-- 技术特点：基于LangChain，状态图工作流
-- 适用场景：复杂业务流程，智能决策链
+**LangGraph** - [GitHub](https://github.com/langchain-ai/langgraph)  
+基于状态图的AI代理工作流框架，构建复杂的决策链路。
 
-**Suna** - [GitHub](https://github.com/kortix-ai/suna)
-- 应用领域：AI代理平台
-- 技术特点：完整平台，浏览器自动化，数据分析
-- 适用场景：端到端自动化，数据驱动决策
+**Suna** - [GitHub](https://github.com/kortix-ai/suna)  
+完整的AI代理平台，集成浏览器自动化和数据分析功能。
 
 ### 智能营销、销售与渠道扩张
 
 #### 自动化Listing与内容生成
 
-**Text Generation WebUI** - [GitHub](https://github.com/oobabooga/text-generation-webui)
-- 功能：内容生成
-- 关键特性：支持多种开源LLM，可自托管
-- 适用场景：产品描述生成，营销文案创作
+**Text Generation WebUI** - [GitHub](https://github.com/oobabooga/text-generation-webui)  
+开源大语言模型的Web界面，支持本地部署和多模型切换。
 
-**Awesome Generative AI Guide** - [GitHub](https://github.com/aishwaryanr/awesome-generative-ai-guide)
-- 功能：教程资源
-- 关键特性：构建自动化产品描述系统指南
-- 适用场景：学习生成式AI，系统架构设计
+**Awesome Generative AI Guide** - [GitHub](https://github.com/aishwaryanr/awesome-generative-ai-guide)  
+生成式AI的综合学习指南，包含实践项目和系统架构设计。
 
 #### 智能广告与促销
 
-**Ecommerce Marketing Spend Optimization** - [GitHub](https://github.com/Morphl-AI/Ecommerce-Marketing-Spend-Optimization)
-- 功能：预算优化
-- 关键特性：遗传算法，跨渠道预算分配
-- 适用场景：广告投放优化，ROI最大化
+**Ecommerce Marketing Spend Optimization** - [GitHub](https://github.com/Morphl-AI/Ecommerce-Marketing-Spend-Optimization)  
+使用遗传算法优化电商营销预算分配，实现跨渠道ROI最大化。
 
-**ADIOS** - [GitHub](https://github.com/google-marketing-solutions/adios)
-- 功能：广告素材生成
-- 关键特性：Google GenAI，大规模定制化图片
-- 适用场景：广告创意生成，视觉营销
+**ADIOS** - [GitHub](https://github.com/google-marketing-solutions/adios)  
+Google开源的AI广告素材生成工具，支持大规模个性化创意制作。
 
-**Mautic** - [GitHub](https://github.com/mautic/mautic)
-- 功能：营销自动化
-- 关键特性：开源，功能全面，客户分群
-- 适用场景：邮件营销，客户关系管理
+**Mautic** - [GitHub](https://github.com/mautic/mautic)  
+开源营销自动化平台，提供邮件营销、客户分群和行为跟踪功能。
 
-**Auto Prompt** - [GitHub](https://github.com/AIDotNet/auto-prompt)
-- 功能：提示工程
-- 关键特性：优化生成式AI指令
-- 适用场景：AI模型调优，提示词优化
+**Auto Prompt** - [GitHub](https://github.com/AIDotNet/auto-prompt)  
+自动化提示词工程工具，优化大语言模型的指令效果。
 
 #### SEO与生成式引擎优化 (GEO)
 
-**Python SEO Analyzer** - [GitHub](https://github.com/sethblack/python-seo-analyzer)
-- 功能：SEO分析
-- 关键特性：网站抓取，技术SEO问题发现
-- 适用场景：网站优化，搜索排名提升
+**Python SEO Analyzer** - [GitHub](https://github.com/sethblack/python-seo-analyzer)  
+Python网站SEO分析工具，自动检测技术SEO问题和优化建议。
 
-**Ecommerce Tools** - [GitHub](https://github.com/practical-data-science/ecommercetools)
-- 功能：电商数据科学
-- 关键特性：技术SEO分析和建模
-- 适用场景：数据驱动SEO，性能分析
+**Ecommerce Tools** - [GitHub](https://github.com/practical-data-science/ecommercetools)  
+电商数据科学工具包，专注于SEO分析和性能建模。
 
-**DataForSEO MCP Server** - [GitHub](https://github.com/Skobyn/dataforseo-mcp-server)
-- 功能：SEO数据集成
-- 关键特性：LLM与SEO工具的自然语言接口
-- 适用场景：智能SEO分析，自动化报告
+**DataForSEO MCP Server** - [GitHub](https://github.com/Skobyn/dataforseo-mcp-server)  
+为大语言模型提供SEO数据接口，支持自然语言SEO查询和分析。
 
 ### 客户体验的未来
 
 #### 高级对话式AI
 
-**Hexabot** - [GitHub](https://github.com/Hexastack/Hexabot)
-- 功能：AI聊天机器人平台
-- 关键特性：多渠道，多语言，可视化编辑器
-- 适用场景：客户服务，销售支持
+**Hexabot** - [GitHub](https://github.com/Hexastack/Hexabot)  
+开源AI聊天机器人平台，支持多渠道部署和可视化对话流设计。
 
-**OpenBuddy** - [GitHub](https://github.com/OpenBuddy/OpenBuddy)
-- 功能：多语言聊天机器人
-- 关键特性：开源，多语言，离线部署
-- 适用场景：全球客服，本地化支持
+**OpenBuddy** - [GitHub](https://github.com/OpenBuddy/OpenBuddy)  
+多语言AI助手，支持离线部署和跨语言对话能力。
 
 ## 关键资源
 
 ### 精选数据集
 
-**MARC** - [AWS Open Data](https://registry.opendata.aws/amazon-reviews-ml/)
-- 描述：多语言亚马逊评论语料库
-- 语言/模态：6种语言/文本
-- 用例：情感分析，文本分类
-- 规模：数百万条多语言评论
+**MARC** - [AWS Open Data](https://registry.opendata.aws/amazon-reviews-ml/)  
+亚马逊多语言评论语料库，包含6种语言的数百万条产品评论数据。
 
-**Multimodal E-Commerce** - [Kaggle](https://www.kaggle.com/datasets/ziya07/multimodal-e-commerce-dataset)
-- 描述：9.9万+产品列表
-- 语言/模态：法语/文本+图像
-- 用例：多模态产品分类
-- 特点：文本和图像的联合数据
+**Multimodal E-Commerce** - [Kaggle](https://www.kaggle.com/datasets/ziya07/multimodal-e-commerce-dataset)  
+包含9.9万+法语产品的多模态数据集，结合文本描述和产品图像。
 
-**European Fashion Store** - [Kaggle](https://www.kaggle.com/datasets/joycemara/european-fashion-store-multitable-dataset)
-- 描述：模拟电商运营关系型数据
-- 语言/模态：欧洲多国/结构化数据
-- 用例：销售分析，客户分群
-- 特点：完整的电商业务数据模型
+**European Fashion Store** - [Kaggle](https://www.kaggle.com/datasets/joycemara/european-fashion-store-multitable-dataset)  
+模拟欧洲时尚电商的完整关系型数据库，适用于业务分析和建模。
 
-**E-commerce Text Classification** - [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification)
-- 描述：5万+产品描述
-- 语言/模态：英语/文本
-- 用例：产品分类
-- 特点：标准化的产品分类数据集
+**E-commerce Text Classification** - [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification)  
+包含5万+英语产品描述的标准化分类数据集。
 
 ### 学习资源
 
 **综合指南**
 
-**Awesome Generative AI Guide** - [GitHub](https://github.com/aishwaryanr/awesome-generative-ai-guide)
-- 内容：全面的生成式AI资源集合
-- 特点：从基础到高级的完整学习路径
-- 适用对象：AI开发者，研究人员
+**Awesome Generative AI Guide** - [GitHub](https://github.com/aishwaryanr/awesome-generative-ai-guide)  
+生成式AI的全面学习指南，提供从基础到高级的完整知识体系。
 
-**GenAI Agents** - [GitHub](https://github.com/NirDiamant/GenAI_Agents)
-- 内容：AI代理开发教程
-- 特点：实践导向的代理系统构建指南
-- 适用对象：AI工程师，产品经理
+**GenAI Agents** - [GitHub](https://github.com/NirDiamant/GenAI_Agents)  
+AI代理系统开发教程，包含实践项目和架构设计指导。
 
-**500 AI Agents Projects** - [GitHub](https://github.com/ashishpatel26/500-AI-Agents-Projects)
-- 内容：丰富的AI代理用例
-- 特点：涵盖各行业的实际应用案例
-- 适用对象：业务分析师，技术决策者
+**500 AI Agents Projects** - [GitHub](https://github.com/ashishpatel26/500-AI-Agents-Projects)  
+涵盖各行业的500个AI代理应用案例和实现方案。
 
 ## 贡献指南
 

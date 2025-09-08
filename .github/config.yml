@@ -1,0 +1,62 @@
+# Configuration for welcome bot
+# https://github.com/behaviorbot/welcome
+
+# Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
+newIssueWelcomeComment: >
+  Thanks for opening your first issue in CBEC-AI-Hub! 🎉
+  
+  
+  We're excited to have you contribute to our cross-border e-commerce AI knowledge hub.
+  
+  
+  A maintainer will review your issue soon. In the meantime, please make sure you've:
+  
+  - [ ] Used a clear and descriptive title
+  
+  - [ ] Provided all necessary information using our issue template
+  
+  - [ ] Searched for existing similar issues
+  
+  
+  If you're adding a new resource, please ensure it meets our [contribution guidelines](https://github.com/cbec-ai-hub/CBEC-AI-Hub/blob/main/.github/CONTRIBUTING.md).
+
+# Configuration for new-pr-welcome - https://github.com/behaviorbot/new-pr-welcome
+newPRWelcomeComment: >
+  Thanks for opening your first pull request in CBEC-AI-Hub! 🚀
+  
+  
+  We appreciate your contribution to the cross-border e-commerce AI community.
+  
+  
+  Please make sure you've:
+  
+  - [ ] Filled out our PR template completely
+  
+  - [ ] Followed our [contribution guidelines](https://github.com/cbec-ai-hub/CBEC-AI-Hub/blob/main/.github/CONTRIBUTING.md)
+  
+  - [ ] Tested all links if you're adding new resources
+  
+  - [ ] Used consistent formatting with existing entries
+  
+  
+  A maintainer will review your PR soon. Thanks for making CBEC-AI-Hub better! 🌟
+
+# Configuration for first-pr-merge - https://github.com/behaviorbot/first-pr-merge
+firstPRMergeComment: >
+  Congratulations on your first merged pull request! 🎉🎊
+  
+  
+  Thank you for contributing to CBEC-AI-Hub and helping build the most comprehensive 
+  resource for cross-border e-commerce AI solutions.
+  
+  
+  Your contribution will help developers and researchers worldwide build better 
+  AI-powered e-commerce solutions. 
+  
+  
+  We'd love to see more contributions from you. Check out our 
+  [good first issues](https://github.com/cbec-ai-hub/CBEC-AI-Hub/labels/good%20first%20issue) 
+  for more ways to contribute!
+  
+  
+  Welcome to the CBEC-AI-Hub community! 🌍✨

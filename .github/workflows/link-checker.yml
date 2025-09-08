@@ -1,0 +1,47 @@
+name: Link Checker
+
+on:
+  schedule:
+    # Run every Monday at 9 AM UTC
+    - cron: '0 9 * * 1'
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Check links in README
+      uses: lycheeverse/lychee-action@v1.8.0
+      with:
+        args: --verbose --no-progress --exclude-mail README.md
+        fail: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Check links in case studies
+      uses: lycheeverse/lychee-action@v1.8.0
+      with:
+        args: --verbose --no-progress --exclude-mail case-studies/
+        fail: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Create issue on failure
+      if: failure()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: 'Broken links detected',
+            body: 'The link checker found broken links. Please check the workflow logs for details.',
+            labels: ['bug', 'maintenance']
+          })

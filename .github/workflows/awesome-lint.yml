@@ -1,0 +1,71 @@
+name: Awesome List Lint
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  awesome-lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install awesome-lint
+      run: npm install -g awesome-lint
+      
+    - name: Run awesome-lint
+      run: awesome-lint README.md
+      
+    - name: Check for duplicate links
+      run: |
+        # Extract all GitHub links and check for duplicates
+        grep -oE 'https://github\.com/[^)]+' README.md | sort | uniq -d > duplicates.txt
+        if [ -s duplicates.txt ]; then
+          echo "Duplicate links found:"
+          cat duplicates.txt
+          exit 1
+        else
+          echo "No duplicate links found"
+        fi
+        
+    - name: Validate table formatting
+      run: |
+        # Check if all tables have consistent formatting
+        python3 -c "
+        import re
+        
+        with open('README.md', 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Find all tables
+        tables = re.findall(r'\|.*\|.*\n(?:\|.*\|.*\n)*', content)
+        
+        for i, table in enumerate(tables):
+            lines = table.strip().split('\n')
+            if len(lines) < 2:
+                continue
+                
+            # Check if header separator exists
+            if not re.match(r'\|[\s\-\|]+\|', lines[1]):
+                print(f'Table {i+1} missing header separator')
+                exit(1)
+                
+            # Check column consistency
+            header_cols = len(lines[0].split('|')) - 2  # Remove empty start/end
+            for j, line in enumerate(lines[2:], 2):
+                line_cols = len(line.split('|')) - 2
+                if line_cols != header_cols:
+                    print(f'Table {i+1}, line {j+1}: Column count mismatch')
+                    exit(1)
+        
+        print('All tables are properly formatted')
+        "

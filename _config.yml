@@ -1,0 +1,53 @@
+# Site settings
+title: CBEC-AI-Hub
+description: >-
+  🌍 A comprehensive, community-driven knowledge hub for AI solutions 
+  in cross-border e-commerce. Discover 100+ curated tools, libraries, 
+  and resources to build intelligent e-commerce systems.
+
+baseurl: "/CBEC-AI-Hub"
+url: "https://kangise.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Minima theme settings
+minima:
+  skin: dark
+  social_links:
+    github: kangise
+    twitter: your_twitter # 可选
+
+# Collections
+collections:
+  case_studies:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation
+header_pages:
+  - index.md
+  - case-studies.md
+  - contributing.md
+  - about.md
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .github/
+  - node_modules/
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - README.md

@@ -2,226 +2,264 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![GitHub Stars](https://img.shields.io/github/stars/kangise/CBEC-AI-Hub?style=social)](https://github.com/kangise/CBEC-AI-Hub/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/kangise/CBEC-AI-Hub)](https://github.com/kangise/CBEC-AI-Hub/graphs/contributors)
 
-> 🌍 A comprehensive, community-driven knowledge hub for AI solutions in cross-border e-commerce
+> A comprehensive, community-driven knowledge hub for AI solutions in cross-border e-commerce
 
 跨境电商AI解决方案的权威开源知识库，专为开发者、数据科学家和技术领袖打造。
 
-## 📖 目录
+## Table of Contents
 
-- [引言](#引言)
-- [基础AI/ML设施](#基础aiml设施)
-- [核心算法与库](#核心算法与库)
-- [应用层解决方案](#应用层解决方案)
-- [关键资源](#关键资源)
-- [贡献指南](#贡献指南)
-- [许可证](#许可证)
+- [Introduction](#introduction)
+- [AI/ML Infrastructure](#aiml-infrastructure)
+- [Core Algorithms & Libraries](#core-algorithms--libraries)
+- [Application Solutions](#application-solutions)
+- [Key Resources](#key-resources)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 🚀 引言
+## Introduction
 
-### 全球电子商务的AI势在必行
+### The AI Imperative for Global E-Commerce
 
-跨境电子商务面临着由物流、法规、文化和金融等多维度复杂性交织而成的挑战网络。人工智能不仅是优化工具，更是现代全球贸易的根本性赋能者，尤其对于新兴的"微型跨国企业"而言，AI是其赖以生存和发展的基石。
+Cross-border e-commerce faces a complex web of challenges spanning logistics, regulations, cultural differences, and financial systems. Artificial Intelligence is not merely an optimization tool—it is a fundamental enabler of modern global trade, particularly for emerging "micro-multinational enterprises" that rely on AI as their foundation for survival and growth.
 
-#### 核心挑战
+#### Core Challenges
 
-- **物流与履约瓶颈**: 高昂成本、漫长运输时间、不稳定的"最后一公里"派送
-- **海关与法规迷宫**: 动态关税、复杂进口税、各国产品标准、HS编码、数据隐私法规
-- **本地化与文化鸿沟**: 支付方式、货币定价、文化习俗、营销渠道适应
-- **支付与欺诈风险**: 多币种交易、汇率波动、跨境支付欺诈防范
+**Logistics & Fulfillment Bottlenecks**
+- High costs and extended shipping times
+- Unpredictable last-mile delivery
+- Complex routing optimization
 
-#### AI解决方案的范式转移
+**Customs & Regulatory Complexity**
+- Dynamic tariffs and complex import taxes
+- Varying product standards across countries
+- HS code classification requirements
+- Data privacy regulations
 
-- **技术演进**: 从预测性AI到生成式AI和代理式AI
-- **微型跨国企业崛起**: AI驱动的自动化工具使小团队能够敏捷进入全球市场
-- **战略能力**: AI从辅助工具转变为重塑全球贸易经济学的核心能力
+**Localization & Cultural Barriers**
+- Multiple payment methods and currencies
+- Cultural preferences and marketing channels
+- Language and communication differences
 
-## 🏗️ 基础AI/ML设施
+**Payment & Fraud Risks**
+- Multi-currency transaction complexity
+- Exchange rate volatility
+- Sophisticated cross-border fraud patterns
 
-### 数据管理与版本控制
+#### AI Solution Paradigm Shift
 
-| 工具 | 功能 | 特性 | 链接 |
-|------|------|------|------|
-| **DVC** | 数据版本控制 | 类Git工作流，支持大型文件，与Git无缝集成 | [GitHub](https://github.com/iterative/dvc) |
+**Technology Evolution**
+From predictive AI to generative AI and autonomous agent systems
 
-### 工作流编排与自动化
+**Rise of Micro-Multinational Enterprises**
+AI-driven automation tools enable small teams to compete globally
 
-| 工具 | 功能 | 特性 | 链接 |
-|------|------|------|------|
-| **Kubeflow** | 工作流编排 | Kubernetes原生，组件化，支持多框架 | [GitHub](https://github.com/kubeflow/kubeflow) |
-| **ZenML** | MLOps框架 | 可复现管道，元数据自动跟踪，缓存机制 | [GitHub](https://github.com/zenml-io/zenml) |
-| **n8n** | 工作流自动化 | 可视化编辑器，500+集成，可自托管 | [GitHub](https://github.com/n8n-io/n8n) |
-| **Activepieces** | 工作流自动化 | 低代码平台，丰富的集成选项 | [GitHub](https://github.com/activepieces/activepieces) |
+**Strategic Capability**
+AI transforms from support tool to core competitive advantage
 
-### 模型部署、服务与监控
+## AI/ML Infrastructure
 
-| 工具 | 功能 | 特性 | 链接 |
-|------|------|------|------|
-| **Seldon Core** | 模型服务 | Kubernetes原生，A/B测试，Canary部署 | [GitHub](https://github.com/SeldonIO/seldon-core) |
-| **MLflow** | ML生命周期管理 | 实验跟踪，模型注册，项目打包 | [GitHub](https://github.com/mlflow/mlflow) |
-| **Deepchecks** | 模型与数据验证 | 预定义检查套件，覆盖研究到生产全流程 | [GitHub](https://github.com/deepchecks/deepchecks) |
+### Data Management & Version Control
 
-### 专用数据存储
+| Tool                    | Function                     | Key Features                                           | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **DVC**                 | Data version control         | Git-like workflow, large file support, Git integration | [GitHub](https://github.com/iterative/dvc)                   |
 
-| 工具 | 功能 | 特性 | 链接 |
-|------|------|------|------|
-| **Weaviate** | 向量数据库 | 开源，云原生，支持混合搜索 | [GitHub](https://github.com/weaviate/weaviate) |
-| **Milvus** | 向量数据库 | 为大规模AI设计，支持多种索引 | [GitHub](https://github.com/milvus-io/milvus) |
+### Workflow Orchestration & Automation
 
-## 🧠 核心算法与库
+| Tool                    | Function                     | Key Features                                           | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **Kubeflow**            | Workflow orchestration       | Kubernetes-native, modular, multi-framework support   | [GitHub](https://github.com/kubeflow/kubeflow)               |
+| **ZenML**               | MLOps framework              | Reproducible pipelines, metadata tracking, caching    | [GitHub](https://github.com/zenml-io/zenml)                  |
+| **n8n**                 | Workflow automation          | Visual editor, 500+ integrations, self-hostable       | [GitHub](https://github.com/n8n-io/n8n)                     |
+| **Activepieces**        | Workflow automation          | Low-code platform, extensive integrations             | [GitHub](https://github.com/activepieces/activepieces)       |
 
-### 推荐与个性化引擎
+### Model Deployment, Serving & Monitoring
 
-| 库 | 主要任务 | 优势 | 链接 |
-|-----|----------|------|------|
-| **LightFM** | 推荐系统 | 处理冷启动问题，支持隐式/显式反馈 | [GitHub](https://github.com/lyst/lightfm) |
-| **Implicit** | 推荐系统 | 专为隐式反馈设计，速度快，可扩展 | [GitHub](https://github.com/benfred/implicit) |
-| **TensorRec** | 推荐系统 | 基于TensorFlow，灵活的推荐框架 | [GitHub](https://github.com/jfkirk/tensorrec) |
+| Tool                    | Function                     | Key Features                                           | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **Seldon Core**         | Model serving                | Kubernetes-native, A/B testing, canary deployment     | [GitHub](https://github.com/SeldonIO/seldon-core)            |
+| **MLflow**              | ML lifecycle management      | Experiment tracking, model registry, project packaging | [GitHub](https://github.com/mlflow/mlflow)                   |
+| **Deepchecks**          | Model & data validation      | Pre-built test suites, research to production coverage | [GitHub](https://github.com/deepchecks/deepchecks)           |
 
-### 时间序列预测
+### Specialized Data Storage
 
-| 库 | 主要任务 | 优势 | 链接 |
-|-----|----------|------|------|
-| **Prophet** | 时间序列预测 | 易于使用，自动处理季节性与节假日 | [GitHub](https://github.com/facebook/prophet) |
-| **Darts** | 时间序列预测 | 模型选择丰富，支持多变量预测 | [GitHub](https://github.com/unit8co/darts) |
-| **frePPLe** | 供应链规划 | 完整的供应链规划工具，集成预测算法 | [GitHub](https://github.com/frePPLe/frepple) |
-| **OpenSTEF** | 自动化预测 | 自动化ML管道，外部预测因子整合 | [GitHub](https://github.com/OpenSTEF/openstef) |
+| Tool                    | Function                     | Key Features                                           | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **Weaviate**            | Vector database              | Open source, cloud-native, hybrid search support      | [GitHub](https://github.com/weaviate/weaviate)               |
+| **Milvus**              | Vector database              | Large-scale AI design, multiple index support         | [GitHub](https://github.com/milvus-io/milvus)                |
 
-### 多语言自然语言处理
+## Core Algorithms & Libraries
 
-| 库 | 主要任务 | 优势 | 链接 |
-|-----|----------|------|------|
-| **spaCy** | 多语言NLP | 生产级性能，预训练多语言管道 | [GitHub](https://github.com/explosion/spaCy) |
-| **Lingua** | 语言检测 | 高精度的自然语言检测 | [GitHub](https://github.com/pemistahl/lingua-py) |
-| **Transformers** | 多语言/多模态NLP | 访问SOTA模型，社区庞大 | [GitHub](https://github.com/huggingface/transformers) |
+### Recommendation & Personalization Engines
 
-### 电子商务计算机视觉
+| Library                 | Primary Task                 | Key Advantages                                         | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **LightFM**             | Recommendation systems       | Cold start handling, implicit/explicit feedback       | [GitHub](https://github.com/lyst/lightfm)                    |
+| **Implicit**            | Recommendation systems       | Implicit feedback optimization, fast and scalable     | [GitHub](https://github.com/benfred/implicit)                |
+| **TensorRec**           | Recommendation systems       | TensorFlow-based, flexible recommendation framework   | [GitHub](https://github.com/jfkirk/tensorrec)                |
 
-| 工具 | 主要任务 | 优势 | 链接 |
-|------|----------|------|------|
-| **CLIP + Faiss** | 多模态搜索 | 文本与图像的联合语义搜索 | [CLIP](https://github.com/openai/CLIP) / [Faiss](https://github.com/facebookresearch/faiss) |
+### Time Series Forecasting
 
-## 🎯 应用层解决方案
+| Library                 | Primary Task                 | Key Advantages                                         | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **Prophet**             | Time series forecasting     | Easy to use, automatic seasonality and holiday handling | [GitHub](https://github.com/facebook/prophet)                |
+| **Darts**               | Time series forecasting     | Rich model selection, multivariate forecasting support | [GitHub](https://github.com/unit8co/darts)                   |
+| **frePPLe**             | Supply chain planning       | Complete supply chain planning, integrated forecasting | [GitHub](https://github.com/frePPLe/frepple)                 |
+| **OpenSTEF**            | Automated forecasting       | Automated ML pipeline, external factor integration    | [GitHub](https://github.com/OpenSTEF/openstef)               |
 
-### 智能运营与自主供应链
+### Multilingual Natural Language Processing
 
-#### 物流与路径优化
+| Library                 | Primary Task                 | Key Advantages                                         | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **spaCy**               | Multilingual NLP             | Production-grade performance, pre-trained pipelines   | [GitHub](https://github.com/explosion/spaCy)                 |
+| **Lingua**              | Language detection           | High-accuracy natural language detection              | [GitHub](https://github.com/pemistahl/lingua-py)             |
+| **Transformers**        | Multilingual/multimodal NLP  | State-of-the-art models, large community             | [GitHub](https://github.com/huggingface/transformers)        |
 
-| 工具 | 应用 | 技术特点 | 链接 |
-|------|------|----------|------|
-| **PyVRP** | 车辆路径问题求解 | 高性能，支持复杂约束 | [GitHub](https://github.com/PyVRP/PyVRP) |
-| **Timefold** | AI约束求解 | Java/Python实现，多种规划优化 | [GitHub](https://github.com/TimefoldAI/timefold-solver) |
+### E-Commerce Computer Vision
 
-#### 库存与仓库管理
+| Tool                    | Primary Task                 | Key Advantages                                         | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **CLIP + Faiss**        | Multimodal search            | Joint text-image semantic search capabilities         | [CLIP](https://github.com/openai/CLIP) / [Faiss](https://github.com/facebookresearch/faiss) |
 
-| 工具 | 应用 | 技术特点 | 链接 |
-|------|------|----------|------|
-| **Stockpyl** | 库存优化 | Python库存优化库，多种经典模型 | [GitHub](https://github.com/LarrySnyder/stockpyl) |
+## Application Solutions
 
-#### 海关、关税与合规自动化
+### Intelligent Operations & Autonomous Supply Chain
 
-| 项目 | 应用 | 技术方法 | 链接 |
-|------|------|----------|------|
-| **HS Code Classification API** | HS编码分类 | 机器学习，FastAPI/Flask | [GitHub](https://github.com/Muhammad-Talha4k/hs_code_classification_api_with_fast-flask) |
-| **HS Codes Prediction** | HS编码分类 | 深度学习，孪生网络，MiniLM | [GitHub](https://github.com/mayank6255/hs_codes_prediction) |
-| **LangChain + RAG** | 贸易法分析 | 大型语言模型，检索增强生成 | [GitHub](https://github.com/langchain-ai/langchain) |
+#### Logistics & Route Optimization
 
-#### 支付安全与欺诈检测
+| Tool                    | Application                  | Technical Features                                     | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **PyVRP**               | Vehicle routing problems     | High performance, complex constraint support          | [GitHub](https://github.com/PyVRP/PyVRP)                     |
+| **Timefold**            | AI constraint solving       | Java/Python implementation, multiple optimization types | [GitHub](https://github.com/TimefoldAI/timefold-solver)      |
 
-| 工具 | 应用 | 技术特点 | 链接 |
-|------|------|----------|------|
-| **PyOD** | 异常检测 | 40+算法，适用于交易欺诈检测 | [GitHub](https://github.com/yzhao062/pyod) |
+#### Inventory & Warehouse Management
 
-#### 自主代理框架
+| Tool                    | Application                  | Technical Features                                     | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **Stockpyl**            | Inventory optimization       | Python inventory library, multiple classic models     | [GitHub](https://github.com/LarrySnyder/stockpyl)            |
 
-| 框架 | 应用 | 技术特点 | 链接 |
-|------|------|----------|------|
-| **CrewAI** | 多代理系统 | 协作AI代理，角色定义 | [GitHub](https://github.com/joaomdmoura/crewAI) |
-| **AutoGen** | 多代理对话 | 微软开发，多代理协作框架 | [GitHub](https://github.com/microsoft/autogen) |
-| **LangGraph** | 代理工作流 | 基于LangChain，状态图工作流 | [GitHub](https://github.com/langchain-ai/langgraph) |
-| **Suna** | AI代理平台 | 完整平台，浏览器自动化，数据分析 | [GitHub](https://github.com/kortix-ai/suna) |
+#### Customs, Tariffs & Compliance Automation
 
-### 智能营销、销售与渠道扩张
+| Project                 | Application                  | Technical Approach                                     | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **HS Code Classification API** | HS code classification   | Machine learning, FastAPI/Flask implementation        | [GitHub](https://github.com/Muhammad-Talha4k/hs_code_classification_api_with_fast-flask) |
+| **HS Codes Prediction** | HS code classification      | Deep learning, Siamese networks, MiniLM              | [GitHub](https://github.com/mayank6255/hs_codes_prediction)  |
+| **LangChain + RAG**     | Trade law analysis          | Large language models, retrieval-augmented generation | [GitHub](https://github.com/langchain-ai/langchain)          |
 
-#### 自动化Listing与内容生成
+#### Payment Security & Fraud Detection
 
-| 工具 | 功能 | 特性 | 链接 |
-|------|------|------|------|
-| **Text Generation WebUI** | 内容生成 | 支持多种开源LLM，可自托管 | [GitHub](https://github.com/oobabooga/text-generation-webui) |
-| **Awesome Generative AI Guide** | 教程资源 | 构建自动化产品描述系统指南 | [GitHub](https://github.com/aishwaryanr/awesome-generative-ai-guide) |
+| Tool                    | Application                  | Technical Features                                     | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **PyOD**                | Anomaly detection            | 40+ algorithms, transaction fraud detection support   | [GitHub](https://github.com/yzhao062/pyod)                   |
 
-#### 智能广告与促销
+#### Autonomous Agent Frameworks
 
-| 工具 | 功能 | 特性 | 链接 |
-|------|------|------|------|
-| **Ecommerce Marketing Spend Optimization** | 预算优化 | 遗传算法，跨渠道预算分配 | [GitHub](https://github.com/Morphl-AI/Ecommerce-Marketing-Spend-Optimization) |
-| **ADIOS** | 广告素材生成 | Google GenAI，大规模定制化图片 | [GitHub](https://github.com/google-marketing-solutions/adios) |
-| **Mautic** | 营销自动化 | 开源，功能全面，客户分群 | [GitHub](https://github.com/mautic/mautic) |
-| **Auto Prompt** | 提示工程 | 优化生成式AI指令 | [GitHub](https://github.com/AIDotNet/auto-prompt) |
+| Framework               | Application                  | Technical Features                                     | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **CrewAI**              | Multi-agent systems          | Collaborative AI agents, role definition              | [GitHub](https://github.com/joaomdmoura/crewAI)              |
+| **AutoGen**             | Multi-agent conversations    | Microsoft-developed, multi-agent collaboration        | [GitHub](https://github.com/microsoft/autogen)               |
+| **LangGraph**           | Agent workflows              | LangChain-based, state graph workflows               | [GitHub](https://github.com/langchain-ai/langgraph)          |
+| **Suna**                | AI agent platform           | Complete platform, browser automation, data analysis  | [GitHub](https://github.com/kortix-ai/suna)                  |
 
-#### SEO与生成式引擎优化 (GEO)
+### Intelligent Marketing, Sales & Channel Expansion
 
-| 工具 | 功能 | 特性 | 链接 |
-|------|------|------|------|
-| **Python SEO Analyzer** | SEO分析 | 网站抓取，技术SEO问题发现 | [GitHub](https://github.com/sethblack/python-seo-analyzer) |
-| **Ecommerce Tools** | 电商数据科学 | 技术SEO分析和建模 | [GitHub](https://github.com/practical-data-science/ecommercetools) |
-| **DataForSEO MCP Server** | SEO数据集成 | LLM与SEO工具的自然语言接口 | [GitHub](https://github.com/Skobyn/dataforseo-mcp-server) |
+#### Automated Listing & Content Generation
 
-### 客户体验的未来
+| Tool                    | Function                     | Key Features                                           | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **Text Generation WebUI** | Content generation        | Multiple open-source LLM support, self-hostable       | [GitHub](https://github.com/oobabooga/text-generation-webui) |
+| **Awesome Generative AI Guide** | Tutorial resources    | Automated product description system guides           | [GitHub](https://github.com/aishwaryanr/awesome-generative-ai-guide) |
 
-#### 高级对话式AI
+#### Intelligent Advertising & Promotions
 
-| 工具 | 功能 | 特性 | 链接 |
-|------|------|------|------|
-| **Hexabot** | AI聊天机器人 | 多渠道，多语言，可视化编辑器 | [GitHub](https://github.com/Hexastack/Hexabot) |
-| **OpenBuddy** | 多语言聊天机器人 | 开源，多语言，离线部署 | [GitHub](https://github.com/OpenBuddy/OpenBuddy) |
+| Tool                    | Function                     | Key Features                                           | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **Ecommerce Marketing Spend Optimization** | Budget optimization | Genetic algorithms, cross-channel budget allocation   | [GitHub](https://github.com/Morphl-AI/Ecommerce-Marketing-Spend-Optimization) |
+| **ADIOS**               | Ad creative generation       | Google GenAI, large-scale customized imagery          | [GitHub](https://github.com/google-marketing-solutions/adios) |
+| **Mautic**              | Marketing automation         | Open source, comprehensive features, customer segmentation | [GitHub](https://github.com/mautic/mautic)                   |
+| **Auto Prompt**         | Prompt engineering           | Generative AI instruction optimization                 | [GitHub](https://github.com/AIDotNet/auto-prompt)            |
 
-## 📊 关键资源
+#### SEO & Generative Engine Optimization (GEO)
 
-### 精选数据集
+| Tool                    | Function                     | Key Features                                           | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **Python SEO Analyzer** | SEO analysis                | Website crawling, technical SEO issue detection       | [GitHub](https://github.com/sethblack/python-seo-analyzer)   |
+| **Ecommerce Tools**     | E-commerce data science      | Technical SEO analysis and modeling                    | [GitHub](https://github.com/practical-data-science/ecommercetools) |
+| **DataForSEO MCP Server** | SEO data integration       | Natural language interface for LLM-SEO tool integration | [GitHub](https://github.com/Skobyn/dataforseo-mcp-server)    |
 
-| 数据集 | 描述 | 语言/模态 | 用例 | 链接 |
-|--------|------|-----------|------|------|
-| **MARC** | 多语言亚马逊评论语料库 | 6种语言/文本 | 情感分析，文本分类 | [AWS Open Data](https://registry.opendata.aws/amazon-reviews-ml/) |
-| **Multimodal E-Commerce** | 9.9万+产品列表 | 法语/文本+图像 | 多模态产品分类 | [Kaggle](https://www.kaggle.com/datasets/ziya07/multimodal-e-commerce-dataset) |
-| **European Fashion Store** | 模拟电商运营关系型数据 | 欧洲多国/结构化数据 | 销售分析，客户分群 | [Kaggle](https://www.kaggle.com/datasets/joycemara/european-fashion-store-multitable-dataset) |
-| **E-commerce Text Classification** | 5万+产品描述 | 英语/文本 | 产品分类 | [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification) |
+### Future of Customer Experience
 
-### 学习资源
+#### Advanced Conversational AI
 
-- **[Awesome Generative AI Guide](https://github.com/aishwaryanr/awesome-generative-ai-guide)** - 全面的生成式AI资源库
-- **[GenAI Agents](https://github.com/NirDiamant/GenAI_Agents)** - AI代理开发教程
-- **[500 AI Agents Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects)** - 丰富的AI代理用例
+| Tool                    | Function                     | Key Features                                           | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+| **Hexabot**             | AI chatbot platform          | Multi-channel, multilingual, visual editor            | [GitHub](https://github.com/Hexastack/Hexabot)               |
+| **OpenBuddy**           | Multilingual chatbot         | Open source, multilingual, offline deployment         | [GitHub](https://github.com/OpenBuddy/OpenBuddy)             |
 
-## 🤝 贡献指南
+## Key Resources
 
-我们欢迎社区贡献！请查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与。
+### Curated Datasets
 
-### 贡献类型
+| Dataset                 | Description                  | Language/Modality                                      | Use Cases                                                     | Repository                                                    |
+|-------------------------|------------------------------|-------------------------------------------------------|---------------------------------------------------------------|---------------------------------------------------------------|
+| **MARC**                | Multilingual Amazon Review Corpus | 6 languages / Text                                 | Sentiment analysis, text classification                      | [AWS Open Data](https://registry.opendata.aws/amazon-reviews-ml/) |
+| **Multimodal E-Commerce** | 99K+ product listings      | French / Text + Images                                | Multimodal product classification                             | [Kaggle](https://www.kaggle.com/datasets/ziya07/multimodal-e-commerce-dataset) |
+| **European Fashion Store** | Simulated e-commerce relational data | European multi-country / Structured data      | Sales analysis, customer segmentation                        | [Kaggle](https://www.kaggle.com/datasets/joycemara/european-fashion-store-multitable-dataset) |
+| **E-commerce Text Classification** | 50K+ product descriptions | English / Text                                      | Product categorization                                        | [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification) |
 
-- 添加新的工具、库或资源
-- 改进现有条目的描述
-- 修复失效链接
-- 提出新的分类建议
-- 分享使用案例和最佳实践
+### Learning Resources
 
-### 准入标准
+**Comprehensive Guides**
+- [Awesome Generative AI Guide](https://github.com/aishwaryanr/awesome-generative-ai-guide) - Comprehensive generative AI resource collection
+- [GenAI Agents](https://github.com/NirDiamant/GenAI_Agents) - AI agent development tutorials
+- [500 AI Agents Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects) - Extensive AI agent use cases
 
-- 项目必须是开源的，或提供有意义的免费层级
-- 与跨境电商AI应用高度相关
-- 具有活跃的开发和维护
-- 提供清晰的文档和使用示例
+## Contributing
 
-## 📄 许可证
+We welcome community contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on how to participate.
+
+### Contribution Types
+
+**Resource Additions**
+- New tools, libraries, or learning resources
+- Datasets relevant to cross-border e-commerce AI
+- Case studies and implementation examples
+
+**Content Improvements**
+- Enhanced descriptions for existing entries
+- Broken link fixes and updates
+- New categorization suggestions
+- Best practices and use case sharing
+
+### Acceptance Criteria
+
+**Required Standards**
+- Open source projects or meaningful free tiers
+- High relevance to cross-border e-commerce AI applications
+- Active development and maintenance
+- Clear documentation and usage examples
+- Community recognition (100+ GitHub stars or widespread adoption)
+
+**Preferred Characteristics**
+- Multi-language support capabilities
+- Cloud-native or containerized deployment
+- Production-grade performance and stability
+- Well-designed APIs and integration options
+- Active community ecosystem
+
+## License
 
 [![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-本知识库采用 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) 许可证。
+This knowledge hub is released under the [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) license.
 
-## 🌟 致谢
+## Acknowledgments
 
-感谢所有为跨境电商AI生态系统做出贡献的开发者、研究者和企业。
+We extend our gratitude to all developers, researchers, and organizations contributing to the cross-border e-commerce AI ecosystem. Your innovations make global commerce more accessible and efficient.
 
 ---
 
-**[⬆ 返回顶部](#cbec-ai-hub-cross-border-e-commerce-ai-knowledge-hub)**
+**[Back to Top](#cbec-ai-hub-cross-border-e-commerce-ai-knowledge-hub)**

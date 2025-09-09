@@ -91,13 +91,35 @@ git checkout -b fix-broken-links
 
 遵循我们的格式指南：
 
-```markdown
-| **工具名称** | 功能描述 | 关键特性 | [链接](URL) |
+```html
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="URL">工具名称</a></strong></td>
+<td>功能描述</td>
+<td>跨境电商应用场景描述</td>
+</tr>
+</table>
 ```
 
 **示例：**
-```markdown
-| **Streamlit** | 快速数据应用开发 | Python原生、丰富组件、易于部署 | [GitHub](https://github.com/streamlit/streamlit) |
+```html
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/streamlit/streamlit">Streamlit</a></strong></td>
+<td>快速数据应用开发框架，Python原生、丰富组件、易于部署</td>
+<td>构建跨境电商数据分析仪表板，实时监控销售指标、库存状态和市场趋势</td>
+</tr>
+</table>
 ```
 
 ### 4. 测试您的更改
@@ -127,8 +149,21 @@ git push origin add-new-resource
 
 ### 资源条目格式
 
-```markdown
-| **工具名称** | 主要功能的简要描述 | 关键区别特征 | [GitHub](链接) |
+使用HTML表格格式，确保列宽一致：
+
+```html
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="GitHub链接">工具名称</a></strong></td>
+<td>主要功能的简要描述</td>
+<td>具体的跨境电商应用场景</td>
+</tr>
+</table>
 ```
 
 ### 描述指南
@@ -136,6 +171,14 @@ git push origin add-new-resource
 - **简洁**：用1-2句话准确描述核心功能
 - **突出独特性**：强调工具的独特优势
 - **避免营销语言**：使用客观的技术描述
+- **跨境电商相关性**：明确说明在跨境电商中的具体应用
+
+### 表格格式要求
+
+- 使用 `<table width="100%">` 确保表格占满容器
+- 列宽比例：工具(15%)、技术描述(35%)、跨境电商应用场景(50%)
+- 工具名称使用 `<strong>` 标签加粗
+- 链接使用 `<a href="">` 标签
 
 ### 链接要求
 

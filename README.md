@@ -63,106 +63,126 @@ AI从支持工具转变为核心竞争优势
 
 ### 数据管理与版本控制
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/iterative/dvc">DVC</a></strong></td>
-<td>为机器学习项目提供Git风格的数据版本控制，支持大文件管理和实验复现</td>
-<td>管理多国商品图片、价格历史数据版本，追踪不同市场的A/B测试数据集，确保推荐算法实验的可复现性</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/iterative/dvc">DVC</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">为机器学习项目提供Git风格的数据版本控制，支持大文件管理和实验复现</td>
+<td style="padding: 8px; border: 1px solid #ddd;">管理多国商品图片、价格历史数据版本，追踪不同市场的A/B测试数据集，确保推荐算法实验的可复现性</td>
 </tr>
 </tbody>
 </table>
 
 ### 工作流编排与自动化
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/kubeflow/kubeflow">Kubeflow</a></strong></td>
-<td>基于Kubernetes的机器学习工作流编排平台，支持端到端ML管道部署</td>
-<td>编排从商品数据采集、多语言翻译、价格优化到库存预测的完整AI管道，支持多地区并行处理</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/kubeflow/kubeflow">Kubeflow</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">基于Kubernetes的机器学习工作流编排平台，支持端到端ML管道部署</td>
+<td style="padding: 8px; border: 1px solid #ddd;">编排从商品数据采集、多语言翻译、价格优化到库存预测的完整AI管道，支持多地区并行处理</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/zenml-io/zenml">ZenML</a></strong></td>
-<td>提供可复现ML管道的开源MLOps框架，具备自动元数据跟踪和缓存功能</td>
-<td>构建可复现的需求预测管道，自动跟踪不同季节、地区的模型性能，支持快速回滚到最佳模型版本</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/zenml-io/zenml">ZenML</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">提供可复现ML管道的开源MLOps框架，具备自动元数据跟踪和缓存功能</td>
+<td style="padding: 8px; border: 1px solid #ddd;">构建可复现的需求预测管道，自动跟踪不同季节、地区的模型性能，支持快速回滚到最佳模型版本</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/n8n-io/n8n">n8n</a></strong></td>
-<td>可视化工作流自动化工具，支持500+应用集成和自托管部署</td>
-<td>自动化订单处理流程，连接多个电商平台API，实现库存同步、价格更新、客户通知的无缝集成</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/n8n-io/n8n">n8n</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">可视化工作流自动化工具，支持500+应用集成和自托管部署</td>
+<td style="padding: 8px; border: 1px solid #ddd;">自动化订单处理流程，连接多个电商平台API，实现库存同步、价格更新、客户通知的无缝集成</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/activepieces/activepieces">Activepieces</a></strong></td>
-<td>低代码工作流自动化平台，提供丰富的第三方服务集成能力</td>
-<td>构建营销自动化流程，根据客户行为触发个性化邮件、调整广告投放策略、同步CRM数据</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/activepieces/activepieces">Activepieces</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">低代码工作流自动化平台，提供丰富的第三方服务集成能力</td>
+<td style="padding: 8px; border: 1px solid #ddd;">构建营销自动化流程，根据客户行为触发个性化邮件、调整广告投放策略、同步CRM数据</td>
 </tr>
 </tbody>
 </table>
 
 ### 模型部署、服务与监控
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/SeldonIO/seldon-core">Seldon Core</a></strong></td>
-<td>Kubernetes原生的机器学习模型服务平台，支持A/B测试和金丝雀部署</td>
-<td>部署推荐系统模型，对不同地区用户进行A/B测试，实时监控转化率并自动切换到最优模型版本</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/SeldonIO/seldon-core">Seldon Core</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">Kubernetes原生的机器学习模型服务平台，支持A/B测试和金丝雀部署</td>
+<td style="padding: 8px; border: 1px solid #ddd;">部署推荐系统模型，对不同地区用户进行A/B测试，实时监控转化率并自动切换到最优模型版本</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/mlflow/mlflow">MLflow</a></strong></td>
-<td>开源机器学习生命周期管理平台，提供实验跟踪、模型注册和部署功能</td>
-<td>管理价格优化、需求预测等多个模型的生命周期，跟踪不同市场的模型表现，支持模型版本管理</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/mlflow/mlflow">MLflow</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">开源机器学习生命周期管理平台，提供实验跟踪、模型注册和部署功能</td>
+<td style="padding: 8px; border: 1px solid #ddd;">管理价格优化、需求预测等多个模型的生命周期，跟踪不同市场的模型表现，支持模型版本管理</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/deepchecks/deepchecks">Deepchecks</a></strong></td>
-<td>机器学习模型和数据验证工具，提供从研究到生产的全流程质量检查</td>
-<td>监控商品推荐模型的数据漂移，检测异常交易模式，确保欺诈检测模型在不同地区的稳定性</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/deepchecks/deepchecks">Deepchecks</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">机器学习模型和数据验证工具，提供从研究到生产的全流程质量检查</td>
+<td style="padding: 8px; border: 1px solid #ddd;">监控商品推荐模型的数据漂移，检测异常交易模式，确保欺诈检测模型在不同地区的稳定性</td>
 </tr>
 </tbody>
 </table>
 
 ### 专用数据存储
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/weaviate/weaviate">Weaviate</a></strong></td>
-<td>开源向量数据库，支持语义搜索和混合查询，适用于AI驱动的搜索应用</td>
-<td>存储商品的多语言描述向量，实现跨语言商品搜索和相似商品推荐，支持图文混合检索</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/weaviate/weaviate">Weaviate</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">开源向量数据库，支持语义搜索和混合查询，适用于AI驱动的搜索应用</td>
+<td style="padding: 8px; border: 1px solid #ddd;">存储商品的多语言描述向量，实现跨语言商品搜索和相似商品推荐，支持图文混合检索</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/milvus-io/milvus">Milvus</a></strong></td>
-<td>专为大规模向量相似性搜索设计的开源数据库，支持多种索引算法</td>
-<td>构建大规模商品图像搜索引擎，支持"拍照购物"功能，快速匹配相似商品并推荐替代品</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/milvus-io/milvus">Milvus</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">专为大规模向量相似性搜索设计的开源数据库，支持多种索引算法</td>
+<td style="padding: 8px; border: 1px solid #ddd;">构建大规模商品图像搜索引擎，支持"拍照购物"功能，快速匹配相似商品并推荐替代品</td>
 </tr>
 </tbody>
 </table>
@@ -171,111 +191,131 @@ AI从支持工具转变为核心竞争优势
 
 ### 推荐与个性化引擎
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/lyst/lightfm">LightFM</a></strong></td>
-<td>混合推荐系统库，擅长处理冷启动问题和稀疏数据场景</td>
-<td>为新用户和新商品提供精准推荐，结合用户地理位置、文化偏好等特征，解决跨境电商的冷启动难题</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/lyst/lightfm">LightFM</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">混合推荐系统库，擅长处理冷启动问题和稀疏数据场景</td>
+<td style="padding: 8px; border: 1px solid #ddd;">为新用户和新商品提供精准推荐，结合用户地理位置、文化偏好等特征，解决跨境电商的冷启动难题</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/benfred/implicit">Implicit</a></strong></td>
-<td>专为隐式反馈数据设计的快速协同过滤推荐算法库</td>
-<td>基于用户浏览、收藏、购买等隐式行为，构建跨平台商品推荐系统，提升转化率和客单价</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/benfred/implicit">Implicit</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">专为隐式反馈数据设计的快速协同过滤推荐算法库</td>
+<td style="padding: 8px; border: 1px solid #ddd;">基于用户浏览、收藏、购买等隐式行为，构建跨平台商品推荐系统，提升转化率和客单价</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/jfkirk/tensorrec">TensorRec</a></strong></td>
-<td>基于TensorFlow的灵活推荐系统框架，支持复杂特征工程</td>
-<td>整合商品属性、用户画像、季节性因素等多维特征，构建适应不同市场文化的个性化推荐引擎</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/jfkirk/tensorrec">TensorRec</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">基于TensorFlow的灵活推荐系统框架，支持复杂特征工程</td>
+<td style="padding: 8px; border: 1px solid #ddd;">整合商品属性、用户画像、季节性因素等多维特征，构建适应不同市场文化的个性化推荐引擎</td>
 </tr>
 </tbody>
 </table>
 
 ### 时间序列预测
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/facebook/prophet">Prophet</a></strong></td>
-<td>Facebook开源的时间序列预测工具，自动处理季节性和节假日效应</td>
-<td>预测不同国家的销售趋势，考虑各地节假日和文化事件，优化库存分配和营销时机</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/facebook/prophet">Prophet</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">Facebook开源的时间序列预测工具，自动处理季节性和节假日效应</td>
+<td style="padding: 8px; border: 1px solid #ddd;">预测不同国家的销售趋势，考虑各地节假日和文化事件，优化库存分配和营销时机</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/unit8co/darts">Darts</a></strong></td>
-<td>Python时间序列预测库，提供统一API支持多种预测模型</td>
-<td>预测汇率波动对定价策略的影响，分析多渠道销售数据，制定动态补货计划</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/unit8co/darts">Darts</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">Python时间序列预测库，提供统一API支持多种预测模型</td>
+<td style="padding: 8px; border: 1px solid #ddd;">预测汇率波动对定价策略的影响，分析多渠道销售数据，制定动态补货计划</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/frePPLe/frepple">frePPLe</a></strong></td>
-<td>开源供应链规划软件，集成需求预测和生产计划优化功能</td>
-<td>整合全球供应商数据，优化跨境物流路径，平衡库存成本与服务水平</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/frePPLe/frepple">frePPLe</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">开源供应链规划软件，集成需求预测和生产计划优化功能</td>
+<td style="padding: 8px; border: 1px solid #ddd;">整合全球供应商数据，优化跨境物流路径，平衡库存成本与服务水平</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/OpenSTEF/openstef">OpenSTEF</a></strong></td>
-<td>自动化短期预测框架，支持外部因子集成和ML管道自动化</td>
-<td>结合天气、汇率、政策等外部因素，预测短期销售波动，支持快速库存调整决策</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/OpenSTEF/openstef">OpenSTEF</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">自动化短期预测框架，支持外部因子集成和ML管道自动化</td>
+<td style="padding: 8px; border: 1px solid #ddd;">结合天气、汇率、政策等外部因素，预测短期销售波动，支持快速库存调整决策</td>
 </tr>
 </tbody>
 </table>
 
 ### 多语言自然语言处理
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/explosion/spaCy">spaCy</a></strong></td>
-<td>工业级自然语言处理库，提供多语言文本分析和实体识别功能</td>
-<td>处理多语言商品描述、客户评论情感分析，提取关键产品特征，支持跨语言搜索优化</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/explosion/spaCy">spaCy</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">工业级自然语言处理库，提供多语言文本分析和实体识别功能</td>
+<td style="padding: 8px; border: 1px solid #ddd;">处理多语言商品描述、客户评论情感分析，提取关键产品特征，支持跨语言搜索优化</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/pemistahl/lingua-py">Lingua</a></strong></td>
-<td>高精度语言检测库，支持75+语言的准确识别</td>
-<td>自动识别客户咨询语言，路由到对应语言的客服系统，优化多语言内容分发策略</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/pemistahl/lingua-py">Lingua</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">高精度语言检测库，支持75+语言的准确识别</td>
+<td style="padding: 8px; border: 1px solid #ddd;">自动识别客户咨询语言，路由到对应语言的客服系统，优化多语言内容分发策略</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/huggingface/transformers">Transformers</a></strong></td>
-<td>Hugging Face的预训练模型库，提供最新的NLP和多模态AI模型</td>
-<td>自动生成多语言商品描述，翻译客户评论，构建智能客服机器人，支持跨语言情感分析</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/huggingface/transformers">Transformers</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">Hugging Face的预训练模型库，提供最新的NLP和多模态AI模型</td>
+<td style="padding: 8px; border: 1px solid #ddd;">自动生成多语言商品描述，翻译客户评论，构建智能客服机器人，支持跨语言情感分析</td>
 </tr>
 </tbody>
 </table>
 
 ### 电商计算机视觉
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/openai/CLIP">CLIP</a> + <a href="https://github.com/facebookresearch/faiss">Faiss</a></strong></td>
-<td>结合OpenAI的多模态模型和Facebook的相似性搜索引擎，实现图文联合检索</td>
-<td>构建"拍照购物"功能，支持跨语言图像搜索，自动生成商品标签，提升视觉搜索的准确性和用户体验</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/openai/CLIP">CLIP</a> + <a href="https://github.com/facebookresearch/faiss">Faiss</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">结合OpenAI的多模态模型和Facebook的相似性搜索引擎，实现图文联合检索</td>
+<td style="padding: 8px; border: 1px solid #ddd;">构建"拍照购物"功能，支持跨语言图像搜索，自动生成商品标签，提升视觉搜索的准确性和用户体验</td>
 </tr>
 </tbody>
 </table>
@@ -286,125 +326,150 @@ AI从支持工具转变为核心竞争优势
 
 #### 物流与路径优化
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/PyVRP/PyVRP">PyVRP</a></strong></td>
-<td>高性能车辆路径问题求解器，支持复杂约束的配送路线优化</td>
-<td>优化海外仓到客户的最后一公里配送路径，考虑时间窗口、车辆容量等约束，降低配送成本</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/PyVRP/PyVRP">PyVRP</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">高性能车辆路径问题求解器，支持复杂约束的配送路线优化</td>
+<td style="padding: 8px; border: 1px solid #ddd;">优化海外仓到客户的最后一公里配送路径，考虑时间窗口、车辆容量等约束，降低配送成本</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/TimefoldAI/timefold-solver">Timefold</a></strong></td>
-<td>AI驱动的约束求解引擎，用于资源调度和生产排程优化</td>
-<td>优化跨境物流时间表，协调海运、空运、陆运的衔接，最小化总运输时间和成本</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/TimefoldAI/timefold-solver">Timefold</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">AI驱动的约束求解引擎，用于资源调度和生产排程优化</td>
+<td style="padding: 8px; border: 1px solid #ddd;">优化跨境物流时间表，协调海运、空运、陆运的衔接，最小化总运输时间和成本</td>
 </tr>
 </tbody>
 </table>
 
 #### 库存与仓库管理
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/LarrySnyder/stockpyl">Stockpyl</a></strong></td>
-<td>Python库存优化库，实现多种经典库存管理模型和补货策略</td>
-<td>管理多国仓库库存水位，考虑运输时间差异和需求不确定性，制定最优补货策略</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/LarrySnyder/stockpyl">Stockpyl</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">Python库存优化库，实现多种经典库存管理模型和补货策略</td>
+<td style="padding: 8px; border: 1px solid #ddd;">管理多国仓库库存水位，考虑运输时间差异和需求不确定性，制定最优补货策略</td>
 </tr>
 </tbody>
 </table>
 
 #### 海关、关税与合规自动化
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/Muhammad-Talha4k/hs_code_classification_api_with_fast-flask">HS Code Classification API</a></strong></td>
-<td>基于机器学习的HS编码自动分类API，支持FastAPI和Flask部署</td>
-<td>自动为新商品分配正确的HS编码，减少海关清关延误，确保关税计算准确性</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/Muhammad-Talha4k/hs_code_classification_api_with_fast-flask">HS Code Classification API</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">基于机器学习的HS编码自动分类API，支持FastAPI和Flask部署</td>
+<td style="padding: 8px; border: 1px solid #ddd;">自动为新商品分配正确的HS编码，减少海关清关延误，确保关税计算准确性</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/mayank6255/hs_codes_prediction">HS Codes Prediction</a></strong></td>
-<td>使用深度学习和孪生网络的高精度HS编码预测系统</td>
-<td>基于商品描述和图像特征，智能预测HS编码，支持批量商品的快速分类处理</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/mayank6255/hs_codes_prediction">HS Codes Prediction</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">使用深度学习和孪生网络的高精度HS编码预测系统</td>
+<td style="padding: 8px; border: 1px solid #ddd;">基于商品描述和图像特征，智能预测HS编码，支持批量商品的快速分类处理</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/langchain-ai/langchain">LangChain + RAG</a></strong></td>
-<td>结合大语言模型和检索增强生成的贸易法规智能问答框架</td>
-<td>构建贸易合规助手，实时查询各国进出口法规，为商品准入提供智能建议</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/langchain-ai/langchain">LangChain + RAG</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">结合大语言模型和检索增强生成的贸易法规智能问答框架</td>
+<td style="padding: 8px; border: 1px solid #ddd;">构建贸易合规助手，实时查询各国进出口法规，为商品准入提供智能建议</td>
 </tr>
 </tbody>
 </table>
 
 #### 支付安全与欺诈检测
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/yzhao062/pyod">PyOD</a></strong></td>
-<td>综合异常检测库，提供40+算法用于交易欺诈和异常行为识别</td>
-<td>检测异常交易模式，识别信用卡欺诈、虚假订单，保护跨境支付安全</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/yzhao062/pyod">PyOD</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">综合异常检测库，提供40+算法用于交易欺诈和异常行为识别</td>
+<td style="padding: 8px; border: 1px solid #ddd;">检测异常交易模式，识别信用卡欺诈、虚假订单，保护跨境支付安全</td>
 </tr>
 </tbody>
 </table>
 
 #### 自主代理框架
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/joaomdmoura/crewAI">CrewAI</a></strong></td>
-<td>多AI代理协作框架，支持角色定义和复杂任务的自动化执行</td>
-<td>构建AI代理团队，分别负责市场调研、竞品分析、定价策略，协作完成新市场进入决策</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/joaomdmoura/crewAI">CrewAI</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">多AI代理协作框架，支持角色定义和复杂任务的自动化执行</td>
+<td style="padding: 8px; border: 1px solid #ddd;">构建AI代理团队，分别负责市场调研、竞品分析、定价策略，协作完成新市场进入决策</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/microsoft/autogen">AutoGen</a></strong></td>
-<td>微软开源的多代理对话系统，支持AI代理间的智能协作</td>
-<td>创建专业化AI代理（采购、销售、客服），通过对话协作处理复杂的跨境业务流程</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/microsoft/autogen">AutoGen</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">微软开源的多代理对话系统，支持AI代理间的智能协作</td>
+<td style="padding: 8px; border: 1px solid #ddd;">创建专业化AI代理（采购、销售、客服），通过对话协作处理复杂的跨境业务流程</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/langchain-ai/langgraph">LangGraph</a></strong></td>
-<td>基于状态图的AI代理工作流框架，构建复杂的决策链路</td>
-<td>设计订单处理工作流，从订单验证、库存检查到物流安排的全自动化决策链</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/langchain-ai/langgraph">LangGraph</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">基于状态图的AI代理工作流框架，构建复杂的决策链路</td>
+<td style="padding: 8px; border: 1px solid #ddd;">设计订单处理工作流，从订单验证、库存检查到物流安排的全自动化决策链</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/kortix-ai/suna">Suna</a></strong></td>
-<td>完整的AI代理平台，集成浏览器自动化和数据分析功能</td>
-<td>自动化竞品价格监控，抓取多平台商品信息，生成市场分析报告</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/kortix-ai/suna">Suna</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">完整的AI代理平台，集成浏览器自动化和数据分析功能</td>
+<td style="padding: 8px; border: 1px solid #ddd;">自动化竞品价格监控，抓取多平台商品信息，生成市场分析报告</td>
 </tr>
 </tbody>
 </table>
@@ -413,87 +478,102 @@ AI从支持工具转变为核心竞争优势
 
 #### 自动化Listing与内容生成
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/oobabooga/text-generation-webui">Text Generation WebUI</a></strong></td>
-<td>开源大语言模型的Web界面，支持本地部署和多模型切换</td>
-<td>本地化部署多语言商品描述生成，保护商业机密，支持批量生成符合各平台规范的Listing内容</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/oobabooga/text-generation-webui">Text Generation WebUI</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">开源大语言模型的Web界面，支持本地部署和多模型切换</td>
+<td style="padding: 8px; border: 1px solid #ddd;">本地化部署多语言商品描述生成，保护商业机密，支持批量生成符合各平台规范的Listing内容</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/aishwaryanr/awesome-generative-ai-guide">Awesome Generative AI Guide</a></strong></td>
-<td>生成式AI的综合学习指南，包含实践项目和系统架构设计</td>
-<td>学习构建自动化内容生成系统，掌握商品标题优化、描述生成、营销文案创作的AI实现方法</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/aishwaryanr/awesome-generative-ai-guide">Awesome Generative AI Guide</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">生成式AI的综合学习指南，包含实践项目和系统架构设计</td>
+<td style="padding: 8px; border: 1px solid #ddd;">学习构建自动化内容生成系统，掌握商品标题优化、描述生成、营销文案创作的AI实现方法</td>
 </tr>
 </tbody>
 </table>
 
 #### 智能广告与促销
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/Morphl-AI/Ecommerce-Marketing-Spend-Optimization">Ecommerce Marketing Spend Optimization</a></strong></td>
-<td>使用遗传算法优化电商营销预算分配，实现跨渠道ROI最大化</td>
-<td>优化多国市场的广告预算分配，平衡Facebook、Google、TikTok等平台投放，最大化全球营销ROI</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/Morphl-AI/Ecommerce-Marketing-Spend-Optimization">Ecommerce Marketing Spend Optimization</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">使用遗传算法优化电商营销预算分配，实现跨渠道ROI最大化</td>
+<td style="padding: 8px; border: 1px solid #ddd;">优化多国市场的广告预算分配，平衡Facebook、Google、TikTok等平台投放，最大化全球营销ROI</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/google-marketing-solutions/adios">ADIOS</a></strong></td>
-<td>Google开源的AI广告素材生成工具，支持大规模个性化创意制作</td>
-<td>批量生成适应不同文化背景的广告创意，自动调整视觉元素和文案风格，提升各地区广告效果</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/google-marketing-solutions/adios">ADIOS</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">Google开源的AI广告素材生成工具，支持大规模个性化创意制作</td>
+<td style="padding: 8px; border: 1px solid #ddd;">批量生成适应不同文化背景的广告创意，自动调整视觉元素和文案风格，提升各地区广告效果</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/mautic/mautic">Mautic</a></strong></td>
-<td>开源营销自动化平台，提供邮件营销、客户分群和行为跟踪功能</td>
-<td>构建多语言邮件营销系统，根据客户地理位置和购买行为自动触发个性化营销活动</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/mautic/mautic">Mautic</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">开源营销自动化平台，提供邮件营销、客户分群和行为跟踪功能</td>
+<td style="padding: 8px; border: 1px solid #ddd;">构建多语言邮件营销系统，根据客户地理位置和购买行为自动触发个性化营销活动</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/AIDotNet/auto-prompt">Auto Prompt</a></strong></td>
-<td>自动化提示词工程工具，优化大语言模型的指令效果</td>
-<td>优化商品描述生成的提示词，确保输出内容符合不同平台的SEO要求和文化偏好</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/AIDotNet/auto-prompt">Auto Prompt</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">自动化提示词工程工具，优化大语言模型的指令效果</td>
+<td style="padding: 8px; border: 1px solid #ddd;">优化商品描述生成的提示词，确保输出内容符合不同平台的SEO要求和文化偏好</td>
 </tr>
 </tbody>
 </table>
 
 #### SEO与生成式引擎优化 (GEO)
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/sethblack/python-seo-analyzer">Python SEO Analyzer</a></strong></td>
-<td>Python网站SEO分析工具，自动检测技术SEO问题和优化建议</td>
-<td>分析多语言网站的SEO表现，检测各地区搜索引擎优化问题，提供本地化SEO改进建议</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/sethblack/python-seo-analyzer">Python SEO Analyzer</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">Python网站SEO分析工具，自动检测技术SEO问题和优化建议</td>
+<td style="padding: 8px; border: 1px solid #ddd;">分析多语言网站的SEO表现，检测各地区搜索引擎优化问题，提供本地化SEO改进建议</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/practical-data-science/ecommercetools">Ecommerce Tools</a></strong></td>
-<td>电商数据科学工具包，专注于SEO分析和性能建模</td>
-<td>分析不同市场的关键词表现，优化商品页面的搜索排名，提升自然流量转化率</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/practical-data-science/ecommercetools">Ecommerce Tools</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">电商数据科学工具包，专注于SEO分析和性能建模</td>
+<td style="padding: 8px; border: 1px solid #ddd;">分析不同市场的关键词表现，优化商品页面的搜索排名，提升自然流量转化率</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/Skobyn/dataforseo-mcp-server">DataForSEO MCP Server</a></strong></td>
-<td>为大语言模型提供SEO数据接口，支持自然语言SEO查询和分析</td>
-<td>通过自然语言查询各国搜索趋势，分析竞品关键词策略，优化多语言SEO内容</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/Skobyn/dataforseo-mcp-server">DataForSEO MCP Server</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">为大语言模型提供SEO数据接口，支持自然语言SEO查询和分析</td>
+<td style="padding: 8px; border: 1px solid #ddd;">通过自然语言查询各国搜索趋势，分析竞品关键词策略，优化多语言SEO内容</td>
 </tr>
 </tbody>
 </table>
@@ -502,24 +582,29 @@ AI从支持工具转变为核心竞争优势
 
 #### 高级对话式AI
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
 <thead>
 <tr>
-<th style="width: 20%;">工具</th>
-<th style="width: 35%;">技术描述</th>
-<th style="width: 45%;">跨境电商应用场景</th>
+<th style="width: 20%; padding: 8px; border: 1px solid #ddd;">工具</th>
+<th style="width: 35%; padding: 8px; border: 1px solid #ddd;">技术描述</th>
+<th style="width: 45%; padding: 8px; border: 1px solid #ddd;">跨境电商应用场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="https://github.com/Hexastack/Hexabot">Hexabot</a></strong></td>
-<td>开源AI聊天机器人平台，支持多渠道部署和可视化对话流设计</td>
-<td>构建多语言智能客服系统，支持WhatsApp、Telegram等全球主流聊天平台，提供24/7客户支持</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/Hexastack/Hexabot">Hexabot</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">开源AI聊天机器人平台，支持多渠道部署和可视化对话流设计</td>
+<td style="padding: 8px; border: 1px solid #ddd;">构建多语言智能客服系统，支持WhatsApp、Telegram等全球主流聊天平台，提供24/7客户支持</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/OpenBuddy/OpenBuddy">OpenBuddy</a></strong></td>
-<td>多语言AI助手，支持离线部署和跨语言对话能力</td>
-<td>部署私有化多语言客服助手，处理订单查询、产品咨询、售后服务，保护客户数据隐私</td>
+<td style="padding: 8px; border: 1px solid #ddd;"><strong><a href="https://github.com/OpenBuddy/OpenBuddy">OpenBuddy</a></strong></td>
+<td style="padding: 8px; border: 1px solid #ddd;">多语言AI助手，支持离线部署和跨语言对话能力</td>
+<td style="padding: 8px; border: 1px solid #ddd;">部署私有化多语言客服助手，处理订单查询、产品咨询、售后服务，保护客户数据隐私</td>
 </tr>
 </tbody>
 </table>

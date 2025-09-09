@@ -25,7 +25,7 @@ permalink: /contributing/
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
     <h3>📝 分享案例研究</h3>
     <p>贡献真实的项目实施经验和技术解决方案。</p>
-    <a href="https://github.com/kangise/CBEC-AI-Hub/discussions" style="color: #0366d6;">开始讨论 →</a>
+    <a href="https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md" style="color: #0366d6;">提交案例研究 →</a>
   </div>
 
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
@@ -63,11 +63,25 @@ permalink: /contributing/
 ### 案例研究要求
 
 **必需条件：**
-- **真实性**：基于真实项目经验
-- **完整性**：包含背景、解决方案、实施、结果
-- **技术深度**：提供充分的技术细节
-- **可复现性**：其他人应该能够参考实施
+- **真实性**：基于真实项目经验，不是理论或概念验证
+- **完整性**：包含背景、解决方案、实施过程、结果和经验总结
+- **技术深度**：提供充分的技术细节和实现方案
+- **可复现性**：其他人应该能够参考和学习实施方法
 - **业务价值**：明确的业务影响和投资回报率
+- **跨境电商相关性**：与跨境电商AI应用直接相关
+
+**案例研究提交流程：**
+1. **填写案例研究模板** - 使用我们的[案例研究提交模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md)
+2. **社区讨论** - 在GitHub Issues中与维护者和社区讨论案例细节
+3. **完善内容** - 根据反馈完善案例研究内容
+4. **提交PR** - 将完整的案例研究文档提交到`case-studies/`目录
+5. **审核发布** - 经过审核后正式发布
+
+**案例研究格式：**
+- 使用Markdown格式编写
+- 包含代码示例和架构图
+- 提供性能数据和业务指标
+- 遵循我们的[案例研究模板](case-studies.md)结构
 
 ## 🚀 快速开始指南
 

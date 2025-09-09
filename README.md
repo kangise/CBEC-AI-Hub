@@ -107,6 +107,16 @@ AI从支持工具转变为核心竞争优势
 <td>低代码工作流自动化平台，提供丰富的第三方服务集成能力</td>
 <td>构建营销自动化流程，根据客户行为触发个性化邮件、调整广告投放策略、同步CRM数据</td>
 </tr>
+<tr>
+<td><strong><a href="https://github.com/microsoft/autogen">AutoGen</a></strong></td>
+<td>微软开源的多代理对话系统，支持AI代理间的智能协作</td>
+<td>创建专业化AI代理（采购、销售、客服），通过对话协作处理复杂的跨境业务流程</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/TimefoldAI/timefold-solver">Timefold</a></strong></td>
+<td>AI驱动的约束求解引擎，用于资源调度和生产排程优化</td>
+<td>优化跨境物流时间表，协调海运、空运、陆运的衔接，最小化总运输时间和成本</td>
+</tr>
 </table>
 
 ### 模型部署、服务与监控
@@ -264,14 +274,7 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/facebook/prophet">Prophet</a></strong></td>
-<td>Facebook开源的时间序列预测工具，自动处理季节性和节假日效应</td>
-<td>通过AI分析市场趋势、消费者需求和竞争格局，识别产品创新机会</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/unit8co/darts">Darts</a></strong></td>
-<td>Python时间序列预测库，提供统一API支持多种预测模型</td>
-<td>预测新兴市场需求趋势，发现产品机会空白，分析竞争对手动态</td>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
 </tr>
 </table>
 
@@ -282,11 +285,6 @@ AI从支持工具转变为核心竞争优势
 <th width="15%">工具</th>
 <th width="35%">技术描述</th>
 <th width="50%">跨境电商应用场景</th>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/huggingface/transformers">Transformers</a></strong></td>
-<td>Hugging Face的预训练模型库，提供最新的NLP和多模态AI模型</td>
-<td>利用AI辅助产品创意生成、功能设计和差异化策略制定</td>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/joaomdmoura/crewAI">CrewAI</a></strong></td>
@@ -304,9 +302,7 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/lyst/lightfm">LightFM</a></strong></td>
-<td>混合推荐系统库，擅长处理冷启动问题和稀疏数据场景</td>
-<td>运用预测模型和数据分析验证产品市场接受度和商业可行性</td>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
 </tr>
 </table>
 
@@ -321,9 +317,7 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/microsoft/autogen">AutoGen</a></strong></td>
-<td>微软开源的多代理对话系统，支持AI代理间的智能协作</td>
-<td>智能化供应商搜索、能力评估和风险分析系统</td>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
 </tr>
 </table>
 
@@ -336,9 +330,7 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/TimefoldAI/timefold-solver">Timefold</a></strong></td>
-<td>AI驱动的约束求解引擎，用于资源调度和生产排程优化</td>
-<td>基于AI的价格预测、采购量优化和供应商选择算法</td>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
 </tr>
 </table>
 
@@ -351,9 +343,7 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/deepchecks/deepchecks">Deepchecks</a></strong></td>
-<td>机器学习模型和数据验证工具，提供从研究到生产的全流程质量检查</td>
-<td>自动化供应商绩效监控、质量控制和协作优化</td>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
 </tr>
 </table>
 
@@ -383,14 +373,7 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/frePPLe/frepple">frePPLe</a></strong></td>
-<td>开源供应链规划软件，集成需求预测和生产计划优化功能</td>
-<td>销售预测、季节性分析和补货策略的智能化管理</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/OpenSTEF/openstef">OpenSTEF</a></strong></td>
-<td>自动化短期预测框架，支持外部因子集成和ML管道自动化</td>
-<td>结合天气、汇率、政策等外部因素，预测短期销售波动，支持快速库存调整决策</td>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
 </tr>
 </table>
 
@@ -424,11 +407,6 @@ AI从支持工具转变为核心竞争优势
 <td>开源大语言模型的Web界面，支持本地部署和多模型切换</td>
 <td>多语言商品描述生成、SEO优化和自动化分类系统</td>
 </tr>
-<tr>
-<td><strong><a href="https://github.com/aishwaryanr/awesome-generative-ai-guide">Awesome Generative AI Guide</a></strong></td>
-<td>生成式AI的综合学习指南，包含实践项目和系统架构设计</td>
-<td>学习构建自动化内容生成系统，掌握商品标题优化、描述生成、营销文案创作的AI实现方法</td>
-</tr>
 </table>
 
 #### 内容本地化
@@ -440,14 +418,7 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/huggingface/transformers">Transformers</a></strong></td>
-<td>Hugging Face的预训练模型库，提供最新的NLP和多模态AI模型</td>
-<td>多语言翻译、文化适应性调整和本地化内容生成</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/pemistahl/lingua-py">Lingua</a></strong></td>
-<td>高精度语言检测库，支持75+语言的准确识别</td>
-<td>自动识别客户咨询语言，路由到对应语言的客服系统，优化多语言内容分发策略</td>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
 </tr>
 </table>
 
@@ -460,9 +431,7 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/openai/CLIP">CLIP</a> + <a href="https://github.com/facebookresearch/faiss">Faiss</a></strong></td>
-<td>结合OpenAI的多模态模型和Facebook的相似性搜索引擎，实现图文联合检索</td>
-<td>商品图片处理、视频生成和AR/VR展示技术</td>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
 </tr>
 </table>
 
@@ -477,9 +446,7 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/explosion/spaCy">spaCy</a></strong></td>
-<td>工业级自然语言处理库，提供多语言文本分析和实体识别功能</td>
-<td>跨文化品牌策略、声誉监控和品牌一致性管理</td>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
 </tr>
 </table>
 
@@ -523,9 +490,9 @@ AI从支持工具转变为核心竞争优势
 </tr>
 </table>
 
-### 客户体验的未来
+### 定价与促销
 
-#### 高级对话式AI
+#### 动态定价策略
 
 <table width="100%">
 <tr>
@@ -534,14 +501,277 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/Hexastack/Hexabot">Hexabot</a></strong></td>
-<td>开源AI聊天机器人平台，支持多渠道部署和可视化对话流设计</td>
-<td>构建多语言智能客服系统，支持WhatsApp、Telegram等全球主流聊天平台，提供24/7客户支持</td>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 促销活动管理
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/OpenBuddy/OpenBuddy">OpenBuddy</a></strong></td>
-<td>多语言AI助手，支持离线部署和跨语言对话能力</td>
-<td>部署私有化多语言客服助手，处理订单查询、产品咨询、售后服务，保护客户数据隐私</td>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+### 客户获取与转化
+
+#### 个性化推荐
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 用户体验优化
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+### 订单处理与履约
+
+#### 订单管理
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 履约优化
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+### 客户服务与维护
+
+#### 客户服务
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 客户关系管理
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 知识产权保护
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 个人信息保护
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+### 行业垂直应用
+
+#### 时尚与服装
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 电子产品
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 家居与生活用品
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 美妆与个护
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 母婴用品
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 健康与保健
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 汽车配件
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 宠物用品
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+### 数据分析与业务优化
+
+#### 运营分析
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 财务分析
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+#### 战略决策支持
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center; color: #666;">待加入</td>
 </tr>
 </table>
 

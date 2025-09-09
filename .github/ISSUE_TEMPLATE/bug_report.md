@@ -1,32 +1,32 @@
 ---
-name: Bug report
-about: Create a report to help us improve
+name: 错误报告
+about: 创建报告帮助我们改进
 title: '[BUG] '
 labels: bug
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**描述错误**
+清晰简洁地描述错误是什么。
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**重现步骤**
+重现该行为的步骤：
+1. 转到 '...'
+2. 点击 '....'
+3. 向下滚动到 '....'
+4. 看到错误
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**预期行为**
+清晰简洁地描述您期望发生的事情。
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+**截图**
+如果适用，请添加截图来帮助解释您的问题。
 
-**Environment (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+**环境（请完成以下信息）：**
+ - 操作系统：[例如 iOS]
+ - 浏览器：[例如 chrome, safari]
+ - 版本：[例如 22]
 
-**Additional context**
-Add any other context about the problem here.
+**其他上下文**
+在此处添加有关问题的任何其他上下文。

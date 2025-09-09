@@ -1,48 +1,48 @@
-# Pull Request
+# 拉取请求
 
-## Description
-Brief description of the changes made.
+## 描述
+对所做更改的简要描述。
 
-## Type of Change
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] Documentation update
-- [ ] Resource addition/update
-- [ ] Case study addition
+## 更改类型
+- [ ] 错误修复（不破坏现有功能的修复）
+- [ ] 新功能（不破坏现有功能的新增功能）
+- [ ] 破坏性更改（可能导致现有功能无法正常工作的修复或功能）
+- [ ] 文档更新
+- [ ] 资源添加/更新
+- [ ] 案例研究添加
 
-## Changes Made
+## 所做更改
 - 
 - 
 - 
 
-## Cross-border E-commerce Relevance
-How do these changes benefit cross-border e-commerce AI applications?
+## 跨境电商相关性
+这些更改如何有益于跨境电商AI应用？
 
-## Checklist
-- [ ] I have read the [CONTRIBUTING.md](../CONTRIBUTING.md) guidelines
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own changes
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
-- [ ] New and existing tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published
+## 检查清单
+- [ ] 我已阅读 [CONTRIBUTING.md](../CONTRIBUTING.md) 指南
+- [ ] 我的代码遵循此项目的样式指南
+- [ ] 我已对自己的更改进行了自我审查
+- [ ] 我已对代码进行了注释，特别是在难以理解的区域
+- [ ] 我已对文档进行了相应更改
+- [ ] 我的更改不会产生新的警告
+- [ ] 新的和现有的测试在本地通过我的更改
+- [ ] 任何依赖的更改都已合并和发布
 
-## For Resource Additions
-- [ ] Resource is open source or has meaningful free tier
-- [ ] Resource is actively maintained (updated within last 6 months)
-- [ ] Resource has good documentation
-- [ ] Resource is directly relevant to CBEC AI use cases
-- [ ] I have verified all links work correctly
-- [ ] I have placed the resource in the appropriate category
-- [ ] I have followed the table format consistently
+## 资源添加专用
+- [ ] 资源是开源的或有有意义的免费层级
+- [ ] 资源得到积极维护（最近6个月内有更新）
+- [ ] 资源有良好的文档
+- [ ] 资源与跨境电商AI用例直接相关
+- [ ] 我已验证所有链接都能正常工作
+- [ ] 我已将资源放在适当的类别中
+- [ ] 我已一致地遵循表格格式
 
-## Testing
-Describe the tests that you ran to verify your changes.
+## 测试
+描述您运行的测试以验证您的更改。
 
-## Screenshots (if applicable)
-Add screenshots to help explain your changes.
+## 截图（如适用）
+添加截图以帮助解释您的更改。
 
-## Additional Notes
-Any additional information that reviewers should know.
+## 其他说明
+审查者应该知道的任何其他信息。

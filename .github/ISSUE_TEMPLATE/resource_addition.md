@@ -1,40 +1,40 @@
 ---
-name: Resource Addition
-about: Suggest a new tool, library, or resource to add to the hub
-title: '[RESOURCE] Add [Tool/Library Name]'
+name: 资源添加
+about: 建议向中心添加新工具、库或资源
+title: '[RESOURCE] 添加 [工具/库名称]'
 labels: resource-addition
 assignees: ''
 
 ---
 
-**Resource Information**
-- **Name**: 
-- **Category**: (e.g., ML Infrastructure, NLP, Computer Vision, etc.)
-- **GitHub/Website URL**: 
-- **License**: 
-- **Language**: 
+**资源信息**
+- **名称**: 
+- **类别**: (例如：机器学习基础设施、自然语言处理、计算机视觉等)
+- **GitHub/网站URL**: 
+- **许可证**: 
+- **语言**: 
 
-**Description**
-A clear and concise description of what this resource does and its main features.
+**描述**
+清晰简洁地描述此资源的功能及其主要特性。
 
-**Cross-border E-commerce Relevance**
-Explain how this resource is relevant to cross-border e-commerce AI applications. Include specific use cases.
+**跨境电商相关性**
+解释此资源与跨境电商AI应用的相关性。包括具体用例。
 
-**Why should it be included?**
-- [ ] Open source or has meaningful free tier
-- [ ] Actively maintained
-- [ ] Good documentation
-- [ ] Relevant to CBEC AI use cases
-- [ ] Unique value proposition
+**为什么应该包含它？**
+- [ ] 开源或有有意义的免费层级
+- [ ] 积极维护
+- [ ] 良好的文档
+- [ ] 与跨境电商AI用例相关
+- [ ] 独特的价值主张
 
-**Additional Information**
-- **Stars/Popularity**: 
-- **Last Updated**: 
-- **Community Size**: 
-- **Documentation Quality**: 
+**其他信息**
+- **星标/受欢迎程度**: 
+- **最后更新**: 
+- **社区规模**: 
+- **文档质量**: 
 
-**Suggested Category Placement**
-Where in the README should this resource be placed?
+**建议的类别位置**
+此资源应该放在README的哪个位置？
 
-**Example Use Case**
-Provide a brief example of how this tool could be used in a cross-border e-commerce scenario.
+**示例用例**
+提供此工具如何在跨境电商场景中使用的简要示例。

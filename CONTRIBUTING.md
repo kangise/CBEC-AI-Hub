@@ -1,225 +1,225 @@
 ---
 layout: page
-title: Contributing
+title: 贡献指南
 permalink: /contributing/
 ---
 
-# Contributing to CBEC-AI-Hub
+# CBEC-AI-Hub 贡献指南
 
-Thank you for your interest in contributing to CBEC-AI-Hub! This guide will help you understand how to contribute to this cross-border e-commerce AI knowledge hub.
+感谢您对 CBEC-AI-Hub 的贡献兴趣！本指南将帮助您了解如何为这个跨境电商AI知识中心做出贡献。
 
 <div style="background: #d4edda; border: 1px solid #c3e6cb; border-radius: 8px; padding: 1rem; margin: 2rem 0;">
-  <strong>🌟 Every contribution matters!</strong> Whether you're adding a new tool, fixing a typo, or sharing a case study, your contribution helps the entire community.
+  <strong>🌟 每一份贡献都很重要！</strong> 无论您是添加新工具、修复错误，还是分享案例研究，您的贡献都会帮助整个社区。
 </div>
 
-## 🤝 Ways to Contribute
+## 🤝 贡献方式
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
 
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
-    <h3>🔧 Add New Resources</h3>
-    <p>Recommend AI tools, libraries, datasets, or learning resources relevant to cross-border e-commerce.</p>
-    <a href="https://github.com/kangise/CBEC-AI-Hub/issues/new?template=resource_addition.md" style="color: #0366d6;">Submit Resource →</a>
+    <h3>🔧 添加新资源</h3>
+    <p>推荐与跨境电商相关的AI工具、库、数据集或学习资源。</p>
+    <a href="https://github.com/kangise/CBEC-AI-Hub/issues/new?template=resource_addition.md" style="color: #0366d6;">提交资源 →</a>
   </div>
 
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
-    <h3>📝 Share Case Studies</h3>
-    <p>Contribute real-world implementation experiences and technical solutions.</p>
-    <a href="https://github.com/kangise/CBEC-AI-Hub/discussions" style="color: #0366d6;">Start Discussion →</a>
+    <h3>📝 分享案例研究</h3>
+    <p>贡献真实的项目实施经验和技术解决方案。</p>
+    <a href="https://github.com/kangise/CBEC-AI-Hub/discussions" style="color: #0366d6;">开始讨论 →</a>
   </div>
 
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
-    <h3>🐛 Fix Issues</h3>
-    <p>Help improve the quality by fixing broken links, updating information, or correcting errors.</p>
-    <a href="https://github.com/kangise/CBEC-AI-Hub/issues" style="color: #0366d6;">View Issues →</a>
+    <h3>🐛 修复问题</h3>
+    <p>通过修复失效链接、更新信息或纠正错误来提升质量。</p>
+    <a href="https://github.com/kangise/CBEC-AI-Hub/issues" style="color: #0366d6;">查看问题 →</a>
   </div>
 
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
-    <h3>🌐 Translate Content</h3>
-    <p>Help make the content accessible to more developers by contributing translations.</p>
-    <a href="https://github.com/kangise/CBEC-AI-Hub/discussions" style="color: #0366d6;">Discuss Translation →</a>
+    <h3>🌐 翻译内容</h3>
+    <p>通过贡献翻译帮助更多开发者访问内容。</p>
+    <a href="https://github.com/kangise/CBEC-AI-Hub/discussions" style="color: #0366d6;">讨论翻译 →</a>
   </div>
 
 </div>
 
-## 📋 Contribution Standards
+## 📋 贡献标准
 
-### For New Resources
+### 新资源要求
 
-**Must meet these criteria:**
-- ✅ Open source or meaningful free tier
-- ✅ Directly relevant to cross-border e-commerce AI
-- ✅ Actively maintained (updated within 6 months)
-- ✅ Good documentation and examples
-- ✅ Community recognition (100+ GitHub stars or widespread use)
+**必须满足以下条件：**
+- ✅ 开源或提供有意义的免费层级
+- ✅ 与跨境电商AI直接相关
+- ✅ 活跃维护（6个月内有更新）
+- ✅ 良好的文档和示例
+- ✅ 社区认可（100+ GitHub星标或广泛使用）
 
-**Preferred characteristics:**
-- 🌟 Multi-language support
-- 🌟 Cloud-native or containerized
-- 🌟 Production-grade performance
-- 🌟 Good API design
-- 🌟 Active community ecosystem
+**优选特征：**
+- 🌟 多语言支持
+- 🌟 云原生或容器化
+- 🌟 生产级性能
+- 🌟 良好的API设计
+- 🌟 活跃的社区生态系统
 
-### For Case Studies
+### 案例研究要求
 
-**Requirements:**
-- **Authenticity**: Based on real project experience
-- **Completeness**: Include background, solution, implementation, results
-- **Technical depth**: Provide sufficient technical details
-- **Reproducibility**: Others should be able to reference the implementation
-- **Business value**: Clear business impact and ROI
+**必需条件：**
+- **真实性**：基于真实项目经验
+- **完整性**：包含背景、解决方案、实施、结果
+- **技术深度**：提供充分的技术细节
+- **可复现性**：其他人应该能够参考实施
+- **业务价值**：明确的业务影响和投资回报率
 
-## 🚀 Quick Start Guide
+## 🚀 快速开始指南
 
-### 1. Fork and Clone
+### 1. Fork 和克隆
 
 ```bash
-# Fork the repository on GitHub, then:
+# 在 GitHub 上 Fork 仓库，然后：
 git clone https://github.com/YOUR_USERNAME/CBEC-AI-Hub.git
 cd CBEC-AI-Hub
 ```
 
-### 2. Create a Branch
+### 2. 创建分支
 
 ```bash
 git checkout -b add-new-resource
-# or
+# 或者
 git checkout -b fix-broken-links
 ```
 
-### 3. Make Changes
+### 3. 进行更改
 
-Follow our formatting guidelines:
+遵循我们的格式指南：
 
 ```markdown
-| **Tool Name** | Function Description | Key Features | [Link](URL) |
+| **工具名称** | 功能描述 | 关键特性 | [链接](URL) |
 ```
 
-**Example:**
+**示例：**
 ```markdown
-| **Streamlit** | Rapid data app development | Python-native, rich components, easy deployment | [GitHub](https://github.com/streamlit/streamlit) |
+| **Streamlit** | 快速数据应用开发 | Python原生、丰富组件、易于部署 | [GitHub](https://github.com/streamlit/streamlit) |
 ```
 
-### 4. Test Your Changes
+### 4. 测试您的更改
 
 ```bash
-# Install dependencies for local testing
+# 安装本地测试依赖
 npm install -g awesome-lint markdown-link-check
 
-# Check awesome list format
+# 检查 awesome 列表格式
 awesome-lint README.md
 
-# Check link validity
+# 检查链接有效性
 markdown-link-check README.md
 ```
 
-### 5. Submit Pull Request
+### 5. 提交 Pull Request
 
 ```bash
 git add .
-git commit -m "feat: add Streamlit for data app development"
+git commit -m "feat: 添加 Streamlit 用于数据应用开发"
 git push origin add-new-resource
 ```
 
-Then create a Pull Request on GitHub using our template.
+然后在 GitHub 上使用我们的模板创建 Pull Request。
 
-## 📝 Formatting Guidelines
+## 📝 格式指南
 
-### Resource Entry Format
+### 资源条目格式
 
 ```markdown
-| **Tool Name** | Brief description of main function | Key distinguishing features | [GitHub](link) |
+| **工具名称** | 主要功能的简要描述 | 关键区别特征 | [GitHub](链接) |
 ```
 
-### Description Guidelines
+### 描述指南
 
-- **Concise**: Use 1-2 sentences to accurately describe core functionality
-- **Highlight uniqueness**: Emphasize the tool's distinctive advantages
-- **Avoid marketing language**: Use objective, technical descriptions
+- **简洁**：用1-2句话准确描述核心功能
+- **突出独特性**：强调工具的独特优势
+- **避免营销语言**：使用客观的技术描述
 
-### Link Requirements
+### 链接要求
 
-- Prefer GitHub repository links
-- If no GitHub, link to official website
-- Ensure links are valid and point to correct resources
+- 优先使用 GitHub 仓库链接
+- 如无 GitHub，链接到官方网站
+- 确保链接有效且指向正确资源
 
-## 🏷️ Issue Labels
+## 🏷️ 问题标签
 
-| Label | Description |
+| 标签 | 描述 |
 |-------|-------------|
-| `good-first-issue` | Perfect for newcomers |
-| `help-wanted` | Community help needed |
-| `enhancement` | Feature improvements |
-| `bug` | Bug reports |
-| `resource-addition` | New resource suggestions |
-| `documentation` | Documentation related |
+| `good-first-issue` | 适合新手的问题 |
+| `help-wanted` | 需要社区帮助 |
+| `enhancement` | 功能改进 |
+| `bug` | 错误报告 |
+| `resource-addition` | 新资源建议 |
+| `documentation` | 文档相关 |
 
-## 🎯 Recognition System
+## 🎯 认可体系
 
-### Contributor Levels
+### 贡献者级别
 
-- **Contributors**: Anyone who submits accepted PRs
-- **Regular Contributors**: 5+ accepted contributions
-- **Core Contributors**: Significant ongoing contributions
-- **Maintainers**: Trusted community members with write access
+- **贡献者**：任何提交被接受PR的人
+- **常规贡献者**：5+ 个被接受的贡献
+- **核心贡献者**：持续重要贡献
+- **维护者**：拥有写入权限的受信任社区成员
 
-### Recognition Benefits
+### 认可福利
 
-- **README acknowledgment**: All contributors listed
-- **Social media promotion**: Major contributions highlighted
-- **Reference letters**: Available for significant contributors
-- **Early access**: Preview new features and content
+- **README 致谢**：所有贡献者都会被列出
+- **社交媒体推广**：重要贡献会被突出显示
+- **推荐信**：为重要贡献者提供
+- **早期访问**：预览新功能和内容
 
-## 📞 Getting Help
+## 📞 获取帮助
 
-Need help or have questions?
+需要帮助或有疑问？
 
-- **[GitHub Issues](https://github.com/kangise/CBEC-AI-Hub/issues)** - Bug reports and feature requests
-- **[GitHub Discussions](https://github.com/kangise/CBEC-AI-Hub/discussions)** - General discussion and Q&A
-- **[Email](mailto:maintainer@example.com)** - Private inquiries
+- **[GitHub Issues](https://github.com/kangise/CBEC-AI-Hub/issues)** - 错误报告和功能请求
+- **[GitHub Discussions](https://github.com/kangise/CBEC-AI-Hub/discussions)** - 一般讨论和问答
+- **[邮件](mailto:maintainer@example.com)** - 私人咨询
 
-## 📜 Code of Conduct
+## 📜 行为准则
 
-### Our Commitment
+### 我们的承诺
 
-We are committed to providing a welcoming and inclusive environment for all contributors, regardless of background, experience level, or identity.
+我们致力于为所有贡献者提供友好和包容的环境，无论背景、经验水平或身份如何。
 
-### Expected Behavior
+### 期望行为
 
-- Use welcoming and inclusive language
-- Respect different viewpoints and experiences
-- Accept constructive criticism gracefully
-- Focus on what's best for the community
-- Show empathy towards other community members
+- 使用友好和包容的语言
+- 尊重不同的观点和经验
+- 优雅地接受建设性批评
+- 专注于对社区最有利的事情
+- 对其他社区成员表现出同理心
 
-### Unacceptable Behavior
+### 不可接受的行为
 
-- Harassment, discrimination, or offensive comments
-- Personal attacks or trolling
-- Publishing private information without permission
-- Any conduct inappropriate in a professional setting
+- 骚扰、歧视或冒犯性评论
+- 人身攻击或恶意行为
+- 未经许可发布私人信息
+- 在专业环境中不当的任何行为
 
-### Enforcement
+### 执行
 
-Project maintainers have the right and responsibility to remove, edit, or reject contributions that don't align with this Code of Conduct.
+项目维护者有权利和责任删除、编辑或拒绝不符合本行为准则的贡献。
 
-## 🎉 Success Stories
+## 🎉 成功案例
 
 <div style="background: #f6f8fa; border-radius: 8px; padding: 2rem; margin: 2rem 0;">
-  <h3>Recent Contributions</h3>
+  <h3>最近的贡献</h3>
   <ul>
-    <li><strong>v1.0.0 Launch</strong> - Initial collection of 100+ curated resources</li>
-    <li><strong>Case Study Framework</strong> - Comprehensive technical solution examples</li>
-    <li><strong>Community Templates</strong> - GitHub issue and PR templates for better collaboration</li>
-    <li><strong>Automated Quality Checks</strong> - Link validation and format checking</li>
+    <li><strong>v1.0.0 发布</strong> - 初始收集了100+精选资源</li>
+    <li><strong>案例研究框架</strong> - 全面的技术解决方案示例</li>
+    <li><strong>社区模板</strong> - GitHub issue 和 PR 模板以改善协作</li>
+    <li><strong>自动化质量检查</strong> - 链接验证和格式检查</li>
   </ul>
 </div>
 
 ---
 
 <div style="text-align: center; margin: 3rem 0; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 8px;">
-  <h3>Ready to Make Your First Contribution?</h3>
-  <p>Join our community of developers, researchers, and practitioners building the future of cross-border e-commerce AI!</p>
-  <a href="https://github.com/kangise/CBEC-AI-Hub/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" style="background: white; color: #667eea; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 0 0.5rem;">Find Good First Issues</a>
-  <a href="https://github.com/kangise/CBEC-AI-Hub/fork" style="background: rgba(255,255,255,0.2); color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 0 0.5rem; border: 1px solid white;">Fork Repository</a>
+  <h3>准备好做出您的第一个贡献了吗？</h3>
+  <p>加入我们的开发者、研究人员和从业者社区，共同构建跨境电商AI的未来！</p>
+  <a href="https://github.com/kangise/CBEC-AI-Hub/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" style="background: white; color: #667eea; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 0 0.5rem;">查找新手友好问题</a>
+  <a href="https://github.com/kangise/CBEC-AI-Hub/fork" style="background: rgba(255,255,255,0.2); color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 0 0.5rem; border: 1px solid white;">Fork 仓库</a>
 </div>

@@ -514,9 +514,44 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/Morphl-AI/Ecommerce-Marketing-Spend-Optimization">Ecommerce Marketing Spend Optimization</a></strong></td>
-<td>使用遗传算法优化电商营销预算分配，实现跨渠道ROI最大化</td>
-<td>广告投放优化、受众定向和创意素材智能生成</td>
+<td><strong><a href="https://github.com/VowpalWabbit/vowpal_wabbit">Vowpal Wabbit</a></strong></td>
+<td>由雅虎和微软研究院开发的在线机器学习系统，速度极快，特别擅长处理大规模、高维度稀疏数据</td>
+<td>构建点击率(CTR)和转化率(CVR)预测模型，在毫秒内预测用户点击概率，为跨境广告自动出价提供核心依据</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/dmlc/xgboost">XGBoost</a></strong></td>
+<td>高效的梯度提升决策树库，是工业界预测任务的黄金标准，以其高精度和高性能著称</td>
+<td>预测用户生命周期价值(LTV)，结合CTR/CVR模型制定以ROAS为目标的智能出价策略，优化跨境广告投放效果</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/microsoft/LightGBM">LightGBM</a></strong></td>
+<td>微软开发的高效梯度提升框架，在保持高精度的同时显著提升训练速度</td>
+<td>快速训练大规模用户行为预测模型，支持实时广告竞价决策和跨平台投放优化</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/huggingface/transformers">Transformers</a></strong></td>
+<td>提供海量预训练NLP模型，如GPT、BERT等，可用于文本生成、摘要和翻译</td>
+<td>自动生成多语言广告文案，根据产品信息和目标受众快速生成多种风格的标题、描述和行动号召</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/Stability-AI/StableDiffusion">Stable Diffusion</a></strong></td>
+<td>强大的文本到图像生成模型，可以通过简单的文本描述创作出高质量、多样化的图像</td>
+<td>快速生成适应不同文化背景的广告图片素材，为各国市场创建本地化视觉内容，降低设计成本</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/facebookresearch/faiss">Faiss</a></strong></td>
+<td>Facebook开发的高效相似性搜索和密集向量聚类库，能在大规模向量中进行极速查找</td>
+<td>实现Lookalike人群扩展，将高价值客户转化为特征向量，在全球用户中快速找到相似潜在客户</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/uber/causalml">CausalML</a></strong></td>
+<td>Uber开源的因果推断库，利用机器学习模型量化干预措施的真实净效应</td>
+<td>广告增益度分析，识别因广告而转化的用户，优化跨境广告预算分配，避免投放浪费</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/uber/orbit">Orbit</a></strong></td>
+<td>用于贝叶斯时间序列预测和推断的Python库，特别适合分析带有不确定性的营销数据</td>
+<td>构建营销组合模型(MMM)，科学评估各广告渠道对跨境业绩的长期贡献，优化全球预算分配</td>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/google-marketing-solutions/adios">ADIOS</a></strong></td>

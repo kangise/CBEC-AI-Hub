@@ -142,6 +142,11 @@ AI从支持工具转变为核心竞争优势
 <td>AI驱动的约束求解引擎，用于资源调度和生产排程优化</td>
 <td>优化跨境物流时间表，协调海运、空运、陆运的衔接，最小化总运输时间和成本</td>
 </tr>
+<tr>
+<td><strong><a href="https://github.com/langchain-ai/langchain">LangChain + RAG</a></strong></td>
+<td>结合大语言模型和检索增强生成的智能问答框架，支持知识库构建和智能查询</td>
+<td>构建跨境电商知识助手，整合产品信息、法规文档、市场数据，为各业务环节提供智能问答支持</td>
+</tr>
 </table>
 
 ### 模型部署、服务与监控
@@ -203,6 +208,21 @@ AI从支持工具转变为核心竞争优势
 <td><strong><a href="https://scikit-learn.org/">Scikit-learn</a></strong></td>
 <td>Python中最基础且全面的机器学习函数库，提供分类、回归、聚类等核心算法</td>
 <td>构建用户分群、价格预测、需求分析等基础ML模型，为跨境电商各业务场景提供算法支撑</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/VowpalWabbit/vowpal_wabbit">Vowpal Wabbit</a></strong></td>
+<td>由雅虎和微软研究院开发的在线机器学习系统，速度极快，特别擅长处理大规模、高维度稀疏数据</td>
+<td>处理跨境电商的大规模用户行为数据，构建实时预测模型，支持CTR/CVR预测等高频场景</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/dmlc/xgboost">XGBoost</a></strong></td>
+<td>高效的梯度提升决策树库，是工业界预测任务的黄金标准，以其高精度和高性能著称</td>
+<td>构建高精度的用户价值预测、需求预测、风险评估等核心业务模型</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/microsoft/LightGBM">LightGBM</a></strong></td>
+<td>微软开发的高效梯度提升框架，在保持高精度的同时显著提升训练速度</td>
+<td>快速训练大规模预测模型，支持实时业务决策和跨平台数据分析</td>
 </tr>
 </table>
 
@@ -527,36 +547,6 @@ AI从支持工具转变为核心竞争优势
 <th width="15%">工具</th>
 <th width="35%">技术描述</th>
 <th width="50%">跨境电商应用场景</th>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/VowpalWabbit/vowpal_wabbit">Vowpal Wabbit</a></strong></td>
-<td>由雅虎和微软研究院开发的在线机器学习系统，速度极快，特别擅长处理大规模、高维度稀疏数据</td>
-<td>构建点击率(CTR)和转化率(CVR)预测模型，在毫秒内预测用户点击概率，为跨境广告自动出价提供核心依据</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/dmlc/xgboost">XGBoost</a></strong></td>
-<td>高效的梯度提升决策树库，是工业界预测任务的黄金标准，以其高精度和高性能著称</td>
-<td>预测用户生命周期价值(LTV)，结合CTR/CVR模型制定以ROAS为目标的智能出价策略，优化跨境广告投放效果</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/microsoft/LightGBM">LightGBM</a></strong></td>
-<td>微软开发的高效梯度提升框架，在保持高精度的同时显著提升训练速度</td>
-<td>快速训练大规模用户行为预测模型，支持实时广告竞价决策和跨平台投放优化</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/huggingface/transformers">Transformers</a></strong></td>
-<td>提供海量预训练NLP模型，如GPT、BERT等，可用于文本生成、摘要和翻译</td>
-<td>自动生成多语言广告文案，根据产品信息和目标受众快速生成多种风格的标题、描述和行动号召</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/Stability-AI/StableDiffusion">Stable Diffusion</a></strong></td>
-<td>强大的文本到图像生成模型，可以通过简单的文本描述创作出高质量、多样化的图像</td>
-<td>快速生成适应不同文化背景的广告图片素材，为各国市场创建本地化视觉内容，降低设计成本</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/facebookresearch/faiss">Faiss</a></strong></td>
-<td>Facebook开发的高效相似性搜索和密集向量聚类库，能在大规模向量中进行极速查找</td>
-<td>实现Lookalike人群扩展，将高价值客户转化为特征向量，在全球用户中快速找到相似潜在客户</td>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/uber/causalml">CausalML</a></strong></td>
@@ -899,11 +889,6 @@ AI从支持工具转变为核心竞争优势
 <td><strong><a href="https://github.com/mayank6255/hs_codes_prediction">HS Codes Prediction</a></strong></td>
 <td>使用深度学习和孪生网络的高精度HS编码预测系统</td>
 <td>基于商品描述和图像特征，智能预测HS编码，支持批量商品的快速分类处理</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/langchain-ai/langchain">LangChain + RAG</a></strong></td>
-<td>结合大语言模型和检索增强生成的贸易法规智能问答框架</td>
-<td>构建贸易合规助手，实时查询各国进出口法规，为商品准入提供智能建议</td>
 </tr>
 </table>
 

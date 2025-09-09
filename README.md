@@ -191,6 +191,21 @@ AI从支持工具转变为核心竞争优势
 
 ## 核心算法与库
 
+### 机器学习基础库
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://scikit-learn.org/">Scikit-learn</a></strong></td>
+<td>Python中最基础且全面的机器学习函数库，提供分类、回归、聚类等核心算法</td>
+<td>构建用户分群、价格预测、需求分析等基础ML模型，为跨境电商各业务场景提供算法支撑</td>
+</tr>
+</table>
+
 ### 推荐与个性化引擎
 
 <table width="100%">
@@ -576,7 +591,9 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+<td><strong><a href="https://scrapy.org/">Scrapy</a> + <a href="https://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a></strong></td>
+<td>强大的Python网络爬虫框架和HTML解析库，用于自动化数据采集</td>
+<td>自动化竞品价格监控，定期抓取主要竞争对手的商品价格、促销活动和库存状态，为AI定价策略提供市场数据输入</td>
 </tr>
 </table>
 
@@ -604,7 +621,9 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+<td><strong><a href="https://github.com/apache/unomi">Apache Unomi</a></strong></td>
+<td>开源的客户数据平台(CDP)标准，专门用于收集、整合和管理客户数据，建立统一的客户档案</td>
+<td>整合全球多渠道客户数据，建立360度客户视图，通过AI智能分群实现跨境个性化营销和推荐</td>
 </tr>
 </table>
 
@@ -665,6 +684,11 @@ AI从支持工具转变为核心竞争优势
 <td><strong><a href="https://github.com/chatwoot/chatwoot">Chatwoot</a></strong></td>
 <td>一个开源的全渠道客户沟通平台，支持实时聊天、邮件、社交媒体等</td>
 <td>为全球用户提供多语言、多渠道的客户支持，将不同国家用户的咨询统一管理，提升客服效率和满意度</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/RasaHQ/rasa">Rasa</a></strong></td>
+<td>领先的开源对话式AI框架，用于构建聊天机器人和语音助理</td>
+<td>建立统一的AI聊天机器人，部署到官网、Facebook Messenger、WhatsApp等全球多渠道，提供一致的多语言客户互动体验</td>
 </tr>
 </table>
 
@@ -824,7 +848,9 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+<td><strong><a href="https://www.metabase.com/">Metabase</a> / <a href="https://superset.apache.org/">Apache Superset</a></strong></td>
+<td>开源商业智能(BI)工具，支持多数据源连接和可视化仪表板构建，具备自然语言查询功能</td>
+<td>整合全球多渠道数据，可视化AI预测结果（如客户LTV、购买概率），为跨境运营团队提供统一的数据洞察平台</td>
 </tr>
 </table>
 

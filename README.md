@@ -65,9 +65,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/iterative/dvc">DVC</a></strong></td>
@@ -80,9 +80,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/kubeflow/kubeflow">Kubeflow</a></strong></td>
@@ -110,9 +110,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/SeldonIO/seldon-core">Seldon Core</a></strong></td>
@@ -135,9 +135,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/weaviate/weaviate">Weaviate</a></strong></td>
@@ -157,9 +157,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/lyst/lightfm">LightFM</a></strong></td>
@@ -182,9 +182,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/facebook/prophet">Prophet</a></strong></td>
@@ -212,9 +212,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/explosion/spaCy">spaCy</a></strong></td>
@@ -237,9 +237,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/openai/CLIP">CLIP</a> + <a href="https://github.com/facebookresearch/faiss">Faiss</a></strong></td>
@@ -256,9 +256,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/PyVRP/PyVRP">PyVRP</a></strong></td>
@@ -276,9 +276,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/LarrySnyder/stockpyl">Stockpyl</a></strong></td>
@@ -291,9 +291,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/Muhammad-Talha4k/hs_code_classification_api_with_fast-flask">HS Code Classification API</a></strong></td>
@@ -316,9 +316,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/yzhao062/pyod">PyOD</a></strong></td>
@@ -331,9 +331,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/joaomdmoura/crewAI">CrewAI</a></strong></td>
@@ -363,9 +363,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/oobabooga/text-generation-webui">Text Generation WebUI</a></strong></td>
@@ -383,9 +383,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/Morphl-AI/Ecommerce-Marketing-Spend-Optimization">Ecommerce Marketing Spend Optimization</a></strong></td>
@@ -413,9 +413,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/sethblack/python-seo-analyzer">Python SEO Analyzer</a></strong></td>
@@ -440,9 +440,9 @@ AI从支持工具转变为核心竞争优势
 
 <table width="100%">
 <tr>
-<th width="20%">工具</th>
+<th width="15%">工具</th>
 <th width="35%">技术描述</th>
-<th width="45%">跨境电商应用场景</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/Hexastack/Hexabot">Hexabot</a></strong></td>

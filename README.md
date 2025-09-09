@@ -17,7 +17,7 @@
 - [案例库](case-studies.md)
 - [基础AI/ML设施](#基础aiml设施)
 - [核心算法与库](#核心算法与库)
-- [应用层解决方案](#应用层解决方案)
+- [应用领域](#应用领域)
 - [关键资源](#关键资源)
 - [技术实施指南](technical-guidelines.md)
 - [贡献指南](#贡献指南)
@@ -251,11 +251,11 @@ AI从支持工具转变为核心竞争优势
 </tr>
 </table>
 
-## 应用层解决方案
+## 应用领域
 
-### 智能运营与自主供应链
+### 产品创新与选品
 
-#### 物流与路径优化
+#### 市场机会发现
 
 <table width="100%">
 <tr>
@@ -264,18 +264,102 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/PyVRP/PyVRP">PyVRP</a></strong></td>
-<td>高性能车辆路径问题求解器，支持复杂约束的配送路线优化</td>
-<td>优化海外仓到客户的最后一公里配送路径，考虑时间窗口、车辆容量等约束，降低配送成本</td>
+<td><strong><a href="https://github.com/facebook/prophet">Prophet</a></strong></td>
+<td>Facebook开源的时间序列预测工具，自动处理季节性和节假日效应</td>
+<td>通过AI分析市场趋势、消费者需求和竞争格局，识别产品创新机会</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/unit8co/darts">Darts</a></strong></td>
+<td>Python时间序列预测库，提供统一API支持多种预测模型</td>
+<td>预测新兴市场需求趋势，发现产品机会空白，分析竞争对手动态</td>
+</tr>
+</table>
+
+#### 产品概念开发
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/huggingface/transformers">Transformers</a></strong></td>
+<td>Hugging Face的预训练模型库，提供最新的NLP和多模态AI模型</td>
+<td>利用AI辅助产品创意生成、功能设计和差异化策略制定</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/joaomdmoura/crewAI">CrewAI</a></strong></td>
+<td>多AI代理协作框架，支持角色定义和复杂任务的自动化执行</td>
+<td>构建产品开发AI团队，协作完成市场调研、概念设计和可行性分析</td>
+</tr>
+</table>
+
+#### 市场验证
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/lyst/lightfm">LightFM</a></strong></td>
+<td>混合推荐系统库，擅长处理冷启动问题和稀疏数据场景</td>
+<td>运用预测模型和数据分析验证产品市场接受度和商业可行性</td>
+</tr>
+</table>
+
+### 采购与供应商管理
+
+#### 供应商发现与评估
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/microsoft/autogen">AutoGen</a></strong></td>
+<td>微软开源的多代理对话系统，支持AI代理间的智能协作</td>
+<td>智能化供应商搜索、能力评估和风险分析系统</td>
+</tr>
+</table>
+
+#### 采购决策优化
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/TimefoldAI/timefold-solver">Timefold</a></strong></td>
 <td>AI驱动的约束求解引擎，用于资源调度和生产排程优化</td>
-<td>优化跨境物流时间表，协调海运、空运、陆运的衔接，最小化总运输时间和成本</td>
+<td>基于AI的价格预测、采购量优化和供应商选择算法</td>
 </tr>
 </table>
 
-#### 库存与仓库管理
+#### 供应商关系管理
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/deepchecks/deepchecks">Deepchecks</a></strong></td>
+<td>机器学习模型和数据验证工具，提供从研究到生产的全流程质量检查</td>
+<td>自动化供应商绩效监控、质量控制和协作优化</td>
+</tr>
+</table>
+
+### 供应链管理
+
+#### 库存管理
 
 <table width="100%">
 <tr>
@@ -286,11 +370,11 @@ AI从支持工具转变为核心竞争优势
 <tr>
 <td><strong><a href="https://github.com/LarrySnyder/stockpyl">Stockpyl</a></strong></td>
 <td>Python库存优化库，实现多种经典库存管理模型和补货策略</td>
-<td>管理多国仓库库存水位，考虑运输时间差异和需求不确定性，制定最优补货策略</td>
+<td>多地区库存分配优化、安全库存计算和滞销预警系统</td>
 </tr>
 </table>
 
-#### 海关、关税与合规自动化
+#### 需求计划
 
 <table width="100%">
 <tr>
@@ -299,23 +383,18 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/Muhammad-Talha4k/hs_code_classification_api_with_fast-flask">HS Code Classification API</a></strong></td>
-<td>基于机器学习的HS编码自动分类API，支持FastAPI和Flask部署</td>
-<td>自动为新商品分配正确的HS编码，减少海关清关延误，确保关税计算准确性</td>
+<td><strong><a href="https://github.com/frePPLe/frepple">frePPLe</a></strong></td>
+<td>开源供应链规划软件，集成需求预测和生产计划优化功能</td>
+<td>销售预测、季节性分析和补货策略的智能化管理</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/mayank6255/hs_codes_prediction">HS Codes Prediction</a></strong></td>
-<td>使用深度学习和孪生网络的高精度HS编码预测系统</td>
-<td>基于商品描述和图像特征，智能预测HS编码，支持批量商品的快速分类处理</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/langchain-ai/langchain">LangChain + RAG</a></strong></td>
-<td>结合大语言模型和检索增强生成的贸易法规智能问答框架</td>
-<td>构建贸易合规助手，实时查询各国进出口法规，为商品准入提供智能建议</td>
+<td><strong><a href="https://github.com/OpenSTEF/openstef">OpenSTEF</a></strong></td>
+<td>自动化短期预测框架，支持外部因子集成和ML管道自动化</td>
+<td>结合天气、汇率、政策等外部因素，预测短期销售波动，支持快速库存调整决策</td>
 </tr>
 </table>
 
-#### 支付安全与欺诈检测
+#### 物流与配送
 
 <table width="100%">
 <tr>
@@ -324,45 +403,15 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/yzhao062/pyod">PyOD</a></strong></td>
-<td>综合异常检测库，提供40+算法用于交易欺诈和异常行为识别</td>
-<td>检测异常交易模式，识别信用卡欺诈、虚假订单，保护跨境支付安全</td>
+<td><strong><a href="https://github.com/PyVRP/PyVRP">PyVRP</a></strong></td>
+<td>高性能车辆路径问题求解器，支持复杂约束的配送路线优化</td>
+<td>跨境物流路径优化、成本预测和配送时效管理</td>
 </tr>
 </table>
 
-#### 自主代理框架
+### 商品上架与内容管理
 
-<table width="100%">
-<tr>
-<th width="15%">工具</th>
-<th width="35%">技术描述</th>
-<th width="50%">跨境电商应用场景</th>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/joaomdmoura/crewAI">CrewAI</a></strong></td>
-<td>多AI代理协作框架，支持角色定义和复杂任务的自动化执行</td>
-<td>构建AI代理团队，分别负责市场调研、竞品分析、定价策略，协作完成新市场进入决策</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/microsoft/autogen">AutoGen</a></strong></td>
-<td>微软开源的多代理对话系统，支持AI代理间的智能协作</td>
-<td>创建专业化AI代理（采购、销售、客服），通过对话协作处理复杂的跨境业务流程</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/langchain-ai/langgraph">LangGraph</a></strong></td>
-<td>基于状态图的AI代理工作流框架，构建复杂的决策链路</td>
-<td>设计订单处理工作流，从订单验证、库存检查到物流安排的全自动化决策链</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/kortix-ai/suna">Suna</a></strong></td>
-<td>完整的AI代理平台，集成浏览器自动化和数据分析功能</td>
-<td>自动化竞品价格监控，抓取多平台商品信息，生成市场分析报告</td>
-</tr>
-</table>
-
-### 智能营销、销售与渠道扩张
-
-#### 自动化Listing与内容生成
+#### 商品信息管理
 
 <table width="100%">
 <tr>
@@ -373,7 +422,7 @@ AI从支持工具转变为核心竞争优势
 <tr>
 <td><strong><a href="https://github.com/oobabooga/text-generation-webui">Text Generation WebUI</a></strong></td>
 <td>开源大语言模型的Web界面，支持本地部署和多模型切换</td>
-<td>本地化部署多语言商品描述生成，保护商业机密，支持批量生成符合各平台规范的Listing内容</td>
+<td>多语言商品描述生成、SEO优化和自动化分类系统</td>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/aishwaryanr/awesome-generative-ai-guide">Awesome Generative AI Guide</a></strong></td>
@@ -382,7 +431,74 @@ AI从支持工具转变为核心竞争优势
 </tr>
 </table>
 
-#### 智能广告与促销
+#### 内容本地化
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/huggingface/transformers">Transformers</a></strong></td>
+<td>Hugging Face的预训练模型库，提供最新的NLP和多模态AI模型</td>
+<td>多语言翻译、文化适应性调整和本地化内容生成</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/pemistahl/lingua-py">Lingua</a></strong></td>
+<td>高精度语言检测库，支持75+语言的准确识别</td>
+<td>自动识别客户咨询语言，路由到对应语言的客服系统，优化多语言内容分发策略</td>
+</tr>
+</table>
+
+#### 视觉与多媒体
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/openai/CLIP">CLIP</a> + <a href="https://github.com/facebookresearch/faiss">Faiss</a></strong></td>
+<td>结合OpenAI的多模态模型和Facebook的相似性搜索引擎，实现图文联合检索</td>
+<td>商品图片处理、视频生成和AR/VR展示技术</td>
+</tr>
+</table>
+
+### 品牌建设与营销
+
+#### 全球品牌建设
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/explosion/spaCy">spaCy</a></strong></td>
+<td>工业级自然语言处理库，提供多语言文本分析和实体识别功能</td>
+<td>跨文化品牌策略、声誉监控和品牌一致性管理</td>
+</tr>
+</table>
+
+#### 整合营销
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/mautic/mautic">Mautic</a></strong></td>
+<td>开源营销自动化平台，提供邮件营销、客户分群和行为跟踪功能</td>
+<td>全渠道营销策略、自动化执行和效果归因分析</td>
+</tr>
+</table>
+
+#### 数字广告
 
 <table width="100%">
 <tr>
@@ -393,7 +509,7 @@ AI从支持工具转变为核心竞争优势
 <tr>
 <td><strong><a href="https://github.com/Morphl-AI/Ecommerce-Marketing-Spend-Optimization">Ecommerce Marketing Spend Optimization</a></strong></td>
 <td>使用遗传算法优化电商营销预算分配，实现跨渠道ROI最大化</td>
-<td>优化多国市场的广告预算分配，平衡Facebook、Google、TikTok等平台投放，最大化全球营销ROI</td>
+<td>广告投放优化、受众定向和创意素材智能生成</td>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/google-marketing-solutions/adios">ADIOS</a></strong></td>
@@ -401,39 +517,9 @@ AI从支持工具转变为核心竞争优势
 <td>批量生成适应不同文化背景的广告创意，自动调整视觉元素和文案风格，提升各地区广告效果</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/mautic/mautic">Mautic</a></strong></td>
-<td>开源营销自动化平台，提供邮件营销、客户分群和行为跟踪功能</td>
-<td>构建多语言邮件营销系统，根据客户地理位置和购买行为自动触发个性化营销活动</td>
-</tr>
-<tr>
 <td><strong><a href="https://github.com/AIDotNet/auto-prompt">Auto Prompt</a></strong></td>
 <td>自动化提示词工程工具，优化大语言模型的指令效果</td>
 <td>优化商品描述生成的提示词，确保输出内容符合不同平台的SEO要求和文化偏好</td>
-</tr>
-</table>
-
-#### SEO与生成式引擎优化 (GEO)
-
-<table width="100%">
-<tr>
-<th width="15%">工具</th>
-<th width="35%">技术描述</th>
-<th width="50%">跨境电商应用场景</th>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/sethblack/python-seo-analyzer">Python SEO Analyzer</a></strong></td>
-<td>Python网站SEO分析工具，自动检测技术SEO问题和优化建议</td>
-<td>分析多语言网站的SEO表现，检测各地区搜索引擎优化问题，提供本地化SEO改进建议</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/practical-data-science/ecommercetools">Ecommerce Tools</a></strong></td>
-<td>电商数据科学工具包，专注于SEO分析和性能建模</td>
-<td>分析不同市场的关键词表现，优化商品页面的搜索排名，提升自然流量转化率</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/Skobyn/dataforseo-mcp-server">DataForSEO MCP Server</a></strong></td>
-<td>为大语言模型提供SEO数据接口，支持自然语言SEO查询和分析</td>
-<td>通过自然语言查询各国搜索趋势，分析竞品关键词策略，优化多语言SEO内容</td>
 </tr>
 </table>
 
@@ -456,6 +542,48 @@ AI从支持工具转变为核心竞争优势
 <td><strong><a href="https://github.com/OpenBuddy/OpenBuddy">OpenBuddy</a></strong></td>
 <td>多语言AI助手，支持离线部署和跨语言对话能力</td>
 <td>部署私有化多语言客服助手，处理订单查询、产品咨询、售后服务，保护客户数据隐私</td>
+</tr>
+</table>
+
+### 合规与风险管理
+
+#### 综合合规管理
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/Muhammad-Talha4k/hs_code_classification_api_with_fast-flask">HS Code Classification API</a></strong></td>
+<td>基于机器学习的HS编码自动分类API，支持FastAPI和Flask部署</td>
+<td>产品安全标准检测、贸易法规监控、HS编码分类、多国税务计算、环保标准符合性和碳足迹管理</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/mayank6255/hs_codes_prediction">HS Codes Prediction</a></strong></td>
+<td>使用深度学习和孪生网络的高精度HS编码预测系统</td>
+<td>基于商品描述和图像特征，智能预测HS编码，支持批量商品的快速分类处理</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/langchain-ai/langchain">LangChain + RAG</a></strong></td>
+<td>结合大语言模型和检索增强生成的贸易法规智能问答框架</td>
+<td>构建贸易合规助手，实时查询各国进出口法规，为商品准入提供智能建议</td>
+</tr>
+</table>
+
+#### 支付与金融风控
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/yzhao062/pyod">PyOD</a></strong></td>
+<td>综合异常检测库，提供40+算法用于交易欺诈和异常行为识别</td>
+<td>支付欺诈检测、汇率风险管理和反洗钱合规</td>
 </tr>
 </table>
 

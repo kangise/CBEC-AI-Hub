@@ -269,6 +269,11 @@ AI从支持工具转变为核心竞争优势
 <td>Hugging Face的预训练模型库，提供最新的NLP和多模态AI模型</td>
 <td>自动生成多语言商品描述，翻译客户评论，构建智能客服机器人，支持跨语言情感分析</td>
 </tr>
+<tr>
+<td><strong><a href="https://github.com/topics/topic-modeling">Topic Modeling Libraries (e.g., Gensim, LDA)</a></strong></td>
+<td>利用统计模型发现文本文档集合中隐藏的主题结构</td>
+<td>分析全球各市场的用户评论和社交媒体讨论，发现新兴的产品需求和趋势，为跨国选品提供数据支持</td>
+</tr>
 </table>
 
 ### 电商计算机视觉
@@ -283,6 +288,11 @@ AI从支持工具转变为核心竞争优势
 <td><strong><a href="https://github.com/openai/CLIP">CLIP</a> + <a href="https://github.com/facebookresearch/faiss">Faiss</a></strong></td>
 <td>结合OpenAI的多模态模型和Facebook的相似性搜索引擎，实现图文联合检索</td>
 <td>构建"拍照购物"功能，支持跨语言图像搜索，自动生成商品标签，提升视觉搜索的准确性和用户体验</td>
+</tr>
+<tr>
+<td><strong><a href="https://opencv.org/">OpenCV</a></strong></td>
+<td>一个开源的计算机视觉和机器学习软件库，包含超过2500种优化算法</td>
+<td>实现以图搜图功能、自动检测和删除不合规的商品图片、识别商品图片中的属性以自动填充标签</td>
 </tr>
 </table>
 
@@ -488,6 +498,11 @@ AI从支持工具转变为核心竞争优势
 <td>开源营销自动化平台，提供邮件营销、客户分群和行为跟踪功能</td>
 <td>全渠道营销策略、自动化执行和效果归因分析</td>
 </tr>
+<tr>
+<td><strong><a href="https://matomo.org/">Matomo</a></strong></td>
+<td>一个开源的Web分析平台，提供详细的用户行为报告，注重数据隐私和所有权</td>
+<td>追踪和分析来自不同国家用户的网站访问行为，评估全球营销活动的效果，优化不同区域的营销策略</td>
+</tr>
 </table>
 
 #### 数字广告
@@ -567,7 +582,9 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+<td><strong><a href="https://www.growthbook.io/">GrowthBook</a></strong></td>
+<td>一个开源的特征标志和A/B测试平台</td>
+<td>针对不同国家的用户群体进行A/B测试，优化网站设计、推荐算法和营销文案，以提高全球范围内的用户转化率</td>
 </tr>
 </table>
 
@@ -610,7 +627,9 @@ AI从支持工具转变为核心竞争优势
 <th width="50%">跨境电商应用场景</th>
 </tr>
 <tr>
-<td colspan="3" style="text-align: center; color: #666;">待加入</td>
+<td><strong><a href="https://github.com/chatwoot/chatwoot">Chatwoot</a></strong></td>
+<td>一个开源的全渠道客户沟通平台，支持实时聊天、邮件、社交媒体等</td>
+<td>为全球用户提供多语言、多渠道的客户支持，将不同国家用户的咨询统一管理，提升客服效率和满意度</td>
 </tr>
 </table>
 

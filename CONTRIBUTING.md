@@ -9,56 +9,56 @@ permalink: /contributing/
 感谢您对 CBEC-AI-Hub 的贡献兴趣！本指南将帮助您了解如何为这个跨境电商AI知识中心做出贡献。
 
 <div style="background: #d4edda; border: 1px solid #c3e6cb; border-radius: 8px; padding: 1rem; margin: 2rem 0;">
-  <strong>🌟 每一份贡献都很重要！</strong> 无论您是添加新工具、修复错误，还是分享案例研究，您的贡献都会帮助整个社区。
+  <strong> 每一份贡献都很重要！</strong> 无论您是添加新工具、修复错误，还是分享案例研究，您的贡献都会帮助整个社区。
 </div>
 
-## 🤝 贡献方式
+##  贡献方式
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
 
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
-    <h3>🔧 添加新资源</h3>
+    <h3> 添加新资源</h3>
     <p>推荐与跨境电商相关的AI工具、库、数据集或学习资源。</p>
     <a href="https://github.com/kangise/CBEC-AI-Hub/issues/new?template=resource_addition.md" style="color: #0366d6;">提交资源 →</a>
   </div>
 
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
-    <h3>📝 分享案例研究</h3>
+    <h3> 分享案例研究</h3>
     <p>贡献真实的项目实施经验和技术解决方案。</p>
     <a href="https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md" style="color: #0366d6;">提交案例研究 →</a>
   </div>
 
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
-    <h3>🐛 修复问题</h3>
+    <h3> 修复问题</h3>
     <p>通过修复失效链接、更新信息或纠正错误来提升质量。</p>
     <a href="https://github.com/kangise/CBEC-AI-Hub/issues" style="color: #0366d6;">查看问题 →</a>
   </div>
 
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
-    <h3>🌐 翻译内容</h3>
+    <h3> 翻译内容</h3>
     <p>通过贡献翻译帮助更多开发者访问内容。</p>
     <a href="https://github.com/kangise/CBEC-AI-Hub/discussions" style="color: #0366d6;">讨论翻译 →</a>
   </div>
 
 </div>
 
-## 📋 贡献标准
+##  贡献标准
 
 ### 新资源要求
 
 **必须满足以下条件：**
-- ✅ 开源或提供有意义的免费层级
-- ✅ 与跨境电商AI直接相关
-- ✅ 活跃维护（6个月内有更新）
-- ✅ 良好的文档和示例
-- ✅ 社区认可（100+ GitHub星标或广泛使用）
+-  开源或提供有意义的免费层级
+-  与跨境电商AI直接相关
+-  活跃维护（6个月内有更新）
+-  良好的文档和示例
+-  社区认可（100+ GitHub星标或广泛使用）
 
 **优选特征：**
-- 🌟 多语言支持
-- 🌟 云原生或容器化
-- 🌟 生产级性能
-- 🌟 良好的API设计
-- 🌟 活跃的社区生态系统
+-  多语言支持
+-  云原生或容器化
+-  生产级性能
+-  良好的API设计
+-  活跃的社区生态系统
 
 ### 案例研究要求
 
@@ -83,7 +83,7 @@ permalink: /contributing/
 - 提供性能数据和业务指标
 - 遵循我们的[案例研究模板](case-studies.md)结构
 
-## 🚀 快速开始指南
+##  快速开始指南
 
 ### 1. Fork 和克隆
 
@@ -159,7 +159,7 @@ git push origin add-new-resource
 
 然后在 GitHub 上使用我们的模板创建 Pull Request。
 
-## 📝 格式指南
+##  格式指南
 
 ### 资源条目格式
 
@@ -200,7 +200,7 @@ git push origin add-new-resource
 - 如无 GitHub，链接到官方网站
 - 确保链接有效且指向正确资源
 
-## 🏷️ 问题标签
+##  问题标签
 
 | 标签 | 描述 |
 |-------|-------------|
@@ -211,7 +211,7 @@ git push origin add-new-resource
 | `resource-addition` | 新资源建议 |
 | `documentation` | 文档相关 |
 
-## 🎯 认可体系
+##  认可体系
 
 ### 贡献者级别
 
@@ -227,7 +227,7 @@ git push origin add-new-resource
 - **推荐信**：为重要贡献者提供
 - **早期访问**：预览新功能和内容
 
-## 📞 获取帮助
+##  获取帮助
 
 需要帮助或有疑问？
 
@@ -235,7 +235,7 @@ git push origin add-new-resource
 - **[GitHub Discussions](https://github.com/kangise/CBEC-AI-Hub/discussions)** - 一般讨论和问答
 - **[邮件](mailto:maintainer@example.com)** - 私人咨询
 
-## 📜 行为准则
+##  行为准则
 
 ### 我们的承诺
 
@@ -260,7 +260,7 @@ git push origin add-new-resource
 
 项目维护者有权利和责任删除、编辑或拒绝不符合本行为准则的贡献。
 
-## 🎉 成功案例
+##  成功案例
 
 <div style="background: #f6f8fa; border-radius: 8px; padding: 2rem; margin: 2rem 0;">
   <h3>最近的贡献</h3>

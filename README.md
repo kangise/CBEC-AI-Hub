@@ -40,6 +40,7 @@
   - [客户服务与维护](#客户服务与维护)
   - [合规与风险管理](#合规与风险管理)
   - [行业垂直应用](#行业垂直应用)
+  - [企业知识管理](#企业知识管理)
   - [数据分析与业务优化](#数据分析与业务优化)
 - [关键资源](#关键资源)
   - [精选数据集](#精选数据集)
@@ -824,6 +825,36 @@ AI从支持工具转变为核心竞争优势
 </tr>
 <tr>
 <td colspan="3" style="text-align: center; color: #666;">待加入</td>
+</tr>
+</table>
+
+### 企业知识管理
+
+<table width="100%">
+<tr>
+<th width="15%">工具</th>
+<th width="35%">技术描述</th>
+<th width="50%">跨境电商应用场景</th>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/labring/FastGPT">FastGPT</a></strong></td>
+<td>一个提供开箱即用能力，并以其强大的可视化工作流编排功能为特色的知识平台</td>
+<td>构建跨境电商知识库，整合产品信息、市场数据、法规文档，通过可视化工作流实现智能问答和决策支持</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/langgenius/dify">Dify.ai</a></strong></td>
+<td>一个面向生产环境的、功能全面的LLMOps平台，集成了AI工作流、RAG管道、模型管理和可观测性等企业级功能</td>
+<td>部署企业级AI助手，管理多语言客服机器人，构建智能化的供应商管理和客户服务系统</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/Mintplex-Labs/anything-llm">AnythingLLM</a></strong></td>
+<td>一个主打"一体化"和"本地优先"的AI应用，提供桌面版和Docker版，强调隐私安全和易用性</td>
+<td>本地化部署企业知识管理系统，保护敏感商业数据，支持离线环境下的智能文档处理和查询</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/1Panel-dev/MaxKB">MaxKB</a></strong></td>
+<td>一个强大且易于使用的开源企业级智能体平台，特别关注与现有业务系统的无缝集成</td>
+<td>集成ERP、CRM等现有业务系统，构建统一的智能化业务流程，实现跨部门的知识共享和协作</td>
 </tr>
 </table>
 

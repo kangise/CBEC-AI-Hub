@@ -1,0 +1,40 @@
+# 基础数据科学库
+pandas>=1.3.0
+numpy>=1.21.0
+scikit-learn>=1.0.0
+scipy>=1.7.0
+
+# 深度学习框架
+torch>=1.9.0
+transformers>=4.0.0
+
+# 数据可视化
+matplotlib>=3.3.0
+seaborn>=0.11.0
+plotly>=5.0.0
+
+# 自然语言处理
+spacy>=3.4.0
+langdetect>=1.0.9
+
+# 计算机视觉
+opencv-python>=4.5.0
+Pillow>=8.0.0
+
+# 推荐系统
+implicit>=0.6.0
+lightfm>=1.16
+
+# 时间序列
+prophet>=1.0.0
+
+# 工具库
+requests>=2.25.0
+beautifulsoup4>=4.9.0
+scrapy>=2.5.0
+
+# 开发工具
+jupyter>=1.0.0
+pytest>=6.0.0
+black>=21.0.0
+flake8>=3.9.0

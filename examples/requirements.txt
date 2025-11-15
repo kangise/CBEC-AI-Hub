@@ -1,0 +1,48 @@
+# 产品选品相关
+prophet>=1.1.0
+pandas>=1.3.0
+numpy>=1.21.0
+matplotlib>=3.3.0
+scikit-learn>=1.0.0
+
+# 内容本地化相关
+transformers>=4.20.0
+torch>=1.9.0
+sentencepiece>=0.1.96
+sacremoses>=0.0.53
+
+# 市场分析相关
+bertopic>=0.15.0
+keybert>=0.7.0
+gensim>=4.2.0
+
+# 广告优化相关
+ray[rllib]>=2.0.0
+sentence-transformers>=2.2.0
+
+# 运营自动化相关
+langchain>=0.0.200
+prefect>=2.0.0
+apache-airflow>=2.5.0
+
+# 客服自动化相关
+haystack-ai>=2.0.0
+llama-index>=0.8.0
+
+# 财务分析相关
+polars>=0.18.0
+duckdb>=0.8.0
+
+# 合规风险相关
+elasticsearch>=8.0.0
+ultralytics>=8.0.0
+
+# 供应链相关
+ortools>=9.4.0
+networkx>=2.8.0
+
+# 通用工具
+requests>=2.25.0
+beautifulsoup4>=4.9.0
+plotly>=5.0.0
+seaborn>=0.11.0

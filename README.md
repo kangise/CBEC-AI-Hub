@@ -1,1022 +1,968 @@
-# E-Commerce Operator Full-Stack Skill Roadmap
+# CBEC-AI-Hub: 跨境电商 AI 实战指南
 
-电商操盘手全栈技能成长路线图 -- 从新手到专家的完整学习体系
+用 AI 重新定义跨境电商运营 -- 从选品到客服，从广告到供应链，每个环节的 AI 工具、方法和实战案例。
 
-一份面向跨境电商从业者的系统化技能成长指南。无论你是刚入行的新人，还是想突破瓶颈的资深运营，都能在这里找到适合自己的学习路径和资源。
+这不是一份电商入门教程，而是一份以 AI 为核心的电商运营升级指南。它假设你已经有基本的电商认知，帮你系统性地把 AI 融入运营的每一个环节。
 
 ---
 
 ## 目录
 
-- [这个项目是什么](#这个项目是什么)
-- [水平等级对照](#水平等级对照)
-- [自我评估定位](#自我评估定位)
-- [Stage 1: 基础认知](#stage-1-基础认知-foundation)
-- [Stage 2: 运营实战](#stage-2-运营实战-operations)
-- [Stage 3: 增长进阶](#stage-3-增长进阶-growth)
-- [Stage 4: 数据驱动](#stage-4-数据驱动-analytics)
-- [Stage 5: 战略与领导力](#stage-5-战略与领导力-leadership)
-- [学习计划模板](#学习计划模板)
-- [持续学习资源](#持续学习资源)
+- [谁适合读这份指南](#谁适合读这份指南)
+- [AI 基础能力](#ai-基础能力)
+- [选品与市场分析中的 AI](#选品与市场分析中的-ai)
+- [Listing 与内容创作中的 AI](#listing-与内容创作中的-ai)
+- [广告优化中的 AI](#广告优化中的-ai)
+- [客服与售后中的 AI](#客服与售后中的-ai)
+- [库存与供应链中的 AI](#库存与供应链中的-ai)
+- [合规与风控中的 AI](#合规与风控中的-ai)
+- [数据分析与 BI 中的 AI](#数据分析与-bi-中的-ai)
+- [运营自动化与 AI Agent](#运营自动化与-ai-agent)
+- [AI 编程能力建设](#ai-编程能力建设)
+- [AI 工具速查表](#ai-工具速查表)
 - [贡献](#贡献)
 
 ---
 
-## 这个项目是什么
+## 谁适合读这份指南
 
-这不是一个工具列表，而是一份电商操盘手的成长蓝图。
+你已经在做跨境电商（或者对电商运营有基本了解），想知道：
 
-它回答的核心问题是：**作为一个电商操盘手，我需要掌握哪些技能？我现在在哪里？下一步该学什么？**
+- AI 到底能帮我做什么？哪些环节能用 AI 提效？
+- 具体用什么工具？怎么用？有没有免费的？
+- 别人是怎么用 AI 做选品、写 Listing、优化广告的？
+- 我不会写代码，能用 AI 吗？会写代码的话能做什么更高级的事？
 
-核心特点：
+这份指南按电商运营的核心环节组织，每个环节都回答三个问题：
 
-- **体系化** -- 5大阶段，覆盖从基础到战略的完整技能树
-- **分级定位** -- 5个水平等级，精准匹配你的当前阶段
-- **AI 融合** -- 每个阶段都融入 AI 工具和自动化方法，不是单独的"AI章节"
-- **资源丰富** -- 每个模块配备 Coursera、YouTube、书籍、博客等多元学习资源
-- **跨境视角** -- 特别关注跨境电商（Amazon / Shopify / TikTok Shop）的独特挑战
-- **实战导向** -- 每个阶段都有明确的实践项目和能力检验标准
-
-```
-Stage 1  基础认知 ──── 电商生态 · 平台规则 · 商业模式 · 基础财务
-    |
-Stage 2  运营实战 ──── 选品 · Listing · 广告 · 客服 · 物流 · 合规
-    |
-Stage 3  增长进阶 ──── 品牌建设 · 多渠道 · 站外引流 · 用户运营
-    |
-Stage 4  数据驱动 ──── 数据分析 · BI工具 · A/B测试 · 财务建模 · 自动化
-    |
-Stage 5  战略领导力 ── 团队管理 · 供应链战略 · 资本运作 · 全球化布局
-```
+1. AI 能做什么（场景和价值）
+2. 用什么工具（优先免费和开源）
+3. 怎么学（免费课程、教程、实战案例）
 
 [回到目录](#目录)
 
 ---
 
-## 水平等级对照
+## AI 基础能力
 
-| 等级 | 称号 | 典型画像 | 核心能力 | 年限参考 |
-|------|------|----------|----------|----------|
-| L1 | 新手 (Rookie) | 刚入行，对电商有兴趣但缺乏实操 | 理解平台规则，能完成基础操作 | 0-6个月 |
-| L2 | 执行者 (Executor) | 能独立运营1-2个店铺/品牌 | 选品上架、广告投放、日常运营 | 6月-2年 |
-| L3 | 操盘手 (Operator) | 能独立操盘一个品牌的全盘运营 | 品牌策略、多渠道、增长黑客 | 2-4年 |
-| L4 | 专家 (Expert) | 数据驱动决策，能带小团队 | 数据分析、自动化、团队管理 | 4-6年 |
-| L5 | 战略家 (Strategist) | 操盘多品牌/多市场，战略级决策 | 全球化布局、资本运作、行业影响力 | 6年+ |
+在深入各个电商环节之前，你需要先建立 AI 的基础认知和使用能力。这是所有后续内容的前提。
 
-[回到目录](#目录)
+### Prompt Engineering -- 和 AI 高效沟通
 
----
+这是最重要的基础技能。你和 AI 沟通的质量直接决定了输出的质量。
 
-## 自我评估定位
+核心要点：
+- 给 AI 明确的角色、上下文和输出格式要求
+- 用 few-shot（给几个例子）比 zero-shot（不给例子）效果好得多
+- 复杂任务拆成多步，不要一次让 AI 做太多
+- 学会迭代：第一次输出不满意，追问和修正比重新开始更高效
 
-花10分钟回答以下问题，找到你在路线图中的起点。对每个陈述，判断你是否能做到。
+免费学习资源：
 
-### A. 基础认知
+| 资源 | 说明 |
+|------|------|
+| [DeepLearning.AI: ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) | Andrew Ng 的免费短课，1.5小时，开发者视角的 Prompt 工程 |
+| [Coursera: Generative AI for Everyone (Andrew Ng)](https://www.coursera.org/learn/generative-ai-for-everyone) | 免费旁听，AI 入门最佳起点 |
+| [Google: Introduction to Generative AI](https://www.cloudskillsboost.google/course_templates/536) | Google Cloud 免费课程，AI 基础概念 |
+| [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering) | 官方指南，最权威的 Prompt 技巧 |
+| [Anthropic Prompt Engineering Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) | Claude 官方指南 |
+| [Learn Prompting](https://learnprompting.org/) | 免费开源教程，从入门到高级 |
 
-| # | 能力项 |
-|---|--------|
-| A1 | 我能说出 Amazon / Shopify / TikTok Shop 的核心区别 |
-| A2 | 我理解 FBA / FBM / Dropshipping 的运作模式和优劣 |
-| A3 | 我能计算一个产品从采购到售出的完整成本结构 |
-| A4 | 我了解跨境电商涉及的基本税务和法规 |
-| A5 | 我能解释什么是 ASIN、BSR、Buy Box、A+ Content |
+### 主流 AI 工具认知
 
-### B. 运营实战
+你需要了解这些工具各自擅长什么，才能在不同场景选对工具。
 
-| # | 能力项 |
-|---|--------|
-| B1 | 我能独立完成一个产品从选品到上架的全流程 |
-| B2 | 我能撰写高转化的 Listing（标题、五点、描述、A+） |
-| B3 | 我能搭建和优化 Amazon PPC 广告（SP/SB/SD） |
-| B4 | 我能管理 FBA 库存（补货计划、库龄管理、移除） |
-| B5 | 我能处理客户投诉、差评回复、A-to-Z 索赔 |
-| B6 | 我了解产品合规要求（认证、标签、知识产权） |
-
-### C. 增长进阶
-
-| # | 能力项 |
-|---|--------|
-| C1 | 我有品牌注册经验，能运用品牌工具（Brand Analytics、Vine） |
-| C2 | 我能策划和执行站外引流（社媒、红人、Deal站） |
-| C3 | 我有多平台运营经验（不只是 Amazon） |
-| C4 | 我能制定产品线扩展策略和新品上市计划 |
-| C5 | 我有拓展新市场（新国家/地区）的经验 |
-
-### D. 数据与自动化
-
-| # | 能力项 |
-|---|--------|
-| D1 | 我能用 Excel/Sheets 做数据透视表和复杂公式 |
-| D2 | 我能从业务报告中提取关键洞察并制定行动计划 |
-| D3 | 我使用过 BI 工具（Tableau / QuickSight / Looker） |
-| D4 | 我能用 Python 写简单的数据处理脚本 |
-| D5 | 我能搭建自动化工作流（Zapier / Make / 脚本） |
-| D6 | 我能用 AI 工具（ChatGPT/Claude）系统性地提升工作效率 |
-
-### E. 战略与领导力
-
-| # | 能力项 |
-|---|--------|
-| E1 | 我有管理电商团队（3人以上）的经验 |
-| E2 | 我能制定年度运营策略和预算规划 |
-| E3 | 我有供应链深度管理经验（工厂合作、品控） |
-| E4 | 我能同时操盘多个品牌或多个市场 |
-| E5 | 我在行业内有一定的影响力和人脉网络 |
-
-### 定位规则
-
-- 某区域 <= 2个能做到 -- 这是你需要重点学习的阶段
-- 某区域 3-4个能做到 -- 你有基础，需要查漏补缺
-- 某区域全部能做到 -- 你已掌握，可以跳过或快速复习
-
-| 情况 | 你的等级 | 建议起点 |
+| 工具 | 免费额度 | 擅长场景 |
 |------|----------|----------|
-| A区 <= 2 | L1 新手 | 从 [Stage 1: 基础认知](#stage-1-基础认知-foundation) 开始 |
-| A区通过，B区 <= 3 | L2 执行者 | 从 [Stage 2: 运营实战](#stage-2-运营实战-operations) 开始 |
-| A+B通过，C区 <= 3 | L3 操盘手 | 从 [Stage 3: 增长进阶](#stage-3-增长进阶-growth) 开始 |
-| A+B+C通过，D区 <= 3 | L4 专家 | 从 [Stage 4: 数据驱动](#stage-4-数据驱动-analytics) 开始 |
-| 全部通过 | L5 战略家 | 聚焦 [Stage 5: 战略领导力](#stage-5-战略与领导力-leadership) |
-
-[回到目录](#目录)
-
----
-
-## Stage 1: 基础认知 (Foundation)
-
-> 目标：建立电商行业的完整认知框架，理解商业本质
->
-> 适合：L1 新手 | 预计时间：4-8周
-
-### 1.1 电商行业全景与趋势
-
-你需要掌握的：
-
-- [ ] 全球电商市场规模与增长趋势
-- [ ] 跨境电商 vs 国内电商的核心差异
-- [ ] 主要跨境电商市场（北美、欧洲、日本、东南亚）的特点
-- [ ] 行业发展趋势（DTC、社交电商、AI 驱动的电商变革）
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: International Business](https://www.coursera.org/learn/international-business) | Univ. of London，理解全球商业环境 |
-| 视频 | [YouTube: How Amazon FBA Works (Jungle Scout)](https://www.youtube.com/@JungleScout) | FBA 运作全流程 |
-| 阅读 | [Marketplace Pulse](https://www.marketplacepulse.com/) | Amazon 市场数据与趋势 |
-| 阅读 | [Statista - eCommerce](https://www.statista.com/outlook/emo/ecommerce/worldwide) | 全球电商统计 |
-
-### 1.2 主流平台深度解析
-
-你需要掌握的：
-
-- [ ] Amazon 生态系统（Seller Central / Vendor Central / FBA / Advertising）
-- [ ] Shopify 独立站模式与生态
-- [ ] TikTok Shop 社交电商模式
-- [ ] Walmart / eBay / Temu 等其他平台概览
-- [ ] 各平台的费用结构和盈利模型
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Amazon Seller University](https://sellercentral.amazon.com/learn) | 官方免费课程（必学） |
-| 课程 | [Shopify Learn](https://www.shopify.com/learn) | 官方免费课程 |
-| 课程 | [TikTok Shop Seller University](https://seller.tiktokglobalshop.com/university/home) | 官方课程 |
-| 视频 | [YouTube: Helium 10 Channel](https://www.youtube.com/@Helium10Software) | Amazon 运营技巧 |
-| 视频 | [YouTube: Learn With Shopify](https://www.youtube.com/@LearnWithShopify) | Shopify 官方频道 |
-
-### 1.3 跨境电商商业模式
-
-你需要掌握的：
-
-- [ ] FBA (Fulfillment by Amazon) 模式详解
-- [ ] FBM (Fulfillment by Merchant) 适用场景
-- [ ] Dropshipping 模式的优劣与风险
-- [ ] DTC (Direct to Consumer) 品牌模式
-- [ ] 各模式的启动资金、风险和利润率对比
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Udemy: Amazon FBA Mastery](https://www.udemy.com/topic/amazon-fba/) | FBA 实操课程 |
-| 书籍 | *The Everything Store* (Brad Stone) | 理解 Amazon 的商业逻辑 |
-| 视频 | [YouTube: FBA vs FBM vs Dropshipping](https://www.youtube.com/results?search_query=FBA+vs+FBM+vs+dropshipping+comparison) | 模式对比 |
-
-### 1.4 基础财务与成本结构
-
-你需要掌握的：
-
-- [ ] 产品成本结构（采购成本 + 头程 + FBA费用 + 广告 + 退货）
-- [ ] Amazon 费用体系（佣金、FBA费、仓储费、广告费）
-- [ ] 利润率计算与定价策略
-- [ ] 现金流管理基础
-- [ ] 汇率风险与跨境支付
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Khan Academy: Finance & Capital Markets](https://www.khanacademy.org/economics-finance-domain/core-finance) | 免费财务基础 |
-| 工具 | [Amazon Revenue Calculator](https://sellercentral.amazon.com/hz/fba/profitabilitycalculator/index) | 官方利润计算器 |
-| 工具 | [Jungle Scout FBA Calculator](https://www.junglescout.com/fba-fee-calculator/) | FBA 费用计算 |
-| 视频 | [YouTube: Amazon FBA Product Cost Breakdown](https://www.youtube.com/results?search_query=amazon+fba+product+cost+breakdown) | 成本拆解 |
-
-AI 应用：用 ChatGPT / Claude 快速分析竞品定价策略，输入竞品价格、评论数、排名等数据，让 AI 帮你做初步的市场可行性判断和成本估算。
-
-### 1.5 法律法规与知识产权基础
-
-你需要掌握的：
-
-- [ ] 各国进口法规与关税基础
-- [ ] 产品认证要求（CE / FCC / PSE / UL）
-- [ ] 知识产权保护（商标、专利、版权）
-- [ ] Amazon 品牌保护政策（Brand Registry / Transparency / Project Zero）
-- [ ] 税务基础（VAT / GST / Sales Tax）
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 官方 | [Amazon Brand Registry](https://brandregistry.amazon.com/) | 品牌注册官方指南 |
-| 官方 | [EU Product Safety](https://ec.europa.eu/safety-gate/) | 欧盟产品安全 |
-| 视频 | [YouTube: CE Marking Explained](https://www.youtube.com/results?search_query=CE+marking+explained+ecommerce) | CE 认证详解 |
-
-AI 应用：用 AI 工具快速查询不同国家的产品合规要求。例如输入产品类目和目标市场，让 ChatGPT 列出需要的认证清单和大致费用范围。注意 AI 输出需要人工验证，法规信息以官方来源为准。
-
-### Stage 1 能力检验
-
-1. 写一份商业计划书 -- 选择一个产品类目，分析市场机会，计算成本和预期利润
-2. 平台对比报告 -- 对比 Amazon / Shopify / TikTok Shop 对你选择的产品的适合度
-3. 成本计算表 -- 用 Excel 建立一个完整的产品成本和利润计算模型
-4. 合规清单 -- 列出你的目标产品在目标市场需要的所有认证和合规要求
-
-[回到目录](#目录)
-
----
-
-## Stage 2: 运营实战 (Operations)
-
-> 目标：掌握电商日常运营的核心技能，能独立运营产品
->
-> 适合：L1-L2 | 预计时间：3-6个月
-
-### 2.1 选品方法论与市场调研
-
-你需要掌握的：
-
-- [ ] 选品的核心逻辑（需求 x 竞争 x 利润 x 供应链）
-- [ ] 市场调研工具使用（Helium 10 / Jungle Scout / Keepa）
-- [ ] 关键词研究与搜索量分析
-- [ ] 竞品分析方法（Review 分析、Listing 拆解、价格追踪）
-- [ ] 供应商寻找与评估（1688 / Alibaba / 展会）
-- [ ] 选品决策矩阵与风险评估
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Helium 10 Freedom Ticket](https://www.helium10.com/freedom-ticket/) | 系统化 Amazon 选品课程（强烈推荐） |
-| 课程 | [Jungle Scout Academy](https://www.junglescout.com/academy/) | 免费选品教程 |
-| 工具 | [Helium 10](https://www.helium10.com/) | 全套 Amazon 工具（Black Box / Cerebro / Magnet） |
-| 工具 | [Jungle Scout](https://www.junglescout.com/) | 选品和市场分析 |
-| 工具 | [Keepa](https://keepa.com/) | 价格和排名历史追踪 |
-| 视频 | [YouTube: Jungle Scout](https://www.youtube.com/@JungleScout) | 选品实操教程 |
-| 书籍 | *Product Research 101* (Renae Clark) | Amazon 选品方法论 |
-
-AI 应用 -- 选品中的 AI 加速：
-
-- 用 ChatGPT / Claude 分析大量竞品 Review，提取用户痛点和未被满足的需求
-- 用 AI 做关键词聚类分析，从海量搜索词中发现选品机会
-- 用 [BERTopic](https://github.com/MaartenGr/BERTopic) 或 [KeyBERT](https://github.com/MaartenGr/KeyBERT) 做评论主题建模，发现产品改进方向
-- 用 AI 辅助供应商沟通（多语言邮件生成、规格书翻译）
-
-### 2.2 Listing 优化
-
-你需要掌握的：
-
-- [ ] 标题优化（关键词布局、可读性、字符限制）
-- [ ] Bullet Points 撰写（卖点提炼、关键词嵌入）
-- [ ] 产品描述与 A+ Content 设计
-- [ ] 主图和副图优化（白底图、场景图、信息图、对比图）
-- [ ] 后台关键词（Search Terms）设置
-- [ ] Listing 质量评分与优化迭代
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 工具 | [Helium 10 Scribbles](https://www.helium10.com/tools/scribbles/) | Listing 关键词优化 |
-| 工具 | [Helium 10 Listing Builder](https://www.helium10.com/tools/listing-builder/) | AI Listing 生成 |
-| 工具 | [Canva](https://www.canva.com/) | 产品图片设计 |
-| 工具 | [Pickfu](https://www.pickfu.com/) | A/B 测试主图和标题 |
-| 视频 | [YouTube: Amazon Listing Optimization](https://www.youtube.com/results?search_query=amazon+listing+optimization+2025) | 实操教程 |
-| 官方 | [Amazon Style Guide](https://sellercentral.amazon.com/help/hub/reference/external/G200270100) | 官方 Listing 规范 |
-
-AI 应用 -- Listing 创作中的 AI：
-
-- 用 ChatGPT / Claude 生成 Listing 初稿（标题、五点、描述），然后人工优化
-- 用 AI 做多语言 Listing 翻译和本地化（不只是翻译，要适配当地搜索习惯）
-- 用 [Midjourney](https://www.midjourney.com/) / [Stable Diffusion](https://github.com/Stability-AI/generative-models) 生成产品场景图和生活方式图
-- 用 AI 分析竞品 Listing 的关键词策略，找出你遗漏的高价值关键词
-- 用 [NLLB-200](https://github.com/facebookresearch/fairseq/tree/nllb) 做高质量多语言翻译
-
-### 2.3 Amazon PPC 广告体系
-
-你需要掌握的：
-
-- [ ] 广告类型详解（Sponsored Products / Brands / Display）
-- [ ] 广告结构设计（Campaign / Ad Group / Targeting）
-- [ ] 关键词匹配类型（Broad / Phrase / Exact）
-- [ ] 竞价策略与预算管理
-- [ ] 广告数据分析（ACoS / TACoS / ROAS / CTR / CVR）
-- [ ] 否定关键词策略
-- [ ] 广告优化周期与方法论
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Amazon Advertising Learning Console](https://learningconsole.amazonadvertising.com/) | 官方广告课程（免费，必学） |
-| 课程 | [Coursera: Digital Advertising Strategy](https://www.coursera.org/learn/digital-advertising-strategy) | 数字广告策略 |
-| 工具 | [Helium 10 Adtomic](https://www.helium10.com/tools/adtomic/) | 广告自动化 |
-| 工具 | [Pacvue](https://www.pacvue.com/) | 企业级广告管理 |
-| 视频 | [YouTube: Amazon PPC Tutorial](https://www.youtube.com/results?search_query=amazon+ppc+tutorial+beginners+2025) | PPC 入门教程 |
-| 书籍 | *Ultimate Guide to Amazon Advertising* (Timothy P. Seward) | 广告体系全书 |
-
-AI 应用 -- 广告优化中的 AI：
-
-- 用 AI 分析搜索词报告，自动识别高转化和浪费性关键词
-- 用 ChatGPT 批量生成否定关键词列表
-- 用 [DeepCTR](https://github.com/shenweichen/DeepCTR) 等框架预测广告点击率和转化率
-- 用 AI 辅助广告文案 A/B 测试（生成多个版本的 Headline）
-- 用 [AutoGluon](https://github.com/autogluon/autogluon) 做广告效果预测建模
-
-### 2.4 库存管理与 FBA 物流
-
-你需要掌握的：
-
-- [ ] FBA 入仓流程（创建货件、标签、包装要求）
-- [ ] 库存补货计划（安全库存、补货周期、Lead Time）
-- [ ] 库存绩效指标（IPI Score）
-- [ ] 仓储费管理（月度仓储费、长期仓储费）
-- [ ] 头程物流选择（海运 / 空运 / 快递 / 铁路）
-- [ ] 多仓库策略与库存分配
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Supply Chain Management](https://www.coursera.org/specializations/supply-chain-management) | Rutgers 供应链管理 |
-| 工具 | [SoStocked](https://www.sostocked.com/) | 库存管理和补货计划 |
-| 工具 | [Flexport](https://www.flexport.com/) | 国际物流平台 |
-| 工具 | [Freightos](https://www.freightos.com/) | 运费比价 |
-| 视频 | [YouTube: FBA Shipping Plan Tutorial](https://www.youtube.com/results?search_query=amazon+fba+shipping+plan+tutorial+2025) | FBA 入仓教程 |
-
-AI 应用 -- 库存预测中的 AI：
-
-- 用 [Facebook Prophet](https://github.com/facebook/prophet) 或 [Darts](https://github.com/unit8co/darts) 做销量时间序列预测
-- 用 AI 分析历史销售数据，预测季节性需求波动，优化补货节奏
-- 用 [OR-Tools](https://github.com/google/or-tools) 做补货策略和仓库分配的运筹优化
-- 用 ChatGPT 辅助分析 IPI 分数下降原因并生成改善方案
-
-### 2.5 客服与售后管理
-
-你需要掌握的：
-
-- [ ] Amazon 买家消息回复规范与时效
-- [ ] 差评处理策略（联系买家、回复评论、Request Review）
-- [ ] A-to-Z Guarantee Claim 处理
-- [ ] 退货退款政策与流程
-- [ ] 账号健康指标管理（ODR / Late Shipment / Pre-fulfillment Cancel）
-- [ ] 常见违规与申诉流程
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 官方 | [Amazon Account Health](https://sellercentral.amazon.com/performance/dashboard) | 账号健康仪表板 |
-| 工具 | [FeedbackWhiz](https://www.feedbackwhiz.com/) | 评论管理和邮件自动化 |
-| 视频 | [YouTube: Amazon Account Suspension & Appeal](https://www.youtube.com/results?search_query=amazon+account+suspension+appeal+2025) | 申诉教程 |
-
-AI 应用 -- 客服中的 AI：
-
-- 用 ChatGPT / Claude 生成多语言客服回复模板（英语、德语、日语等）
-- 用 AI 批量分析差评内容，提取产品问题的共性模式
-- 用 [LlamaIndex](https://github.com/run-llama/llama_index) 构建产品 FAQ 知识库，辅助客服快速回答
-- 用 AI 辅助撰写账号申诉信（Plan of Action），分析违规原因并生成改善方案
-- 用 [NLLB-200](https://github.com/facebookresearch/fairseq/tree/nllb) 实现多语言客服消息实时翻译
-
-### 2.6 合规与风险控制
-
-你需要掌握的：
-
-- [ ] 产品合规认证（CE / FCC / UL / PSE / REACH / RoHS）
-- [ ] 包装和标签要求（各国不同）
-- [ ] Amazon 政策合规（Listing 政策、Review 政策、广告政策）
-- [ ] 知识产权风险排查（商标、专利、外观设计）
-- [ ] 账号安全与风控（关联、二审、品牌投诉）
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 官方 | [Amazon Product Compliance](https://sellercentral.amazon.com/help/hub/reference/external/GRLKR2BQFM6MPC9Y) | 产品合规要求 |
-| 官方 | [EU REACH Regulation](https://echa.europa.eu/regulations/reach/understanding-reach) | 欧盟 REACH 法规 |
-| 服务 | [SGS](https://www.sgs.com/) / [TUV](https://www.tuv.com/) / [Intertek](https://www.intertek.com/) | 全球检测认证 |
-| 视频 | [YouTube: Amazon Product Compliance Guide](https://www.youtube.com/results?search_query=amazon+product+compliance+certification+guide) | 合规指南 |
-
-AI 应用 -- 合规中的 AI：
-
-- 用 AI 快速查询不同国家/品类的合规要求清单
-- 用 [YOLOv8](https://github.com/ultralytics/ultralytics) 等视觉模型自动检测产品图片中的潜在违规内容
-- 用 AI 辅助 HS Code 分类，降低海关申报错误风险
-- 用 ChatGPT 分析 Amazon 政策更新，评估对现有 Listing 的影响
-
-### Stage 2 能力检验
-
-1. 选品报告 -- 完成一个完整的选品分析，包含市场容量、竞争分析、利润计算、供应商评估
-2. Listing 作品 -- 为你选的产品写一套完整的 Listing（标题+五点+描述+A+），并用工具检查关键词覆盖
-3. 广告计划 -- 制定一个新品上市的广告策略，包含 Campaign 结构、预算分配、KPI 目标
-4. 运营 SOP -- 编写一份日常运营 SOP（每日/每周/每月的检查清单和操作流程）
-
-[回到目录](#目录)
-
----
-
-## Stage 3: 增长进阶 (Growth)
-
-> 目标：从单品运营升级到品牌操盘，掌握多渠道增长策略
->
-> 适合：L2-L3 | 预计时间：3-6个月
-
-### 3.1 品牌注册与品牌建设
-
-你需要掌握的：
-
-- [ ] Amazon Brand Registry 注册流程与权益
-- [ ] 品牌定位与品牌故事（Brand Story）
-- [ ] A+ Premium Content / Brand Store 设计
-- [ ] Brand Analytics 数据解读与应用
-- [ ] Vine 计划与早期评论策略
-- [ ] 品牌保护（Transparency / Project Zero）
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Brand Management (IE Business School)](https://www.coursera.org/learn/brand-management) | 品牌管理基础 |
-| 课程 | [Coursera: Brand Identity and Strategy](https://www.coursera.org/learn/brand-identity-strategy) | 品牌战略 |
-| 官方 | [Amazon Brand Registry](https://brandregistry.amazon.com/) | 官方指南 |
-| 书籍 | *Building a StoryBrand* (Donald Miller) | 品牌故事方法论 |
-| 书籍 | *Positioning* (Al Ries & Jack Trout) | 定位经典 |
-| 视频 | [YouTube: Amazon Brand Store Design](https://www.youtube.com/results?search_query=amazon+brand+store+design+tutorial) | Brand Store 教程 |
-
-AI 应用 -- 品牌建设中的 AI：
-
-- 用 AI 生成品牌故事初稿和品牌调性指南
-- 用 Midjourney / DALL-E 生成品牌视觉素材（Logo 概念、包装设计概念）
-- 用 AI 分析 Brand Analytics 数据，发现品牌搜索趋势和市场份额变化
-- 用 ChatGPT 做品牌定位工作坊（模拟消费者视角分析你的品牌）
-
-### 3.2 站外引流
-
-你需要掌握的：
-
-- [ ] 社交媒体营销（Instagram / TikTok / Facebook / Pinterest）
-- [ ] 红人营销（Influencer Marketing）策略与执行
-- [ ] Deal 站引流（Slickdeals / Kinja / DealNews）
-- [ ] Google Ads / Facebook Ads 基础
-- [ ] 邮件营销（Email Marketing）
-- [ ] 内容营销与 SEO
-- [ ] Attribution 归因分析
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Social Media Marketing (Northwestern)](https://www.coursera.org/specializations/social-media-marketing) | 社媒营销专项 |
-| 课程 | [Google Digital Garage](https://learndigital.withgoogle.com/digitalgarage) | Google 数字营销免费课程 |
-| 课程 | [HubSpot Academy: Inbound Marketing](https://academy.hubspot.com/courses/inbound-marketing) | 免费入站营销认证 |
-| 课程 | [Meta Blueprint](https://www.facebook.com/business/learn) | Facebook/Instagram 广告官方课程 |
-| 工具 | [Amazon Attribution](https://advertising.amazon.com/solutions/products/amazon-attribution) | 站外流量归因 |
-| 工具 | [Upfluence](https://www.upfluence.com/) / [Grin](https://grin.co/) | 红人搜索和管理 |
-| 工具 | [Klaviyo](https://www.klaviyo.com/) | 电商邮件营销 |
-
-AI 应用 -- 站外引流中的 AI：
-
-- 用 AI 批量生成社交媒体内容（帖子文案、Hashtag 策略）
-- 用 AI 分析红人的粉丝画像和内容风格，匹配最适合的合作对象
-- 用 AI 生成广告素材变体（文案 + 图片），加速 A/B 测试
-- 用 ChatGPT 撰写红人合作 Outreach 邮件（多语言版本）
-- 用 AI 视频工具生成短视频广告素材（用于 TikTok / Reels）
-
-### 3.3 多渠道扩展
-
-你需要掌握的：
-
-- [ ] Shopify 独立站搭建与运营
-- [ ] Walmart Marketplace 入驻与运营
-- [ ] TikTok Shop 运营策略
-- [ ] eBay / Etsy 等补充渠道
-- [ ] 多渠道库存同步与订单管理
-- [ ] 渠道策略（各渠道定位与差异化）
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Shopify Learn](https://www.shopify.com/learn) | 官方建站课程 |
-| 官方 | [Walmart Seller Academy](https://seller.walmart.com/) | 官方课程 |
-| 工具 | [Sellbrite](https://www.sellbrite.com/) | 多渠道库存同步 |
-| 工具 | [Linnworks](https://www.linnworks.com/) | 订单和库存管理 |
-| 视频 | [YouTube: Multi-Channel E-Commerce Strategy](https://www.youtube.com/results?search_query=multi+channel+ecommerce+strategy) | 多渠道策略 |
-
-### 3.4 用户运营与复购策略
-
-你需要掌握的：
-
-- [ ] 客户生命周期管理（获取 - 激活 - 留存 - 推荐）
-- [ ] Amazon Post / Live / Manage Your Customer Engagement
-- [ ] Subscribe & Save 策略
-- [ ] 产品线扩展与交叉销售
-- [ ] 品牌忠诚度建设
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Customer Analytics (Wharton)](https://www.coursera.org/learn/wharton-customer-analytics) | 客户分析 |
-| 书籍 | *Hooked* (Nir Eyal) | 用户习惯养成 |
-| 书籍 | *Hacking Growth* (Sean Ellis) | 增长黑客方法论 |
-
-AI 应用 -- 用户运营中的 AI：
-
-- 用 AI 分析客户评论和反馈，构建用户画像和需求图谱
-- 用 AI 个性化邮件营销内容（根据购买历史生成推荐）
-- 用 [BERTopic](https://github.com/MaartenGr/BERTopic) 做评论主题聚类，发现用户关注的核心话题
-- 用 AI 辅助设计产品线扩展策略（分析互补品和替代品关系）
-
-### 3.5 新市场拓展
-
-你需要掌握的：
-
-- [ ] 市场评估框架（市场规模、竞争、法规、物流）
-- [ ] 欧洲市场（EU5: DE/FR/IT/ES/UK）运营要点
-- [ ] 日本市场运营要点
-- [ ] 新兴市场（澳洲、中东、东南亚）机会评估
-- [ ] 本地化策略（语言、文化、支付、物流）
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: International Marketing (Yonsei)](https://www.coursera.org/learn/international-marketing) | 国际营销 |
-| 官方 | [Amazon Global Selling](https://sell.amazon.com/global-selling) | 各站点开店指南 |
-| 官方 | [EU VAT One-Stop Shop](https://vat-one-stop-shop.ec.europa.eu/index_en) | 欧盟 VAT 指南 |
-| 视频 | [YouTube: Amazon Europe Selling Guide](https://www.youtube.com/results?search_query=amazon+europe+selling+guide+2025) | 欧洲站运营 |
-
-AI 应用 -- 新市场拓展中的 AI：
-
-- 用 AI 做目标市场的竞争格局快速分析
-- 用 [NLLB-200](https://github.com/facebookresearch/fairseq/tree/nllb) 做高质量多语言 Listing 翻译
-- 用 AI 分析目标市场的消费者偏好差异（文化适配）
-- 用 ChatGPT 生成各市场的合规要求对比表
-
-### Stage 3 能力检验
-
-1. 品牌策略文档 -- 为你的品牌制定完整的品牌定位、视觉识别和品牌故事
-2. 站外引流方案 -- 设计一个新品上市的站外引流计划（渠道选择、预算、KPI、时间线）
-3. 多渠道计划 -- 评估并制定从 Amazon 扩展到第二个渠道的方案
-4. 新市场评估 -- 完成一个新市场（如欧洲或日本）的进入可行性分析
-
-[回到目录](#目录)
-
----
-
-## Stage 4: 数据驱动 (Analytics)
-
-> 目标：用数据驱动决策，掌握分析工具和自动化技能
->
-> 适合：L3-L4 | 预计时间：6-12个月
-
-### 4.1 数据分析思维与方法论
-
-你需要掌握的：
-
-- [ ] 数据分析的基本框架（提问 - 收集 - 清洗 - 分析 - 呈现 - 行动）
-- [ ] 电商核心指标体系（流量 x 转化 x 客单价 x 复购）
-- [ ] 漏斗分析（Impression - Click - Add to Cart - Purchase）
-- [ ] 同比/环比分析、趋势分析
-- [ ] 归因分析与因果推断基础
-- [ ] 数据可视化原则
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics) | Google 数据分析认证（强烈推荐） |
-| 课程 | [Khan Academy: Statistics & Probability](https://www.khanacademy.org/math/statistics-probability) | 统计学基础（免费） |
-| 书籍 | *Storytelling with Data* (Cole Nussbaumer Knaflic) | 数据可视化圣经 |
-| 书籍 | *Lean Analytics* (Alistair Croll) | 精益数据分析 |
-| 视频 | [YouTube: Alex The Analyst](https://www.youtube.com/@AlexTheAnalyst) | 数据分析入门 |
-
-AI 应用 -- 数据分析中的 AI：
-
-- 用 ChatGPT Advanced Data Analysis 上传 CSV 直接做数据探索和可视化
-- 用 Claude 分析业务报告，提取关键洞察和行动建议
-- 用 [pandas-ai](https://github.com/gventuri/pandas-ai) 通过自然语言查询数据
-- 用 AI 辅助写 SQL 查询和数据处理脚本
-
-### 4.2 Excel / Google Sheets 高级技巧
-
-你需要掌握的：
-
-- [ ] 数据透视表（Pivot Table）高级用法
-- [ ] VLOOKUP / INDEX-MATCH / XLOOKUP
-- [ ] 条件格式与数据验证
-- [ ] 图表设计与仪表板搭建
-- [ ] Power Query 数据清洗
-- [ ] Google Sheets 特有功能（IMPORTDATA / QUERY / Apps Script）
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Excel Skills for Business (Macquarie)](https://www.coursera.org/specializations/excel) | Excel 从入门到精通 |
-| 视频 | [YouTube: Leila Gharani](https://www.youtube.com/@LeilaGharani) | Excel 高级技巧 |
-| 视频 | [YouTube: Google Sheets Dashboard Tutorial](https://www.youtube.com/results?search_query=google+sheets+dashboard+tutorial) | Sheets 仪表板 |
-
-### 4.3 BI 工具与 SQL
-
-你需要掌握的：
-
-- [ ] BI 工具选型（QuickSight / Tableau / Looker / Power BI）
-- [ ] 数据连接与数据建模
-- [ ] 仪表板设计原则
-- [ ] SQL 基础查询（SELECT / JOIN / GROUP BY / 子查询）
-- [ ] 定时报告与告警设置
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Data Visualization with Tableau (UC Davis)](https://www.coursera.org/specializations/data-visualization) | Tableau 专项 |
-| 课程 | [Coursera: SQL for Data Science (UC Davis)](https://www.coursera.org/learn/sql-for-data-science) | SQL 入门 |
-| 课程 | [Microsoft Learn: Power BI](https://learn.microsoft.com/en-us/training/powerplatform/power-bi) | 官方免费课程 |
-| 工具 | [SQLBolt](https://sqlbolt.com/) | 交互式 SQL 练习 |
-| 工具 | [Mode Analytics SQL Tutorial](https://mode.com/sql-tutorial/) | 免费 SQL 教程 |
-| 视频 | [YouTube: Guy in a Cube](https://www.youtube.com/@GuyInACube) | Power BI 教程 |
-
-### 4.4 A/B 测试与实验设计
-
-你需要掌握的：
-
-- [ ] A/B 测试的基本原理（假设检验、统计显著性）
-- [ ] Amazon Manage Your Experiments 使用
-- [ ] 测试设计（样本量、测试时长、变量控制）
-- [ ] 结果分析与决策
-- [ ] 常见陷阱（过早停止、多重比较、选择偏差）
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Udacity: A/B Testing (Google)](https://www.udacity.com/course/ab-testing--ud257) | 免费 A/B 测试课程 |
-| 工具 | [Amazon Manage Your Experiments](https://sellercentral.amazon.com/experiments) | 官方 A/B 测试 |
-| 工具 | [Evan Miller A/B Test Calculator](https://www.evanmiller.org/ab-testing/) | 样本量计算器 |
-
-### 4.5 财务建模与利润分析
-
-你需要掌握的：
-
-- [ ] 产品级 P&L（利润与亏损）分析
-- [ ] 单位经济模型（Unit Economics）
-- [ ] 现金流预测模型
-- [ ] 场景分析（Best / Base / Worst Case）
-- [ ] 库存周转与资金效率
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Financial Modeling (Wharton)](https://www.coursera.org/learn/wharton-quantitative-modeling) | 量化建模 |
-| 书籍 | *Financial Intelligence* (Karen Berman) | 非财务人员的财务入门 |
-| 视频 | [YouTube: E-Commerce Financial Modeling](https://www.youtube.com/results?search_query=ecommerce+financial+modeling+excel) | 财务建模教程 |
-
-### 4.6 Python 编程与数据处理
-
-你需要掌握的：
-
-- [ ] Python 基础语法（变量、循环、函数、类）
-- [ ] pandas 核心操作（读取、筛选、分组、合并、透视）
-- [ ] 用 openpyxl 自动化 Excel 报表生成
-- [ ] 文件批量处理（CSV / Excel / JSON）
-- [ ] 定时任务（cron）
-- [ ] Git 版本控制基础
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Python for Everybody (Univ. of Michigan)](https://www.coursera.org/specializations/python) | 最经典的 Python 入门 |
-| 课程 | [Kaggle: Pandas Course](https://www.kaggle.com/learn/pandas) | 免费 pandas 微课程 |
-| 课程 | [Coursera: Google IT Automation with Python](https://www.coursera.org/professional-certificates/google-it-automation) | Google Python 自动化认证 |
-| 书籍 | [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) | 免费在线书（实用自动化） |
-| 视频 | [YouTube: Corey Schafer Python Tutorials](https://www.youtube.com/@coreyms) | 高质量 Python 教程 |
-| 练习 | [HackerRank Python](https://www.hackerrank.com/domains/python) | Python 练习 |
-
-AI 应用 -- 编程中的 AI：
-
-- 用 [GitHub Copilot](https://github.com/features/copilot) / [Kiro](https://kiro.dev/) / [Cursor](https://cursor.sh/) 做 AI 辅助编程
-- 用 ChatGPT / Claude 解释代码、调试错误、生成代码片段
-- 零基础也能通过 AI 辅助快速写出实用的数据处理脚本
-
-### 4.7 网页爬虫与数据采集
-
-你需要掌握的：
-
-- [ ] HTTP 基础与 requests 库
-- [ ] HTML 解析（BeautifulSoup / lxml）
-- [ ] 浏览器自动化（Selenium / Playwright）
-- [ ] API 调用（Amazon SP-API / 第三方 API）
-- [ ] 数据存储（CSV / JSON / SQLite）
-- [ ] 爬虫伦理与法律边界
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Using Python to Access Web Data (Univ. of Michigan)](https://www.coursera.org/learn/python-network-data) | 网络数据获取 |
-| 文档 | [Amazon SP-API Documentation](https://developer-docs.amazon.com/sp-api/) | 官方 API 文档 |
-| 文档 | [Playwright Python Docs](https://playwright.dev/python/) | Playwright 文档 |
-| 视频 | [YouTube: Web Scraping with Python](https://www.youtube.com/results?search_query=corey+schafer+web+scraping+python) | 爬虫教程 |
-
-### 4.8 工作流自动化
-
-你需要掌握的：
-
-- [ ] 无代码自动化（Zapier / Make / n8n）
-- [ ] Amazon 运营自动化场景设计
-- [ ] 报表自动生成与分发
-- [ ] 库存预警自动化
-- [ ] 多系统数据同步
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 工具 | [Zapier](https://zapier.com/) | 最流行的无代码自动化 |
-| 工具 | [Make (Integromat)](https://www.make.com/) | 可视化工作流 |
-| 工具 | [n8n](https://n8n.io/) | 开源自动化（可自部署） |
-| 课程 | [Zapier University](https://zapier.com/university) | 官方免费课程 |
-| 视频 | [YouTube: n8n Automation Tutorial](https://www.youtube.com/results?search_query=n8n+automation+tutorial+beginners) | n8n 教程 |
-
-AI 应用 -- 自动化中的 AI：
-
-- 用 [LangChain](https://github.com/langchain-ai/langchain) / [LangGraph](https://github.com/langchain-ai/langgraph) 构建 AI Agent 工作流
-- 用 AI 自动生成运营日报/周报（从数据到洞察到建议）
-- 用 [CrewAI](https://github.com/joaomdmoura/crewAI) / [AutoGen](https://github.com/microsoft/autogen) 构建多 Agent 协作系统
-- 用 [Prefect](https://github.com/PrefectHQ/prefect) / [Airflow](https://github.com/apache/airflow) 编排复杂数据管道
-- 用 [Streamlit](https://streamlit.io/) / [Gradio](https://www.gradio.app/) 快速搭建内部数据工具
-
-### 4.9 自建工具与内部系统
-
-你需要掌握的：
-
-- [ ] Web 应用基础（Flask / Streamlit / Gradio）
-- [ ] 数据库基础（SQLite / PostgreSQL）
-- [ ] 前端基础（HTML / CSS / JavaScript）
-- [ ] 部署基础（GitHub Pages / Vercel / AWS）
-- [ ] 内部工具设计思维
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [CS50: Introduction to Computer Science (Harvard)](https://cs50.harvard.edu/x/) | 计算机科学入门（经典） |
-| 课程 | [freeCodeCamp: Web Development](https://www.freecodecamp.org/) | 免费全栈课程 |
-| 工具 | [Streamlit](https://streamlit.io/) | Python 快速搭建数据应用 |
-| 工具 | [Retool](https://retool.com/) | 低代码内部工具 |
-| 视频 | [YouTube: Streamlit Tutorial](https://www.youtube.com/results?search_query=streamlit+tutorial+data+professor) | Streamlit 教程 |
-
-AI 应用 -- 工具开发中的 AI：
-
-- 用 AI IDE（Kiro / Cursor / GitHub Copilot）大幅加速开发效率
-- 用 [RAGFlow](https://github.com/infiniflow/ragflow) / [LlamaIndex](https://github.com/run-llama/llama_index) 构建基于内部数据的 AI 问答系统
-- 用 [vLLM](https://github.com/vllm-project/vllm) / [Ollama](https://github.com/ollama/ollama) 本地部署开源模型，保护商业数据隐私
-- 用 [LoRA/PEFT](https://github.com/huggingface/peft) 微调模型适配特定电商场景
-
-### Stage 4 能力检验
-
-1. 数据看板 -- 用 Excel 或 BI 工具搭建一个包含核心 KPI 的运营仪表板
-2. 自动化脚本 -- 用 Python 自动化一个你日常重复的运营任务（如报表生成、数据合并）
-3. 财务模型 -- 建立一个产品级的 P&L 模型，包含场景分析
-4. 内部工具 -- 开发一个解决团队痛点的小工具并部署上线
-
-[回到目录](#目录)
-
----
-
-## Stage 5: 战略与领导力 (Leadership)
-
-> 目标：从执行者升级为战略决策者，具备操盘多品牌/多市场的能力
->
-> 适合：L4-L5 | 预计时间：持续学习
-
-### 5.1 团队搭建与管理
-
-你需要掌握的：
-
-- [ ] 电商团队组织架构设计（运营/广告/设计/客服/供应链）
-- [ ] 招聘与人才评估（核心岗位的能力模型）
-- [ ] 绩效管理与 KPI 设计
-- [ ] 远程团队管理（跨时区协作）
-- [ ] SOP 体系搭建与知识管理
-- [ ] 团队文化与激励机制
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Leading Teams (Univ. of Michigan)](https://www.coursera.org/learn/leading-teams) | 团队领导力 |
-| 课程 | [Coursera: Organizational Leadership (Northwestern)](https://www.coursera.org/specializations/organizational-leadership) | 组织领导力专项 |
-| 书籍 | *High Output Management* (Andy Grove) | 高产出管理（经典） |
-| 书籍 | *The Manager's Path* (Camille Fournier) | 技术管理者成长路径 |
-| 书籍 | *Measure What Matters* (John Doerr) | OKR 方法论 |
-| 工具 | [Notion](https://www.notion.so/) | 团队知识库和项目管理 |
-| 工具 | [Loom](https://www.loom.com/) | 异步视频沟通 |
-
-AI 应用 -- 团队管理中的 AI：
-
-- 用 AI 辅助编写岗位 JD、面试问题和评估标准
-- 用 AI 生成 SOP 文档初稿，加速知识沉淀
-- 用 AI 工具（Notion AI / ChatGPT）辅助会议纪要和行动项跟踪
-- 用 AI 分析团队绩效数据，发现效率瓶颈
-
-### 5.2 供应链深度管理
-
-你需要掌握的：
-
-- [ ] 供应商关系管理（从贸易商到工厂直供）
-- [ ] 产品开发与模具管理
-- [ ] 品质控制体系（QC 流程、验货标准）
-- [ ] 供应链金融（账期谈判、信用证）
-- [ ] 多供应商策略与风险分散
-- [ ] 供应链数字化（ERP / WMS）
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Supply Chain Management (Rutgers)](https://www.coursera.org/specializations/supply-chain-management) | 供应链管理专项 |
-| 课程 | [edX: Supply Chain Design (MIT)](https://www.edx.org/learn/supply-chain-management/massachusetts-institute-of-technology-supply-chain-design) | MIT 供应链设计 |
-| 书籍 | *The Goal* (Eliyahu Goldratt) | 约束理论经典 |
-| 服务 | [QIMA](https://www.qima.com/) | 第三方验货服务 |
-
-AI 应用 -- 供应链中的 AI：
-
-- 用 [Prophet](https://github.com/facebook/prophet) / [GluonTS](https://github.com/awslabs/gluonts) 做需求预测，优化采购计划
-- 用 [OR-Tools](https://github.com/google/or-tools) 做供应链网络优化（多仓分配、物流路径）
-- 用 [NetworkX](https://github.com/networkx/networkx) 建模供应链网络，分析风险节点
-- 用 AI 辅助供应商评估（分析历史交货数据、品质数据）
-- 用 [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) / [Tesseract](https://github.com/tesseract-ocr/tesseract) 自动识别发票和单据
-
-### 5.3 财务战略与资本运作
-
-你需要掌握的：
-
-- [ ] 电商企业估值方法
-- [ ] 融资策略（自有资金 / 贷款 / 投资人）
-- [ ] 现金流管理与资金规划
-- [ ] 税务筹划（公司架构、转移定价）
-- [ ] 并购与品牌收购（Aggregator 模式）
-- [ ] 退出策略（出售品牌 / IPO / 被收购）
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Corporate Finance (Wharton)](https://www.coursera.org/learn/wharton-finance) | 公司金融 |
-| 课程 | [Coursera: Entrepreneurship (Wharton)](https://www.coursera.org/specializations/wharton-entrepreneurship) | 创业专项 |
-| 书籍 | *Profit First* (Mike Michalowicz) | 利润优先的财务管理 |
-| 书籍 | *Zero to One* (Peter Thiel) | 创业思维 |
-| 平台 | [Empire Flippers](https://empireflippers.com/) | 电商品牌买卖 |
-
-### 5.4 多品牌 / 多市场全球化布局
-
-你需要掌握的：
-
-- [ ] 多品牌矩阵策略（品牌定位差异化）
-- [ ] 全球化运营体系（标准化 vs 本地化）
-- [ ] 跨市场资源共享与协同
-- [ ] 本地团队 vs 远程团队的选择
-- [ ] 全球合规体系搭建
-- [ ] 风险管理（汇率、政策、地缘政治）
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 课程 | [Coursera: Global Strategy (Univ. of Illinois)](https://www.coursera.org/learn/global-strategy) | 全球战略 |
-| 课程 | [INSEAD: International Business Strategy](https://www.coursera.org/learn/international-business-strategy) | 国际商业战略 |
-| 书籍 | *The Culture Map* (Erin Meyer) | 跨文化管理（强烈推荐） |
-| 书籍 | *Blue Ocean Strategy* (W. Chan Kim) | 蓝海战略 |
-| 书籍 | *Good Strategy Bad Strategy* (Richard Rumelt) | 战略思维 |
-
-### 5.5 行业影响力与个人品牌
-
-你需要掌握的：
-
-- [ ] 行业社群参与（论坛、会议、Mastermind）
-- [ ] 内容输出（博客、播客、社交媒体）
-- [ ] 演讲与分享
-- [ ] 人脉网络建设
-
-学习资源：
-
-| 类型 | 资源 | 说明 |
-|------|------|------|
-| 社群 | [Prosper Show](https://prospershow.com/) | Amazon 卖家大会 |
-| 社群 | [知无不言](https://www.wearesellers.com/) | 中文跨境电商社区 |
-| 社群 | [创蓝论坛](https://bbs.ichuanglan.com/) | 中文 Amazon 卖家论坛 |
-| 播客 | [AM/PM Podcast](https://www.ampmpodcast.com/) | Amazon 卖家播客 |
-| 播客 | [Serious Sellers Podcast (Helium 10)](https://www.helium10.com/podcast/) | 成功卖家访谈 |
-| 播客 | [eCommerceFuel](https://www.ecommercefuel.com/podcast/) | 高端电商社群播客 |
-| 书籍 | *Show Your Work* (Austin Kleon) | 如何展示你的工作 |
-| 书籍 | *Building a Second Brain* (Tiago Forte) | 知识管理 |
-
-### Stage 5 能力检验
-
-1. 团队方案 -- 设计一个5-10人电商团队的组织架构、岗位职责和 KPI 体系
-2. 全球化战略 -- 制定一个品牌从单一市场扩展到3个市场的战略规划
-3. 财务规划 -- 完成一份年度运营预算和3年财务预测
-4. 行业分享 -- 在社群或会议上做一次主题分享
-
-[回到目录](#目录)
-
----
-
-## 学习计划模板
-
-### 全职学习（每天4-6小时）
-
-| 阶段 | 时长 | 里程碑 |
-|------|------|--------|
-| Stage 1 基础认知 | 2-4周 | 能写出完整的商业计划书 |
-| Stage 2 运营实战 | 2-3个月 | 独立运营一个产品从0到出单 |
-| Stage 3 增长进阶 | 2-3个月 | 月销售额突破 $10K |
-| Stage 4 数据驱动 | 3-6个月 | 建立完整的数据看板，开发一个自动化工具 |
-| Stage 5 战略领导力 | 持续 | 管理团队 / 多品牌运营 |
-
-### 在职学习（每天1-2小时）
-
-将上述时长 x 2-3 倍。建议每周集中一个主题深入学习，周末做实践项目。
-
-### 学习建议
-
-1. 不要跳级 -- 基础不牢，后面会更吃力
-2. 边学边做 -- 每个模块都要有实际产出
-3. 善用 AI -- 把 AI 当作学习伙伴，用它解释概念、生成练习、检查作业
-4. 记录复盘 -- 建立自己的知识库和案例库
-5. 找到社群 -- 加入电商社群，和同行交流
-6. 关注变化 -- 平台政策和算法经常变，保持学习
-
-[回到目录](#目录)
-
----
-
-## 持续学习资源
-
-### MBA 级别课程
+| [ChatGPT](https://chat.openai.com/) | 免费版可用 GPT-4o mini | 通用对话、文案、分析、代码 |
+| [Claude](https://claude.ai/) | 免费版可用 | 长文本分析、结构化输出、代码 |
+| [Google Gemini](https://gemini.google.com/) | 免费 | 多模态（图片+文本）、Google 生态集成 |
+| [Perplexity](https://www.perplexity.ai/) | 免费 | 带引用的搜索式问答，适合市场调研 |
+| [Midjourney](https://www.midjourney.com/) | 付费 | 高质量产品图和营销素材生成 |
+| [Microsoft Copilot](https://copilot.microsoft.com/) | 免费 | 集成 Office，适合报表和文档 |
+| [Kimi](https://kimi.moonshot.cn/) | 免费 | 中文长文本处理，适合中文电商场景 |
+
+免费学习资源：
 
 | 资源 | 说明 |
 |------|------|
-| [Coursera: Wharton Business Foundations](https://www.coursera.org/specializations/wharton-business-foundations) | 沃顿商学院商业基础 |
-| [Coursera: Strategic Leadership (UIUC)](https://www.coursera.org/specializations/strategic-leadership) | 战略领导力 |
-| [Coursera: Generative AI for Everyone (Andrew Ng)](https://www.coursera.org/learn/generative-ai-for-everyone) | AI 入门（强烈推荐） |
-| [DeepLearning.AI: Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) | Prompt 工程 |
+| [YouTube: AI Tools for Business (Matt Wolfe)](https://www.youtube.com/@maboroshi) | 每周更新 AI 工具评测 |
+| [YouTube: All About AI](https://www.youtube.com/@AllAboutAI) | AI 工具教程和对比 |
+| [There's An AI For That](https://theresanaiforthat.com/) | AI 工具搜索引擎，按场景分类 |
 
-### 持续关注的信息源
+[回到目录](#目录)
+
+---
+
+## 选品与市场分析中的 AI
+
+选品是电商运营的起点，也是 AI 能产生最大杠杆效应的环节之一。传统选品依赖经验和手动调研，AI 可以把这个过程从"拍脑袋"升级到"数据驱动"。
+
+### AI 能做什么
+
+| 场景 | 传统做法 | AI 做法 | 效率提升 |
+|------|----------|---------|----------|
+| 市场趋势发现 | 手动浏览 Best Seller、New Release | AI 分析搜索趋势数据，自动发现上升品类 | 10x |
+| 竞品 Review 分析 | 逐条阅读竞品评论 | AI 批量分析数千条 Review，提取痛点和需求 | 50x |
+| 关键词研究 | 工具导出 + 手动筛选 | AI 做语义聚类，发现关键词背后的真实需求 | 5x |
+| 需求预测 | 看历史销量趋势 | 时间序列模型预测未来需求，量化不确定性 | 3x |
+| 供应商沟通 | 手动写邮件、翻译 | AI 生成多语言询盘邮件、规格书翻译 | 5x |
+
+### 工具和方法
+
+不需要写代码的方案：
+
+| 工具 | 免费 | 用法 |
+|------|------|------|
+| ChatGPT / Claude | 是（有限额） | 粘贴竞品 Review 让 AI 分析痛点；输入品类让 AI 做市场分析框架 |
+| Perplexity | 是 | 搜索式调研：直接问"2025年 Amazon US 宠物用品趋势"，带引用来源 |
+| Google Gemini | 是 | 上传竞品截图，让 AI 分析 Listing 策略和定价模式 |
+| Google Trends | 是 | 验证品类搜索趋势，对比不同市场的需求差异 |
+
+需要写代码的进阶方案：
+
+| 工具 | 开源/免费 | 用途 |
+|------|-----------|------|
+| [BERTopic](https://github.com/MaartenGr/BERTopic) | 开源 | 对大量 Review 做主题建模，自动发现用户关注的核心话题 |
+| [KeyBERT](https://github.com/MaartenGr/KeyBERT) | 开源 | 从产品描述和评论中提取关键特征词 |
+| [Facebook Prophet](https://github.com/facebook/prophet) | 开源 | 时间序列预测，预测品类销量趋势和季节性 |
+| [Darts](https://github.com/unit8co/darts) | 开源 | 更强大的时间序列预测库，支持深度学习模型 |
+| [GluonTS](https://github.com/awslabs/gluonts) | 开源 | AWS 出品的概率时间序列预测，适合多 SKU 预测 |
+
+### 实战案例
+
+案例 1：用 ChatGPT 做竞品 Review 分析
+
+```
+Prompt 示例：
+
+你是一个资深的 Amazon 产品经理。我会给你一组竞品的 1-3 星差评。
+请分析这些差评，输出：
+1. 排名前5的用户痛点（按提及频率排序）
+2. 每个痛点的具体描述和代表性评论
+3. 针对每个痛点的产品改进建议
+4. 这些痛点中，哪些是你认为最容易通过产品设计解决的
+
+[粘贴差评内容]
+```
+
+案例 2：用 BERTopic 做大规模 Review 主题分析
+
+当你有几千条甚至上万条 Review 时，手动分析不现实。BERTopic 可以自动聚类发现主题。
+
+```python
+from bertopic import BERTopic
+import pandas as pd
+
+reviews = pd.read_csv("competitor_reviews.csv")
+topic_model = BERTopic(language="english", min_topic_size=10)
+topics, probs = topic_model.fit_transform(reviews["text"].tolist())
+topic_model.get_topic_info()  # 查看发现的主题
+```
+
+### 免费学习资源
 
 | 资源 | 说明 |
 |------|------|
-| [Marketplace Pulse](https://www.marketplacepulse.com/) | 电商市场数据 |
-| [Jungle Scout Blog](https://www.junglescout.com/blog/) | 行业趋势 |
-| [eComCrew](https://www.ecomcrew.com/) | 电商运营博客 |
-| [Seller Sessions](https://sellersessions.com/) | Amazon 深度分析 |
-| [Harvard Business Review](https://hbr.org/) | 商业管理 |
+| [YouTube: How to Use ChatGPT for Amazon Product Research](https://www.youtube.com/results?search_query=chatgpt+amazon+product+research) | 实操教程合集 |
+| [Kaggle: BERTopic Tutorial](https://www.kaggle.com/learn/intro-to-machine-learning) | 免费机器学习入门（为 BERTopic 打基础） |
+| [BERTopic 官方文档](https://maartengr.github.io/BERTopic/) | 完整教程和示例 |
+| [Facebook Prophet 官方教程](https://facebook.github.io/prophet/docs/quick_start.html) | 快速上手时间序列预测 |
+| [Google Trends](https://trends.google.com/) | 免费趋势分析工具 |
 
-### AI 工具速查
+[回到目录](#目录)
 
-| 工具 | 用途 |
+---
+
+## Listing 与内容创作中的 AI
+
+Listing 优化和内容创作是 AI 在电商领域最成熟、最容易上手的应用场景。AI 不是替代你写 Listing，而是把你从"从零开始写"升级到"编辑和优化 AI 初稿"。
+
+### AI 能做什么
+
+| 场景 | AI 做法 | 注意事项 |
+|------|---------|----------|
+| 标题生成 | 输入关键词和卖点，AI 生成多个标题变体 | 需要人工检查关键词覆盖和平台规范 |
+| 五点描述 | AI 根据产品特性和竞品分析生成卖点 | 确保差异化，不要和竞品雷同 |
+| A+ Content | AI 生成文案框架和模块内容 | 视觉设计仍需人工或设计工具 |
+| 多语言翻译 | AI 做本地化翻译（不只是直译） | 需要母语者审核关键市场 |
+| SEO 关键词 | AI 分析竞品 Listing 提取关键词策略 | 结合工具数据验证搜索量 |
+| 产品图片 | AI 生成场景图、生活方式图 | 主图仍建议用实拍白底图 |
+| 视频脚本 | AI 生成产品视频脚本和分镜 | 需要人工调整节奏和品牌调性 |
+
+### 工具和方法
+
+文案生成（不需要写代码）：
+
+| 工具 | 免费 | 用法 |
+|------|------|------|
+| ChatGPT / Claude | 是（有限额） | 生成 Listing 初稿、优化现有文案、分析竞品 Listing |
+| Google Gemini | 是 | 上传竞品截图让 AI 分析，多模态能力强 |
+| [Helium 10 Listing Builder](https://www.helium10.com/tools/listing-builder/) | 部分免费 | 内置 AI 生成，结合关键词数据 |
+| Microsoft Copilot | 是 | 在 Word 中直接用 AI 辅助写作 |
+
+多语言翻译：
+
+| 工具 | 免费 | 说明 |
+|------|------|------|
+| [DeepL](https://www.deepl.com/) | 是（有限额） | 翻译质量优于 Google Translate，尤其是欧洲语言 |
+| ChatGPT / Claude | 是（有限额） | 可以做"本地化翻译"而不是直译，告诉它目标市场的搜索习惯 |
+| [NLLB-200](https://github.com/facebookresearch/fairseq/tree/nllb) | 开源 | Meta 的 200 语言翻译模型，可本地部署 |
+| [MarianMT](https://huggingface.co/Helsinki-NLP) | 开源 | HuggingFace 上的翻译模型，支持多语言对 |
+
+图片生成：
+
+| 工具 | 免费 | 说明 |
+|------|------|------|
+| [Midjourney](https://www.midjourney.com/) | 付费 | 最高质量的 AI 图片生成，适合产品场景图 |
+| [DALL-E (ChatGPT)](https://chat.openai.com/) | Plus 用户 | 集成在 ChatGPT 中，方便迭代 |
+| [Stable Diffusion](https://github.com/Stability-AI/generative-models) | 开源免费 | 可本地运行，无限生成，需要 GPU |
+| [Leonardo.ai](https://leonardo.ai/) | 有免费额度 | 在线使用，适合产品图生成 |
+| [Canva AI](https://www.canva.com/) | 部分免费 | 集成 AI 图片生成和编辑 |
+| [ControlNet](https://github.com/lllyasviel/ControlNet) | 开源 | 精确控制图片生成（保持产品轮廓） |
+| [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) | 开源 | 基于现有产品图生成不同风格变体 |
+
+### 实战案例
+
+案例 1：用 AI 生成多语言 Listing
+
+```
+Prompt 示例：
+
+你是一个专业的 Amazon Listing 优化专家，精通德语市场。
+
+我的产品是一个便携式蓝牙音箱，核心卖点：
+- IPX7 防水
+- 24小时续航
+- 360度环绕音效
+- 重量仅 300g
+
+请为 Amazon.de 生成：
+1. 德语标题（不超过200字符，包含核心关键词）
+2. 5个 Bullet Points（德语，每条突出一个卖点，融入德国消费者关心的点）
+3. 产品描述（德语，200字以内）
+
+要求：
+- 不是直译，要符合德国消费者的搜索习惯和表达方式
+- 融入德语市场常用的搜索关键词
+- 语气专业但不生硬
+```
+
+案例 2：用 AI 分析竞品 Listing 策略
+
+```
+Prompt 示例：
+
+分析以下3个竞品的 Amazon Listing，对比它们的策略差异：
+
+[竞品A标题和五点]
+[竞品B标题和五点]
+[竞品C标题和五点]
+
+请输出：
+1. 三个竞品各自的核心定位和差异化策略
+2. 它们共同强调的卖点（说明这是品类的"必备项"）
+3. 它们各自独有的卖点（说明这是差异化机会）
+4. 关键词覆盖对比（哪些关键词被多个竞品使用）
+5. 基于以上分析，我的 Listing 应该如何差异化定位
+```
+
+### 免费学习资源
+
+| 资源 | 说明 |
 |------|------|
-| [ChatGPT](https://chat.openai.com/) / [Claude](https://claude.ai/) | 通用 AI 助手（文案、分析、编程） |
-| [Midjourney](https://www.midjourney.com/) | AI 图片生成（产品图、广告素材） |
-| [GitHub Copilot](https://github.com/features/copilot) / [Kiro](https://kiro.dev/) | AI 编程助手 |
-| [Zapier](https://zapier.com/) / [Make](https://www.make.com/) / [n8n](https://n8n.io/) | 工作流自动化 |
-| [Streamlit](https://streamlit.io/) | 快速搭建数据应用 |
-| [Ollama](https://github.com/ollama/ollama) | 本地运行开源 AI 模型 |
+| [YouTube: AI Amazon Listing Optimization](https://www.youtube.com/results?search_query=ai+amazon+listing+optimization+2025) | 实操教程合集 |
+| [YouTube: Midjourney Product Photography](https://www.youtube.com/results?search_query=midjourney+product+photography+ecommerce) | AI 产品图生成教程 |
+| [Stable Diffusion WebUI 教程](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki) | 免费本地 AI 图片生成 |
+| [DeepL 官方文档](https://www.deepl.com/docs-api) | API 文档，可批量翻译 |
+| [HuggingFace NLP Course](https://huggingface.co/learn/nlp-course) | 免费 NLP 课程，理解翻译模型原理 |
+
+[回到目录](#目录)
+
+---
+
+## 广告优化中的 AI
+
+Amazon PPC 广告是数据密集型工作，天然适合 AI 介入。从关键词扩展到竞价优化，从文案测试到效果预测，AI 可以在广告的每个环节提供杠杆。
+
+### AI 能做什么
+
+| 场景 | AI 做法 |
+|------|---------|
+| 关键词扩展 | AI 语义分析发现相关长尾词，不只是字面匹配 |
+| 否定关键词 | AI 分析搜索词报告，自动识别浪费性关键词 |
+| 广告文案 | AI 批量生成 Headline 变体，加速 A/B 测试 |
+| 竞价优化 | 预测模型估算不同竞价下的转化概率 |
+| 预算分配 | AI 分析各 Campaign 的边际 ROAS，优化预算分配 |
+| 效果预测 | 基于历史数据预测广告效果，辅助决策 |
+
+### 工具和方法
+
+不需要写代码：
+
+| 工具 | 免费 | 用法 |
+|------|------|------|
+| ChatGPT / Claude | 是（有限额） | 分析搜索词报告、生成否定关键词列表、写广告文案变体 |
+| [Amazon Advertising Learning Console](https://learningconsole.amazonadvertising.com/) | 是 | 官方免费课程，理解广告体系 |
+| Google Gemini | 是 | 上传广告报告截图，让 AI 分析优化方向 |
+
+需要写代码的进阶方案：
+
+| 工具 | 开源/免费 | 用途 |
+|------|-----------|------|
+| [SentenceTransformers](https://github.com/UKPLab/sentence-transformers) | 开源 | 关键词语义相似度分析，发现语义相关但字面不同的关键词 |
+| [BGE Embedding](https://github.com/FlagOpen/FlagEmbedding) | 开源 | 中英文双语嵌入模型，分析关键词竞争度 |
+| [DeepCTR](https://github.com/shenweichen/DeepCTR) | 开源 | 点击率预测框架，预测广告转化概率 |
+| [AutoGluon](https://github.com/autogluon/autogluon) | 开源 | 自动化机器学习，无需深度 ML 知识即可建模 |
+| [LightGBM](https://github.com/microsoft/LightGBM) | 开源 | 高效梯度提升框架，适合广告效果预测 |
+
+### 实战案例
+
+案例：用 ChatGPT 分析搜索词报告
+
+```
+Prompt 示例：
+
+你是一个 Amazon PPC 广告优化专家。
+
+以下是我的搜索词报告数据（过去30天）：
+[粘贴搜索词、展示量、点击量、花费、订单数、销售额]
+
+请分析并输出：
+1. 高转化关键词 TOP 10（按 ROAS 排序），建议提高竞价
+2. 高花费低转化关键词 TOP 10，建议降低竞价或否定
+3. 高展示低点击关键词（CTR < 0.3%），分析可能原因
+4. 建议添加的否定关键词列表
+5. 整体优化建议（预算重新分配方向）
+```
+
+### 免费学习资源
+
+| 资源 | 说明 |
+|------|------|
+| [Amazon Advertising Learning Console](https://learningconsole.amazonadvertising.com/) | 官方免费广告课程（必学） |
+| [YouTube: Amazon PPC with AI](https://www.youtube.com/results?search_query=amazon+ppc+ai+optimization+2025) | AI 广告优化教程 |
+| [Google: Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course) | 免费 ML 入门，理解预测模型原理 |
+| [Kaggle: Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) | 免费 ML 微课程 |
+| [AutoGluon 官方教程](https://auto.gluon.ai/stable/tutorials/) | 自动化 ML 快速上手 |
+
+[回到目录](#目录)
+
+---
+
+## 客服与售后中的 AI
+
+客服是重复性最高的运营环节之一，也是 AI 最容易产生立竿见影效果的场景。多语言回复、差评分析、申诉信撰写，AI 都能大幅提效。
+
+### AI 能做什么
+
+| 场景 | AI 做法 |
+|------|---------|
+| 买家消息回复 | AI 生成多语言回复模板，保持专业且符合平台规范 |
+| 差评分析 | 批量分析差评内容，提取产品问题的共性模式 |
+| 差评回复 | AI 生成得体的公开回复，展示品牌态度 |
+| 申诉信撰写 | AI 辅助写 Plan of Action，分析违规原因并生成改善方案 |
+| FAQ 知识库 | 基于产品手册和历史问答构建智能知识库 |
+| 多语言支持 | 实时翻译买家消息，生成对应语言的回复 |
+
+### 工具和方法
+
+不需要写代码：
+
+| 工具 | 免费 | 用法 |
+|------|------|------|
+| ChatGPT / Claude | 是（有限额） | 生成客服回复模板、分析差评、写申诉信 |
+| [DeepL](https://www.deepl.com/) | 是（有限额） | 翻译买家消息和回复 |
+| Google Gemini | 是 | 上传差评截图批量分析 |
+
+需要写代码的进阶方案：
+
+| 工具 | 开源/免费 | 用途 |
+|------|-----------|------|
+| [LlamaIndex](https://github.com/run-llama/llama_index) | 开源 | 构建产品 FAQ 知识库，AI 自动检索回答 |
+| [Haystack](https://github.com/deepset-ai/haystack) | 开源 | 构建问答系统，连接产品文档和政策 |
+| [NLLB-200](https://github.com/facebookresearch/fairseq/tree/nllb) | 开源 | Meta 的 200 语言翻译模型，可本地部署 |
+| [FastChat](https://github.com/lm-sys/FastChat) | 开源 | 部署本地客服聊天机器人 |
+| [Ollama](https://github.com/ollama/ollama) | 开源 | 本地运行 LLM，保护客户数据隐私 |
+
+### 实战案例
+
+案例 1：用 AI 批量分析差评并生成改善方案
+
+```
+Prompt 示例：
+
+你是一个电商产品质量分析师。以下是我的产品最近60天的所有1-3星评论。
+
+请完成以下分析：
+1. 将所有差评按问题类型分类（如：质量问题、功能不符、物流损坏、使用困难等）
+2. 每个类型的出现频率和占比
+3. 每个类型中最有代表性的3条评论原文
+4. 针对每个问题类型，给出：
+   - 短期应对措施（Listing 调整、客服话术）
+   - 长期改善方案（产品改进、供应商沟通要点）
+5. 优先级排序：哪个问题最值得先解决（考虑频率和严重程度）
+
+[粘贴差评内容]
+```
+
+案例 2：用 AI 写账号申诉信
+
+```
+Prompt 示例：
+
+你是一个 Amazon 账号申诉专家。我的账号因为以下原因被暂停：
+[具体违规通知内容]
+
+请帮我撰写一份 Plan of Action (POA)，包含：
+1. Root Cause（根本原因分析）-- 承认问题，不推卸责任
+2. Immediate Actions（已采取的紧急措施）
+3. Preventive Measures（防止再次发生的长期措施）
+
+要求：
+- 语气诚恳、专业
+- 每个部分用具体的、可执行的行动项，不要空话
+- 符合 Amazon 申诉信的格式规范
+```
+
+### 免费学习资源
+
+| 资源 | 说明 |
+|------|------|
+| [LlamaIndex 官方教程](https://docs.llamaindex.ai/en/stable/getting_started/) | 免费，构建 RAG 知识库 |
+| [Haystack 官方教程](https://haystack.deepset.ai/tutorials) | 免费，构建问答系统 |
+| [YouTube: AI Customer Service for E-Commerce](https://www.youtube.com/results?search_query=ai+customer+service+ecommerce+amazon) | 实操教程 |
+| [YouTube: Amazon Appeal Letter with AI](https://www.youtube.com/results?search_query=amazon+appeal+letter+chatgpt) | AI 写申诉信教程 |
+| [Ollama 官方文档](https://ollama.com/) | 免费本地 LLM 部署 |
+
+[回到目录](#目录)
+
+---
+
+## 库存与供应链中的 AI
+
+库存管理和供应链是电商运营中最"数学密集"的环节。传统做法靠经验和 Excel，AI 可以把预测精度和决策质量提升一个量级。
+
+### AI 能做什么
+
+| 场景 | AI 做法 |
+|------|---------|
+| 需求预测 | 时间序列模型预测各 SKU 未来销量，考虑季节性和促销影响 |
+| 补货决策 | 基于预测结果自动计算最优补货量和补货时间 |
+| 库存优化 | 多仓库库存分配优化，平衡成本和时效 |
+| 供应商评估 | AI 分析历史交货数据，评估供应商可靠性 |
+| 物流路径 | 运筹优化选择最优物流方案 |
+| 单据处理 | OCR 自动识别发票、装箱单等文档 |
+
+### 工具和方法
+
+不需要写代码：
+
+| 工具 | 免费 | 用法 |
+|------|------|------|
+| ChatGPT / Claude | 是（有限额） | 分析库存数据、生成补货建议、计算安全库存 |
+| Google Sheets + AI | 是 | 用 Gemini 在 Sheets 中做简单预测 |
+
+需要写代码的进阶方案：
+
+| 工具 | 开源/免费 | 用途 |
+|------|-----------|------|
+| [Facebook Prophet](https://github.com/facebook/prophet) | 开源 | 最易上手的时间序列预测，支持季节性和节假日效应 |
+| [Darts](https://github.com/unit8co/darts) | 开源 | 更强大的时间序列库，支持深度学习模型 |
+| [GluonTS](https://github.com/awslabs/gluonts) | 开源 | AWS 出品，概率预测，适合多 SKU 场景 |
+| [NeuralProphet](https://github.com/ourownstory/neural_prophet) | 开源 | Prophet 的神经网络升级版 |
+| [OR-Tools](https://github.com/google/or-tools) | 开源 | Google 运筹优化工具，补货策略和仓库分配 |
+| [NetworkX](https://github.com/networkx/networkx) | 开源 | 供应链网络建模和分析 |
+| [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | 开源 | 多语言 OCR，自动识别发票和单据 |
+| [Tesseract](https://github.com/tesseract-ocr/tesseract) | 开源 | 经典 OCR 引擎 |
+
+### 实战案例
+
+案例：用 Prophet 预测 SKU 销量
+
+```python
+from prophet import Prophet
+import pandas as pd
+
+# 准备数据：日期列 ds，销量列 y
+df = pd.read_csv("daily_sales.csv")
+df.columns = ["ds", "y"]
+
+# 添加促销日（如 Prime Day、BFCM）
+model = Prophet(yearly_seasonality=True, weekly_seasonality=True)
+model.add_country_holidays(country_name="US")
+model.fit(df)
+
+# 预测未来90天
+future = model.make_future_dataframe(periods=90)
+forecast = model.predict(future)
+
+# 查看预测结果和不确定性区间
+model.plot(forecast)
+model.plot_components(forecast)
+```
+
+基于预测结果计算补货量：
+
+```
+Prompt 示例（给 ChatGPT）：
+
+我的产品预测未来90天日均销量为 50 件（置信区间 40-65）。
+当前库存 2000 件，FBA 在途 500 件。
+从下单到入仓的 Lead Time 是 45 天。
+安全库存天数我想设为 14 天。
+
+请帮我计算：
+1. 当前库存可以支撑多少天
+2. 最晚什么时候需要下新的采购订单
+3. 建议采购量（考虑最优和最坏情况）
+4. 如果 Lead Time 延长到 60 天，以上数字如何变化
+```
+
+### 免费学习资源
+
+| 资源 | 说明 |
+|------|------|
+| [Prophet 官方教程](https://facebook.github.io/prophet/docs/quick_start.html) | 免费，快速上手时间序列预测 |
+| [Darts 官方教程](https://unit8co.github.io/darts/) | 免费，更多模型选择 |
+| [Coursera: Supply Chain Analytics (Rutgers)](https://www.coursera.org/learn/supply-chain-analytics) | 免费旁听，供应链分析 |
+| [Google OR-Tools 教程](https://developers.google.com/optimization) | 免费，运筹优化入门 |
+| [YouTube: Demand Forecasting with Python](https://www.youtube.com/results?search_query=demand+forecasting+python+prophet+tutorial) | 实操教程 |
+
+[回到目录](#目录)
+
+---
+
+## 合规与风控中的 AI
+
+跨境电商的合规要求复杂且多变（不同国家、不同品类、不同平台），AI 可以帮你快速查询、分类和监控合规风险。
+
+### AI 能做什么
+
+| 场景 | AI 做法 |
+|------|---------|
+| 合规查询 | AI 快速查询不同国家/品类的认证要求和法规变化 |
+| HS Code 分类 | 机器学习模型自动分类产品海关编码 |
+| Listing 合规检查 | AI 扫描 Listing 文案，识别可能违反平台政策的内容 |
+| 图片合规检查 | 视觉模型检测产品图片中的潜在违规内容 |
+| 政策监控 | AI 追踪平台政策更新，评估对现有产品的影响 |
+| 知识产权排查 | AI 辅助检索商标和专利数据库 |
+
+### 工具和方法
+
+不需要写代码：
+
+| 工具 | 免费 | 用法 |
+|------|------|------|
+| ChatGPT / Claude | 是（有限额） | 查询合规要求、分析政策变化、生成合规清单 |
+| Perplexity | 是 | 带引用的合规信息搜索，可验证来源 |
+| Google Gemini | 是 | 上传产品图片检查是否有潜在合规问题 |
+
+需要写代码的进阶方案：
+
+| 工具 | 开源/免费 | 用途 |
+|------|-----------|------|
+| [scikit-learn](https://github.com/scikit-learn/scikit-learn) | 开源 | HS Code 自动分类模型 |
+| [YOLOv8](https://github.com/ultralytics/ultralytics) | 开源 | 产品图片违规内容检测 |
+| [GroundingDINO](https://github.com/IDEA-Research/GroundingDINO) | 开源 | 基于文本描述的图片内容检测 |
+| [DeBERTa](https://github.com/microsoft/DeBERTa) | 开源 | 文本分类，识别 Listing 中的敏感内容 |
+| [ElasticSearch](https://github.com/elastic/elasticsearch) | 开源 | 构建法规知识库，快速检索 |
+
+### 实战案例
+
+案例：用 AI 生成多市场合规对比表
+
+```
+Prompt 示例：
+
+我要在 Amazon US、DE、JP 三个站点销售一款儿童电动牙刷。
+
+请帮我生成一份合规要求对比表，包含：
+1. 每个市场需要的产品认证（如 FCC、CE、PSE 等）
+2. 包装和标签的特殊要求
+3. 电池/充电相关的运输限制
+4. 儿童产品的额外安全要求（如 CPSIA、EN 71 等）
+5. 预估认证费用范围和周期
+6. 需要注意的常见合规陷阱
+
+注意：请标注信息的时效性，法规可能已更新，建议我向认证机构确认最新要求。
+```
+
+### 免费学习资源
+
+| 资源 | 说明 |
+|------|------|
+| [YouTube: Amazon Product Compliance with AI](https://www.youtube.com/results?search_query=amazon+product+compliance+ai+tools) | AI 合规工具教程 |
+| [scikit-learn 官方教程](https://scikit-learn.org/stable/tutorial/) | 免费，机器学习分类入门 |
+| [YOLOv8 官方文档](https://docs.ultralytics.com/) | 免费，目标检测入门 |
+| [EU Product Safety Regulations](https://ec.europa.eu/safety-gate/) | 官方免费，欧盟产品安全法规 |
+
+[回到目录](#目录)
+
+---
+
+## 数据分析与 BI 中的 AI
+
+数据分析是电商运营从"凭感觉"到"看数据"的关键跃迁。AI 让这个过程更快、更深、门槛更低 -- 你甚至可以用自然语言直接查询数据。
+
+### AI 能做什么
+
+| 场景 | AI 做法 |
+|------|---------|
+| 数据探索 | 上传 CSV/Excel，用自然语言提问，AI 自动分析和可视化 |
+| 报表生成 | AI 自动从数据中提取关键洞察，生成分析报告 |
+| 异常检测 | AI 自动发现数据中的异常波动（销量骤降、退货率飙升） |
+| SQL 生成 | 用自然语言描述需求，AI 生成 SQL 查询 |
+| 仪表板搭建 | AI 辅助设计仪表板布局和指标选择 |
+| 财务建模 | AI 辅助构建 P&L 模型和场景分析 |
+
+### 工具和方法
+
+不需要写代码：
+
+| 工具 | 免费 | 用法 |
+|------|------|------|
+| ChatGPT (Advanced Data Analysis) | Plus 用户 | 上传 CSV/Excel，自然语言分析，自动生成图表 |
+| Claude | 是（有限额） | 粘贴数据表格，让 AI 分析趋势和异常 |
+| Google Gemini + Sheets | 是 | 在 Google Sheets 中用 AI 辅助分析 |
+| [Julius AI](https://julius.ai/) | 有免费额度 | 上传数据文件，自然语言分析和可视化 |
+| Microsoft Copilot + Excel | 是 | 在 Excel 中用 AI 辅助分析 |
+
+需要写代码的进阶方案：
+
+| 工具 | 开源/免费 | 用途 |
+|------|-----------|------|
+| [pandas-ai](https://github.com/gventuri/pandas-ai) | 开源 | 用自然语言查询 pandas DataFrame |
+| [Streamlit](https://streamlit.io/) | 开源 | 快速搭建数据仪表板和分析工具 |
+| [Metabase](https://github.com/metabase/metabase) | 开源 | 自托管 BI 工具，支持 SQL 和可视化 |
+| [Apache Superset](https://github.com/apache/superset) | 开源 | 企业级 BI 平台 |
+| [DuckDB](https://github.com/duckdb/duckdb) | 开源 | 高性能分析数据库，直接查询 CSV/Parquet |
+| [Polars](https://github.com/pola-rs/polars) | 开源 | 比 pandas 快 10-100x 的数据处理框架 |
+
+### 实战案例
+
+案例 1：用 ChatGPT 做销售数据分析
+
+```
+Prompt 示例：
+
+我上传了过去12个月的 Amazon 销售数据（包含日期、ASIN、销量、销售额、广告花费、退货数）。
+
+请帮我分析：
+1. 整体销售趋势（月度同比、环比）
+2. TOP 10 ASIN 的表现对比（销售额、利润率、退货率）
+3. 广告效率分析（TACoS 趋势、各 ASIN 的 ROAS）
+4. 异常检测：哪些 ASIN 在哪些月份出现了异常波动
+5. 季节性分析：哪些产品有明显的季节性模式
+6. 基于以上分析的3个关键行动建议
+
+请用图表展示关键发现。
+```
+
+案例 2：用 Streamlit 搭建运营仪表板
+
+```python
+import streamlit as st
+import pandas as pd
+
+st.title("Amazon 运营仪表板")
+
+uploaded_file = st.file_uploader("上传销售数据", type=["csv", "xlsx"])
+if uploaded_file:
+    df = pd.read_csv(uploaded_file)
+    
+    # 核心指标
+    col1, col2, col3 = st.columns(3)
+    col1.metric("总销售额", f"${df['revenue'].sum():,.0f}")
+    col2.metric("总订单数", f"{df['orders'].sum():,}")
+    col3.metric("平均客单价", f"${df['revenue'].sum()/df['orders'].sum():.2f}")
+    
+    # 趋势图
+    st.line_chart(df.groupby("date")["revenue"].sum())
+```
+
+### 免费学习资源
+
+| 资源 | 说明 |
+|------|------|
+| [Coursera: Google Data Analytics Certificate](https://www.coursera.org/professional-certificates/google-data-analytics) | 免费旁听，数据分析入门最佳路径 |
+| [Kaggle Learn](https://www.kaggle.com/learn) | 免费微课程：pandas、数据可视化、SQL |
+| [Mode SQL Tutorial](https://mode.com/sql-tutorial/) | 免费交互式 SQL 教程 |
+| [Streamlit 官方教程](https://docs.streamlit.io/get-started) | 免费，30分钟搭建第一个数据应用 |
+| [YouTube: Data Analysis with AI Tools](https://www.youtube.com/results?search_query=data+analysis+ai+tools+chatgpt+2025) | AI 数据分析教程 |
+| [DuckDB 官方教程](https://duckdb.org/docs/) | 免费，高性能数据查询 |
+
+[回到目录](#目录)
+
+---
+
+## 运营自动化与 AI Agent
+
+当你把前面各环节的 AI 应用串联起来，就进入了"运营自动化"的阶段。AI Agent 可以自主完成多步骤任务，把你从重复性工作中彻底解放出来。
+
+### AI 能做什么
+
+| 场景 | AI 做法 |
+|------|---------|
+| 日报/周报自动生成 | AI 自动拉取数据、分析趋势、生成报告 |
+| 库存预警 | 自动监控库存水平，触发补货提醒 |
+| 价格监控 | 自动追踪竞品价格变化，触发告警 |
+| 评论监控 | 自动分析新差评，生成回复建议 |
+| 广告自动优化 | AI Agent 根据规则自动调整竞价和预算 |
+| 多步骤工作流 | 多个 AI Agent 协作完成复杂任务 |
+
+### 工具和方法
+
+无代码/低代码自动化：
+
+| 工具 | 免费 | 用法 |
+|------|------|------|
+| [Zapier](https://zapier.com/) | 有免费额度 | 连接不同应用，触发自动化工作流 |
+| [Make (Integromat)](https://www.make.com/) | 有免费额度 | 可视化工作流编排，比 Zapier 更灵活 |
+| [n8n](https://n8n.io/) | 开源免费 | 可自部署的自动化平台，无限工作流 |
+| [Airtable](https://www.airtable.com/) | 有免费额度 | 数据库 + 自动化，适合运营数据管理 |
+
+AI Agent 框架（需要写代码）：
+
+| 工具 | 开源/免费 | 用途 |
+|------|-----------|------|
+| [LangChain](https://github.com/langchain-ai/langchain) | 开源 | 最流行的 LLM 应用开发框架 |
+| [LangGraph](https://github.com/langchain-ai/langgraph) | 开源 | 基于图的 AI Agent 工作流编排 |
+| [CrewAI](https://github.com/joaomdmoura/crewAI) | 开源 | 多 Agent 协作框架，定义角色和任务 |
+| [AutoGen](https://github.com/microsoft/autogen) | 开源 | 微软出品的多 Agent 对话框架 |
+| [Prefect](https://github.com/PrefectHQ/prefect) | 开源 | 数据工作流编排和调度 |
+| [Airflow](https://github.com/apache/airflow) | 开源 | 企业级工作流管理平台 |
+
+### 实战案例
+
+案例 1：用 n8n 搭建自动化运营监控
+
+场景：每天早上自动检查关键指标，异常时发送告警。
+
+工作流设计：
+1. 定时触发（每天早上 9:00）
+2. 从 Google Sheets / 数据库拉取昨日销售数据
+3. 调用 AI（ChatGPT API）分析数据，判断是否有异常
+4. 如果有异常，发送 Slack / 邮件告警，附带 AI 的分析和建议
+5. 无论是否异常，生成日报存入指定文件夹
+
+案例 2：用 CrewAI 构建竞品监控 Agent
+
+```python
+from crewai import Agent, Task, Crew
+
+# 定义 Agent
+researcher = Agent(
+    role="竞品研究员",
+    goal="监控竞品的价格、评论和 Listing 变化",
+    backstory="你是一个资深的电商竞品分析师"
+)
+
+analyst = Agent(
+    role="数据分析师",
+    goal="分析竞品变化对我们的影响并给出建议",
+    backstory="你是一个数据驱动的电商运营专家"
+)
+
+# 定义任务
+monitor_task = Task(
+    description="检查以下竞品 ASIN 的最新价格和评论变化：[ASIN列表]",
+    agent=researcher
+)
+
+analysis_task = Task(
+    description="基于竞品变化数据，分析对我们产品的影响并给出行动建议",
+    agent=analyst
+)
+
+# 组建团队执行
+crew = Crew(agents=[researcher, analyst], tasks=[monitor_task, analysis_task])
+result = crew.kickoff()
+```
+
+### 免费学习资源
+
+| 资源 | 说明 |
+|------|------|
+| [n8n 官方教程](https://docs.n8n.io/) | 免费，自动化工作流入门 |
+| [LangChain 官方教程](https://python.langchain.com/docs/get_started/introduction) | 免费，LLM 应用开发 |
+| [DeepLearning.AI: LangChain for LLM Application Development](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) | 免费短课 |
+| [DeepLearning.AI: AI Agents in LangGraph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/) | 免费短课 |
+| [DeepLearning.AI: Multi AI Agent Systems with crewAI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/) | 免费短课 |
+| [CrewAI 官方文档](https://docs.crewai.com/) | 免费，多 Agent 系统 |
+| [YouTube: n8n Automation for E-Commerce](https://www.youtube.com/results?search_query=n8n+automation+ecommerce) | 实操教程 |
+
+[回到目录](#目录)
+
+---
+
+## AI 编程能力建设
+
+你不需要成为程序员，但掌握基础编程能力会让你能用 AI 做更多事。好消息是：AI 本身就是最好的编程老师和助手。
+
+### 学习路径
+
+```
+Level 0: 零代码
+  用 ChatGPT / Claude 做分析、写文案、翻译
+  用 Zapier / Make / n8n 做自动化
+  用 Google Sheets + AI 做数据处理
+
+Level 1: Python 基础（2-4周）
+  变量、循环、函数、文件读写
+  pandas 数据处理
+  用 AI 辅助写代码（不需要记语法）
+
+Level 2: 数据处理（2-4周）
+  pandas 进阶（分组、合并、透视）
+  openpyxl 自动化 Excel
+  批量处理文件
+  定时任务
+
+Level 3: AI 应用开发（4-8周）
+  调用 AI API（OpenAI / Anthropic）
+  构建 RAG 知识库（LlamaIndex）
+  搭建数据应用（Streamlit）
+  部署和分享工具
+
+Level 4: AI Agent 和系统（持续）
+  LangChain / LangGraph
+  多 Agent 系统
+  本地模型部署
+  微调模型
+```
+
+### 核心原则：AI 辅助编程
+
+你不需要记住语法。现代 AI 编程助手可以：
+- 根据你的自然语言描述生成代码
+- 解释你看不懂的代码
+- 调试错误并给出修复方案
+- 把你的想法转化为可运行的程序
+
+| 工具 | 免费 | 说明 |
+|------|------|------|
+| [GitHub Copilot](https://github.com/features/copilot) | 学生免费 | 最流行的 AI 编程助手 |
+| [Kiro](https://kiro.dev/) | 免费 | AI IDE，spec 驱动开发 |
+| [Cursor](https://cursor.sh/) | 有免费额度 | AI-first 代码编辑器 |
+| ChatGPT / Claude | 是（有限额） | 粘贴代码让 AI 解释、调试、改进 |
+| [Google Colab](https://colab.research.google.com/) | 是 | 免费在线 Python 环境，无需安装 |
+| [Replit](https://replit.com/) | 有免费额度 | 在线 IDE，内置 AI 助手 |
+
+### 免费学习资源
+
+Python 入门（选一个即可）：
+
+| 资源 | 说明 |
+|------|------|
+| [Coursera: Python for Everybody (Univ. of Michigan)](https://www.coursera.org/specializations/python) | 免费旁听，最经典的 Python 入门 |
+| [freeCodeCamp: Python](https://www.freecodecamp.org/learn/scientific-computing-with-python/) | 完全免费 |
+| [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) | 免费在线书，实用自动化导向 |
+| [Kaggle: Python Course](https://www.kaggle.com/learn/python) | 免费微课程，交互式 |
+| [YouTube: Python for Beginners (Corey Schafer)](https://www.youtube.com/@coreyms) | 免费，高质量教程 |
+| [YouTube: Programming with Mosh - Python](https://www.youtube.com/@programmingwithmosh) | 免费，6小时完整教程 |
+
+数据处理：
+
+| 资源 | 说明 |
+|------|------|
+| [Kaggle: Pandas Course](https://www.kaggle.com/learn/pandas) | 免费，pandas 入门最快路径 |
+| [Coursera: Data Analysis with Python (IBM)](https://www.coursera.org/learn/data-analysis-with-python) | 免费旁听 |
+
+AI 应用开发：
+
+| 资源 | 说明 |
+|------|------|
+| [DeepLearning.AI: Building Systems with ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/) | 免费短课 |
+| [DeepLearning.AI: LangChain for LLM Application Development](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) | 免费短课 |
+| [DeepLearning.AI: Building RAG Agents with LlamaIndex](https://www.deeplearning.ai/short-courses/building-agentic-rag-with-llamaindex/) | 免费短课 |
+| [LlamaIndex 官方教程](https://docs.llamaindex.ai/en/stable/getting_started/) | 免费 |
+| [Streamlit 官方教程](https://docs.streamlit.io/get-started) | 免费 |
+| [HuggingFace NLP Course](https://huggingface.co/learn/nlp-course) | 免费，NLP 和模型使用 |
+
+本地模型部署和微调：
+
+| 资源 | 说明 |
+|------|------|
+| [Ollama 官方文档](https://ollama.com/) | 免费，一行命令运行本地 LLM |
+| [HuggingFace PEFT 教程](https://huggingface.co/docs/peft) | 免费，LoRA 微调入门 |
+| [DeepLearning.AI: Finetuning Large Language Models](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/) | 免费短课 |
+
+[回到目录](#目录)
+
+---
+
+## AI 工具速查表
+
+按场景快速查找适合的 AI 工具。标注 [免费] 的工具完全免费或有实用的免费额度。
+
+### 通用 AI 助手
+
+| 工具 | 免费 | 最适合场景 |
+|------|------|------------|
+| [ChatGPT](https://chat.openai.com/) | [免费] | 文案、分析、代码、通用任务 |
+| [Claude](https://claude.ai/) | [免费] | 长文本分析、结构化输出、代码 |
+| [Google Gemini](https://gemini.google.com/) | [免费] | 多模态分析（图片+文本） |
+| [Perplexity](https://www.perplexity.ai/) | [免费] | 带引用的搜索式调研 |
+| [Kimi](https://kimi.moonshot.cn/) | [免费] | 中文长文本处理 |
+
+### 内容创作
+
+| 工具 | 免费 | 最适合场景 |
+|------|------|------------|
+| [Midjourney](https://www.midjourney.com/) | 付费 | 高质量产品图和营销素材 |
+| [Leonardo.ai](https://leonardo.ai/) | [免费] | 在线 AI 图片生成 |
+| [Stable Diffusion](https://github.com/Stability-AI/generative-models) | [免费] 开源 | 本地无限图片生成 |
+| [Canva AI](https://www.canva.com/) | [免费] | 图片编辑和设计 |
+| [DeepL](https://www.deepl.com/) | [免费] | 高质量翻译 |
+| [ControlNet](https://github.com/lllyasviel/ControlNet) | [免费] 开源 | 精确控制图片生成 |
+
+### 数据分析
+
+| 工具 | 免费 | 最适合场景 |
+|------|------|------------|
+| [Julius AI](https://julius.ai/) | [免费] | 上传数据自然语言分析 |
+| [pandas-ai](https://github.com/gventuri/pandas-ai) | [免费] 开源 | 自然语言查询数据 |
+| [Streamlit](https://streamlit.io/) | [免费] 开源 | 快速搭建数据应用 |
+| [Metabase](https://github.com/metabase/metabase) | [免费] 开源 | 自托管 BI 工具 |
+| [DuckDB](https://github.com/duckdb/duckdb) | [免费] 开源 | 高性能数据查询 |
+
+### 预测和建模
+
+| 工具 | 免费 | 最适合场景 |
+|------|------|------------|
+| [Facebook Prophet](https://github.com/facebook/prophet) | [免费] 开源 | 时间序列预测（最易上手） |
+| [Darts](https://github.com/unit8co/darts) | [免费] 开源 | 高级时间序列预测 |
+| [AutoGluon](https://github.com/autogluon/autogluon) | [免费] 开源 | 自动化机器学习 |
+| [BERTopic](https://github.com/MaartenGr/BERTopic) | [免费] 开源 | 文本主题建模 |
+| [OR-Tools](https://github.com/google/or-tools) | [免费] 开源 | 运筹优化 |
+
+### 自动化
+
+| 工具 | 免费 | 最适合场景 |
+|------|------|------------|
+| [n8n](https://n8n.io/) | [免费] 开源 | 自部署工作流自动化 |
+| [Zapier](https://zapier.com/) | [免费] 有限额 | 无代码应用连接 |
+| [Make](https://www.make.com/) | [免费] 有限额 | 可视化工作流 |
+
+### AI 开发框架
+
+| 工具 | 免费 | 最适合场景 |
+|------|------|------------|
+| [LangChain](https://github.com/langchain-ai/langchain) | [免费] 开源 | LLM 应用开发 |
+| [LlamaIndex](https://github.com/run-llama/llama_index) | [免费] 开源 | RAG 知识库构建 |
+| [CrewAI](https://github.com/joaomdmoura/crewAI) | [免费] 开源 | 多 Agent 协作 |
+| [Ollama](https://github.com/ollama/ollama) | [免费] 开源 | 本地运行 LLM |
+| [vLLM](https://github.com/vllm-project/vllm) | [免费] 开源 | 高性能 LLM 推理 |
+
+### 编程助手
+
+| 工具 | 免费 | 最适合场景 |
+|------|------|------------|
+| [GitHub Copilot](https://github.com/features/copilot) | 学生免费 | IDE 内 AI 编程 |
+| [Kiro](https://kiro.dev/) | [免费] | AI IDE |
+| [Cursor](https://cursor.sh/) | [免费] 有限额 | AI-first 编辑器 |
+| [Google Colab](https://colab.research.google.com/) | [免费] | 在线 Python 环境 |
 
 [回到目录](#目录)
 
@@ -1024,8 +970,16 @@ AI 应用 -- 供应链中的 AI：
 
 ## 贡献
 
-欢迎提交 PR 补充学习资源、修正内容或分享你的学习经验。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+欢迎提交 PR 补充工具、案例、学习资源或修正内容。
+
+添加资源时请注意：
+- 优先推荐免费或开源的工具和课程
+- 注明是否免费
+- 简要说明为什么推荐
+- 如果是付费资源，说明为什么值得付费
+
+[GitHub 仓库](https://github.com/kangise/CBEC-AI-Hub) | [提交 Issue](https://github.com/kangise/CBEC-AI-Hub/issues)
 
 ## 许可证
 
-本项目采用 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) 许可证。
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) -- 自由使用，无需署名。

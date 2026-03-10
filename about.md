@@ -8,30 +8,29 @@ permalink: /about/
 
 ## 这个项目是什么
 
-一份以 AI 为核心的跨境电商运营实战指南。
+CBEC-AI-Hub 是 AAAI China Chapter 发起的开源项目，专注于 AI 在跨境电商领域的实际应用。
 
-它不教你电商基础知识，而是假设你已经有电商运营经验，帮你系统性地把 AI 融入运营的每一个环节 -- 选品、Listing、广告、客服、供应链、合规、数据分析、自动化。
-
-## 为什么做这个
-
-AI 工具在快速迭代，但大多数电商从业者还停留在"用 ChatGPT 写写文案"的阶段。实际上 AI 能做的远不止这些：需求预测、Review 主题建模、广告效果预测、多 Agent 自动化运营 -- 这些都是已经可以落地的应用。
-
-这个项目把这些散落在各处的知识、工具和案例整理成一份结构化的指南，让电商人能快速找到"我的这个问题，AI 能怎么帮我"。
+它不是链接聚合，而是提供原创的、可直接使用的实战内容：Prompt 模板、Colab Notebook、案例分析。
 
 ## 设计原则
 
-- AI 是主角，电商场景是背景
-- 每个环节都分"不需要写代码"和"需要写代码"两条路径
-- 优先推荐免费和开源的工具与课程
-- 实战案例驱动，包含可直接使用的 Prompt 模板和代码示例
+- 三类受众精准切分：运营人（不写代码）、技术人（写代码）、管理者（定策略）
+- 原创可执行内容：每个 Prompt 都经过实际业务验证，每个 Notebook 都能在 Colab 运行
+- 可追踪的学习路径：每个模块都有明确的完成标志
+- 免费优先：优先推荐免费和开源的工具与课程
+- 社区驱动：通过 AAAI China Chapter 社群持续更新和优化
+
+## AAAI China Chapter
+
+AAAI China Chapter (AAAI 中国分会) 致力于推动 AI 技术在中国的应用和发展。CBEC-AI-Hub 是 Chapter 在跨境电商垂直领域的实践项目。
 
 ## 贡献
 
-欢迎提交 PR 补充工具、案例或学习资源。
+欢迎提交 PR 贡献 Prompt 模板、Notebook、案例或修正内容。
 
 - [GitHub 仓库](https://github.com/kangise/CBEC-AI-Hub)
 - [提交 Issue](https://github.com/kangise/CBEC-AI-Hub/issues)
 
 ## 许可证
 
-[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) -- 自由使用，无需署名。
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)

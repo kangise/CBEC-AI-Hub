@@ -1,7 +1,7 @@
 # Site settings
 title: E-Commerce Operator Roadmap
 description: >-
-  🗺️ 电商操盘手全栈技能成长路线图 — 从新手到专家的完整学习体系。
+  电商操盘手全栈技能成长路线图 -- 从新手到专家的完整学习体系。
   系统化的技能树、分级定位、丰富的学习资源。
 
 baseurl: "/CBEC-AI-Hub"
@@ -18,16 +18,9 @@ minima:
   social_links:
     github: kangise
 
-# Collections
-collections:
-  roadmap:
-    output: true
-    permalink: /roadmap/:name/
-
 # Navigation
 header_pages:
   - index.md
-  - roadmap/00-self-assessment.md
   - about.md
   - CONTRIBUTING.md
 

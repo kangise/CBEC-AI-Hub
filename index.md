@@ -3,136 +3,114 @@ layout: home
 title: 首页
 ---
 
-# 欢迎来到 CBEC-AI-Hub 
-
-<div class="hero-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 2rem; border-radius: 10px; text-align: center; margin: 2rem 0;">
-  <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">跨境电商AI知识中心</h1>
-  <p style="font-size: 1.2rem; margin-bottom: 2rem;">发现100+精选AI工具、库和资源，构建智能电商系统</p>
-  <a href="#getting-started" style="background: white; color: #667eea; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block;">开始使用</a>
+<div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: white; padding: 3rem 2rem; border-radius: 12px; text-align: center; margin: 2rem 0;">
+  <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">🗺️ 电商操盘手全栈技能路线图</h1>
+  <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem;">E-Commerce Operator Full-Stack Skill Roadmap</p>
+  <p style="font-size: 1rem; max-width: 600px; margin: 0 auto 2rem;">从新手到战略家，6大阶段系统化成长路径<br/>找到你的起点，规划你的学习之路</p>
+  <a href="/CBEC-AI-Hub/roadmap/self-assessment/" style="background: #e94560; color: white; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; margin: 0 0.5rem;">🧭 开始定位</a>
 </div>
 
-##  您将在这里找到什么
+## 这是什么
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
-  
+这不是一个工具列表，而是一份**电商操盘手的成长蓝图**。
+
+它回答一个核心问题：**作为电商操盘手，我需要掌握哪些技能？我现在在哪里？下一步该学什么？**
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
-    <h3> 机器学习基础设施</h3>
-    <p>用于数据管理、工作流编排和模型部署的生产级工具</p>
-    <ul>
-      <li>使用 DVC 进行数据版本控制</li>
-      <li>使用 Kubeflow 进行工作流编排</li>
-      <li>使用 Seldon Core 进行模型服务</li>
-    </ul>
+    <h3>🏗️ 体系化</h3>
+    <p>6大阶段，覆盖从基础认知到战略领导力的完整技能树</p>
   </div>
-
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
-    <h3> 核心算法</h3>
-    <p>专门用于推荐系统、时间序列预测和自然语言处理的库</p>
-    <ul>
-      <li>使用 LightFM 进行推荐</li>
-      <li>使用 Prophet 进行预测</li>
-      <li>使用 spaCy 进行多语言NLP</li>
-    </ul>
+    <h3>🎚️ 分级定位</h3>
+    <p>5个水平等级，精准匹配你的当前阶段和下一步方向</p>
   </div>
-
   <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
-    <h3> 应用解决方案</h3>
-    <p>用于物流、合规、营销和客户体验的即用型解决方案</p>
-    <ul>
-      <li>HS编码分类</li>
-      <li>欺诈检测系统</li>
-      <li>多语言聊天机器人</li>
-    </ul>
+    <h3>📚 资源丰富</h3>
+    <p>Coursera、YouTube、书籍、工具 — 每个模块配备多元学习资源</p>
   </div>
-
-</div>
-
-##  数据概览
-
-<div style="display: flex; justify-content: space-around; text-align: center; margin: 3rem 0; padding: 2rem; background: #f6f8fa; border-radius: 8px;">
-  <div>
-    <h2 style="color: #0366d6; margin: 0;">100+</h2>
-    <p>精选工具</p>
-  </div>
-  <div>
-    <h2 style="color: #28a745; margin: 0;">15+</h2>
-    <p>分类</p>
-  </div>
-  <div>
-    <h2 style="color: #6f42c1; margin: 0;">6</h2>
-    <p>支持语言</p>
-  </div>
-  <div>
-    <h2 style="color: #d73a49; margin: 0;">2</h2>
-    <p>案例研究</p>
+  <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem;">
+    <h3>🛠️ 实战导向</h3>
+    <p>每个阶段都有明确的实践项目和能力检验标准</p>
   </div>
 </div>
 
-##  开始使用 {#getting-started}
+## 路线图总览
 
-### 开发者
-1. **浏览[主仓库](https://github.com/kangise/CBEC-AI-Hub)** - 探索我们精选的工具列表
-2. **查看[案例研究](/case-studies/)** - 从真实世界的实施中学习
-3. **加入讨论** - 分享您的经验并提出问题
+<div style="margin: 2rem 0;">
 
-### 研究人员
-1. **探索数据集** - 为您的研究找到高质量数据集
-2. **审查算法** - 发现最先进的方法
-3. **贡献发现** - 与社区分享您的研究
-
-### 业务领导者
-1. **了解全景** - 获得可用AI解决方案的概览
-2. **评估工具** - 为您的用例比较不同方法
-3. **规划实施** - 使用我们的案例研究作为实施指南
-
-##  精选案例研究
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin: 2rem 0;">
-  
-  <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem; background: white;">
-    <h3> 智能HS编码分类</h3>
-    <p>学习如何使用BERT和机器学习构建产品海关编码自动分类系统。</p>
-    <div style="margin: 1rem 0;">
-      <span style="background: #e1f5fe; color: #01579b; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">BERT</span>
-      <span style="background: #f3e5f5; color: #4a148c; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">FastAPI</span>
-      <span style="background: #e8f5e8; color: #1b5e20; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">合规</span>
-    </div>
-    <a href="/case-studies/hs-code-classification/" style="color: #0366d6; text-decoration: none;">阅读案例研究 →</a>
+<div style="display: flex; align-items: center; padding: 1rem; margin: 0.5rem 0; border-left: 4px solid #6c757d; background: #f8f9fa; border-radius: 0 8px 8px 0;">
+  <div style="min-width: 40px; font-size: 1.5rem;">⬜</div>
+  <div>
+    <strong><a href="/CBEC-AI-Hub/roadmap/foundation/" style="color: #333; text-decoration: none;">Stage 1: 基础认知</a></strong><br/>
+    <span style="font-size: 0.9rem; color: #666;">电商生态 · 平台规则 · 商业模式 · 基础财务 · 法规入门</span>
   </div>
+</div>
 
-  <div style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem; background: white;">
-    <h3> 多语言产品推荐</h3>
-    <p>了解如何为全球电商构建跨语言和文化的推荐系统。</p>
-    <div style="margin: 1rem 0;">
-      <span style="background: #fff3e0; color: #e65100; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">LightFM</span>
-      <span style="background: #f1f8e9; color: #33691e; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">spaCy</span>
-      <span style="background: #fce4ec; color: #880e4f; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">多语言</span>
-    </div>
-    <a href="/case-studies/multilingual-recommendation/" style="color: #0366d6; text-decoration: none;">阅读案例研究 →</a>
+<div style="display: flex; align-items: center; padding: 1rem; margin: 0.5rem 0; border-left: 4px solid #28a745; background: #f8f9fa; border-radius: 0 8px 8px 0;">
+  <div style="min-width: 40px; font-size: 1.5rem;">🟩</div>
+  <div>
+    <strong><a href="/CBEC-AI-Hub/roadmap/operations/" style="color: #333; text-decoration: none;">Stage 2: 运营实战</a></strong><br/>
+    <span style="font-size: 0.9rem; color: #666;">选品 · Listing优化 · PPC广告 · 库存物流 · 客服售后 · 合规</span>
   </div>
+</div>
+
+<div style="display: flex; align-items: center; padding: 1rem; margin: 0.5rem 0; border-left: 4px solid #ffc107; background: #f8f9fa; border-radius: 0 8px 8px 0;">
+  <div style="min-width: 40px; font-size: 1.5rem;">🟨</div>
+  <div>
+    <strong><a href="/CBEC-AI-Hub/roadmap/growth/" style="color: #333; text-decoration: none;">Stage 3: 增长进阶</a></strong><br/>
+    <span style="font-size: 0.9rem; color: #666;">品牌建设 · 站外引流 · 多渠道扩展 · 用户运营 · 新市场拓展</span>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center; padding: 1rem; margin: 0.5rem 0; border-left: 4px solid #fd7e14; background: #f8f9fa; border-radius: 0 8px 8px 0;">
+  <div style="min-width: 40px; font-size: 1.5rem;">🟧</div>
+  <div>
+    <strong><a href="/CBEC-AI-Hub/roadmap/analytics/" style="color: #333; text-decoration: none;">Stage 4: 数据驱动</a></strong><br/>
+    <span style="font-size: 0.9rem; color: #666;">数据分析 · Excel进阶 · BI工具 · A/B测试 · 财务建模 · 竞品情报</span>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center; padding: 1rem; margin: 0.5rem 0; border-left: 4px solid #dc3545; background: #f8f9fa; border-radius: 0 8px 8px 0;">
+  <div style="min-width: 40px; font-size: 1.5rem;">🟥</div>
+  <div>
+    <strong><a href="/CBEC-AI-Hub/roadmap/automation/" style="color: #333; text-decoration: none;">Stage 5: 自动化 & AI</a></strong><br/>
+    <span style="font-size: 0.9rem; color: #666;">Python编程 · 数据处理 · 爬虫 · AI工具 · 工作流自动化 · 自建工具</span>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center; padding: 1rem; margin: 0.5rem 0; border-left: 4px solid #6f42c1; background: #f8f9fa; border-radius: 0 8px 8px 0;">
+  <div style="min-width: 40px; font-size: 1.5rem;">🟪</div>
+  <div>
+    <strong><a href="/CBEC-AI-Hub/roadmap/leadership/" style="color: #333; text-decoration: none;">Stage 6: 战略 & 领导力</a></strong><br/>
+    <span style="font-size: 0.9rem; color: #666;">团队管理 · 供应链战略 · 资本运作 · 全球化布局 · 行业影响力</span>
+  </div>
+</div>
 
 </div>
 
-##  社区
+## 水平等级
 
-加入我们不断壮大的开发者、研究人员和业务领导者社区，共同致力于跨境电商AI：
+| 等级 | 称号 | 典型画像 | 年限参考 |
+|------|------|----------|----------|
+| ⬜ L1 | 新手 Rookie | 刚入行，对电商有兴趣但缺乏实操 | 0-6个月 |
+| 🟩 L2 | 执行者 Executor | 能独立运营1-2个店铺/品牌 | 6月-2年 |
+| 🟨 L3 | 操盘手 Operator | 能独立操盘一个品牌的全盘运营 | 2-4年 |
+| 🟧 L4 | 专家 Expert | 数据驱动决策，能带小团队 | 4-6年 |
+| 🟥 L5 | 战略家 Strategist | 操盘多品牌/多市场，战略级决策 | 6年+ |
 
-- **[GitHub 讨论](https://github.com/kangise/CBEC-AI-Hub/discussions)** - 提问和分享想法
-- **[问题反馈](https://github.com/kangise/CBEC-AI-Hub/issues)** - 报告错误或请求功能
-- **[贡献指南](/contributing/)** - 了解如何贡献
+## 如何使用
 
-##  最近更新
-
-- **v1.0.0** - 初始发布，包含100+精选工具和资源
-- 添加了HS编码分类和多语言推荐的综合案例研究
-- 启动了GitHub Pages网站，改进了导航
-- 设置了自动链接检查和内容验证
+1. 完成 [🧭 自我评估问卷](/CBEC-AI-Hub/roadmap/self-assessment/) 确定你的当前等级
+2. 根据等级选择对应阶段开始学习
+3. 每个模块都有 checklist，完成后打勾
+4. 每个阶段都有实战项目，做完才算真正掌握
+5. 电商变化快，定期回顾和更新你的技能树
 
 ---
 
 <div style="text-align: center; margin: 3rem 0; padding: 2rem; background: #f6f8fa; border-radius: 8px;">
-  <h3>准备好构建跨境电商的未来了吗？</h3>
-  <p>探索我们精选的资源并加入社区！</p>
-  <a href="https://github.com/kangise/CBEC-AI-Hub" style="background: #0366d6; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 0 0.5rem;">在GitHub上查看</a>
-  <a href="/contributing/" style="background: #28a745; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 0 0.5rem;">贡献</a>
+  <h3>找到你的起点</h3>
+  <p>花10分钟完成自我评估，开始你的成长之路</p>
+  <a href="/CBEC-AI-Hub/roadmap/self-assessment/" style="background: #0366d6; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">🧭 开始自我评估</a>
 </div>

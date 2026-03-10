@@ -1,9 +1,8 @@
 # Site settings
-title: CBEC-AI-Hub
+title: E-Commerce Operator Roadmap
 description: >-
-  🌍 A comprehensive, community-driven knowledge hub for AI solutions 
-  in cross-border e-commerce. Discover 100+ curated tools, libraries, 
-  and resources to build intelligent e-commerce systems.
+  🗺️ 电商操盘手全栈技能成长路线图 — 从新手到专家的完整学习体系。
+  系统化的技能树、分级定位、丰富的学习资源。
 
 baseurl: "/CBEC-AI-Hub"
 url: "https://kangise.github.io"
@@ -18,20 +17,19 @@ minima:
   skin: dark
   social_links:
     github: kangise
-    twitter: your_twitter # 可选
 
 # Collections
 collections:
-  case_studies:
+  roadmap:
     output: true
-    permalink: /:collection/:name/
+    permalink: /roadmap/:name/
 
 # Navigation
 header_pages:
   - index.md
-  - case-studies.md
-  - contributing.md
+  - roadmap/00-self-assessment.md
   - about.md
+  - CONTRIBUTING.md
 
 # Plugins
 plugins:
@@ -51,3 +49,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - assets/
+  - datasets/
+  - examples/
+  - scripts/
+  - tests/
+  - tools/
+  - docs/
+  - PROJECT_UPDATE_SUMMARY.md
+  - requirements.txt

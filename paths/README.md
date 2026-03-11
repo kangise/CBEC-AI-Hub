@@ -4,6 +4,21 @@
 
 AI 正在重塑跨境电商的每一个环节。根据你的角色和目标，选择最适合的学习路径。
 
+> 🌟 **推荐先修**：无论你选择哪条路径，建议先完成 [Path 0: AI 基础先行](0-foundations/)，建立 AI 认知基础。
+
+---
+
+## Path 0: AI 基础先行（推荐先修）
+
+不确定 AI 到底是什么、能做什么？从这里开始。4 个模块带你从零建立 AI 认知。
+
+| 模块 | 主题 | 预计时间 |
+|------|------|----------|
+| [F1. AI 的前世今生](0-foundations/f1-ai-evolution.md) | 从机器学习到 Agent 的发展脉络 | 2 小时 |
+| [F2. Prompt 工程](0-foundations/f2-prompt-engineering.md) | CRISP 框架 + 高级技巧 + 场景模板 | 3 小时 |
+| [F3. 知识库与 RAG](0-foundations/f3-rag-knowledge.md) | Embedding、向量数据库、RAG 架构 | 2 小时 |
+| [F4. 自动化与 Agent](0-foundations/f4-agent-automation.md) | 从脚本到 Agent 的三层自动化 | 2 小时 |
+
 ---
 
 ## 选择你的路径

@@ -4,34 +4,99 @@ title: 贡献指南
 permalink: /contributing/
 ---
 
-# 贡献指南
+# 贡献指南 | Contributing Guide
 
-欢迎为这个路线图做贡献。以下是几种参与方式：
+欢迎为 CBEC-AI-Hub 做贡献！以下是参与方式和提交标准。
 
-## 你可以做什么
+Welcome to CBEC-AI-Hub! Here's how you can contribute.
 
-- **补充学习资源** — 发现了好的课程、视频、书籍或工具？提交 PR 添加到对应模块
-- **修正内容** — 发现链接失效、信息过时或描述不准确？帮忙修正
-- **分享经验** — 你的学习路径和实战经验对其他人很有价值
-- **翻译** — 帮助将内容翻译成英文或其他语言
+---
 
-## 提交流程
+## 你可以做什么 | Ways to Contribute
+
+### 🎯 提交 Prompt 模板（最简单！）
+
+**不需要会 Git/PR** — 直接通过 Issue 提交即可：
+
+1. 打开 [Prompt 提交模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=prompt_submission.md)
+2. 填写表单：模板名称、场景、Prompt 内容、使用效果
+3. 提交 Issue，维护者会审核并转化为正式模板文件
+4. 你会被标注为贡献者 ✨
+
+### 📓 提交 Notebook
+
+通过 [Notebook 提交模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=notebook_submission.md) 提交，要求：
+- 可在 Google Colab 免费版运行
+- 第一个代码单元格包含 `!pip install` 安装依赖
+- 包含中英文注释
+
+### 📋 提交案例 | Case Study
+
+通过 [案例提交模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md) 提交，要求包含具体量化指标。
+
+### 🔗 报告空链接
+
+发现失效链接？通过 [空链接报告模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=broken_link_report.md) 提交。
+
+### 🔧 其他贡献
+
+- **补充学习资源** — 发现好的课程、视频、工具？提交 PR
+- **修正内容** — 信息过时或描述不准确？帮忙修正
+- **翻译** — 帮助完善英文版内容
+
+---
+
+## Prompt 模板标准格式 | Prompt Template Format
+
+如果你通过 PR 直接提交 Prompt 模板文件，请使用以下格式：
+
+```markdown
+## 模板 N: 模板名称
+
+**场景**: 使用场景描述
+**推荐工具**: ChatGPT / Claude / Gemini
+**验证状态**: ✅ 已验证 / 🔄 社区贡献-待验证
+**贡献者**: [@your-github-handle](https://github.com/your-github-handle)
+
+### Prompt
+
+​```
+你的 Prompt 内容...
+​```
+
+### 预期输出示例
+
+> 简要展示输出格式和质量
+
+### 使用技巧
+
+- Tip 1
+- Tip 2
+
+---
+
+📎 **分享此模板**: `直接链接 URL`
+🏠 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub)
+```
+
+---
+
+## PR 提交流程 | PR Workflow
 
 1. Fork 仓库
-2. 创建分支 (`git checkout -b add-resource`)
+2. 创建分支 (`git checkout -b add-prompt-xxx`)
 3. 修改内容
-4. 提交 PR，简要说明你的更改
+4. 确保通过质量检查清单（见 PR 模板）
+5. 提交 PR，简要说明更改
 
-## 资源提交标准
-
-添加学习资源时，请确保：
+### 资源提交标准
 
 - 内容质量高，对电商从业者有实际帮助
 - 优先推荐免费或有免费层级的资源
 - 注明资源类型（📺课程 / 🎬视频 / 📚书籍 / 🔧工具 / 📖文章）
-- 简要说明为什么推荐这个资源
+- 简要说明为什么推荐
 
-## 格式参考
+### 格式参考
 
 ```markdown
 - 📺 [课程名称](URL) — 一句话说明为什么推荐
@@ -40,6 +105,9 @@ permalink: /contributing/
 - 🔧 [工具名](URL) — 一句话说明用途
 ```
 
-## 问题反馈
+---
+
+## 问题反馈 | Feedback
 
 - [提交 Issue](https://github.com/kangise/CBEC-AI-Hub/issues)
+- [查看路线图](roadmap/README.md)

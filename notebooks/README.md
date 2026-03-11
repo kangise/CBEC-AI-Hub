@@ -1,0 +1,39 @@
+# 📓 Notebook 实验室 | Notebook Lab
+
+> 可在 Google Colab 免费版直接运行的 Jupyter Notebook，零配置上手。
+> Ready-to-run Jupyter Notebooks on Google Colab free tier — zero setup required.
+
+最后更新: 2025-06-20
+
+---
+
+## Notebook 索引 | Index
+
+| Notebook | 内容 Content | 难度 Difficulty | 预计时间 Time | Colab |
+|----------|-------------|----------------|--------------|-------|
+| [b1-data-pipeline.ipynb](b1-data-pipeline.ipynb) | Amazon 报告数据处理 — 用 pandas 读取、清洗、计算核心指标 | ⭐ 入门 Beginner | 30 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/CBEC-AI-Hub/blob/main/notebooks/b1-data-pipeline.ipynb) |
+
+---
+
+## 如何使用 | How to Use
+
+1. 点击 Notebook 右侧的 **Open in Colab** 按钮
+2. 在 Colab 中点击 **Runtime → Run all** 运行所有单元格
+3. 所有依赖会在第一个代码单元格自动安装
+
+> 💡 所有 Notebook 均在 Google Colab 免费版测试通过，无需 GPU。
+
+---
+
+## 计划中 | Planned
+
+- Prophet 销量预测（中级）
+- BERTopic Review 主题分析（中级）
+- 产品 FAQ 知识库 RAG（中级）
+- 运营日报自动生成 Agent（高级）
+
+关注 [路线图](../roadmap/README.md) 了解最新进展。
+
+---
+
+📎 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub) — AI × 跨境电商实战知识库

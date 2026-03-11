@@ -1,8 +1,13 @@
+# GitHub Repository Topics (set manually in repo Settings → About):
+#   ai, cross-border-ecommerce, prompt-engineering, cbec, amazon,
+#   awesome-list, aaai, ecommerce, chatgpt, prompt-templates
+
 # Site settings
-title: E-Commerce Operator Roadmap
+title: "CBEC-AI-Hub: AI × Cross-Border E-Commerce Knowledge Hub"
 description: >-
-  电商操盘手全栈技能成长路线图 -- 从新手到专家的完整学习体系。
-  系统化的技能树、分级定位、丰富的学习资源。
+  AI × 跨境电商实战知识库 — 可直接使用的 Prompt 模板、Colab Notebook、实战案例。
+  The definitive AI guide for cross-border e-commerce — ready-to-use prompts, notebooks, and case studies.
+  An AAAI China Chapter Initiative.
 
 baseurl: "/CBEC-AI-Hub"
 url: "https://kangise.github.io"
@@ -30,6 +35,14 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# SEO
+twitter:
+  card: summary_large_image
+social:
+  name: CBEC-AI-Hub
+  links:
+    - https://github.com/kangise/CBEC-AI-Hub
+
 # Exclude from processing
 exclude:
   - .github/
@@ -42,6 +55,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - README_EN.md
   - assets/
   - datasets/
   - examples/
@@ -50,4 +64,7 @@ exclude:
   - tools/
   - docs/
   - PROJECT_UPDATE_SUMMARY.md
+  - CHANGELOG.md
+  - CODEOWNERS
+  - EVOLUTION_LOG.md
   - requirements.txt

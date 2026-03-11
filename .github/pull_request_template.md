@@ -1,49 +1,50 @@
-# 拉取请求
+# Pull Request
 
-## 描述
-对所做更改的简要描述。
+## 描述 | Description
 
-## 更改类型
-- [ ] 错误修复（不破坏现有功能的修复）
-- [ ] 新功能（不破坏现有功能的新增功能）
-- [ ] 破坏性更改（可能导致现有功能无法正常工作的修复或功能）
-- [ ] 文档更新
-- [ ] 资源添加/更新
-- [ ] 案例研究添加
+<!-- 简要描述你的更改 | Brief description of your changes -->
 
-## 所做更改
-- 
-- 
-- 
+## 更改类型 | Change Type
 
-## 跨境电商相关性
-这些更改如何有益于跨境电商AI应用？
+- [ ] 🐛 Bug 修复 | Bug fix
+- [ ] ✨ 新内容 | New content (Prompt / Notebook / Case Study)
+- [ ] 📝 文档更新 | Documentation update
+- [ ] 🔗 链接修复 | Link fix
+- [ ] 🔧 基础设施 | Infrastructure (CI, templates, config)
 
-## 检查清单
-- [ ] 我已阅读 [CONTRIBUTING.md](../CONTRIBUTING.md) 指南
-- [ ] 我的代码遵循此项目的样式指南
-- [ ] 我已对自己的更改进行了自我审查
-- [ ] 我已对代码进行了注释，特别是在难以理解的区域
-- [ ] 我已对文档进行了相应更改
-- [ ] 我的更改不会产生新的警告
-- [ ] 新的和现有的测试在本地通过我的更改
-- [ ] 任何依赖的更改都已合并和发布
+## 所做更改 | Changes Made
 
-## 资源添加专用
-- [ ] 资源是开源的或有有意义的免费层级
-- [ ] 资源得到积极维护（最近6个月内有更新）
-- [ ] 资源有良好的文档
-- [ ] 资源与跨境电商AI用例直接相关
-- [ ] 我已验证所有链接都能正常工作
-- [ ] 我已将资源放在适当的类别中
-- [ ] 我已遵循HTML表格格式（15%-35%-50%列宽）
-- [ ] 我已包含具体的跨境电商应用场景描述
+-
+-
 
-## 测试
-描述您运行的测试以验证您的更改。
+## 质量检查清单 | Quality Checklist
 
-## 截图（如适用）
-添加截图以帮助解释您的更改。
+### 通用 | General
+- [ ] 我已阅读 [CONTRIBUTING.md](../CONTRIBUTING.md)
+- [ ] 所有内部链接指向存在的文件 | All internal links point to existing files
+- [ ] 没有引入新的 "即将发布" 占位符 | No new "coming soon" placeholders without Issue link
+- [ ] 已对自己的更改进行自我审查 | Self-reviewed my changes
 
-## 其他说明
-审查者应该知道的任何其他信息。
+### Prompt 模板 | Prompt Templates
+- [ ] 使用标准格式（标题、场景、Prompt、预期输出、工具、技巧）| Uses standard format
+- [ ] 标注了验证状态和贡献者 | Includes verification status and contributor
+- [ ] 包含分享链接和来源归属 | Includes share URL and attribution
+- [ ] 已在 prompts/README.md 索引中添加条目 | Added entry to prompts/README.md
+
+### Notebook
+- [ ] 第一个代码单元格包含 `!pip install` | First code cell has `!pip install`
+- [ ] 可在 Google Colab 免费版运行 | Runs on Colab free tier
+- [ ] 包含中英文注释 | Includes bilingual comments
+- [ ] 已在 notebooks/README.md 索引中添加条目 | Added entry to notebooks/README.md
+
+### 案例 | Case Study
+- [ ] 包含具体量化指标 | Includes specific metrics
+- [ ] 遵循案例标准格式 | Follows case study format
+
+## 截图 | Screenshots (if applicable)
+
+<!-- 添加截图帮助说明 -->
+
+## 其他说明 | Additional Notes
+
+<!-- 审查者需要知道的其他信息 -->

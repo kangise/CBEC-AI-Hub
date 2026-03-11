@@ -1,0 +1,15 @@
+# CBEC-AI-Hub Code Owners
+# These owners will be automatically requested for review on PRs.
+
+# Default owner for all files
+* @kangise
+
+# Content directories
+/prompts/ @kangise
+/notebooks/ @kangise
+/paths/ @kangise
+/docs/case-studies/ @kangise
+
+# Infrastructure
+/.github/ @kangise
+/_config.yml @kangise

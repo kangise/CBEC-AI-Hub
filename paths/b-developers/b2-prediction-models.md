@@ -20,10 +20,6 @@ flowchart LR
     B4["B4 Agent 工作流"]
     B4 --> B5
     B5["B5 本地模型部署"]
-    click B1 "b1-data-pipeline.md"
-    click B3 "b3-rag-knowledge-base.md"
-    click B4 "b4-agent-workflow.md"
-    click B5 "b5-local-model-deploy.md"
     classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
 ```
 

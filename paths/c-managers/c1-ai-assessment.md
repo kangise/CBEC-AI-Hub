@@ -12,8 +12,6 @@ flowchart LR
     C1["✅ C1 AI 评估规划<br/>（当前）"]:::current
     C1 --> C2["C2 团队技能建设"]
     C2 --> C3["C3 ROI 评估"]
-    click C2 "c2-team-building.md"
-    click C3 "c3-roi-evaluation.md"
     classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
 ```
 

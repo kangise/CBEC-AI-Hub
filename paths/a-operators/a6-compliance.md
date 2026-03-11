@@ -21,11 +21,6 @@ flowchart LR
     A5["A5 库存供应链"]
     A5 --> A6
     A6["✅ A6 合规风控<br/>（当前）"]:::current
-    click A1 "a1-product-research.md"
-    click A2 "a2-listing-optimization.md"
-    click A3 "a3-advertising.md"
-    click A4 "a4-customer-service.md"
-    click A5 "a5-inventory.md"
     classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
 ```
 

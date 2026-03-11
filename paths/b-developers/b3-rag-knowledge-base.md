@@ -5,7 +5,6 @@
 > **难度**: ⭐⭐ 中级 → ⭐⭐⭐ 进阶
 > **前提**: B1 数据管道基础（Python、文件处理）、B2 基本 ML 概念
 > **预计时间**: 每天 1 小时，2-3 周
-
 ---
 
 ## 本模块你将构建
@@ -252,7 +251,6 @@ from llama_index.core import (
 )
 from llama_index.core.node_parser import SentenceSplitter
 
-
 def build_product_faq(
     docs_dir: str,
     chunk_size: int = 512,
@@ -305,7 +303,6 @@ def build_product_faq(
     
     return index
 
-
 def query_product_faq(
     index: VectorStoreIndex,
     question: str,
@@ -346,7 +343,6 @@ def query_product_faq(
         "num_sources": len(sources),
     }
 
-
 # 使用示例
 # index = build_product_faq("data/product_docs", chunk_size=512)
 #
@@ -373,7 +369,6 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Document, 
 from llama_index.core.node_parser import SentenceSplitter
 import pandas as pd
 
-
 def load_review_data(csv_path: str, text_col: str = "review_text",
                      max_reviews: int = 1000) -> list:
     """将 Review CSV 数据转换为 LlamaIndex Document 对象。"""
@@ -399,7 +394,6 @@ def load_review_data(csv_path: str, text_col: str = "review_text",
     
     print(f"📝 加载了 {len(documents)} 条 Review")
     return documents
-
 
 def build_multi_source_rag(
     product_docs_dir: str = None,
@@ -448,7 +442,6 @@ def build_multi_source_rag(
     print("✅ 多源 RAG 索引构建完成")
     return index
 
-
 def query_with_source_filter(
     index: VectorStoreIndex,
     question: str,
@@ -489,7 +482,6 @@ def query_with_source_filter(
     
     return {"question": question, "answer": str(response), "sources": sources}
 
-
 # 使用示例
 # index = build_multi_source_rag(
 #     product_docs_dir="data/product_docs",
@@ -510,7 +502,6 @@ def query_with_source_filter(
 import chromadb
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, StorageContext
 from llama_index.vector_stores.chroma import ChromaVectorStore
-
 
 def create_chroma_index(
     docs_dir: str,
@@ -542,7 +533,6 @@ def create_chroma_index(
     print(f"✅ 索引构建完成，共 {chroma_collection.count()} 个向量")
     return index
 
-
 def load_existing_chroma_index(
     collection_name: str = "product_knowledge",
     persist_dir: str = "chroma_db",
@@ -555,7 +545,6 @@ def load_existing_chroma_index(
     print(f"✅ 加载已有索引: {chroma_collection.count()} 个向量")
     return index
 
-
 def add_documents_to_index(index: VectorStoreIndex, new_docs_dir: str) -> int:
     """增量添加新文档到已有索引。不需要重建整个索引。"""
     new_documents = SimpleDirectoryReader(new_docs_dir).load_data()
@@ -563,7 +552,6 @@ def add_documents_to_index(index: VectorStoreIndex, new_docs_dir: str) -> int:
         index.insert(doc)
     print(f"➕ 新增 {len(new_documents)} 个文档到索引")
     return len(new_documents)
-
 
 # 使用示例
 # index = create_chroma_index("data/product_docs", persist_dir="chroma_db")
@@ -597,7 +585,6 @@ ollama list                      # 查看已下载的模型
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from llama_index.llms.ollama import Ollama
 from llama_index.embeddings.ollama import OllamaEmbedding
-
 
 def build_local_rag(
     docs_dir: str,
@@ -640,7 +627,6 @@ def build_local_rag(
     print(f"✅ 本地 RAG 构建完成（LLM: {llm_model}, Embed: {embed_model}）")
     print("🔒 所有数据在本地处理，未发送到任何外部服务")
     return index
-
 
 # 使用示例
 # index = build_local_rag("data/product_docs")
@@ -685,7 +671,6 @@ from ragas.metrics import (
 )
 from datasets import Dataset
 
-
 def evaluate_rag_quality(
     questions: list[str],
     answers: list[str],
@@ -725,7 +710,6 @@ def evaluate_rag_quality(
     
     return dict(result)
 
-
 def create_eval_dataset(index, eval_questions: list[dict]) -> tuple:
     """
     从 RAG 系统生成评估数据集。
@@ -747,7 +731,6 @@ def create_eval_dataset(index, eval_questions: list[dict]) -> tuple:
             ground_truths.append(item["ground_truth"])
     
     return questions, answers, contexts, ground_truths or None
-
 
 # 使用示例
 # eval_questions = [
@@ -790,7 +773,6 @@ def create_eval_dataset(index, eval_questions: list[dict]) -> tuple:
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from llama_index.core.prompts import PromptTemplate
 
-
 # 自定义客服 Prompt — 控制回答风格和边界
 CUSTOMER_SERVICE_PROMPT = PromptTemplate(
     """你是一个专业的电商客服助手。请基于以下产品文档回答客户问题。
@@ -808,7 +790,6 @@ CUSTOMER_SERVICE_PROMPT = PromptTemplate(
 
 回答："""
 )
-
 
 def build_customer_service_bot(docs_dir: str, chunk_size: int = 256) -> VectorStoreIndex:
     """
@@ -828,7 +809,6 @@ def build_customer_service_bot(docs_dir: str, chunk_size: int = 256) -> VectorSt
     print(f"✅ 客服知识库构建完成: {len(documents)} 个文档")
     return index
 
-
 def answer_customer_question(index: VectorStoreIndex, question: str) -> dict:
     """回答客户问题，带来源追溯。"""
     query_engine = index.as_query_engine(
@@ -846,7 +826,6 @@ def answer_customer_question(index: VectorStoreIndex, question: str) -> dict:
                       else "medium",
         "sources": [node.metadata.get("file_name", "") for node in response.source_nodes],
     }
-
 
 # 使用示例
 # index = build_customer_service_bot("data/customer_service_docs")
@@ -890,7 +869,6 @@ def build_compliance_rag(policy_docs_dir: str, chunk_size: int = 1024) -> Vector
     print(f"✅ 合规知识库构建完成: {len(documents)} 个政策文档")
     return index
 
-
 # 使用示例
 # index = build_compliance_rag("data/amazon_policies")
 # engine = index.as_query_engine(similarity_top_k=5)
@@ -921,7 +899,6 @@ def build_training_rag(
     index = VectorStoreIndex.from_documents(all_docs, show_progress=True)
     print(f"✅ 培训知识库: {len(all_docs)} 个文档")
     return index
-
 
 # 使用示例
 # index = build_training_rag(sop_dir="data/sop", case_study_dir="data/cases", faq_dir="data/faq")
@@ -1039,7 +1016,6 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.retrievers.bm25 import BM25Retriever
 from llama_index.core.retrievers import QueryFusionRetriever
 
-
 def build_hybrid_search(
     docs_dir: str,
     vector_top_k: int = 3,
@@ -1073,7 +1049,6 @@ def build_hybrid_search(
     print("✅ 混合搜索构建完成（向量 + BM25）")
     return hybrid_retriever, index
 
-
 # 使用示例
 # retriever, index = build_hybrid_search("data/product_docs")
 # nodes = retriever.retrieve("ASIN B0XXXXX 的规格参数")  # BM25 擅长
@@ -1089,7 +1064,6 @@ def build_hybrid_search(
 ```python
 from llama_index.core import VectorStoreIndex
 from llama_index.core.postprocessor import SentenceTransformerRerank
-
 
 def query_with_reranking(
     index: VectorStoreIndex,
@@ -1125,7 +1099,6 @@ Agent 可以根据用户问题自动决定：是查产品文档、查政策文�
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.core.tools import QueryEngineTool, ToolMetadata
 from llama_index.core.agent import ReActAgent
-
 
 def build_rag_agent(
     product_docs_dir: str,
@@ -1177,7 +1150,6 @@ def build_rag_agent(
     agent = ReActAgent.from_tools(tools, verbose=True)
     print("✅ RAG Agent 构建完成（3 个知识库工具）")
     return agent
-
 
 # 使用示例
 # agent = build_rag_agent("data/product_docs", "data/policy_docs", "data/review_docs")
@@ -1383,6 +1355,50 @@ pip install llama-index openai \
 ```
 
 > ⚠️ **安装提示**：LlamaIndex v0.10+ 采用模块化架构，核心包 `llama-index` 只包含基础功能，向量数据库、LLM 提供商等需要单独安装对应的集成包（如 `llama-index-vector-stores-chroma`）。
+
+🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
+
+```mermaid
+flowchart LR
+    B1["B1 数据管道"]
+    B1 --> B2
+    B2["B2 预测模型"]
+    B2 --> B3
+    B3["✅ B3 RAG 知识库<br/>（当前）"]:::current
+    B3 --> B4
+    B4["B4 Agent 工作流"]
+    B4 --> B5
+    B5["B5 本地模型部署"]
+    click B1 "b1-data-pipeline.md"
+    click B2 "b2-prediction-models.md"
+    click B4 "b4-agent-workflow.md"
+    click B5 "b5-local-model-deploy.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["B3 RAG 知识库"]) --> S1
+    S1["1. RAG 原理"]
+    S1 --> S2
+    S2["2. 快速搭建"]
+    S2 --> S3
+    S3["3. 多文档 RAG"]
+    S3 --> S4
+    S4["4. 向量数据库"]
+    S4 --> S5
+    S5["5. 本地 LLM"]
+    S5 --> S6
+    S6["6. 评估优化"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
 
 ### 附录 D：常见问题 FAQ
 

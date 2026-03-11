@@ -5,7 +5,6 @@
 > **难度**: ⭐ 入门  
 > **预计时间**: 1-2 小时  
 > **前置模块**: [C1 AI 能力评估与规划](c1-ai-assessment.md)
-
 ---
 
 ## 本模块你将产出
@@ -780,6 +779,48 @@ Workshop 信息：
 抵触派的转变通常发生在他们亲眼看到同事用 AI 节省了大量时间的时候。最有效的"转化"方式不是管理者的说教，而是同事的真实案例。
 
 > 💡 **管理者的角色**：不要强制抵触派使用 AI。创造一个"用 AI 的人明显更轻松"的环境，让抵触派自己产生"我也想试试"的动力。强制只会加深抵触。
+
+🏠 [Hub 首页](../../README.md) · 📋 [Path C 总览](README.md)
+
+```mermaid
+flowchart LR
+    C1["C1 AI 评估规划"]
+    C1 --> C2
+    C2["✅ C2 团队技能建设<br/>（当前）"]:::current
+    C2 --> C3
+    C3["C3 ROI 评估"]
+    click C1 "c1-ai-assessment.md"
+    click C3 "c3-roi-evaluation.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["C2 团队技能建设"]) --> S1
+    S1["1. 培训方法论"]
+    S1 --> S2
+    S2["2. 角色课程"]
+    S2 --> S3
+    S3["3. Prompt 库搭建"]
+    S3 --> S4
+    S4["4. 使用规范"]
+    S4 --> S5
+    S5["5. Prompt 模板"]
+    S5 --> S6
+    S6["6. 实战工作流"]
+    S6 --> S7
+    S7["7. 常见问题"]
+    S7 --> S8
+    S8["8. 案例分析"]
+    S8 --> S9
+    S9["9. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
 
 ### 8.3 案例三：跨部门 AI 技能建设
 

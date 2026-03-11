@@ -7,7 +7,6 @@
 > **预计时间**: 每天 1 小时，1-2 周
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/CBEC-AI-Hub/blob/main/notebooks/b1-data-pipeline.ipynb) — 直接在 Colab 运行配套 Notebook
-
 ---
 
 ## 本模块你将构建
@@ -108,7 +107,6 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-
 def load_business_report(filepath: str, market: str = "US") -> pd.DataFrame:
     """
     读取 Amazon Business Report CSV/Excel，处理常见数据问题。
@@ -181,7 +179,6 @@ def load_business_report(filepath: str, market: str = "US") -> pd.DataFrame:
     
     return df
 
-
 # 使用示例
 # df_us = load_business_report("reports/us_business_report.csv", market="US")
 # df_jp = load_business_report("reports/jp_business_report.csv", market="JP")
@@ -212,7 +209,6 @@ def merge_reports(report_files: dict[str, str]) -> pd.DataFrame:
     
     merged = pd.concat(frames, ignore_index=True)
     return merged
-
 
 def calculate_metrics(df: pd.DataFrame, group_by: list[str]) -> pd.DataFrame:
     """
@@ -266,7 +262,6 @@ def calculate_metrics(df: pd.DataFrame, group_by: list[str]) -> pd.DataFrame:
     
     return summary.round(2)
 
-
 # 使用示例
 # reports = {"US": "us_report.csv", "DE": "de_report.csv", "JP": "jp_report.csv"}
 # merged = merge_reports(reports)
@@ -286,7 +281,6 @@ def calculate_metrics(df: pd.DataFrame, group_by: list[str]) -> pd.DataFrame:
 
 ```python
 from datetime import datetime
-
 
 def generate_weekly_report(
     report_files: dict[str, str],
@@ -368,7 +362,6 @@ def generate_weekly_report(
     print(f"✅ 周报已生成: {output_path}")
     return output_path
 
-
 # 使用示例
 # generate_weekly_report(
 #     report_files={"US": "us_report.csv", "DE": "de_report.csv"},
@@ -434,7 +427,6 @@ from sp_api.base import Marketplaces
 from datetime import datetime, timedelta
 import pandas as pd
 
-
 def fetch_orders(
     credentials: dict,
     marketplace: Marketplaces = Marketplaces.US,
@@ -496,7 +488,6 @@ def fetch_orders(
     
     return df
 
-
 # 使用示例
 # from sp_api.base import Marketplaces
 # orders = fetch_orders(credentials, Marketplaces.US, days_back=30)
@@ -513,7 +504,6 @@ def fetch_orders(
 from sp_api.api import Inventories
 from sp_api.base import Marketplaces
 import pandas as pd
-
 
 def fetch_inventory(
     credentials: dict,
@@ -571,7 +561,6 @@ def fetch_inventory(
     
     return df
 
-
 # 使用示例
 # inventory = fetch_inventory(credentials, Marketplaces.US)
 # low_stock = inventory[inventory["stock_status"] != "🟢 正常"]
@@ -589,7 +578,6 @@ import time
 import json
 import gzip
 import pandas as pd
-
 
 def request_advertising_report(
     credentials: dict,
@@ -669,7 +657,6 @@ def request_advertising_report(
     print(f"📊 获取到 {len(df)} 行数据")
     return df
 
-
 # 使用示例
 # ad_report = request_advertising_report(
 #     credentials, Marketplaces.US,
@@ -707,7 +694,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-
 def daily_data_collection():
     """每日数据采集任务"""
     today = datetime.now().strftime("%Y%m%d")
@@ -741,7 +727,6 @@ def daily_data_collection():
     except Exception as e:
         logger.error(f"❌ 采集失败: {e}", exc_info=True)
 
-
 def weekly_report_generation():
     """每周报告生成任务"""
     logger.info("开始生成周报...")
@@ -751,7 +736,6 @@ def weekly_report_generation():
         logger.info("✅ 周报生成完成")
     except Exception as e:
         logger.error(f"❌ 周报生成失败: {e}", exc_info=True)
-
 
 # 设置定时任务
 schedule.every().day.at("08:00").do(daily_data_collection)
@@ -815,7 +799,6 @@ SP-API 覆盖了大部分数据需求，但有些数据只能通过 Seller Centr
 from playwright.sync_api import sync_playwright
 from pathlib import Path
 import time
-
 
 def download_business_report(
     email: str,
@@ -902,7 +885,6 @@ def download_business_report(
             
         finally:
             browser.close()
-
 
 # 使用示例
 # filepath = download_business_report(
@@ -1038,7 +1020,6 @@ import pandas as pd
 matplotlib.rcParams["font.sans-serif"] = ["PingFang SC", "Heiti TC", "Arial"]
 matplotlib.rcParams["axes.unicode_minus"] = False
 
-
 def plot_market_comparison(df: pd.DataFrame, metric: str = "GMS"):
     """
     绘制多市场指标对比柱状图。
@@ -1074,7 +1055,6 @@ def plot_market_comparison(df: pd.DataFrame, metric: str = "GMS"):
     plt.tight_layout()
     plt.savefig(f"output/{metric}_by_market.png", dpi=150)
     plt.show()
-
 
 # 使用示例
 # market_data = calculate_metrics(merged, group_by=["Market"])
@@ -1245,6 +1225,52 @@ def generate_html_dashboard(
 
 > 💡 **为什么用自包含 HTML？** 一个 .html 文件就是完整的报告，可以通过邮件、Slack、微信直接发送。接收者双击打开即可查看，不需要安装任何软件。Chart.js 从 CDN 加载，文件本身只有几 KB。
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
+
+```mermaid
+flowchart LR
+    B1["✅ B1 数据管道<br/>（当前）"]:::current
+    B1 --> B2
+    B2["B2 预测模型"]
+    B2 --> B3
+    B3["B3 RAG 知识库"]
+    B3 --> B4
+    B4["B4 Agent 工作流"]
+    B4 --> B5
+    B5["B5 本地模型部署"]
+    click B2 "b2-prediction-models.md"
+    click B3 "b3-rag-knowledge-base.md"
+    click B4 "b4-agent-workflow.md"
+    click B5 "b5-local-model-deploy.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["B1 数据管道"]) --> S1
+    S1["1. 数据工程方法论"]
+    S1 --> S2
+    S2["2. pandas 处理"]
+    S2 --> S3
+    S3["3. SP-API 采集"]
+    S3 --> S4
+    S4["4. 浏览器自动化"]
+    S4 --> S5
+    S5["5. 数据存储查询"]
+    S5 --> S6
+    S6["6. 数据可视化"]
+    S6 --> S7
+    S7["7. 完整 Pipeline"]
+    S7 --> S8
+    S8["8. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 ---
 
 ## 7. 实战项目：构建完整的数据管道
@@ -1374,7 +1400,6 @@ from transform.business_report import load_business_report
 from transform.metrics import calculate_metrics, merge_reports
 from report.html_report import generate_html_dashboard
 
-
 def run(date_str: str = None, markets: list = None):
     """
     执行完整的数据管道。
@@ -1430,7 +1455,6 @@ def run(date_str: str = None, markets: list = None):
     print(f"\n✅ Pipeline 完成!")
     print(f"   处理数据: {processed_dir / 'merged.parquet'}")
     print(f"   输出报告: {output_path}")
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="数据管道")

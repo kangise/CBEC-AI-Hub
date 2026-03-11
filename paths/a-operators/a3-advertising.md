@@ -4,7 +4,6 @@
 > **最后更新**: 2026-03-10
 > **难度**: ⭐⭐ 进阶
 > **预计时间**: 每天 30 分钟，1-2 周
-
 ---
 
 ## 本模块你将学会
@@ -195,7 +194,6 @@ Content rephrased for compliance with licensing restrictions. Sources: [deepbi.c
 
 > 完整的标准化模板（含验证状态、贡献者信息、分享链接）存放在 [prompts/advertising.md](../../prompts/advertising.md)。
 > 本节提供每个模板的深度解析、常见错误和进阶变体。
-
 
 ### 3.1 搜索词报告分析
 
@@ -832,6 +830,53 @@ Content rephrased for compliance with licensing restrictions. Source: [futurumgr
 ```
 
 > 💡 **飞轮效应的核心指标**：TACOS。如果 TACOS 持续下降，说明飞轮在运转 — 广告花费没变但总销售额在增长，因为自然流量在增加。如果 TACOS 持续上升，说明你越来越依赖广告，需要检查 Listing 质量和产品竞争力。
+
+🏠 [Hub 首页](../../README.md) · 📋 [Path A 总览](README.md)
+
+```mermaid
+flowchart LR
+    A1["A1 选品与市场"]
+    A1 --> A2
+    A2["A2 Listing 创作"]
+    A2 --> A3
+    A3["✅ A3 广告优化<br/>（当前）"]:::current
+    A3 --> A4
+    A4["A4 客服售后"]
+    A4 --> A5
+    A5["A5 库存供应链"]
+    A5 --> A6
+    A6["A6 合规风控"]
+    click A1 "a1-product-research.md"
+    click A2 "a2-listing-optimization.md"
+    click A4 "a4-customer-service.md"
+    click A5 "a5-inventory.md"
+    click A6 "a6-compliance.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["A3 广告优化"]) --> S1
+    S1["1. 广告基础"]
+    S1 --> S2
+    S2["2. 工具对比"]
+    S2 --> S3
+    S3["3. Prompt 模板库"]
+    S3 --> S4
+    S4["4. 实战 SOP"]
+    S4 --> S5
+    S5["5. 大促策略"]
+    S5 --> S6
+    S6["6. 常见陷阱"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
 
 ### 6.3 多渠道广告策略（Amazon + Google + Social）
 

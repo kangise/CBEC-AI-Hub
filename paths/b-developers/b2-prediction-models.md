@@ -5,7 +5,6 @@
 > **难度**: ⭐⭐ 中级 → ⭐⭐⭐ 进阶  
 > **前提**: B1 数据管道基础（pandas、数据清洗）、Python 基础  
 > **预计时间**: 每天 1 小时，2-3 周
-
 ---
 
 ## 本模块你将构建
@@ -57,7 +56,6 @@ import matplotlib
 matplotlib.rcParams["font.sans-serif"] = ["PingFang SC", "Heiti TC", "Arial"]
 matplotlib.rcParams["axes.unicode_minus"] = False
 
-
 def decompose_sales(df: pd.DataFrame, date_col: str = "date", value_col: str = "units"):
     """
     将销量时间序列分解为趋势、季节性、噪声三个成分。
@@ -84,7 +82,6 @@ def decompose_sales(df: pd.DataFrame, date_col: str = "date", value_col: str = "
     plt.show()
     
     return result
-
 
 # 使用示例
 # df = pd.read_csv("data/daily_sales.csv")
@@ -216,7 +213,6 @@ import matplotlib
 matplotlib.rcParams["font.sans-serif"] = ["PingFang SC", "Heiti TC", "Arial"]
 matplotlib.rcParams["axes.unicode_minus"] = False
 
-
 # ============================================================
 # Step 1: 数据准备
 # ============================================================
@@ -273,7 +269,6 @@ def prepare_prophet_data(
     
     return prophet_df
 
-
 # ============================================================
 # Step 2: 训练模型
 # ============================================================
@@ -313,7 +308,6 @@ def train_prophet(
     print("✅ 模型训练完成")
     
     return model
-
 
 # ============================================================
 # Step 3: 生成预测
@@ -355,7 +349,6 @@ def make_forecast(
           f"{forecast['yhat_upper'].tail(periods).mean():.1f}]")
     
     return forecast
-
 
 # ============================================================
 # Step 4: 可视化
@@ -420,7 +413,6 @@ def plot_forecast(
     plt.savefig("output/forecast.png", dpi=150, bbox_inches="tight")
     plt.show()
     print("📊 图表已保存: output/forecast.png")
-
 
 # ============================================================
 # 完整使用示例
@@ -516,7 +508,6 @@ def create_ecommerce_holidays(years: list[int]) -> pd.DataFrame:
     
     return pd.DataFrame(holidays)
 
-
 def train_prophet_with_holidays(
     df: pd.DataFrame,
     holidays: pd.DataFrame = None,
@@ -592,7 +583,6 @@ def train_prophet_with_regressors(
     
     return model
 
-
 def forecast_with_regressors(
     model: Prophet,
     periods: int = 90,
@@ -626,7 +616,6 @@ def forecast_with_regressors(
     
     return forecast
 
-
 # 使用示例
 # df = prepare_prophet_data(raw_df)
 # df["ad_spend"] = ad_data["spend"]  # 合并广告花费数据
@@ -645,14 +634,12 @@ def forecast_with_regressors(
 
 > ⚠️ **外部变量的陷阱**：预测时你需要提供未来的外部变量值。如果你不知道未来的广告预算，那添加 `ad_spend` 作为回归变量反而会降低预测精度。只添加你能合理预估未来值的变量。
 
-
 ### 3.3 AutoGluon 自动化预测（零配置建模）
 
 AutoGluon 是 Amazon 开源的自动化机器学习框架。它的时间序列模块可以自动尝试多种模型（Prophet、ETS、DeepAR、Theta 等），选择最优的一个。适合不想手动调参的场景。
 
 ```python
 from autogluon.timeseries import TimeSeriesDataFrame, TimeSeriesPredictor
-
 
 def autogluon_forecast(
     df: pd.DataFrame,
@@ -723,7 +710,6 @@ def autogluon_forecast(
     
     return predictions
 
-
 # 使用示例
 # df = pd.read_csv("data/daily_sales_all_skus.csv")
 # predictions = autogluon_forecast(
@@ -755,7 +741,6 @@ BERTopic 可以从大量 Review 文本中自动发现主题，帮助你理解客
 from bertopic import BERTopic
 from sentence_transformers import SentenceTransformer
 import pandas as pd
-
 
 def analyze_review_topics(
     reviews: list[str],
@@ -816,7 +801,6 @@ def analyze_review_topics(
     
     return topic_model, topics, probs
 
-
 def get_topic_summary(
     topic_model: BERTopic,
     reviews: list[str],
@@ -875,7 +859,6 @@ def get_topic_summary(
     
     return summary
 
-
 # 使用示例
 # reviews_df = pd.read_csv("data/reviews.csv")
 # reviews = reviews_df["review_text"].tolist()
@@ -901,7 +884,6 @@ def get_topic_summary(
 > 💡 **BERTopic 的实际价值**：假设你有 5000 条竞品 Review，手动读完需要几天。BERTopic 5 分钟就能告诉你：主题 1 是"电池续航差"（平均评分 2.1），主题 2 是"画质好"（平均评分 4.5），主题 3 是"App 难用"（平均评分 1.8）。这直接告诉你产品改进方向。
 >
 > 参考：[BERTopic 官方文档](https://maartengr.github.io/BERTopic/) | [BERTopic 最佳实践](https://maartengr.github.io/BERTopic/getting_started/best_practices/best_practices.html)
-
 
 ### 3.5 预测结果转化为补货决策
 
@@ -990,7 +972,6 @@ def forecast_to_reorder(
     print(f"   建议订货: {suggested_qty} 件（MOQ={moq}）")
     
     return result
-
 
 # 使用示例
 # reorder = forecast_to_reorder(
@@ -1132,7 +1113,6 @@ def backtest_prophet(
     
     return cv_results, perf
 
-
 # 使用示例
 # cv_results, perf = backtest_prophet(prophet_df, initial_days=180, horizon_days=30)
 #
@@ -1206,7 +1186,6 @@ from src.prophet_model import (
 from src.evaluator import evaluate_forecast, backtest_prophet
 from src.reorder import forecast_to_reorder
 
-
 def run(
     data_path: str,
     asin: str = None,
@@ -1274,7 +1253,6 @@ def run(
         )
     
     print(f"\n✅ 预测完成！结果已保存到 output/")
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="SKU 销量预测")
@@ -1467,6 +1445,50 @@ pip install prophet pandas numpy matplotlib \
 ```
 
 > ⚠️ Prophet 在某些系统上安装可能遇到问题（依赖 pystan/cmdstanpy）。如果安装失败，参考 [Prophet 安装指南](https://facebook.github.io/prophet/docs/installation.html) 或使用 Google Colab（预装了大部分依赖）。
+
+🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
+
+```mermaid
+flowchart LR
+    B1["B1 数据管道"]
+    B1 --> B2
+    B2["✅ B2 预测模型<br/>（当前）"]:::current
+    B2 --> B3
+    B3["B3 RAG 知识库"]
+    B3 --> B4
+    B4["B4 Agent 工作流"]
+    B4 --> B5
+    B5["B5 本地模型部署"]
+    click B1 "b1-data-pipeline.md"
+    click B3 "b3-rag-knowledge-base.md"
+    click B4 "b4-agent-workflow.md"
+    click B5 "b5-local-model-deploy.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["B2 预测模型"]) --> S1
+    S1["1. 预测方法论"]
+    S1 --> S2
+    S2["2. 需求预测"]
+    S2 --> S3
+    S3["3. 价格优化"]
+    S3 --> S4
+    S4["4. 广告效果预测"]
+    S4 --> S5
+    S5["5. 异常检测"]
+    S5 --> S6
+    S6["6. 模型部署"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
 
 ---
 

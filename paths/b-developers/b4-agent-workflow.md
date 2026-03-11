@@ -5,7 +5,6 @@
 > **难度**: ⭐⭐⭐ 高级
 > **前提**: B1 数据管道基础（Python、文件处理）、B3 RAG 基本概念
 > **预计时间**: 每天 1 小时，2-3 周
-
 ---
 
 ## 本模块你将构建
@@ -237,7 +236,6 @@ from langchain_openai import ChatOpenAI
 from langchain_core.tools import tool
 from langgraph.prebuilt import create_react_agent
 
-
 # 1. 定义工具
 @tool
 def get_sales_data(date: str) -> dict:
@@ -259,7 +257,6 @@ def get_sales_data(date: str) -> dict:
         "yoy_change": -0.12,
     }
 
-
 @tool
 def detect_anomaly(metric: str, value: float, threshold: float) -> dict:
     """检测指标是否异常。
@@ -277,7 +274,6 @@ def detect_anomaly(metric: str, value: float, threshold: float) -> dict:
         "is_anomaly": is_anomaly,
         "severity": "high" if value < threshold * 1.5 else "medium",
     }
-
 
 # 2. 创建 Agent
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
@@ -551,7 +547,6 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langgraph.graph import StateGraph, END
 from langgraph.graph.message import add_messages
 
-
 @tool
 def fetch_new_reviews(hours: int = 24) -> str:
     """获取最近 N 小时的新增 Review。"""
@@ -568,7 +563,6 @@ def fetch_new_reviews(hours: int = 24) -> str:
         ],
     }, ensure_ascii=False)
 
-
 @tool
 def analyze_review_sentiment(review_text: str) -> str:
     """对单条 Review 进行情感分析和问题分类。"""
@@ -584,7 +578,6 @@ def analyze_review_sentiment(review_text: str) -> str:
         "categories": categories or ["其他"],
         "severity": "high" if "安全" in str(categories) else "medium",
     }, ensure_ascii=False)
-
 
 # --- 工作流：与库存预警 Agent 结构相同 ---
 # fetch_reviews → 有差评？ → Yes → analyze_reviews → generate_alert → END
@@ -1027,6 +1020,50 @@ def analyze_product_image(image_path: str) -> str:
 | 多 Agent 协作（CrewAI） | GPT-4o | 6-10 次 | ~$0.50 |
 
 > 💡 **成本控制建议**：日常监控类 Agent 用 GPT-4o-mini 就够了。只有需要深度分析（如竞品策略分析、复杂报告生成）时才用 GPT-4o。
+
+🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
+
+```mermaid
+flowchart LR
+    B1["B1 数据管道"]
+    B1 --> B2
+    B2["B2 预测模型"]
+    B2 --> B3
+    B3["B3 RAG 知识库"]
+    B3 --> B4
+    B4["✅ B4 Agent 工作流<br/>（当前）"]:::current
+    B4 --> B5
+    B5["B5 本地模型部署"]
+    click B1 "b1-data-pipeline.md"
+    click B2 "b2-prediction-models.md"
+    click B3 "b3-rag-knowledge-base.md"
+    click B5 "b5-local-model-deploy.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["B4 Agent 工作流"]) --> S1
+    S1["1. Agent 概念"]
+    S1 --> S2
+    S2["2. 工具调用"]
+    S2 --> S3
+    S3["3. 工作流编排"]
+    S3 --> S4
+    S4["4. 电商 Agent"]
+    S4 --> S5
+    S5["5. 监控调试"]
+    S5 --> S6
+    S6["6. 生产部署"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
 
 ---
 

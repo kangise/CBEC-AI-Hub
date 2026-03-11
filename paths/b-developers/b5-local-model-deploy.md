@@ -7,6 +7,50 @@
 > **预计时间**: 每天 1 小时，3-4 周
 ---
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
+
+```mermaid
+flowchart LR
+    B1["B1 数据管道"]
+    B1 --> B2
+    B2["B2 预测模型"]
+    B2 --> B3
+    B3["B3 RAG 知识库"]
+    B3 --> B4
+    B4["B4 Agent 工作流"]
+    B4 --> B5
+    B5["✅ B5 本地模型部署<br/>（当前）"]:::current
+    click B1 "b1-data-pipeline.md"
+    click B2 "b2-prediction-models.md"
+    click B3 "b3-rag-knowledge-base.md"
+    click B4 "b4-agent-workflow.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["B5 本地模型部署"]) --> S1
+    S1["1. 本地部署概述"]
+    S1 --> S2
+    S2["2. Ollama 入门"]
+    S2 --> S3
+    S3["3. 模型选择"]
+    S3 --> S4
+    S4["4. 微调基础"]
+    S4 --> S5
+    S5["5. API 服务化"]
+    S5 --> S6
+    S6["6. 性能优化"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 ## 本模块你将构建
 
 本地 AI 服务 — 在自己的机器上运行 LLM，保护商业数据隐私；用 LoRA 微调模型适配电商场景。
@@ -1172,51 +1216,7 @@ def batch_analyze(
 | ChatGLM4 | 智谱 AI | 9B | GLM-4 License | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ | `ollama run glm4:9b` |
 
 > 模型能力评级基于公开基准测试和社区反馈，仅供参考。实际表现因任务而异。
-
-🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
-
-```mermaid
-flowchart LR
-    B1["B1 数据管道"]
-    B1 --> B2
-    B2["B2 预测模型"]
-    B2 --> B3
-    B3["B3 RAG 知识库"]
-    B3 --> B4
-    B4["B4 Agent 工作流"]
-    B4 --> B5
-    B5["✅ B5 本地模型部署<br/>（当前）"]:::current
-    click B1 "b1-data-pipeline.md"
-    click B2 "b2-prediction-models.md"
-    click B3 "b3-rag-knowledge-base.md"
-    click B4 "b4-agent-workflow.md"
-    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
-```
-
 ---
-
-## 📖 本模块章节导航
-
-```mermaid
-flowchart TD
-    START(["B5 本地模型部署"]) --> S1
-    S1["1. 本地部署概述"]
-    S1 --> S2
-    S2["2. Ollama 入门"]
-    S2 --> S3
-    S3["3. 模型选择"]
-    S3 --> S4
-    S4["4. 微调基础"]
-    S4 --> S5
-    S5["5. API 服务化"]
-    S5 --> S6
-    S6["6. 性能优化"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
-
-
 ### 9.2 硬件需求速查表
 
 | 任务 | 最低配置 | 推荐配置 | 预算参考 |

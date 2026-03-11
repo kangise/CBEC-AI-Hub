@@ -7,6 +7,52 @@
 > **前置模块**: [C1 AI 能力评估与规划](c1-ai-assessment.md)、[C2 团队 AI 技能建设](c2-team-building.md)
 ---
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path C 总览](README.md)
+
+```mermaid
+flowchart LR
+    C1["C1 AI 评估规划"]
+    C1 --> C2
+    C2["C2 团队技能建设"]
+    C2 --> C3
+    C3["✅ C3 ROI 评估<br/>（当前）"]:::current
+    click C1 "c1-ai-assessment.md"
+    click C2 "c2-team-building.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["C3 ROI 评估"]) --> S1
+    S1["1. ROI 方法论"]
+    S1 --> S2
+    S2["2. 计算框架"]
+    S2 --> S3
+    S3["3. 基准数据"]
+    S3 --> S4
+    S4["4. 数据收集"]
+    S4 --> S5
+    S5["5. Prompt 模板"]
+    S5 --> S6
+    S6["6. 实战案例"]
+    S6 --> S7
+    S7["7. 优化策略"]
+    S7 --> S8
+    S8["8. 报告模板"]
+    S8 --> S9
+    S9["9. 常见陷阱"]
+    S9 --> S10
+    S10["10. 长期视角"]
+    S10 --> S11
+    S11["11. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 ## 本模块你将产出
 
 一份完整的 AI 项目 ROI 评估报告。
@@ -941,53 +987,7 @@ Slide 5：下一步计划（1.5 分钟）
 | 标准化客服回复 | 个性化 + 多语言客服回复 | 客户满意度提升 |
 
 > 💡 **核心洞察**：Level 1（效率提升）的 ROI 有天花板 — 你最多把时间省到零。但 Level 3-4（能力扩展和战略优势）的 ROI 没有天花板 — 新的能力可以创造全新的业务增长。
-
-🏠 [Hub 首页](../../README.md) · 📋 [Path C 总览](README.md)
-
-```mermaid
-flowchart LR
-    C1["C1 AI 评估规划"]
-    C1 --> C2
-    C2["C2 团队技能建设"]
-    C2 --> C3
-    C3["✅ C3 ROI 评估<br/>（当前）"]:::current
-    click C1 "c1-ai-assessment.md"
-    click C2 "c2-team-building.md"
-    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
-```
-
 ---
-
-## 📖 本模块章节导航
-
-```mermaid
-flowchart TD
-    START(["C3 ROI 评估"]) --> S1
-    S1["1. ROI 方法论"]
-    S1 --> S2
-    S2["2. 计算框架"]
-    S2 --> S3
-    S3["3. 基准数据"]
-    S3 --> S4
-    S4["4. 数据收集"]
-    S4 --> S5
-    S5["5. Prompt 模板"]
-    S5 --> S6
-    S6["6. 实战案例"]
-    S6 --> S7
-    S7["7. 优化策略"]
-    S7 --> S8
-    S8["8. 报告模板"]
-    S8 --> S9
-    S9["9. 常见陷阱"]
-    S9 --> S10
-    S10["10. 长期视角"]
-    S10 --> S11
-    S11["11. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
-
-
 ### 10.3 AI ROI 的复利效应
 
 AI 的 ROI 不是线性增长，而是复利增长：

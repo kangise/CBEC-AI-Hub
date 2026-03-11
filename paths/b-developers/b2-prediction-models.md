@@ -7,6 +7,50 @@
 > **预计时间**: 每天 1 小时，2-3 周
 ---
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
+
+```mermaid
+flowchart LR
+    B1["B1 数据管道"]
+    B1 --> B2
+    B2["✅ B2 预测模型<br/>（当前）"]:::current
+    B2 --> B3
+    B3["B3 RAG 知识库"]
+    B3 --> B4
+    B4["B4 Agent 工作流"]
+    B4 --> B5
+    B5["B5 本地模型部署"]
+    click B1 "b1-data-pipeline.md"
+    click B3 "b3-rag-knowledge-base.md"
+    click B4 "b4-agent-workflow.md"
+    click B5 "b5-local-model-deploy.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["B2 预测模型"]) --> S1
+    S1["1. 预测方法论"]
+    S1 --> S2
+    S2["2. 需求预测"]
+    S2 --> S3
+    S3["3. 价格优化"]
+    S3 --> S4
+    S4["4. 广告预测"]
+    S4 --> S5
+    S5["5. 异常检测"]
+    S5 --> S6
+    S6["6. 模型部署"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 ## 本模块你将构建
 
 销量预测模型 + Review 主题分析系统。
@@ -1445,51 +1489,7 @@ pip install prophet pandas numpy matplotlib \
 ```
 
 > ⚠️ Prophet 在某些系统上安装可能遇到问题（依赖 pystan/cmdstanpy）。如果安装失败，参考 [Prophet 安装指南](https://facebook.github.io/prophet/docs/installation.html) 或使用 Google Colab（预装了大部分依赖）。
-
-🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
-
-```mermaid
-flowchart LR
-    B1["B1 数据管道"]
-    B1 --> B2
-    B2["✅ B2 预测模型<br/>（当前）"]:::current
-    B2 --> B3
-    B3["B3 RAG 知识库"]
-    B3 --> B4
-    B4["B4 Agent 工作流"]
-    B4 --> B5
-    B5["B5 本地模型部署"]
-    click B1 "b1-data-pipeline.md"
-    click B3 "b3-rag-knowledge-base.md"
-    click B4 "b4-agent-workflow.md"
-    click B5 "b5-local-model-deploy.md"
-    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
-```
-
 ---
-
-## 📖 本模块章节导航
-
-```mermaid
-flowchart TD
-    START(["B2 预测模型"]) --> S1
-    S1["1. 预测方法论"]
-    S1 --> S2
-    S2["2. 需求预测"]
-    S2 --> S3
-    S3["3. 价格优化"]
-    S3 --> S4
-    S4["4. 广告效果预测"]
-    S4 --> S5
-    S5["5. 异常检测"]
-    S5 --> S6
-    S6["6. 模型部署"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
-
-
 ---
 
 📖 [返回 Path B](README.md) | 🏠 [返回 Hub 首页](../../README.md) | ⬅️ [B1 数据管道](b1-data-pipeline.md) | ➡️ [B3 RAG 知识库](b3-rag-knowledge-base.md)

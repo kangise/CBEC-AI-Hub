@@ -6,6 +6,53 @@
 > **预计时间**: 每天 30 分钟，1-2 周
 ---
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path A 总览](README.md)
+
+```mermaid
+flowchart LR
+    A1["A1 选品与市场"]
+    A1 --> A2
+    A2["A2 Listing 创作"]
+    A2 --> A3
+    A3["✅ A3 广告优化<br/>（当前）"]:::current
+    A3 --> A4
+    A4["A4 客服售后"]
+    A4 --> A5
+    A5["A5 库存供应链"]
+    A5 --> A6
+    A6["A6 合规风控"]
+    click A1 "a1-product-research.md"
+    click A2 "a2-listing-optimization.md"
+    click A4 "a4-customer-service.md"
+    click A5 "a5-inventory.md"
+    click A6 "a6-compliance.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["A3 广告优化"]) --> S1
+    S1["1. 广告基础"]
+    S1 --> S2
+    S2["2. 工具对比"]
+    S2 --> S3
+    S3["3. Prompt 模板库"]
+    S3 --> S4
+    S4["4. 实战 SOP"]
+    S4 --> S5
+    S5["5. 大促策略"]
+    S5 --> S6
+    S6["6. 常见陷阱"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 ## 本模块你将学会
 
 用 AI 工具把需要数小时的广告数据分析压缩到 30 分钟。从搜索词报告分析到出价优化，建立一套可复用的 AI 辅助广告管理工作流。
@@ -830,54 +877,7 @@ Content rephrased for compliance with licensing restrictions. Source: [futurumgr
 ```
 
 > 💡 **飞轮效应的核心指标**：TACOS。如果 TACOS 持续下降，说明飞轮在运转 — 广告花费没变但总销售额在增长，因为自然流量在增加。如果 TACOS 持续上升，说明你越来越依赖广告，需要检查 Listing 质量和产品竞争力。
-
-🏠 [Hub 首页](../../README.md) · 📋 [Path A 总览](README.md)
-
-```mermaid
-flowchart LR
-    A1["A1 选品与市场"]
-    A1 --> A2
-    A2["A2 Listing 创作"]
-    A2 --> A3
-    A3["✅ A3 广告优化<br/>（当前）"]:::current
-    A3 --> A4
-    A4["A4 客服售后"]
-    A4 --> A5
-    A5["A5 库存供应链"]
-    A5 --> A6
-    A6["A6 合规风控"]
-    click A1 "a1-product-research.md"
-    click A2 "a2-listing-optimization.md"
-    click A4 "a4-customer-service.md"
-    click A5 "a5-inventory.md"
-    click A6 "a6-compliance.md"
-    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
-```
-
 ---
-
-## 📖 本模块章节导航
-
-```mermaid
-flowchart TD
-    START(["A3 广告优化"]) --> S1
-    S1["1. 广告基础"]
-    S1 --> S2
-    S2["2. 工具对比"]
-    S2 --> S3
-    S3["3. Prompt 模板库"]
-    S3 --> S4
-    S4["4. 实战 SOP"]
-    S4 --> S5
-    S5["5. 大促策略"]
-    S5 --> S6
-    S6["6. 常见陷阱"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
-
-
 ### 6.3 多渠道广告策略（Amazon + Google + Social）
 
 Amazon 站内广告不是唯一的流量来源。站外流量（Google Ads、社交媒体）可以补充站内广告的不足，尤其是在品牌建设和新客获取方面。

@@ -6,6 +6,53 @@
 > **预计时间**: 每天 30 分钟，1-2 周
 ---
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path A 总览](README.md)
+
+```mermaid
+flowchart LR
+    A1["✅ A1 选品与市场<br/>（当前）"]:::current
+    A1 --> A2
+    A2["A2 Listing 创作"]
+    A2 --> A3
+    A3["A3 广告优化"]
+    A3 --> A4
+    A4["A4 客服售后"]
+    A4 --> A5
+    A5["A5 库存供应链"]
+    A5 --> A6
+    A6["A6 合规风控"]
+    click A2 "a2-listing-optimization.md"
+    click A3 "a3-advertising.md"
+    click A4 "a4-customer-service.md"
+    click A5 "a5-inventory.md"
+    click A6 "a6-compliance.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["A1 选品与市场"]) --> S1
+    S1["1. 方法论"]
+    S1 --> S2
+    S2["2. 工具全景"]
+    S2 --> S3
+    S3["3. Prompt 模板库"]
+    S3 --> S4
+    S4["4. 选品 SOP"]
+    S4 --> S5
+    S5["5. 常见陷阱"]
+    S5 --> S6
+    S6["6. 进阶技巧"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 ## 本模块你将学会
 
 用 AI 工具把需要几天的选品调研压缩到几小时。从市场趋势分析到竞品痛点提取，建立一套可复用的 AI 辅助选品工作流。
@@ -552,54 +599,7 @@ Helium 10 Black Box 筛选条件（推荐起点）：
 - 评分：3.5-4.3（评分低说明品类有改进空间）
 
 > 💡 这些只是起点参数，根据你的资金和经验调整。资金充足可以放宽售价上限，经验丰富可以挑战 Review 更多的品类。
-
-🏠 [Hub 首页](../../README.md) · 📋 [Path A 总览](README.md)
-
-```mermaid
-flowchart LR
-    A1["✅ A1 选品与市场<br/>（当前）"]:::current
-    A1 --> A2
-    A2["A2 Listing 创作"]
-    A2 --> A3
-    A3["A3 广告优化"]
-    A3 --> A4
-    A4["A4 客服售后"]
-    A4 --> A5
-    A5["A5 库存供应链"]
-    A5 --> A6
-    A6["A6 合规风控"]
-    click A2 "a2-listing-optimization.md"
-    click A3 "a3-advertising.md"
-    click A4 "a4-customer-service.md"
-    click A5 "a5-inventory.md"
-    click A6 "a6-compliance.md"
-    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
-```
-
 ---
-
-## 📖 本模块章节导航
-
-```mermaid
-flowchart TD
-    START(["A1 选品与市场"]) --> S1
-    S1["1. 方法论"]
-    S1 --> S2
-    S2["2. 工具全景"]
-    S2 --> S3
-    S3["3. Prompt 模板库"]
-    S3 --> S4
-    S4["4. 选品 SOP"]
-    S4 --> S5
-    S5["5. 常见陷阱"]
-    S5 --> S6
-    S6["6. 进阶技巧"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
-
-
 **Step 3: 竞品深度分析**
 
 目标：理解品类的痛点地图和必备卖点。

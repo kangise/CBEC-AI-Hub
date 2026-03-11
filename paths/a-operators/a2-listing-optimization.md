@@ -6,6 +6,53 @@
 > **预计时间**: 每天 30 分钟，1-2 周
 ---
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path A 总览](README.md)
+
+```mermaid
+flowchart LR
+    A1["A1 选品与市场"]
+    A1 --> A2
+    A2["✅ A2 Listing 创作<br/>（当前）"]:::current
+    A2 --> A3
+    A3["A3 广告优化"]
+    A3 --> A4
+    A4["A4 客服售后"]
+    A4 --> A5
+    A5["A5 库存供应链"]
+    A5 --> A6
+    A6["A6 合规风控"]
+    click A1 "a1-product-research.md"
+    click A3 "a3-advertising.md"
+    click A4 "a4-customer-service.md"
+    click A5 "a5-inventory.md"
+    click A6 "a6-compliance.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["A2 Listing 创作"]) --> S1
+    S1["1. 方法论"]
+    S1 --> S2
+    S2["2. 工具对比"]
+    S2 --> S3
+    S3["3. Prompt 模板库"]
+    S3 --> S4
+    S4["4. 实战 SOP"]
+    S4 --> S5
+    S5["5. 多语言策略"]
+    S5 --> S6
+    S6["6. 常见陷阱"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 ## 本模块你将学会
 
 用 AI 工具把需要一整天的 Listing 撰写压缩到 1-2 小时。从关键词布局到 A+ Content 设计，建立一套可复用的 AI 辅助 Listing 创建与优化工作流。
@@ -901,54 +948,7 @@ Content rephrased for compliance with licensing restrictions. Source: [bebolddig
 ```
 
 > 💡 **文化适配的核心原则**：不要假设"在美国卖得好的 Listing 翻译一下就能在德国卖好"。德国消费者可能完全不关心你在美国强调的卖点。每个市场都需要独立的 Listing 策略。
-
-🏠 [Hub 首页](../../README.md) · 📋 [Path A 总览](README.md)
-
-```mermaid
-flowchart LR
-    A1["A1 选品与市场"]
-    A1 --> A2
-    A2["✅ A2 Listing 创作<br/>（当前）"]:::current
-    A2 --> A3
-    A3["A3 广告优化"]
-    A3 --> A4
-    A4["A4 客服售后"]
-    A4 --> A5
-    A5["A5 库存供应链"]
-    A5 --> A6
-    A6["A6 合规风控"]
-    click A1 "a1-product-research.md"
-    click A3 "a3-advertising.md"
-    click A4 "a4-customer-service.md"
-    click A5 "a5-inventory.md"
-    click A6 "a6-compliance.md"
-    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
-```
-
 ---
-
-## 📖 本模块章节导航
-
-```mermaid
-flowchart TD
-    START(["A2 Listing 创作"]) --> S1
-    S1["1. 方法论"]
-    S1 --> S2
-    S2["2. 工具对比"]
-    S2 --> S3
-    S3["3. Prompt 模板库"]
-    S3 --> S4
-    S4["4. 实战 SOP"]
-    S4 --> S5
-    S5["5. 多语言策略"]
-    S5 --> S6
-    S6["6. 常见陷阱"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
-
-
 ---
 
 ## 7. 学习资源

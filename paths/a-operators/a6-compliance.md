@@ -6,6 +6,53 @@
 > **预计时间**: 每天 30 分钟，1-2 周
 ---
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path A 总览](README.md)
+
+```mermaid
+flowchart LR
+    A1["A1 选品与市场"]
+    A1 --> A2
+    A2["A2 Listing 创作"]
+    A2 --> A3
+    A3["A3 广告优化"]
+    A3 --> A4
+    A4["A4 客服售后"]
+    A4 --> A5
+    A5["A5 库存供应链"]
+    A5 --> A6
+    A6["✅ A6 合规风控<br/>（当前）"]:::current
+    click A1 "a1-product-research.md"
+    click A2 "a2-listing-optimization.md"
+    click A3 "a3-advertising.md"
+    click A4 "a4-customer-service.md"
+    click A5 "a5-inventory.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["A6 合规风控"]) --> S1
+    S1["1. 合规基础"]
+    S1 --> S2
+    S2["2. 工具对比"]
+    S2 --> S3
+    S3["3. Prompt 模板库"]
+    S3 --> S4
+    S4["4. 实战 SOP"]
+    S4 --> S5
+    S5["5. 申诉策略"]
+    S5 --> S6
+    S6["6. 常见陷阱"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 > ⚠️ **重要免责声明 | Important Disclaimer**  
 > 本模块内容仅供一般性参考，**不构成法律、税务或合规建议**。各国法规频繁更新，AI 工具的输出可能不反映最新法规变化。在做出任何合规决策之前，请务必咨询专业的法律顾问、认证机构或税务师。依赖本模块内容做出的任何决策，风险由使用者自行承担。  
 > This module is for general reference only and **does not constitute legal, tax, or compliance advice**. Regulations change frequently and AI outputs may not reflect the latest updates. Always consult qualified legal counsel, certification bodies, or tax advisors before making compliance decisions.
@@ -1027,54 +1074,7 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 > 2. 了解需要哪些合规项
 > 3. 用对应的 Prompt 模板（第 3 节）做深度分析
 > 4. 向认证机构询价确认费用和周期
-
-🏠 [Hub 首页](../../README.md) · 📋 [Path A 总览](README.md)
-
-```mermaid
-flowchart LR
-    A1["A1 选品与市场"]
-    A1 --> A2
-    A2["A2 Listing 创作"]
-    A2 --> A3
-    A3["A3 广告优化"]
-    A3 --> A4
-    A4["A4 客服售后"]
-    A4 --> A5
-    A5["A5 库存供应链"]
-    A5 --> A6
-    A6["✅ A6 合规风控<br/>（当前）"]:::current
-    click A1 "a1-product-research.md"
-    click A2 "a2-listing-optimization.md"
-    click A3 "a3-advertising.md"
-    click A4 "a4-customer-service.md"
-    click A5 "a5-inventory.md"
-    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
-```
-
 ---
-
-## 📖 本模块章节导航
-
-```mermaid
-flowchart TD
-    START(["A6 合规风控"]) --> S1
-    S1["1. 合规基础"]
-    S1 --> S2
-    S2["2. 工具对比"]
-    S2 --> S3
-    S3["3. Prompt 模板库"]
-    S3 --> S4
-    S4["4. 实战 SOP"]
-    S4 --> S5
-    S5["5. 申诉策略"]
-    S5 --> S6
-    S6["6. 常见陷阱"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
-
-
 ### Prompt 速查表
 
 | 场景 | Prompt 模板 | 所在章节 |

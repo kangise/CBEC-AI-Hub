@@ -6,6 +6,53 @@
 > **预计时间**: 每天 30 分钟，1-2 周
 ---
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path A 总览](README.md)
+
+```mermaid
+flowchart LR
+    A1["A1 选品与市场"]
+    A1 --> A2
+    A2["A2 Listing 创作"]
+    A2 --> A3
+    A3["A3 广告优化"]
+    A3 --> A4
+    A4["✅ A4 客服售后<br/>（当前）"]:::current
+    A4 --> A5
+    A5["A5 库存供应链"]
+    A5 --> A6
+    A6["A6 合规风控"]
+    click A1 "a1-product-research.md"
+    click A2 "a2-listing-optimization.md"
+    click A3 "a3-advertising.md"
+    click A5 "a5-inventory.md"
+    click A6 "a6-compliance.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["A4 客服售后"]) --> S1
+    S1["1. 客服方法论"]
+    S1 --> S2
+    S2["2. 工具对比"]
+    S2 --> S3
+    S3["3. Prompt 模板库"]
+    S3 --> S4
+    S4["4. 实战 SOP"]
+    S4 --> S5
+    S5["5. 多语言客服"]
+    S5 --> S6
+    S6["6. 常见陷阱"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 ## 本模块你将学会
 
 用 AI 工具把客服从"被动救火"变成"主动防御"。从差评分析到账号申诉，建立一套可复用的 AI 辅助客服管理工作流。
@@ -844,54 +891,7 @@ Content rephrased for compliance with licensing restrictions. Source: [TraceFuse
 ```
 
 > 💡 **产品迭代的核心原则**：先做 Quick Win（改 Listing、改包装、改说明书），再做产品改进。Quick Win 成本低、见效快，可以在 1-2 周内减少 20-30% 的相关差评。
-
-🏠 [Hub 首页](../../README.md) · 📋 [Path A 总览](README.md)
-
-```mermaid
-flowchart LR
-    A1["A1 选品与市场"]
-    A1 --> A2
-    A2["A2 Listing 创作"]
-    A2 --> A3
-    A3["A3 广告优化"]
-    A3 --> A4
-    A4["✅ A4 客服售后<br/>（当前）"]:::current
-    A4 --> A5
-    A5["A5 库存供应链"]
-    A5 --> A6
-    A6["A6 合规风控"]
-    click A1 "a1-product-research.md"
-    click A2 "a2-listing-optimization.md"
-    click A3 "a3-advertising.md"
-    click A5 "a5-inventory.md"
-    click A6 "a6-compliance.md"
-    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
-```
-
 ---
-
-## 📖 本模块章节导航
-
-```mermaid
-flowchart TD
-    START(["A4 客服售后"]) --> S1
-    S1["1. 客服方法论"]
-    S1 --> S2
-    S2["2. 工具对比"]
-    S2 --> S3
-    S3["3. Prompt 模板库"]
-    S3 --> S4
-    S4["4. 实战 SOP"]
-    S4 --> S5
-    S5["5. 多语言客服"]
-    S5 --> S6
-    S6["6. 常见陷阱"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
-
-
 ### 6.3 多站点客服策略（文化差异）
 
 不同市场的客户期望和沟通风格差异很大。了解这些差异可以显著提升客服质量：

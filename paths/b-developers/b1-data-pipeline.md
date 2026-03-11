@@ -9,6 +9,52 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/CBEC-AI-Hub/blob/main/notebooks/b1-data-pipeline.ipynb) — 直接在 Colab 运行配套 Notebook
 ---
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
+
+```mermaid
+flowchart LR
+    B1["✅ B1 数据管道<br/>（当前）"]:::current
+    B1 --> B2
+    B2["B2 预测模型"]
+    B2 --> B3
+    B3["B3 RAG 知识库"]
+    B3 --> B4
+    B4["B4 Agent 工作流"]
+    B4 --> B5
+    B5["B5 本地模型部署"]
+    click B2 "b2-prediction-models.md"
+    click B3 "b3-rag-knowledge-base.md"
+    click B4 "b4-agent-workflow.md"
+    click B5 "b5-local-model-deploy.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["B1 数据管道"]) --> S1
+    S1["1. 数据工程方法论"]
+    S1 --> S2
+    S2["2. pandas 处理"]
+    S2 --> S3
+    S3["3. SP-API 采集"]
+    S3 --> S4
+    S4["4. 浏览器自动化"]
+    S4 --> S5
+    S5["5. 数据存储查询"]
+    S5 --> S6
+    S6["6. 数据可视化"]
+    S6 --> S7
+    S7["7. 完整 Pipeline"]
+    S7 --> S8
+    S8["8. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 ## 本模块你将构建
 
 一个自动化数据管道：从 Amazon 报告到清洗后的分析数据集。
@@ -1224,53 +1270,7 @@ def generate_html_dashboard(
 ```
 
 > 💡 **为什么用自包含 HTML？** 一个 .html 文件就是完整的报告，可以通过邮件、Slack、微信直接发送。接收者双击打开即可查看，不需要安装任何软件。Chart.js 从 CDN 加载，文件本身只有几 KB。
-
-🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
-
-```mermaid
-flowchart LR
-    B1["✅ B1 数据管道<br/>（当前）"]:::current
-    B1 --> B2
-    B2["B2 预测模型"]
-    B2 --> B3
-    B3["B3 RAG 知识库"]
-    B3 --> B4
-    B4["B4 Agent 工作流"]
-    B4 --> B5
-    B5["B5 本地模型部署"]
-    click B2 "b2-prediction-models.md"
-    click B3 "b3-rag-knowledge-base.md"
-    click B4 "b4-agent-workflow.md"
-    click B5 "b5-local-model-deploy.md"
-    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
-```
-
 ---
-
-## 📖 本模块章节导航
-
-```mermaid
-flowchart TD
-    START(["B1 数据管道"]) --> S1
-    S1["1. 数据工程方法论"]
-    S1 --> S2
-    S2["2. pandas 处理"]
-    S2 --> S3
-    S3["3. SP-API 采集"]
-    S3 --> S4
-    S4["4. 浏览器自动化"]
-    S4 --> S5
-    S5["5. 数据存储查询"]
-    S5 --> S6
-    S6["6. 数据可视化"]
-    S6 --> S7
-    S7["7. 完整 Pipeline"]
-    S7 --> S8
-    S8["8. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
-
-
 ---
 
 ## 7. 实战项目：构建完整的数据管道

@@ -7,6 +7,50 @@
 > **预计时间**: 每天 1 小时，2-3 周
 ---
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
+
+```mermaid
+flowchart LR
+    B1["B1 数据管道"]
+    B1 --> B2
+    B2["B2 预测模型"]
+    B2 --> B3
+    B3["✅ B3 RAG 知识库<br/>（当前）"]:::current
+    B3 --> B4
+    B4["B4 Agent 工作流"]
+    B4 --> B5
+    B5["B5 本地模型部署"]
+    click B1 "b1-data-pipeline.md"
+    click B2 "b2-prediction-models.md"
+    click B4 "b4-agent-workflow.md"
+    click B5 "b5-local-model-deploy.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["B3 RAG 知识库"]) --> S1
+    S1["1. RAG 原理"]
+    S1 --> S2
+    S2["2. 快速搭建"]
+    S2 --> S3
+    S3["3. 多文档 RAG"]
+    S3 --> S4
+    S4["4. 向量数据库"]
+    S4 --> S5
+    S5["5. 本地 LLM"]
+    S5 --> S6
+    S6["6. 评估优化"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 ## 本模块你将构建
 
 基于内部文档的 AI 问答系统 — 上传产品手册、政策文档、FAQ、Review 数据，AI 自动检索并回答问题。
@@ -1355,51 +1399,7 @@ pip install llama-index openai \
 ```
 
 > ⚠️ **安装提示**：LlamaIndex v0.10+ 采用模块化架构，核心包 `llama-index` 只包含基础功能，向量数据库、LLM 提供商等需要单独安装对应的集成包（如 `llama-index-vector-stores-chroma`）。
-
-🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
-
-```mermaid
-flowchart LR
-    B1["B1 数据管道"]
-    B1 --> B2
-    B2["B2 预测模型"]
-    B2 --> B3
-    B3["✅ B3 RAG 知识库<br/>（当前）"]:::current
-    B3 --> B4
-    B4["B4 Agent 工作流"]
-    B4 --> B5
-    B5["B5 本地模型部署"]
-    click B1 "b1-data-pipeline.md"
-    click B2 "b2-prediction-models.md"
-    click B4 "b4-agent-workflow.md"
-    click B5 "b5-local-model-deploy.md"
-    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
-```
-
 ---
-
-## 📖 本模块章节导航
-
-```mermaid
-flowchart TD
-    START(["B3 RAG 知识库"]) --> S1
-    S1["1. RAG 原理"]
-    S1 --> S2
-    S2["2. 快速搭建"]
-    S2 --> S3
-    S3["3. 多文档 RAG"]
-    S3 --> S4
-    S4["4. 向量数据库"]
-    S4 --> S5
-    S5["5. 本地 LLM"]
-    S5 --> S6
-    S6["6. 评估优化"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
-
-
 ### 附录 D：常见问题 FAQ
 
 **Q: RAG 和 Fine-tuning 可以一起用吗？**

@@ -7,6 +7,50 @@
 > **预计时间**: 每天 1 小时，2-3 周
 ---
 
+🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
+
+```mermaid
+flowchart LR
+    B1["B1 数据管道"]
+    B1 --> B2
+    B2["B2 预测模型"]
+    B2 --> B3
+    B3["B3 RAG 知识库"]
+    B3 --> B4
+    B4["✅ B4 Agent 工作流<br/>（当前）"]:::current
+    B4 --> B5
+    B5["B5 本地模型部署"]
+    click B1 "b1-data-pipeline.md"
+    click B2 "b2-prediction-models.md"
+    click B3 "b3-rag-knowledge-base.md"
+    click B5 "b5-local-model-deploy.md"
+    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
+```
+
+---
+
+## 📖 本模块章节导航
+
+```mermaid
+flowchart TD
+    START(["B4 Agent 工作流"]) --> S1
+    S1["1. Agent 概念"]
+    S1 --> S2
+    S2["2. 工具调用"]
+    S2 --> S3
+    S3["3. 工作流编排"]
+    S3 --> S4
+    S4["4. 电商 Agent"]
+    S4 --> S5
+    S5["5. 监控调试"]
+    S5 --> S6
+    S6["6. 生产部署"]
+    S6 --> S7
+    S7["7. 学习资源"]
+    style START fill:#ff9900,color:#fff,font-weight:bold
+```
+
+
 ## 本模块你将构建
 
 AI Agent 系统 — 自动执行多步骤运营任务（如每日数据检查 → 异常分析 → 报告生成 → 告警通知）。
@@ -1020,51 +1064,7 @@ def analyze_product_image(image_path: str) -> str:
 | 多 Agent 协作（CrewAI） | GPT-4o | 6-10 次 | ~$0.50 |
 
 > 💡 **成本控制建议**：日常监控类 Agent 用 GPT-4o-mini 就够了。只有需要深度分析（如竞品策略分析、复杂报告生成）时才用 GPT-4o。
-
-🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
-
-```mermaid
-flowchart LR
-    B1["B1 数据管道"]
-    B1 --> B2
-    B2["B2 预测模型"]
-    B2 --> B3
-    B3["B3 RAG 知识库"]
-    B3 --> B4
-    B4["✅ B4 Agent 工作流<br/>（当前）"]:::current
-    B4 --> B5
-    B5["B5 本地模型部署"]
-    click B1 "b1-data-pipeline.md"
-    click B2 "b2-prediction-models.md"
-    click B3 "b3-rag-knowledge-base.md"
-    click B5 "b5-local-model-deploy.md"
-    classDef current fill:#ff9900,stroke:#333,color:#fff,font-weight:bold
-```
-
 ---
-
-## 📖 本模块章节导航
-
-```mermaid
-flowchart TD
-    START(["B4 Agent 工作流"]) --> S1
-    S1["1. Agent 概念"]
-    S1 --> S2
-    S2["2. 工具调用"]
-    S2 --> S3
-    S3["3. 工作流编排"]
-    S3 --> S4
-    S4["4. 电商 Agent"]
-    S4 --> S5
-    S5["5. 监控调试"]
-    S5 --> S6
-    S6["6. 生产部署"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
-
-
 ---
 
 ⬅️ [B3. RAG 知识库系统](b3-rag-knowledge-base.md) · ➡️ [B5. 本地模型部署与微调](b5-local-model-deploy.md)

@@ -19,18 +19,7 @@ flowchart LR
 
 ## 📖 本模块章节导航
 
-```mermaid
-flowchart TD
-    START(["C1 AI 评估规划"]) --> S1["1. 方法论"]
-    S1 --> S2["2. 优先级矩阵"]
-    S2 --> S3["3. Prompt 模板"]
-    S3 --> S4["4. 评估工具"]
-    S4 --> S5["5. 实战 SOP"]
-    S5 --> S6["6. 常见陷阱"]
-    S6 --> S7["7. 案例分析"]
-    S7 --> S8["8. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
+1. [AI 落地方法论](#1-ai-落地方法论先想清楚再动手) · 2. [优先级矩阵](#2-ai-落地优先级矩阵) · 3. [Prompt 模板](#3-prompt-模板管理者专用) · 4. [评估工具](#4-评估工具) · 5. [实战工作流](#5-实战工作流ai-落地规划-sop) · 6. [常见陷阱](#6-常见陷阱) · 7. [案例分析](#7-案例分析不同规模团队的-ai-落地) · 8. [学习资源](#8-学习资源) · 9. [🦞 OpenClaw 自动化](#9-用-openclaw-辅助-ai-能力评估) · 10. [完成标志](#10-完成标志)
 
 ---
 
@@ -390,7 +379,46 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 
 ---
 
-## 9. 完成标志
+## 9. 用 OpenClaw 辅助 AI 能力评估
+
+### 9.1 场景：AI Agent 自动收集团队 AI 使用数据
+
+```
+你对 OpenClaw 说：
+"每周五下午，自动汇总团队本周的 AI 使用情况：
+从 Slack #ai-usage 频道统计使用次数，从 Google Sheet 读取效率数据，
+生成周报发到 #management 频道"
+
+OpenClaw 自动执行：
+1. [Heartbeat] 每周五 17:00 触发
+2. [Skill: slack] 统计 #ai-usage 频道的消息数和使用案例
+3. [Skill: google-sheets] 读取团队效率追踪表
+4. [LLM] 生成 AI 使用周报（使用率、ROI、亮点、问题）
+5. [Skill: slack] 发送周报到 #management
+```
+
+### 9.2 需要的 Skills 和 MCP Server
+
+| 组件 | 用途 | 链接 |
+|------|------|------|
+| **slack** Skill | 读取使用数据、发送报告 | [ClawHub](https://clawhub.ai/) |
+| **google-sheets** Skill | 读取效率追踪数据 | [ClawHub](https://clawhub.ai/) |
+| **memory** Skill | 存储历| **mem??? **memory** Skill | 存储历| **mem??? *aw.com/) |
+
+### 9.3 相关资源
+
+| 资源 | 说明 | 链接 |
+|------|------|------|
+| OpenClaw 官方文档 | 安装和配置指南 | [docs.openclaw.com](https://docs.openclaw.com/) |
+| ClawHub Skills 市场 | 搜索和安装 Agent Skills | [clawhub.ai](https://clawhub.ai/) |
+| OpenClaw 商业应用指南 | 企业场景设置 | [Business Guide](https://www.aimakers.co/blog/openclaw-clawbot-business-guide/) |
+| F4 自动化与 Agent | Agent 基础模块 | [F4 模块](../0-foundations/f4-agent-automation.md) |
+
+Content rephrased for compliance with licensing restrictions. Sources cited inline.
+
+---
+
+## 10. 完成标志
 
 - [ ] 完成团队 AI 成熟度评估问卷（全员填写，汇总平均分）
 - [ ] 完成 AI 落地优先级矩阵（根据团队实际情况调整评分）

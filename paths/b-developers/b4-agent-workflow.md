@@ -27,24 +27,7 @@ flowchart LR
 
 ## 📖 本模块章节导航
 
-```mermaid
-flowchart TD
-    START(["B4 Agent 工作流"]) --> S1
-    S1["1. Agent 概念"]
-    S1 --> S2
-    S2["2. 工具调用"]
-    S2 --> S3
-    S3["3. 工作流编排"]
-    S3 --> S4
-    S4["4. 电商 Agent"]
-    S4 --> S5
-    S5["5. 监控调试"]
-    S5 --> S6
-    S6["6. 生产部署"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
+1. [Agent 方法论](#1-agent-方法论) · 2. [工具全景](#2-工具全景) · 3. [代码实战](#3-代码实战) · 4. [电商 Agent 应用](#4-电商-agent-应用场景) · 5. [常见陷阱](#5-常见陷阱) · 6. [进阶技术](#6-进阶技术) · 7. [学习资源](#7-学习资源) · 8. [🦞 OpenClaw 实战](#8-用-openclaw-部署电商-agent) · 9. [完成标志](#9-完成标志)
 
 
 ## 本模块你将构建
@@ -1000,7 +983,51 @@ def analyze_product_image(image_path: str) -> str:
 
 ---
 
-## 8. 完成标志
+## 8. 用 OpenClaw 部署电商 Agent
+
+### 8.1 场景：用 OpenClaw 搭建多技能电商运营 Agent
+
+```
+你对 OpenClaw 说：
+"帮我搭建一个全自动电商运营 Agent，
+能监控销售数据、分析竞品、管理库存、处理客服问题"
+
+OpenClaw 自动执行：
+1. 安装 OpenClaw 到本地/服务器
+2. 配置 LLM（Claude/GPT/Ollama）
+3. 安装电商相关 Skills（google-sheets, slack, web-search）
+4. 配置 MCP Server（filesystem, fetch, sqlite）
+5. 通过 WhatsApp/Telegram 下达运营指令
+6. Agent 自主执行并汇报结果
+```
+
+### 8.2 需要的 Skills 和 MCP Server
+
+| 组件 | 用途 | 链接 |
+|------|------|------|
+| **google-sheets** Skill | 读写运营数据 | [ClawHub](https://clawhub.ai/) |
+| **slack** Skill | 告警和汇报 | [ClawHub](https://clawhub.ai/) |
+| **web-search** Skill | 竞品监控 | [ClawHub](https://clawhub.ai/) |
+| **memory** Skill | 存储运营知识 | [OpenClaw Docs](https://docs.openclaw.com/) |
+| **filesystem MCP** | 读写本地数据 | [MCP Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
+| **fetch MCP** | 调用外部 API | [MCP Fetch](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) |
+| **sqlite MCP** | 本地数据库 | [MCP SQLite](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite) |
+
+### 8.3 相关资源
+
+| 资源 | 说明 | 链接 |
+|------|------|------|
+| OpenClaw 官方文档 | 安装和配置指南 | [docs.openclaw.com](https://docs.openclaw.com/) |
+| ClawHub Skills 市场 | 搜索和安装 Agent Skills | [clawhub.ai](https://clawhub.ai/) |
+| OpenClaw MCP 集成 | 连接 MCP Server | [Build Skill with MCP](https://rebeccamdeprey.com/blog/build-openclaw-skill-with-mcp) |
+| F4 自动化与 Agent | Agent 基础模块 | [F4 模块](../0-foundations/f4-agent-automation.md) |
+| OpenClaw 完整设置指南 | 25 Tools + 53 Skills | [Setup Guide](https://yu-wenhao.com/en/blog/openclaw-tools-skills-tutorial) |
+
+Content rephrased for compliance with licensing restrictions. Sources cited inline.
+
+---
+
+## 9. 完成标志
 
 - [ ] 理解 Agent vs Chain vs RAG 的区别，能说出各自适用场景
 - [ ] 用 LangGraph 构建一个能调用工具的最简 Agent（3.1）
@@ -1011,7 +1038,7 @@ def analyze_product_image(image_path: str) -> str:
 
 ---
 
-## 9. 附录
+## 10. 附录
 
 ### 9.1 Agent 架构速查
 

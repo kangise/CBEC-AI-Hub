@@ -28,24 +28,7 @@ flowchart LR
 
 ## 📖 本模块章节导航
 
-```mermaid
-flowchart TD
-    START(["A1 选品与市场"]) --> S1
-    S1["1. 方法论"]
-    S1 --> S2
-    S2["2. 工具全景"]
-    S2 --> S3
-    S3["3. Prompt 模板库"]
-    S3 --> S4
-    S4["4. 选品 SOP"]
-    S4 --> S5
-    S5["5. 常见陷阱"]
-    S5 --> S6
-    S6["6. 进阶技巧"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
+1. [选品方法论](#1-选品方法论ai-之前你需要理解的基础) · 2. [AI 工具全景](#2-ai-工具全景选品阶段用什么) · 3. [Prompt 模板库](#3-prompt-模板库选品专用) · 4. [选品 SOP](#4-选品实战工作流) · 5. [常见陷阱](#5-常见选品陷阱) · 6. [进阶技巧](#6-进阶技巧) · 7. [学习资源](#7-学习资源) · 8. [🦞 OpenClaw 自动化](#8-用-openclaw-自动化选品流程) · 9. [完成标志](#9-完成标志)
 
 
 ## 本模块你将学会
@@ -807,7 +790,51 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 
 ---
 
-## 8. 完成标志
+## 8. 用 OpenClaw 自动化选品流程
+
+### 8.1 场景：AI Agent 自动竞品监控与选品情报
+
+OpenClaw 可以把本模块的手动选品流程变成自动化的 Agent 工作流：
+
+```
+你对 OpenClaw 说（通过 WhatsApp/Telegram）：
+"每天早上 9 点，帮我监控以下 5 个竞品 ASIN 的价格、BSR 和新 Review，
+如果有显著变化，分析原因并发到我的 Slack #product-intel 频道"
+
+OpenClaw 自动执行：
+1. [Heartbeat] 每天 9:00 触发
+2. [Skill: web-search] 获取竞品最新数据
+3. [Skill: memory] 对比昨日数据，检测变化
+4. [LLM] 分析变化原因（降价促销？新品冲击？季节性？）
+5. [Skill: slack] 发送分析报告到指定频道
+```
+
+### 8.2 需要的 Skills 和 MCP Server
+
+| 组件 | 用途 | 安装方式 | 链接 |
+|------|------|---------|------|
+| **web-search** Skill | 搜索竞品数据和市场信息 | 内置 Skill | [OpenClaw Docs](https://docs.openclaw.com/) |
+| **memory** Skill | 存储历史数据，对比变化 | 内置 Skill | [OpenClaw Docs](https://docs.openclaw.com/) |
+| **slack** Skill | 发送告警和报告 | `clawhub install slack` | [ClawHub](https://clawhub.ai/) |
+| **google-sheets** Skill | 读写选品数据表 | `clawhub install google-sheets` | [ClawHub](https://clawhub.ai/) |
+| **filesystem MCP** | 读取本地 CSV/Excel 报告 | MCP Server 配置 | [MCP Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
+| **fetch MCP** | 调用外部 API | MCP Server 配置 | [MCP Fetch](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) |
+
+### 8.3 相关资源
+
+| 资源 | 说明 | 链接 |
+|------|------|------|
+| OpenClaw 官方文档 | 安装和配置指南 | [docs.openclaw.com](https://docs.openclaw.com/) |
+| ClawHub Skills 市场 | 搜索和安装 Agent Skills | [clawhub.ai](https://clawhub.ai/) |
+| OpenClaw MCP 集成指南 | 如何连接 MCP Server | [Build Skill with MCP](https://rebeccamdeprey.com/blog/build-openclaw-skill-with-mcp) |
+| OpenClaw 设置指南 | 10 种配置方案 | [Setup Guide](https://o-mega.ai/articles/openclaw-setup-guide-10-configurations-for-every-use-case-2026) |
+| F4 自动化与 Agent | 本 Hub 的 Agent 基础模块 | [F4 模块](../0-foundations/f4-agent-automation.md) |
+
+Content rephrased for compliance with licensing restrictions. Sources cited inline.
+
+---
+
+## 9. 完成标志
 
 - [ ] 用 AI 完成一个完整的选品可行性分析报告（覆盖 7 步法的所有步骤）
 - [ ] 至少使用 3 个不同的 Prompt 模板并对比效果

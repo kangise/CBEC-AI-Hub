@@ -28,24 +28,7 @@ flowchart LR
 
 ## 📖 本模块章节导航
 
-```mermaid
-flowchart TD
-    START(["A2 Listing 创作"]) --> S1
-    S1["1. 方法论"]
-    S1 --> S2
-    S2["2. 工具对比"]
-    S2 --> S3
-    S3["3. Prompt 模板库"]
-    S3 --> S4
-    S4["4. 实战 SOP"]
-    S4 --> S5
-    S5["5. 多语言策略"]
-    S5 --> S6
-    S6["6. 常见陷阱"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
+1. [Listing 方法论](#1-listing-方法论ai-之前你需要理解的基础) · 2. [AI 工具全景](#2-ai-工具全景listing-阶段用什么) · 3. [Prompt 模板库](#3-prompt-模板库listing-专用) · 4. [Listing 实战工作流](#4-listing-实战工作流) · 5. [常见陷阱](#5-常见-listing-陷阱) · 6. [进阶技巧](#6-进阶技巧) · 7. [学习资源](#7-学习资源) · 8. [🦞 OpenClaw 自动化](#8-用-openclaw-自动化-listing-工作流) · 9. [完成标志](#9-完成标志)
 
 
 ## 本模块你将学会
@@ -991,7 +974,46 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 
 ---
 
-## 8. 完成标志
+## 8. 用 OpenClaw 自动化 Listing 工作流
+
+### 8.1 场景：AI Agent 自动生成多语言 Listing
+
+```
+你对 OpenClaw 说：
+"帮我为 Google Sheet 'New Products' 第 3 行的新产品生成 US/DE/JP 三站 Listing，
+保存到 'Listing Drafts' Sheet，完成后通知我审核"
+
+OpenClaw 自动执行：
+1. [Skill: google-sheets] 读取产品信息
+2. [LLM] 生成英文 Listing（标题 + 5 Bullet + 描述 + Search Terms）
+3. [LLM] 本地化为德文和日文版本
+4. [Skill: google-sheets] 写入 Listing Drafts
+5. [Skill: slack] 通知审核
+```
+
+### 8.2 需要的 Skills 和 MCP Server
+
+| 组件 | 用途 | 链接 |
+|------|------|------|
+| **google-sheets** Skill | 读写产品数据和 Listing 草稿 | [ClawHub](https://clawhub.ai/) |
+| **slack/telegram** Skill | 审核通知 | [ClawHub](https://clawhub.ai/) |
+| **memory** Skill | 存储品牌风格指南和关键词库 | [OpenClaw Docs](https://docs.openclaw.com/) |
+| **filesystem MCP** | 读取本地关键词文件 | [MCP Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
+
+### 8.3 相关资源
+
+| 资源 | 说明 | 链接 |
+|------|------|------|
+| OpenClaw 官方文档 | 安装和配置指南 | [docs.openclaw.com](https://docs.openclaw.com/) |
+| ClawHub Skills 市场 | 搜索和安装 Agent Skills | [clawhub.ai](https://clawhub.ai/) |
+| OpenClaw MCP 集成 | 连接 MCP Server | [Build Skill with MCP](https://rebeccamdeprey.com/blog/build-openclaw-skill-with-mcp) |
+| F4 自动化与 Agent | Agent 基础模块 | [F4 模块](../0-foundations/f4-agent-automation.md) |
+
+Content rephrased for compliance with licensing restrictions. Sources cited inline.
+
+---
+
+## 9. 完成标志
 
 - [ ] 用 AI 生成一套完整的 Listing（标题 + 五点 + 描述 + Search Terms），并完成人工优化
 - [ ] 用 AI 做一次竞品 Listing 策略拆解（至少 3 个竞品）

@@ -28,24 +28,7 @@ flowchart LR
 
 ## 📖 本模块章节导航
 
-```mermaid
-flowchart TD
-    START(["A6 合规风控"]) --> S1
-    S1["1. 合规基础"]
-    S1 --> S2
-    S2["2. 工具对比"]
-    S2 --> S3
-    S3["3. Prompt 模板库"]
-    S3 --> S4
-    S4["4. 实战 SOP"]
-    S4 --> S5
-    S5["5. 申诉策略"]
-    S5 --> S6
-    S6["6. 常见陷阱"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
+1. [合规方法论](#1-合规方法论ai-之前你需要理解的基础) · 2. [AI 工具全景](#2-ai-工具全景合规阶段用什么) · 3. [Prompt 模板库](#3-prompt-模板库合规专用) · 4. [合规实战工作流](#4-合规实战工作流) · 5. [常见陷阱](#5-常见合规陷阱) · 6. [进阶技巧](#6-进阶技巧) · 7. [学习资源](#7-学习资源) · 8. [🦞 OpenClaw 自动化](#8-用-openclaw-自动化合规检查) · 9. [完成标志](#9-完成标志)
 
 
 > ⚠️ **重要免责声明 | Important Disclaimer**  
@@ -1004,7 +987,46 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 
 ---
 
-## 8. 完成标志
+## 8. 用 OpenClaw 自动化合规检查
+
+### 8.1 场景：AI Agent 新品上架前自动合规预检
+
+```
+你对 OpenClaw 说：
+"新产品信息录入后，自动检索合规知识库，
+对比产品信息和各市场合规要求，生成差距清单和认证费用估算，发送合规预检报告"
+
+OpenClaw 自动执行：
+1. [触发] 新产品信息录入时
+2. [Skill: memory] 检索合规知识库（各市场认证要求）
+3. [LLM] 对比产品信息和合规要求，生成差距清单
+4. [LLM] 估算认证费用和周期
+5. [Skill: slack] 发送合规预检报告
+```
+
+### 8.2 需要的 Skills 和 MCP Server
+
+| 组件 | 用途 | 链接 |
+|------|------|------|
+| **memory** Skill | 存储合规知识库和认证要求 | [OpenClaw Docs](https://docs.openclaw.com/) |
+| **web-search** Skill | 检索最新法规更新 | [OpenClaw Docs](https://docs.openclaw.com/) |
+| **slack** Skill | 发送合规预检报告 | [ClawHub](https://clawhub.ai/) |
+| **filesystem MCP** | 读取本地合规文档和模板 | [MCP Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
+
+### 8.3 相关资源
+
+| 资源 | 说明 | 链接 |
+|------|------|------|
+| OpenClaw 官方文档 | 安装和配置指南 | [docs.openclaw.com](https://docs.openclaw.com/) |
+| ClawHub Skills 市场 | 搜索和安装 Agent Skills | [clawhub.ai](https://clawhub.ai/) |
+| OpenClaw MCP 集成 | 连接 MCP Server | [Build Skill with MCP](https://rebeccamdeprey.com/blog/build-openclaw-skill-with-mcp) |
+| F4 自动化与 Agent | Agent 基础模块 | [F4 模块](../0-foundations/f4-agent-automation.md) |
+
+Content rephrased for compliance with licensing restrictions. Sources cited inline.
+
+---
+
+## 9. 完成标志
 
 - [ ] 用 AI 为一个产品生成完整的多市场合规对比表（覆盖 US/EU/JP 至少两个市场）
 - [ ] 用 AI 生成产品认证需求清单，并向至少 2 家认证机构询价验证

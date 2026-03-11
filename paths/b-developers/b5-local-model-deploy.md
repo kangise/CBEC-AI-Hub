@@ -27,24 +27,7 @@ flowchart LR
 
 ## 📖 本模块章节导航
 
-```mermaid
-flowchart TD
-    START(["B5 本地模型部署"]) --> S1
-    S1["1. 本地部署概述"]
-    S1 --> S2
-    S2["2. Ollama 入门"]
-    S2 --> S3
-    S3["3. 模型选择"]
-    S3 --> S4
-    S4["4. 微调基础"]
-    S4 --> S5
-    S5["5. API 服务化"]
-    S5 --> S6
-    S6["6. 性能优化"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
+1. [本地部署方法论](#1-本地部署方法论) · 2. [工具全景](#2-工具全景) · 3. [代码实战](#3-代码实战) · 4. [硬件选购指南](#4-硬件选购指南) · 5. [常见陷阱](#5-常见陷阱) · 6. [进阶技术](#6-进阶技术) · 7. [学习资源](#7-学习资源) · 8. [🦞 OpenClaw 本地部署](#8-用-openclaw--ollama-构建本地-agent) · 9. [完成标志](#9-完成标志)
 
 
 ## 本模块你将构建
@@ -1184,7 +1167,46 @@ def batch_analyze(
 
 ---
 
-## 8. 完成标志
+## 8. 用 OpenClaw + Ollama 构建本地 Agent
+
+### 8.1 场景：完全本地化的 AI Agent（数据不出服务器）
+
+```
+你对 OpenClaw 说：
+"用本地模型处理所有敏感商业数据，
+利润分析、供应商价格对比、库存成本计算，零外部 API 调用"
+
+OpenClaw 自动执行：
+1. 安装 Ollama + 下载 Qwen2.5/Llama 3.3
+2. 安装 OpenClaw，配置使用本地 Ollama 模型
+3. 配置 filesystem MCP（只访问指定目录）
+4. 所有数据处理在本地完成
+5. 通过 Signal/本地 Web UI 交互
+```
+
+### 8.2 需要的 Skills 和 MCP Server
+
+| 组件 | 用途 | 链接 |
+|------|------|------|
+| **filesystem MCP** | 读写本地敏感数据 | [MCP Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
+| **memory** Skill | 本地知识图谱存储 | [OpenClaw Docs](https://docs.openclaw.com/) |
+| **Ollama** | 本地运行 LLM | [ollama.com](https://ollama.com/) |
+
+### 8.3 相关资源
+
+| 资源 | 说明 | 链接 |
+|------|------|------|
+| OpenClaw 官方文档 | 安装和配置指南 | [docs.openclaw.com](https://docs.openclaw.com/) |
+| ClawHub Skills 市场 | 搜索和安装 Agent Skills | [clawhub.ai](https://clawhub.ai/) |
+| OpenClaw MCP 集成 | 连接 MCP Server | [Build Skill with MCP](https://rebeccamdeprey.com/blog/build-openclaw-skill-with-mcp) |
+| F4 自动化与 Agent | Agent 基础模块 | [F4 模块](../0-foundations/f4-agent-automation.md) |
+| OpenClaw + Ollama 配置 | 本地模型集成 | [OpenClaw Setup](https://macaron.im/blog/how-to-setup-openclaw) |
+
+Content rephrased for compliance with licensing restrictions. Sources cited inline.
+
+---
+
+## 9. 完成标志
 
 - [ ] 在本地安装 Ollama 并成功运行一个 LLM（3.1）
 - [ ] 能说出 Qwen2.5 / Llama 3.1 / Mistral 各自的优势和适用场景（3.2）
@@ -1196,7 +1218,7 @@ def batch_analyze(
 
 ---
 
-## 9. 附录
+## 10. 附录
 
 ### 9.1 开源模型对比表
 

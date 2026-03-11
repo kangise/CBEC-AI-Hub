@@ -23,28 +23,7 @@ flowchart LR
 
 ## 📖 本模块章节导航
 
-```mermaid
-flowchart TD
-    START(["C2 团队技能建设"]) --> S1
-    S1["1. 培训方法论"]
-    S1 --> S2
-    S2["2. 角色课程"]
-    S2 --> S3
-    S3["3. Prompt 库搭建"]
-    S3 --> S4
-    S4["4. 使用规范"]
-    S4 --> S5
-    S5["5. Prompt 模板"]
-    S5 --> S6
-    S6["6. 实战工作流"]
-    S6 --> S7
-    S7["7. 常见问题"]
-    S7 --> S8
-    S8["8. 案例分析"]
-    S8 --> S9
-    S9["9. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
+1. [培训方法论](#1-培训方法论为什么大多数-ai-培训都失败了) · 2. [按角色培训](#2-按角色定制的培训课程) · 3. [Prompt 库搭建](#3-团队-prompt-库搭建) · 4. [使用规范](#4-ai-使用规范制定) · 5. [Prompt 模板](#5-prompt-模板团队建设专用) · 6. [实战工作流](#6-实战工作流从零搭建团队-ai-能力) · 7. [常见问题](#7-常见问题与解决方案) · 8. [案例分析](#8-案例分析团队-ai-技能建设实战) · 9. [学习资源](#9-学习资源) · 10. [🦞 OpenClaw 自动化](#10-用-openclaw-辅助团队-ai-建设) · 11. [完成标志](#11-完成标志)
 
 
 ## 本模块你将产出
@@ -893,7 +872,45 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 
 ---
 
-## 10. 完成标志
+## 10. 用 OpenClaw 辅助团队 AI 建设
+
+### 10.1 场景：AI Agent 自动化新人 AI 培训和 Prompt 库维护
+
+```
+你对 OpenClaw 说：
+"当新人在 Slack 提问 AI 使用问题时，自动从 Prompt 库检索最佳模板，
+生成个性化建议回复，并每月统计 Prompt 库使用情况"
+
+OpenClaw 自动执行：
+1. [Channel: Slack] 新人在 #ai-help 提问
+2. [Skill: memory] 从 Prompt 库检索最佳模板
+3. [LLM] 生成个性化的使用建议
+4. [Skill: slack] 回复新人并记录常见问题
+5. [Heartbeat] 每月自动生成 Prompt 库使用统计
+```
+
+### 10.2 需要的 Skills 和 MCP Server
+
+| 组件 | 用途 | 链接 |
+|------|------|------|
+| **slack** Skill | 监听提问、发送回复 | [ClawHub](https://clawhub.ai/) |
+| **memory** Skill | 存储和检索 Prompt 库 | [OpenClaw Docs](https://docs.openclaw.com/) |
+| **google-sheets** Skill | 记录使用统计数据 | [ClawHub](https://clawhub.ai/) |
+
+### 10.3 相关资源
+
+| 资源 | 说明 | 链接 |
+|------|------|------|
+| OpenClaw 官方文档 | 安装和配置指南 | [docs.openclaw.com](https://docs.openclaw.com/) |
+| ClawHub Skills 市场 | 搜索和安装 Agent Skills | [clawhub.ai](https://clawhub.ai/) |
+| OpenClaw 商业应用指南 | 企业场景设置 | [Business Guide](https://www.aimakers.co/blog/openclaw-clawbot-business-guide/) |
+| F4 自动化与 Agent | Agent 基础模块 | [F4 模块](../0-foundations/f4-agent-automation.md) |
+
+Content rephrased for compliance with licensing restrictions. Sources cited inline.
+
+---
+
+## 11. 完成标志
 
 - [ ] 完成全员 AI 基础 workshop（100% 参与率）
 - [ ] 每个岗位完成至少 1 次专项培训

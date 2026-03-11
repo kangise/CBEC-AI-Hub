@@ -29,26 +29,7 @@ flowchart LR
 
 ## 📖 本模块章节导航
 
-```mermaid
-flowchart TD
-    START(["B1 数据管道"]) --> S1
-    S1["1. 数据工程方法论"]
-    S1 --> S2
-    S2["2. pandas 处理"]
-    S2 --> S3
-    S3["3. SP-API 采集"]
-    S3 --> S4
-    S4["4. 浏览器自动化"]
-    S4 --> S5
-    S5["5. 数据存储查询"]
-    S5 --> S6
-    S6["6. 数据可视化"]
-    S6 --> S7
-    S7["7. 完整 Pipeline"]
-    S7 --> S8
-    S8["8. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
+1. [数据工程方法论](#1-数据工程方法论) · 2. [pandas 数据处理](#2-核心技能pandas-数据处理) · 3. [SP-API 数据采集](#3-sp-api-数据采集) · 4. [浏览器自动化](#4-浏览器自动化selenium--playwright) · 5. [数据存储与查询](#5-数据存储与查询) · 6. [数据可视化](#6-数据可视化与报告) · 7. [实战项目](#7-实战项目构建完整的数据管道) · 8. [学习资源](#8-学习资源) · 9. [🦞 OpenClaw 自动化](#9-用-openclaw-自动化数据管道) · 10. [完成标志](#10-完成标志)
 
 
 ## 本模块你将构建
@@ -1557,7 +1538,50 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 
 ---
 
-## 9. 完成标志
+## 9. 用 OpenClaw 自动化数据管道
+
+### 9.1 场景：AI Agent 自动采集和处理 Amazon 报告
+
+```
+你对 OpenClaw 说：
+"每天早上 8 点，从 Seller Central 下载昨天的 Business Report 和 Advertising Report，
+合并到 Google Sheet 'Daily Dashboard'，如果有异常指标（销量下降 >20%、ACOS 上升 >10%），
+发 Slack 告警到 #daily-ops"
+
+OpenClaw 自动执行：
+1. [Heartbeat] 每天 8:00 触发
+2. [Skill: web-search / fetch MCP] 获取报告数据
+3. [LLM + pandas] 数据清洗和合并
+4. [Skill: google-sheets] 写入 Dashboard
+5. [LLM] 检测异常指标
+6. [Skill: slack] 异常时发送告警
+```
+
+### 9.2 需要的 Skills 和 MCP Server
+
+| 组件 | 用途 | 链接 |
+|------|------|------|
+| **google-sheets** Skill | 读写数据报表 | [ClawHub](https://clawhub.ai/) |
+| **slack** Skill | 异常告警通知 | [ClawHub](https://clawhub.ai/) |
+| **memory** Skill | 存储历史基线数据 | [OpenClaw Docs](https://docs.openclaw.com/) |
+| **filesystem MCP** | 读写本地 CSV/Excel | [MCP Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
+| **fetch MCP** | 调用 SP-API 等外部接口 | [MCP Fetch](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) |
+| **sqlite MCP** | 本地数据库存储 | [MCP SQLite](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite) |
+
+### 9.3 相关资源
+
+| 资源 | 说明 | 链接 |
+|------|------|------|
+| OpenClaw 官方文档 | 安装和配置指南 | [docs.openclaw.com](https://docs.openclaw.com/) |
+| ClawHub Skills 市场 | 搜索和安装 Agent Skills | [clawhub.ai](https://clawhub.ai/) |
+| OpenClaw MCP 集成 | 连接 MCP Server | [Build Skill with MCP](https://rebeccamdeprey.com/blog/build-openclaw-skill-with-mcp) |
+| F4 自动化与 Agent | Agent 基础模块 | [F4 模块](../0-foundations/f4-agent-automation.md) |
+
+Content rephrased for compliance with licensing restrictions. Sources cited inline.
+
+---
+
+## 10. 完成标志
 
 - [ ] 写一个脚本自动读取和清洗 Amazon Business Report（处理编码、数值、日期问题）
 - [ ] 写一个脚本自动合并多个市场的报告并正确计算 ASP 和 CR（从基础指标重算）

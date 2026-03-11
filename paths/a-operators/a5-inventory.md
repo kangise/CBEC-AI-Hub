@@ -28,24 +28,7 @@ flowchart LR
 
 ## 📖 本模块章节导航
 
-```mermaid
-flowchart TD
-    START(["A5 库存供应链"]) --> S1
-    S1["1. 库存方法论"]
-    S1 --> S2
-    S2["2. 工具对比"]
-    S2 --> S3
-    S3["3. Prompt 模板库"]
-    S3 --> S4
-    S4["4. 实战 SOP"]
-    S4 --> S5
-    S5["5. 补货策略"]
-    S5 --> S6
-    S6["6. 常见陷阱"]
-    S6 --> S7
-    S7["7. 学习资源"]
-    style START fill:#ff9900,color:#fff,font-weight:bold
-```
+1. [库存方法论](#1-库存方法论ai-之前你需要理解的基础) · 2. [AI 工具全景](#2-ai-工具全景库存管理阶段用什么) · 3. [Prompt 模板库](#3-prompt-模板库库存专用) · 4. [库存实战工作流](#4-库存实战工作流) · 5. [常见陷阱](#5-常见库存陷阱) · 6. [进阶技巧](#6-进阶技巧) · 7. [学习资源](#7-学习资源) · 8. [🦞 OpenClaw 自动化](#8-用-openclaw-自动化库存管理) · 9. [完成标志](#9-完成标志)
 
 
 ## 本模块你将学会
@@ -1010,7 +993,46 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 
 ---
 
-## 8. 完成标志
+## 8. 用 OpenClaw 自动化库存管理
+
+### 8.1 场景：AI Agent 自动库存预警与补货建议
+
+```
+你对 OpenClaw 说：
+"每天早上 8 点检查库存和销售数据，
+计算安全库存和预计断货日期，生成补货建议，库存低于安全线时发送预警"
+
+OpenClaw 自动执行：
+1. [Heartbeat] 每天 8:00 触发
+2. [Skill: google-sheets] 读取库存和销售数据
+3. [LLM] 计算安全库存和预计断货日期
+4. [LLM] 生成补货建议（数量、时间、紧急度）
+5. [Skill: slack] 库存低于安全线时发送预警
+```
+
+### 8.2 需要的 Skills 和 MCP Server
+
+| 组件 | 用途 | 链接 |
+|------|------|------|
+| **google-sheets** Skill | 读写库存和销售数据 | [ClawHub](https://clawhub.ai/) |
+| **slack** Skill | 发送库存预警通知 | [ClawHub](https://clawhub.ai/) |
+| **memory** Skill | 存储历史库存数据和补货规则 | [OpenClaw Docs](https://docs.openclaw.com/) |
+| **filesystem MCP** | 读取本地库存报告文件 | [MCP Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
+
+### 8.3 相关资源
+
+| 资源 | 说明 | 链接 |
+|------|------|------|
+| OpenClaw 官方文档 | 安装和配置指南 | [docs.openclaw.com](https://docs.openclaw.com/) |
+| ClawHub Skills 市场 | 搜索和安装 Agent Skills | [clawhub.ai](https://clawhub.ai/) |
+| OpenClaw MCP 集成 | 连接 MCP Server | [Build Skill with MCP](https://rebeccamdeprey.com/blog/build-openclaw-skill-with-mcp) |
+| F4 自动化与 Agent | Agent 基础模块 | [F4 模块](../0-foundations/f4-agent-automation.md) |
+
+Content rephrased for compliance with licensing restrictions. Sources cited inline.
+
+---
+
+## 9. 完成标志
 
 - [ ] 用 AI 建立一个产品的完整补货决策模型（含安全库存计算、补货点、三种场景分析）
 - [ ] 用 AI 分析你的 IPI Score，制定具体的改善方案并执行至少 1 个月

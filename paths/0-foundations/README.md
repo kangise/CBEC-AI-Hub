@@ -58,7 +58,7 @@ flowchart LR
 - [ ] 理解 RAG 的核心架构，知道什么时候该用 RAG 而不是直接问 AI
 - [ ] 理解 Agent 和普通对话的区别，能判断哪些业务场景适合用 Agent
 
-完成 Path 0 后，根据你的角色选择下一步：
+完成 Path 0 后，建议先看 [🗺️ AI 应用全景评估](ai-landscape.md) 建立全局视角，再根据你的角色选择下一步：
 - 运营人 → [Path A: AI 提效实战](../a-operators/)
 - 技术人 → [Path B: AI 系统构建](../b-developers/)
 - 管理者 → [Path C: AI 战略落地](../c-managers/)

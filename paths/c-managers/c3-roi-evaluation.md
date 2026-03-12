@@ -1,7 +1,7 @@
 # C3. AI 项目 ROI 评估 | AI Project ROI Evaluation
 
 > **路径**: Path C: 管理者 · **模块**: C3  
-> **最后更新**: 2026-03-11  
+> **最后更新**: 2026-03-12  
 > **难度**: ⭐⭐ 中级  
 > **预计时间**: 1-2 小时  
 > **前置模块**: [C1 AI 能力评估与规划](c1-ai-assessment.md)、[C2 团队 AI 技能建设](c2-team-building.md)

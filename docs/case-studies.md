@@ -176,7 +176,7 @@
 
 **技术参考资料：**
 -  [技术实施指南](technical-guidelines.md) - 架构模式、性能基准和最佳实践
-- 🛠️ [贡献指南](CONTRIBUTING.md) - 详细的贡献流程和格式要求
+- 🛠️ [贡献指南](../CONTRIBUTING.md) - 详细的贡献流程和格式要求
 
 **贡献方式：**
 - **[提交案例研究](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md)** - 使用我们的专用模板
@@ -206,4 +206,4 @@
 
 ---
 
-**案例研究贡献**: 如果您有新的案例研究想要分享，请使用我们的[案例研究提交模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md)或参考[贡献指南](CONTRIBUTING.md)了解详细流程。
+**案例研究贡献**: 如果您有新的案例研究想要分享，请使用我们的[案例研究提交模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md)或参考[贡献指南](../CONTRIBUTING.md)了解详细流程。

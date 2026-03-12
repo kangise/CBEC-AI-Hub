@@ -1,7 +1,7 @@
 # F4. 自动化与 Agent | Automation & AI Agents
 
 > **路径**: Path 0: AI 基础先行 · **模块**: F4
-> **最后更新**: 2026-03-11
+> **最后更新**: 2026-03-12
 > **难度**: ⭐⭐ 中级
 > **预计时间**: 2 小时
 > **前置模块**: [F1 AI 的前世今生](f1-ai-evolution.md)、[F2 Prompt 工程](f2-prompt-engineering.md)、[F3 知识库与 RAG](f3-rag-knowledge.md)

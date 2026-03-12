@@ -1,7 +1,7 @@
 # F2. Prompt 工程 | Prompt Engineering
 
 > **路径**: Path 0: AI 基础先行 · **模块**: F2
-> **最后更新**: 2026-03-11
+> **最后更新**: 2026-03-12
 > **难度**: ⭐ 入门 → ⭐⭐ 中级
 > **预计时间**: 3 小时
 > **前置模块**: [F1 AI 的前世今生](f1-ai-evolution.md)
@@ -789,7 +789,7 @@ Content rephrased for compliance with licensing restrictions. Source: [Prompt En
 | 资源 | 链接 |
 |------|------|
 | OpenClaw 官方文档 | [docs.openclaw.com](https://docs.openclaw.com/) |
-| ClawHub Skills 市场 | [clawhub.com](https://clawhub.com/) |
+| ClawHub Skills 市场 | [clawhub.ai](https://clawhub.ai/) |
 | CBEC-AI-Hub 商业指南 | [about.md](../../about.md) |
 | F4 自动化与 Agent | [f4-agent-automation.md](f4-agent-automation.md) |
 

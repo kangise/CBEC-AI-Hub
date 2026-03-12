@@ -472,5 +472,5 @@ class DataDriftDetector:
 
 - [源代码仓库](https://github.com/cbec-ai-hub/hs-code-classifier)
 - [API文档](https://api.example.com/docs)
-- [部署指南](deployment-guide.md)
-- [性能基准测试](benchmark-results.md)
+- 部署指南（待补充）
+- 性能基准测试（待补充）

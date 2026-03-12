@@ -174,6 +174,8 @@ flowchart TD
 | **[Path B: 技术人](paths/b-developers/)** | 开发/数据/BI 岗 | 需要 Python | 每天1小时，4-8周 | 一个可部署的 AI 工具 |
 | **[Path C: 管理者](paths/c-managers/)** | 团队负责人/创始人 | 不需要 | 集中3-5小时 | 一份 AI 落地规划书 |
 
+> 🗺️ **推荐**：完成 Path 0 后、进入具体路径前，先看 [AI 应用全景评估](paths/0-foundations/ai-landscape.md) — 30 分钟了解每个环节 AI 能做到什么程度、优先级如何排序。
+
 > 不确定选哪条？三条路径可以交叉学习。运营人学完 Path A 想深入，可以进 Path B；管理者想了解细节，可以看 Path A 的具体模块。
 
 [回到目录](#-目录--table-of-contents)
@@ -252,6 +254,24 @@ flowchart LR
 | [C3. AI 项目 ROI 评估](paths/c-managers/c3-roi-evaluation.md) | ROI 计算框架、效果衡量 | 至少一个 AI 项目的 ROI 评估报告 |
 
 > 完成以上 3 个模块，输出一份完整的团队 AI 落地规划书（包含优先级、时间线、预算、KPI）。
+
+[回到目录](#-目录--table-of-contents)
+
+---
+
+## Path D: 多平台 — 超越 Amazon
+
+> 🆕 把 AI 能力从 Amazon 扩展到 Shopify 独立站、TikTok Shop 等平台。
+>
+> 前置：建议先完成 Path A 的核心模块
+
+📖 [查看 Path D 完整内容 →](paths/d-platforms/)
+
+| 模块 | 平台 | 核心内容 |
+|------|------|----------|
+| [D1. Shopify AI 指南](paths/d-platforms/shopify-ai-guide.md) | Shopify | 选品→产品页→广告→邮件→客服→数据分析全链路 |
+| D2. TikTok Shop AI 指南 | TikTok Shop | 短视频生成、达人匹配、直播脚本（即将发布） |
+| D3. 跨平台 AI 策略 | 多平台 | Amazon + 独立站 + 社交电商协同（即将发布） |
 
 [回到目录](#-目录--table-of-contents)
 

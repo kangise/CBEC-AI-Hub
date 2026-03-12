@@ -48,7 +48,7 @@
 | AI 应用 | Amazon 重点 | Shopify 重点 |
 |---------|-----------|-------------|
 | 选品 | 站内需求分析（BSR、搜索量） | 趋势发现 + 利基市场验证 |
-| 内容 | A9 算法 SEO（关键词密度） | Google SEO + 品牌故事 + 视觉设计 |
+| 内容 | A10/COSMO 语义 SEO + Rufus 优化 | Google SEO + 品牌故事 + 视觉设计 |
 | 广告 | PPC（站内 Sponsored Ads） | Facebook/Google/TikTok Ads（站外） |
 | 客户关系 | 几乎无法触达（Amazon 控制） | 完全拥有（邮件、SMS、会员） |
 | 数据分析 | Business Report + 广告报告 | GA4 + Shopify Analytics + 热力图 |
@@ -157,7 +157,7 @@ Step 4：财务模型（AI 辅助）
 
 | 元素 | Amazon Listing | Shopify 产品页 |
 |------|---------------|---------------|
-| 标题 | 关键词堆砌（A9 算法） | 品牌化 + 可读性（Google SEO + 用户体验） |
+| 标题 | COSMO 语义匹配 + Rufus 可读性 | 品牌化 + 可读性（Google SEO + 用户体验） |
 | 描述 | Bullet Points + A+ Content | 自由格式（Liquid 模板，可嵌入视频/动画） |
 | 图片 | 白底主图 + 6 张辅图 | 无限制（生活场景、360°、视频、GIF） |
 | SEO | 后台 Search Terms | Meta Title/Description + Schema + URL 结构 |
@@ -704,7 +704,7 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 | AI 场景 | Amazon 做法 | Shopify 做法 |
 |---------|-----------|-------------|
 | 选品 | BSR + Review 分析 | Google Trends + 竞品独立站分析 |
-| 内容 | A9 SEO 关键词优化 | Google SEO + 品牌故事 |
+| 内容 | A10/COSMO 语义 SEO + Rufus 优化 | Google SEO + 品牌故事 |
 | 广告 | 站内 PPC | Facebook/Google/TikTok 站外广告 |
 | 客户关系 | 几乎无法触达 | 邮件 + SMS + 会员体系 |
 | 数据 | Seller Central 报告 | GA4 + Shopify Analytics |

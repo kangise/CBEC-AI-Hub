@@ -47,22 +47,62 @@ flowchart LR
 
 ## 1. Listing 方法论：AI 之前你需要理解的基础
 
-### 1.1 Listing 的第一性原理（A9/A10 算法如何工作）
+### 1.1 Amazon 搜索算法演进：从 A9 到 COSMO + Rufus
 
-Listing 的本质是在"被搜索到"和"被点击购买"之间找到平衡 — 关键词决定曝光，文案决定转化。
+Listing 的本质是在"被搜索到"和"被点击购买"之间找到平衡。但 2024-2026 年，Amazon 的搜索系统经历了三次重大升级，Listing 优化策略也必须跟着变：
 
-Amazon 的搜索算法（A9，2024 年后逐步升级为 A10）核心逻辑：
+**算法演进时间线：**
+
+| 阶段 | 时间 | 核心逻辑 | Listing 策略 |
+|------|------|---------|-------------|
+| **A9** | 2015-2024 | 关键词匹配 + 销售速度 | 堆关键词、刷单冲排名 |
+| **A10** | 2024-2025 | 有机转化 + 外部流量 + 客户满意度 | 重视真实转化率、外部引流、降低退货率 |
+| **COSMO** | 2025-2026 | 语义理解 + 意图匹配 + 知识图谱 | 从"关键词匹配"转向"意图匹配"，Listing 要回答"谁需要、为什么需要" |
+| **Rufus** | 2024-2026 | AI 购物助手 + 自然语言问答 | Listing 变成"产品知识库"，要能回答用户的自然语言问题 |
+
+**A10 vs A9 的关键变化：**
 
 ```
-Listing 排名 = 相关性（关键词匹配）× 转化率 × 销售速度 × 账户权重
+A9 时代：排名 = 关键词匹配 × 销售速度（PPC 推动的销量权重高）
+A10 时代：排名 = 关键词匹配 × 有机转化率 × 外部流量 × 客户满意度
+
+A10 新增/加权的因素：
+├── 有机销售权重 > PPC 销售权重（不能只靠广告冲排名了）
+├── 外部流量加分（从 Google/社交媒体引流到 Amazon 有额外权重）
+├── 客户满意度信号（退货率、Review 评分、A-to-Z Claim）
+├── 账户健康度（品牌注册、卖家评级、库存表现）
+└── 关键词堆砌惩罚（不自然的关键词密度会被降权）
 ```
 
-- **相关性**：你的标题、五点、Search Terms 是否包含用户搜索的关键词
-- **转化率**：用户看到你的 Listing 后是否购买（图片、价格、Review 都影响）
-- **销售速度**：单位时间内的销量（广告推动的销量也算）
-- **账户权重**：A10 新增因素 — 品牌注册、卖家评级、退货率等
+**COSMO（COmmon Sense MOdeling）— 2025 年的游戏规则改变者：**
 
-> 💡 **核心洞察**：很多卖家把 Listing 优化等同于"堆关键词"。但 A10 算法越来越重视转化率 — 一个关键词覆盖少但转化率高的 Listing，排名可能比关键词堆砌但转化率低的 Listing 更好。AI 帮你写 Listing 的价值不只是"写得快"，而是"写得既有关键词覆盖又有说服力"。
+COSMO 是 Amazon 基于大语言模型构建的"常识知识图谱"。它不再只看关键词是否匹配，而是理解产品和用户需求之间的语义关系。
+
+```
+A9/A10 的匹配方式：
+  用户搜索 "camping charger" → 匹配标题/五点中包含 "camping" 和 "charger" 的产品
+
+COSMO 的匹配方式：
+  用户搜索 "camping charger" → COSMO 理解：
+  ├── 用户场景：户外露营，可能没有电源
+  ├── 用户需求：便携、大容量、防水、太阳能充电
+  ├── 关联属性：轻便、耐用、多接口、LED 灯
+  └── 匹配产品：不只看关键词，还看产品属性是否满足露营场景的需求
+```
+
+**COSMO 对 Listing 的影响：**
+1. **场景化描述比关键词更重要** — 你的 Listing 需要清楚说明"谁在什么场景下用这个产品"
+2. **属性完整性** — 填写所有产品属性（材质、尺寸、适用场景、兼容性），COSMO 会读取这些结构化数据
+3. **内容一致性** — 标题、五点、描述、A+ Content 的信息要一致，COSMO 会检测矛盾
+4. **语义丰富度** — 用自然语言描述产品的使用场景和解决的问题，而不只是列功能参数
+
+**Rufus — AI 购物助手（详见 [§6.1](#61-amazon-rufus-优化2026-新趋势)）：**
+
+Rufus 是面向消费者的 AI 助手，用户可以用自然语言提问（如"What's the best portable charger for a 3-day camping trip?"）。Rufus 会从 Listing、Review、Q&A、A+ Content 中提取信息来回答。这意味着你的 Listing 不只是给人看的，也是给 AI 读的。
+
+> 💡 **2026 年的核心洞察**：Listing 优化已经从"关键词游戏"变成"意图匹配 + AI 可读性"。AI 帮你写 Listing 的价值不只是"写得快"，而是"写得既能被 COSMO 理解，又能被 Rufus 引用，还能说服真人购买"。
+
+Content rephrased for compliance with licensing restrictions. Sources: [ZonGuru COSMO Guide](https://www.zonguru.com/blog/what-is-amazon-cosmo), [ZonGuru Amazon SEO 2026](https://www.zonguru.com/blog/amazon-seo-guide), [MyAmazonGuy COSMO+Rufus](https://myamazonguy.com/seo/amazon-seo-in-the-age-of-ai), [BareGold A10 Playbook](https://baregold.ca/resources/amazon-a10-algorithm-in-2026-the-listing-optimization-playbo)
 
 ### 1.2 Listing 的组成部分
 
@@ -790,7 +830,7 @@ Content rephrased for compliance with licensing restrictions. Sources: [amazonfb
 
 | 陷阱 | 表现 | 如何避免 |
 |------|------|----------|
-| **关键词堆砌** | 标题塞满关键词，读起来像乱码（"Portable Charger Power Bank Battery Pack External Battery Backup..."） | 标题保持可读性，关键词自然融入。A10 算法惩罚关键词堆砌。 |
+| **关键词堆砌** | 标题塞满关键词，读起来像乱码 | 标题保持可读性，关键词自然融入。A10/COSMO 算法惩罚关键词堆砌，COSMO 更重视语义理解而非关键词密度。 |
 | **关键词重复浪费** | 标题、五点、Search Terms 中反复出现同一个词 | Amazon 只需要一个词出现一次就会索引。用 AI 做去重检查。 |
 | **忽略长尾词** | 只关注高搜索量的大词，忽略精准的长尾词 | 长尾词竞争低、转化率高。用 Search Terms 覆盖长尾词。 |
 | **不更新关键词** | Listing 上线后从不更新关键词 | 搜索趋势会变化，每季度用 Helium 10 重新反查竞品关键词。 |

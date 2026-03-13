@@ -11,6 +11,7 @@
 
 | Notebook | 内容 Content | 难度 Difficulty | 预计时间 Time | Colab |
 |----------|-------------|----------------|--------------|-------|
+| [a1-product-research.ipynb](a1-product-research.ipynb) | 竞品 Review 批量分析 + AI Prompt 生成 | ⭐ 入门 Beginner | 20 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/CBEC-AI-Hub/blob/main/notebooks/a1-product-research.ipynb) |
 | [b1-data-pipeline.ipynb](b1-data-pipeline.ipynb) | Amazon 报告数据处理 — 用 pandas 读取、清洗、计算核心指标 | ⭐ 入门 Beginner | 30 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/CBEC-AI-Hub/blob/main/notebooks/b1-data-pipeline.ipynb) |
 
 ---

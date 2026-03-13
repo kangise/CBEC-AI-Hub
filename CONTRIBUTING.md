@@ -6,9 +6,9 @@ permalink: /contributing/
 
 # 贡献指南 | Contributing Guide
 
-欢迎为 CBEC-AI-Hub 做贡献！以下是参与方式和提交标准。
+欢迎为 ecommerce-ai-roadmap 做贡献！以下是参与方式和提交标准。
 
-Welcome to CBEC-AI-Hub! Here's how you can contribute.
+Welcome to ecommerce-ai-roadmap! Here's how you can contribute.
 
 ---
 
@@ -18,25 +18,25 @@ Welcome to CBEC-AI-Hub! Here's how you can contribute.
 
 **不需要会 Git/PR** — 直接通过 Issue 提交即可：
 
-1. 打开 [Prompt 提交模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=prompt_submission.md)
+1. 打开 [Prompt 提交模板](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=prompt_submission.md)
 2. 填写表单：模板名称、场景、Prompt 内容、使用效果
 3. 提交 Issue，维护者会审核并转化为正式模板文件
 4. 你会被标注为贡献者 ✨
 
 ### 📓 提交 Notebook
 
-通过 [Notebook 提交模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=notebook_submission.md) 提交，要求：
+通过 [Notebook 提交模板](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=notebook_submission.md) 提交，要求：
 - 可在 Google Colab 免费版运行
 - 第一个代码单元格包含 `!pip install` 安装依赖
 - 包含中英文注释
 
 ### 📋 提交案例 | Case Study
 
-通过 [案例提交模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md) 提交，要求包含具体量化指标。
+通过 [案例提交模板](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=case_study_submission.md) 提交，要求包含具体量化指标。
 
 ### 🔗 报告空链接
 
-发现失效链接？通过 [空链接报告模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=broken_link_report.md) 提交。
+发现失效链接？通过 [空链接报告模板](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=broken_link_report.md) 提交。
 
 ### 🔧 其他贡献
 
@@ -76,7 +76,7 @@ Welcome to CBEC-AI-Hub! Here's how you can contribute.
 ---
 
 📎 **分享此模板**: `直接链接 URL`
-🏠 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub)
+🏠 **来源**: [ecommerce-ai-roadmap](https://github.com/kangise/ecommerce-ai-roadmap)
 ```
 
 ---
@@ -109,5 +109,5 @@ Welcome to CBEC-AI-Hub! Here's how you can contribute.
 
 ## 问题反馈 | Feedback
 
-- [提交 Issue](https://github.com/kangise/CBEC-AI-Hub/issues)
+- [提交 Issue](https://github.com/kangise/ecommerce-ai-roadmap/issues)
 - [查看路线图](roadmap/README.md)

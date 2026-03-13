@@ -1,6 +1,6 @@
 # 文档目录
 
-本目录包含CBEC-AI-Hub项目的详细文档。
+本目录包含ecommerce-ai-roadmap项目的详细文档。
 
 ## 目录结构
 

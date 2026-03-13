@@ -790,7 +790,7 @@ Content rephrased for compliance with licensing restrictions. Source: [Prompt En
 |------|------|
 | OpenClaw 官方文档 | [docs.openclaw.com](https://docs.openclaw.com/) |
 | ClawHub Skills 市场 | [clawhub.ai](https://clawhub.ai/) |
-| CBEC-AI-Hub 商业指南 | [about.md](../../about.md) |
+| ecommerce-ai-roadmap 商业指南 | [about.md](../../about.md) |
 | F4 自动化与 Agent | [f4-agent-automation.md](f4-agent-automation.md) |
 
 ---

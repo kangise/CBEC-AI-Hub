@@ -27,7 +27,7 @@
 
 ### 2. 目录结构重组
 ```
-CBEC-AI-Hub/
+ecommerce-ai-roadmap/
 ├── examples/                    # 💡 业务场景示例
 │   ├── product-research/        # 选品相关
 │   ├── content-localization/    # 内容本地化

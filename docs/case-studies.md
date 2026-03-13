@@ -1,6 +1,6 @@
 # 案例研究 | Case Studies
 
-本目录包含CBEC-AI-Hub的实际应用案例研究，展示AI技术在跨境电商中的具体实现和效果。
+本目录包含ecommerce-ai-roadmap的实际应用案例研究，展示AI技术在跨境电商中的具体实现和效果。
 
 ##  案例概览
 
@@ -168,7 +168,7 @@
 -  部署和运维的实践经验
 
 **案例研究提交流程：**
-1. **[填写案例研究申请](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md)** - 使用专用模板详细描述您的案例
+1. **[填写案例研究申请](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=case_study_submission.md)** - 使用专用模板详细描述您的案例
 2. **社区讨论** - 与维护者和社区讨论案例细节和技术方案
 3. **完善文档** - 根据反馈完善案例研究内容（建议参考[技术实施指南](technical-guidelines.md)）
 4. **提交PR** - 将完整的案例研究文档提交到`case-studies/`目录
@@ -179,9 +179,9 @@
 - 🛠️ [贡献指南](../CONTRIBUTING.md) - 详细的贡献流程和格式要求
 
 **贡献方式：**
-- **[提交案例研究](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md)** - 使用我们的专用模板
-- **[参与讨论](https://github.com/kangise/CBEC-AI-Hub/discussions)** - 在社区中分享经验和想法
-- **[联系维护者](https://github.com/kangise/CBEC-AI-Hub/issues)** - 进行深度案例访谈
+- **[提交案例研究](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=case_study_submission.md)** - 使用我们的专用模板
+- **[参与讨论](https://github.com/kangise/ecommerce-ai-roadmap/discussions)** - 在社区中分享经验和想法
+- **[联系维护者](https://github.com/kangise/ecommerce-ai-roadmap/issues)** - 进行深度案例访谈
 
 **隐私保护：**
 - 可以匿名化公司和产品信息
@@ -206,4 +206,4 @@
 
 ---
 
-**案例研究贡献**: 如果您有新的案例研究想要分享，请使用我们的[案例研究提交模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md)或参考[贡献指南](../CONTRIBUTING.md)了解详细流程。
+**案例研究贡献**: 如果您有新的案例研究想要分享，请使用我们的[案例研究提交模板](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=case_study_submission.md)或参考[贡献指南](../CONTRIBUTING.md)了解详细流程。

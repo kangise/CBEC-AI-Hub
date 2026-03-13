@@ -67,5 +67,5 @@
 
 ---
 
-📎 **分享此案例**: `https://github.com/kangise/CBEC-AI-Hub/blob/main/docs/case-studies/automated-review-analysis.md`
-🏠 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub) — AI × 跨境电商实战知识库
+📎 **分享此案例**: `https://github.com/kangise/ecommerce-ai-roadmap/blob/main/docs/case-studies/automated-review-analysis.md`
+🏠 **来源**: [ecommerce-ai-roadmap](https://github.com/kangise/ecommerce-ai-roadmap) — AI × 跨境电商实战知识库

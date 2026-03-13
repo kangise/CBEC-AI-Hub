@@ -45,8 +45,8 @@
 
 ---
 
-📎 **分享此模板**: `https://github.com/kangise/CBEC-AI-Hub/blob/main/prompts/listing-optimization.md#模板-1-listing-全套生成`
-🏠 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub) — AI × 跨境电商实战知识库
+📎 **分享此模板**: `https://github.com/kangise/ecommerce-ai-roadmap/blob/main/prompts/listing-optimization.md#模板-1-listing-全套生成`
+🏠 **来源**: [ecommerce-ai-roadmap](https://github.com/kangise/ecommerce-ai-roadmap) — AI × 跨境电商实战知识库
 
 ---
 
@@ -83,8 +83,8 @@
 
 ---
 
-📎 **分享此模板**: `https://github.com/kangise/CBEC-AI-Hub/blob/main/prompts/listing-optimization.md#模板-2-多语言本地化`
-🏠 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub) — AI × 跨境电商实战知识库
+📎 **分享此模板**: `https://github.com/kangise/ecommerce-ai-roadmap/blob/main/prompts/listing-optimization.md#模板-2-多语言本地化`
+🏠 **来源**: [ecommerce-ai-roadmap](https://github.com/kangise/ecommerce-ai-roadmap) — AI × 跨境电商实战知识库
 
 ---
 
@@ -123,5 +123,5 @@
 
 ---
 
-📎 **分享此模板**: `https://github.com/kangise/CBEC-AI-Hub/blob/main/prompts/listing-optimization.md#模板-3-竞品-listing-策略拆解`
-🏠 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub) — AI × 跨境电商实战知识库
+📎 **分享此模板**: `https://github.com/kangise/ecommerce-ai-roadmap/blob/main/prompts/listing-optimization.md#模板-3-竞品-listing-策略拆解`
+🏠 **来源**: [ecommerce-ai-roadmap](https://github.com/kangise/ecommerce-ai-roadmap) — AI × 跨境电商实战知识库

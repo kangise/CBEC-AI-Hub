@@ -1,9 +1,9 @@
-# CBEC-AI-Hub: AI × Cross-Border E-Commerce Knowledge Hub
+# ecommerce-ai-roadmap: AI × Cross-Border E-Commerce Knowledge Hub
 
 > The Definitive AI Guide for Cross-Border E-Commerce | 跨境电商 AI 实战知识库
 
-[![AAAI China Chapter](https://img.shields.io/badge/AAAI_China_Chapter-Initiative-blue)](https://github.com/kangise/CBEC-AI-Hub)
-[![Stars](https://img.shields.io/github/stars/kangise/CBEC-AI-Hub?style=social)](https://github.com/kangise/CBEC-AI-Hub)
+[![AAAI China Chapter](https://img.shields.io/badge/AAAI_China_Chapter-Initiative-blue)](https://github.com/kangise/ecommerce-ai-roadmap)
+[![Stars](https://img.shields.io/github/stars/kangise/ecommerce-ai-roadmap?style=social)](https://github.com/kangise/ecommerce-ai-roadmap)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 **Original hands-on content, not a link aggregator.** 12 ready-to-use prompts · 3 learning paths · real-world case studies
@@ -320,7 +320,7 @@ Copy the checklists below into your note-taking app to track your learning progr
 
 ## AAAI China Chapter Community
 
-CBEC-AI-Hub is an open-source project under the **AAAI China Chapter**. We are dedicated to advancing the practical application of AI in cross-border e-commerce.
+ecommerce-ai-roadmap is an open-source project under the **AAAI China Chapter**. We are dedicated to advancing the practical application of AI in cross-border e-commerce.
 
 ### What You Get by Joining
 
@@ -333,8 +333,8 @@ CBEC-AI-Hub is an open-source project under the **AAAI China Chapter**. We are d
 ### How to Participate
 
 - Star this repo to stay updated
-- [Submit an Issue](https://github.com/kangise/CBEC-AI-Hub/issues) to report problems or suggest improvements
-- [Submit a PR](https://github.com/kangise/CBEC-AI-Hub/pulls) to contribute prompts, notebooks, or case studies
+- [Submit an Issue](https://github.com/kangise/ecommerce-ai-roadmap/issues) to report problems or suggest improvements
+- [Submit a PR](https://github.com/kangise/ecommerce-ai-roadmap/pulls) to contribute prompts, notebooks, or case studies
 - Follow AAAI China Chapter for event announcements
 
 [Back to Table of Contents](#-table-of-contents)

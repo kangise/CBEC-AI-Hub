@@ -21,7 +21,7 @@
 
 ### 1.2 间接竞品（相关领域）
 
-| 仓库/资源 | 类型 | 与 CBEC-AI-Hub 的关系 |
+| 仓库/资源 | 类型 | 与 ecommerce-ai-roadmap 的关系 |
 |-----------|------|----------------------|
 | `developer-roadmap` (347k ⭐) | 学习路线图 | 结构参考 — 我们是 "e-commerce AI 版的 developer-roadmap" |
 | `free-programming-books` (380k ⭐) | 资源聚合 | 规模参考 — 证明知识聚合类仓库可达极高 star |
@@ -35,7 +35,7 @@
 
 ### 2.1 AI 应用类别覆盖对比
 
-| AI 应用类别 | awesome 列表 | ChatGPT Prompt 集 | Amazon 工具仓库 | 付费课程 | **CBEC-AI-Hub** |
+| AI 应用类别 | awesome 列表 | ChatGPT Prompt 集 | Amazon 工具仓库 | 付费课程 | **ecommerce-ai-roadmap** |
 |-------------|-------------|-------------------|----------------|----------|-----------------|
 | 选品与市场分析 | 🔗 链接 | ❌ | 🔧 代码片段 | ✅ 理论 | 🔄 **Prompt + 方法论** |
 | Listing 与内容创作 | 🔗 链接 | ✅ 通用 Prompt | ❌ | ✅ 理论 | 🔄 **垂直 Prompt + 实战** |
@@ -56,7 +56,7 @@
 
 ### 2.2 内容形式对比
 
-| 内容形式 | awesome 列表 | ChatGPT Prompt 集 | Amazon 工具仓库 | **CBEC-AI-Hub** |
+| 内容形式 | awesome 列表 | ChatGPT Prompt 集 | Amazon 工具仓库 | **ecommerce-ai-roadmap** |
 |----------|-------------|-------------------|----------------|-----------------|
 | 结构化学习路径 | ❌ | ❌ | ❌ | ✅ 3 条路径 |
 | 可直接使用的 Prompt | ❌ | ✅ 通用 | ❌ | ✅ 垂直电商 |
@@ -77,7 +77,7 @@
 4. **单语言**: 绝大多数仓库只有英文或只有中文，无法服务双语用户群
 5. **更新停滞**: 多数仓库在初始热度后更新频率急剧下降
 
-### 3.2 CBEC-AI-Hub 的独特优势
+### 3.2 ecommerce-ai-roadmap 的独特优势
 
 1. **原创实战内容**: 不是链接聚合，每个 Prompt 模板都经过实际业务验证
 2. **结构化学习路径**: 3 条路径（运营人/技术人/管理者）覆盖不同角色需求
@@ -87,9 +87,9 @@
 
 ### 3.3 未被覆盖的蓝海领域
 
-以下 3 个 AI 应用类别在所有竞品中均未被系统化覆盖，是 CBEC-AI-Hub 建立差异化壁垒的关键：
+以下 3 个 AI 应用类别在所有竞品中均未被系统化覆盖，是 ecommerce-ai-roadmap 建立差异化壁垒的关键：
 
-| 蓝海类别 | 为什么没人做 | CBEC-AI-Hub 的切入点 |
+| 蓝海类别 | 为什么没人做 | ecommerce-ai-roadmap 的切入点 |
 |----------|-------------|---------------------|
 | **Review 分析 (NLP)** | 需要 NLP 专业知识 + 电商业务理解的交叉能力 | 提供从数据采集到情感分析的完整 Pipeline，含 Prompt + Notebook |
 | **定价策略 (ML)** | 涉及多变量（汇率、关税、竞品价格），模型复杂度高 | 从简单规则到 ML 模型的渐进式教程，结合跨境电商特有的多市场定价场景 |
@@ -99,9 +99,9 @@
 
 ## 4. 定位声明 | Positioning Statement
 
-> **CBEC-AI-Hub 是 "the developer-roadmap for e-commerce AI"**
+> **ecommerce-ai-roadmap 是 "the developer-roadmap for e-commerce AI"**
 >
-> 正如 [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap) 是开发者学习路线的行业标准，CBEC-AI-Hub 致力于成为 "AI + 跨境电商" 领域的行业标准参考。
+> 正如 [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap) 是开发者学习路线的行业标准，ecommerce-ai-roadmap 致力于成为 "AI + 跨境电商" 领域的行业标准参考。
 >
 > 我们不是又一个 awesome 链接列表。我们提供：
 > - 📚 **结构化学习系统** — 3 条路径，从入门到精通

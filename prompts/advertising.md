@@ -40,8 +40,8 @@
 
 ---
 
-📎 **分享此模板**: `https://github.com/kangise/CBEC-AI-Hub/blob/main/prompts/advertising.md#模板-1-搜索词报告分析`
-🏠 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub) — AI × 跨境电商实战知识库
+📎 **分享此模板**: `https://github.com/kangise/ecommerce-ai-roadmap/blob/main/prompts/advertising.md#模板-1-搜索词报告分析`
+🏠 **来源**: [ecommerce-ai-roadmap](https://github.com/kangise/ecommerce-ai-roadmap) — AI × 跨境电商实战知识库
 
 ---
 
@@ -78,5 +78,5 @@
 
 ---
 
-📎 **分享此模板**: `https://github.com/kangise/CBEC-AI-Hub/blob/main/prompts/advertising.md#模板-2-广告文案-ab-测试`
-🏠 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub) — AI × 跨境电商实战知识库
+📎 **分享此模板**: `https://github.com/kangise/ecommerce-ai-roadmap/blob/main/prompts/advertising.md#模板-2-广告文案-ab-测试`
+🏠 **来源**: [ecommerce-ai-roadmap](https://github.com/kangise/ecommerce-ai-roadmap) — AI × 跨境电商实战知识库

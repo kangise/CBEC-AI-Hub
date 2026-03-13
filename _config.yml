@@ -3,13 +3,13 @@
 #   awesome-list, aaai, ecommerce, chatgpt, prompt-templates
 
 # Site settings
-title: "CBEC-AI-Hub: AI × Cross-Border E-Commerce Knowledge Hub"
+title: "ecommerce-ai-roadmap: AI × Cross-Border E-Commerce Knowledge Hub"
 description: >-
   AI × 跨境电商实战知识库 — 可直接使用的 Prompt 模板、Colab Notebook、实战案例。
   The definitive AI guide for cross-border e-commerce — ready-to-use prompts, notebooks, and case studies.
   An AAAI China Chapter Initiative.
 
-baseurl: "/CBEC-AI-Hub"
+baseurl: "/ecommerce-ai-roadmap"
 url: "https://kangise.github.io"
 
 # Build settings
@@ -39,9 +39,9 @@ plugins:
 twitter:
   card: summary_large_image
 social:
-  name: CBEC-AI-Hub
+  name: ecommerce-ai-roadmap
   links:
-    - https://github.com/kangise/CBEC-AI-Hub
+    - https://github.com/kangise/ecommerce-ai-roadmap
 
 # Exclude from processing
 exclude:

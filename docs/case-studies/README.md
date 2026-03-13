@@ -20,7 +20,7 @@
 
 ## 提交你的案例 | Submit Your Case Study
 
-有实战案例想分享？通过 [案例提交模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=case_study_submission.md) 提交。
+有实战案例想分享？通过 [案例提交模板](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=case_study_submission.md) 提交。
 
 案例格式要求：
 - 业务背景与挑战
@@ -31,4 +31,4 @@
 
 ---
 
-📎 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub) — AI × 跨境电商实战知识库
+📎 **来源**: [ecommerce-ai-roadmap](https://github.com/kangise/ecommerce-ai-roadmap) — AI × 跨境电商实战知识库

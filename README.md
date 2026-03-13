@@ -1,9 +1,9 @@
-# CBEC-AI-Hub: AI × Cross-Border E-Commerce Knowledge Hub
+# ecommerce-ai-roadmap: AI × Cross-Border E-Commerce Knowledge Hub
 
 > 跨境电商 AI 实战知识库 | The Definitive AI Guide for Cross-Border E-Commerce
 
-[![AAAI China Chapter](https://img.shields.io/badge/AAAI_China_Chapter-Initiative-blue)](https://github.com/kangise/CBEC-AI-Hub)
-[![Stars](https://img.shields.io/github/stars/kangise/CBEC-AI-Hub?style=social)](https://github.com/kangise/CBEC-AI-Hub)
+[![AAAI China Chapter](https://img.shields.io/badge/AAAI_China_Chapter-Initiative-blue)](https://github.com/kangise/ecommerce-ai-roadmap)
+[![Stars](https://img.shields.io/github/stars/kangise/ecommerce-ai-roadmap?style=social)](https://github.com/kangise/ecommerce-ai-roadmap)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 **原创实战内容，不是链接聚合。** 12 个可直接复制的 Prompt 模板 · 3 条学习路径 · 实战案例
@@ -34,7 +34,7 @@
 
 ## 🆕 What's New
 
-- 📅 2025-06-20: 新增 [Notebook 实验室](notebooks/) — 首个 Notebook: Amazon 报告数据处理 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/CBEC-AI-Hub/blob/main/notebooks/b1-data-pipeline.ipynb)
+- 📅 2025-06-20: 新增 [Notebook 实验室](notebooks/) — 首个 Notebook: Amazon 报告数据处理 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b1-data-pipeline.ipynb)
 - 📅 2025-06-20: 新增 2 个实战案例: [AI Listing 生成](docs/case-studies/ai-listing-generation.md)、[自动化 Review 分析](docs/case-studies/automated-review-analysis.md)
 - 📅 2025-06-20: 新增 [README_EN.md](README_EN.md) 英文完整版 + 社区基础设施（Issue 模板、CODEOWNERS、CHANGELOG）
 
@@ -354,7 +354,7 @@ flowchart LR
 
 ## AAAI China Chapter 社群
 
-CBEC-AI-Hub 是 **AAAI China Chapter (AAAI 中国分会)** 的开源项目之一。我们致力于推动 AI 技术在跨境电商领域的实际应用。
+ecommerce-ai-roadmap 是 **AAAI China Chapter (AAAI 中国分会)** 的开源项目之一。我们致力于推动 AI 技术在跨境电商领域的实际应用。
 
 ### 加入社群你能获得什么
 
@@ -367,8 +367,8 @@ CBEC-AI-Hub 是 **AAAI China Chapter (AAAI 中国分会)** 的开源项目之一
 ### 如何参与
 
 - Star 本仓库，关注更新
-- [提交 Issue](https://github.com/kangise/CBEC-AI-Hub/issues) 反馈问题或建议
-- [提交 PR](https://github.com/kangise/CBEC-AI-Hub/pulls) 贡献 Prompt 模板、Notebook 或案例
+- [提交 Issue](https://github.com/kangise/ecommerce-ai-roadmap/issues) 反馈问题或建议
+- [提交 PR](https://github.com/kangise/ecommerce-ai-roadmap/pulls) 贡献 Prompt 模板、Notebook 或案例
 - 关注 AAAI China Chapter 获取活动信息
 
 [回到目录](#-目录--table-of-contents)
@@ -377,13 +377,13 @@ CBEC-AI-Hub 是 **AAAI China Chapter (AAAI 中国分会)** 的开源项目之一
 
 ## Contributors
 
-感谢所有为 CBEC-AI-Hub 做出贡献的人！ | Thanks to all contributors!
+感谢所有为 ecommerce-ai-roadmap 做出贡献的人！ | Thanks to all contributors!
 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
 <a href="https://github.com/kangise"><img src="https://github.com/kangise.png" width="60px" alt="kangise" /></a>
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-> 🎯 想加入贡献者墙？[提交一个 Prompt 模板](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=prompt_submission.md) 就够了！不需要会 PR。
+> 🎯 想加入贡献者墙？[提交一个 Prompt 模板](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=prompt_submission.md) 就够了！不需要会 PR。
 
 [回到目录](#-目录--table-of-contents)
 

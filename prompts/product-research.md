@@ -37,8 +37,8 @@
 
 ---
 
-📎 **分享此模板**: `https://github.com/kangise/CBEC-AI-Hub/blob/main/prompts/product-research.md#模板-1-竞品-review-痛点分析`
-🏠 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub) — AI × 跨境电商实战知识库
+📎 **分享此模板**: `https://github.com/kangise/ecommerce-ai-roadmap/blob/main/prompts/product-research.md#模板-1-竞品-review-痛点分析`
+🏠 **来源**: [ecommerce-ai-roadmap](https://github.com/kangise/ecommerce-ai-roadmap) — AI × 跨境电商实战知识库
 
 ---
 
@@ -78,8 +78,8 @@
 
 ---
 
-📎 **分享此模板**: `https://github.com/kangise/CBEC-AI-Hub/blob/main/prompts/product-research.md#模板-2-市场可行性快速评估`
-🏠 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub) — AI × 跨境电商实战知识库
+📎 **分享此模板**: `https://github.com/kangise/ecommerce-ai-roadmap/blob/main/prompts/product-research.md#模板-2-市场可行性快速评估`
+🏠 **来源**: [ecommerce-ai-roadmap](https://github.com/kangise/ecommerce-ai-roadmap) — AI × 跨境电商实战知识库
 
 ---
 
@@ -116,5 +116,5 @@
 
 ---
 
-📎 **分享此模板**: `https://github.com/kangise/CBEC-AI-Hub/blob/main/prompts/product-research.md#模板-3-关键词需求聚类`
-🏠 **来源**: [CBEC-AI-Hub](https://github.com/kangise/CBEC-AI-Hub) — AI × 跨境电商实战知识库
+📎 **分享此模板**: `https://github.com/kangise/ecommerce-ai-roadmap/blob/main/prompts/product-research.md#模板-3-关键词需求聚类`
+🏠 **来源**: [ecommerce-ai-roadmap](https://github.com/kangise/ecommerce-ai-roadmap) — AI × 跨境电商实战知识库

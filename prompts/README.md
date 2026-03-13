@@ -30,7 +30,7 @@
 
 欢迎提交你验证过的 Prompt 模板！最简单的方式：
 
-👉 [提交 Prompt 模板 Issue](https://github.com/kangise/CBEC-AI-Hub/issues/new?template=prompt_submission.md)
+👉 [提交 Prompt 模板 Issue](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=prompt_submission.md)
 
 填写表单即可，不需要会 Git 或 PR。
 

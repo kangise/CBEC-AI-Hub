@@ -12,7 +12,9 @@
 | Notebook | 内容 Content | 难度 Difficulty | 预计时间 Time | Colab |
 |----------|-------------|----------------|--------------|-------|
 | [a1-product-research.ipynb](a1-product-research.ipynb) | 竞品 Review 批量分析 + AI Prompt 生成 | ⭐ 入门 Beginner | 20 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/a1-product-research.ipynb) |
+| [a3-advertising.ipynb](a3-advertising.ipynb) 🆕 | 搜索词报告四象限分析 + 否定词 + 出价优化 | ⭐ 入门 Beginner | 25 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/a3-advertising.ipynb) |
 | [b1-data-pipeline.ipynb](b1-data-pipeline.ipynb) | Amazon 报告数据处理 — 用 pandas 读取、清洗、计算核心指标 | ⭐ 入门 Beginner | 30 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b1-data-pipeline.ipynb) |
+| [c3-roi-evaluation.ipynb](c3-roi-evaluation.ipynb) 🆕 | AI 工具 ROI 计算 — 量化每个工具的投资回报 | ⭐ 入门 Beginner | 15 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/c3-roi-evaluation.ipynb) |
 
 ---
 
@@ -32,6 +34,8 @@
 - BERTopic Review 主题分析（中级）
 - 产品 FAQ 知识库 RAG（中级）
 - 运营日报自动生成 Agent（高级）
+- 社交媒体内容日历 AI 规划（入门）
+- 多平台 Listing 批量转换（入门）
 
 关注 [路线图](../roadmap/README.md) 了解最新进展。
 

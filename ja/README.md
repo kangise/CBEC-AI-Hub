@@ -253,4 +253,4 @@ Amazon USでポータブルネックファン（Neck Fan）を販売したいと
 
 ---
 
-*An AAAI China Chapter Initiative | Maintained by the CBEC-AI community*
+*An AAAI China Chapter Initiative | Maintained by AAAEC, the Association of AI Applications for E-Commerce*

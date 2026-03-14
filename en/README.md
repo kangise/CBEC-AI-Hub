@@ -465,4 +465,4 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md) for details.
 
 ---
 
-*An AAAI China Chapter Initiative | Maintained by the CBEC-AI community*
+*An AAAI China Chapter Initiative | Maintained by AAAEC, the Association of AI Applications for E-Commerce*

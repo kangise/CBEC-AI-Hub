@@ -443,4 +443,4 @@ ecommerce-ai-roadmap 是 **AAAI China Chapter (AAAI 中国分会)** 的开源项
 
 ---
 
-*An AAAI China Chapter Initiative | Maintained by the CBEC-AI community*
+*An AAAI China Chapter Initiative | Maintained by AAAEC, the Association of AI Applications for E-Commerce*

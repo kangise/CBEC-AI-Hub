@@ -130,4 +130,4 @@ Presenta las comparaciones de datos clave en formato de tabla.
 
 ---
 
-*An AAAI China Chapter Initiative | Maintained by the CBEC-AI community*
+*An AAAI China Chapter Initiative | Maintained by AAAEC, the Association of AI Applications for E-Commerce*

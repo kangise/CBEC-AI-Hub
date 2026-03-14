@@ -1,3 +1,11 @@
+<div align="center">
+
+### 🌐 Language / 语言切換
+
+[![中文](https://img.shields.io/badge/🇨🇳_中文-点击切换-orange?style=for-the-badge)](../README.md) [![English](https://img.shields.io/badge/🇺🇸_English-Click_Here-blue?style=for-the-badge)](../en/README.md) [![日本語](https://img.shields.io/badge/🇯🇵_日本語-現在の言語-red?style=for-the-badge)](README.md) [![Español](https://img.shields.io/badge/🇪🇸_Español-Haz_Clic-yellow?style=for-the-badge)](../es/README.md)
+
+</div>
+
 [🇨🇳 中文](../README.md) | [🇺🇸 English](../en/README.md) | 🇯🇵 日本語 | [🇪🇸 Español](../es/README.md)
 
 # ecommerce-ai-roadmap: 越境EC AI 実践ガイド | Amazon セラー・Shopify・TikTok Shop

@@ -1,3 +1,11 @@
+<div align="center">
+
+### 🌐 Language / 语言切换
+
+[![中文](https://img.shields.io/badge/🇨🇳_中文-当前语言-orange?style=for-the-badge)](README.md) [![English](https://img.shields.io/badge/🇺🇸_English-Click_Here-blue?style=for-the-badge)](en/README.md) [![日本語](https://img.shields.io/badge/🇯🇵_日本語-ここをクリック-red?style=for-the-badge)](ja/README.md) [![Español](https://img.shields.io/badge/🇪🇸_Español-Haz_Clic-yellow?style=for-the-badge)](es/README.md)
+
+</div>
+
 # ecommerce-ai-roadmap: AI Prompts & Strategies for Amazon Sellers, Shopify & TikTok Shop
 
 > 跨境电商 AI 实战知识库 -- Amazon Listing 优化 / Rufus & COSMO 语义 SEO / PPC 广告分析 / TikTok Shop 视频脚本 / Shopify GEO 优化 / ChatGPT Prompts for E-Commerce
@@ -11,7 +19,7 @@
 48 个 AI 实战场景直达 · Amazon / Shopify / TikTok Shop 三平台覆盖 · Rufus/COSMO/GEO 优化方法论 · 可直接复制的 Prompt 模板
 48 AI use cases with deep-dive guides · Amazon / Shopify / TikTok Shop · Rufus/COSMO/GEO optimization · Ready-to-use ChatGPT prompts
 
-🇨🇳 中文 | 🇺🇸 [English](README_EN.md)
+🇨🇳 中文（当前） | 🇺🇸 [English](en/README.md) | 🇯🇵 [日本語](ja/README.md) | 🇪🇸 [Español](es/README.md)
 
 ---
 

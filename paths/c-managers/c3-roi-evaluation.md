@@ -1106,5 +1106,8 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 | 成本优化 | AI 成本优化分析 | [5.5](#55-ai-成本优化分析) |
 
 ---
-
-⬅️ [返回 Path C 总览](README.md) | 🏠 [返回 Hub 首页](../../README.md) | ⬅️ [上一模块: C2 团队 AI 技能建设](c2-team-building.md)
+> 🏠 [Hub 首页](../../README.md) · 📋 [Path C 总览](README.md)
+> 
+> **Path C**: [C1 评估](c1-ai-assessment.md) · [C2 建设](c2-team-building.md) · [C3 ROI](c3-roi-evaluation.md)
+> 
+> **快速跳转**: [Path 0 基础](../0-foundations/) · [Path A 运营](../a-operators/) · [Path B 技术](../b-developers/) · [Path D 多平台](../d-platforms/) · [Path E 社交媒体](../e-social-media/)

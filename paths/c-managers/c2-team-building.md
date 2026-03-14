@@ -957,5 +957,8 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 | P — Product | 产出 | "输出表格 + 综合建议" |
 
 ---
-
-⬅️ [返回 Path C 总览](README.md) | 🏠 [返回 Hub 首页](../../README.md) | ➡️ [下一模块: C3 AI 项目 ROI 评估](c3-roi-evaluation.md)
+> 🏠 [Hub 首页](../../README.md) · 📋 [Path C 总览](README.md)
+> 
+> **Path C**: [C1 评估](c1-ai-assessment.md) · [C2 建设](c2-team-building.md) · [C3 ROI](c3-roi-evaluation.md)
+> 
+> **快速跳转**: [Path 0 基础](../0-foundations/) · [Path A 运营](../a-operators/) · [Path B 技术](../b-developers/) · [Path D 多平台](../d-platforms/) · [Path E 社交媒体](../e-social-media/)

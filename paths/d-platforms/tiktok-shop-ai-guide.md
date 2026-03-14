@@ -1657,5 +1657,8 @@ AI 工具 ROI = (节省时间 x 时薪 + 增加收入) / 工具月费
 Content rephrased for compliance with licensing restrictions. Sources: [Forbes Social Commerce](https://www.forbes.com/sites/catherineerdly/2025/07/14/ai-is-fueling-a-100-billion-boom-in-social-commerce/), [Iterathon TikTok Automation](https://iterathon.tech/blog/tiktok-shop-instagram-shopping-automation-2026)
 
 ---
-
-[返回 Path D 总览](README.md) | [Hub 首页](../../README.md) | [D1 Shopify 指南](shopify-ai-guide.md) | [D3 跨平台 AI 策略](cross-platform-strategy.md)
+> 🏠 [Hub 首页](../../README.md) · 📋 [Path D 总览](README.md) · 📊 [平台对比](platform-comparison.md)
+> 
+> **Path D**: [D1 Shopify](shopify-ai-guide.md) · [D2 TikTok](tiktok-shop-ai-guide.md) · [D3 跨平台](cross-platform-strategy.md) · [D4 Walmart](d4-walmart-ai-guide.md) · [D5 Temu](d5-temu-seller-guide.md) · [D6 东南亚](d6-southeast-asia-ai-guide.md) · [D7 拉美](d7-mercado-libre-ai-guide.md) · [D8 日本](d8-rakuten-japan-ai-guide.md) · [D9 eBay](d9-ebay-ai-guide.md) · [D10 AliExpress](d10-aliexpress-ai-guide.md) · [D11 韩国](d11-coupang-korea-ai-guide.md) · [D12 Faire](d12-faire-wholesale-ai-guide.md) · [D13 欧洲](d13-europe-marketplaces-guide.md)
+> 
+> **快速跳转**: [Path 0 基础](../0-foundations/) · [Path A 运营](../a-operators/) · [Path B 技术](../b-developers/) · [Path C 管理](../c-managers/) · [Path E 社交媒体](../e-social-media/)

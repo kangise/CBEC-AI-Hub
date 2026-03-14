@@ -2212,5 +2212,8 @@ Shopify 数据:
 | 买太多 App | 每个 App 都有月费，加起来很贵 | 起步只需要 3-4 个核心 App |
 
 ---
-
-[返回 Path D 总览](README.md) | [Hub 首页](../../README.md) | [D2 TikTok Shop AI 指南](tiktok-shop-ai-guide.md) | [D3 跨平台 AI 策略](cross-platform-strategy.md)
+> 🏠 [Hub 首页](../../README.md) · 📋 [Path D 总览](README.md) · 📊 [平台对比](platform-comparison.md)
+> 
+> **Path D**: [D1 Shopify](shopify-ai-guide.md) · [D2 TikTok](tiktok-shop-ai-guide.md) · [D3 跨平台](cross-platform-strategy.md) · [D4 Walmart](d4-walmart-ai-guide.md) · [D5 Temu](d5-temu-seller-guide.md) · [D6 东南亚](d6-southeast-asia-ai-guide.md) · [D7 拉美](d7-mercado-libre-ai-guide.md) · [D8 日本](d8-rakuten-japan-ai-guide.md) · [D9 eBay](d9-ebay-ai-guide.md) · [D10 AliExpress](d10-aliexpress-ai-guide.md) · [D11 韩国](d11-coupang-korea-ai-guide.md) · [D12 Faire](d12-faire-wholesale-ai-guide.md) · [D13 欧洲](d13-europe-marketplaces-guide.md)
+> 
+> **快速跳转**: [Path 0 基础](../0-foundations/) · [Path A 运营](../a-operators/) · [Path B 技术](../b-developers/) · [Path C 管理](../c-managers/) · [Path E 社交媒体](../e-social-media/)

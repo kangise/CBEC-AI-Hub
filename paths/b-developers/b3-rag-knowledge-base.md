@@ -1436,5 +1436,8 @@ A: 三个方向：(1) 用 Chroma 持久化避免重建索引；(2) 减小 top_k 
 A: 本地 Chroma 可能不够用，考虑迁移到 Pinecone（云托管）或 Qdrant（自托管）。同时优化 chunk_size 和 Embedding 模型选择。
 
 ---
-
-📖 [返回 Path B](README.md) | 🏠 [返回 Hub 首页](../../README.md) | ⬅️ [B2 预测模型](b2-prediction-models.md) | ➡️ [B4 Agent 工作流](b4-agent-workflow.md)
+> 🏠 [Hub 首页](../../README.md) · 📋 [Path B 总览](README.md)
+> 
+> **Path B**: [B1 数据](b1-data-pipeline.md) · [B2 预测](b2-prediction-models.md) · [B3 RAG](b3-rag-knowledge-base.md) · [B4 Agent](b4-agent-workflow.md) · [B5 部署](b5-local-model-deploy.md)
+> 
+> **快速跳转**: [Path 0 基础](../0-foundations/) · [Path A 运营](../a-operators/) · [Path C 管理](../c-managers/) · [Path D 多平台](../d-platforms/) · [Path E 社交媒体](../e-social-media/)

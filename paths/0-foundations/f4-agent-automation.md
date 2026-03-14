@@ -728,5 +728,8 @@ Month 5-6：Agent 优化
 | 管理者 | [Path C: AI 战略落地](../c-managers/) | 制定可执行的团队 AI 落地计划 |
 
 ---
-
-⬅️ [上一模块: F3 知识库与 RAG](f3-rag-knowledge.md) | 📖 [返回 Path 0 总览](README.md) | 🏠 [返回 Hub 首页](../../README.md)
+> 🏠 [Hub 首页](../../README.md) · 📋 [Path 0 总览](README.md) · 📊 [AI 全景评估](ai-landscape.md)
+> 
+> **Path 0**: [F1 AI 演进](f1-ai-evolution.md) · [F2 Prompt 工程](f2-prompt-engineering.md) · [F3 RAG 知识库](f3-rag-knowledge.md) · [F4 Agent 自动化](f4-agent-automation.md) · [AI 全景](ai-landscape.md)
+> 
+> **快速跳转**: [Path A 运营](../a-operators/) · [Path B 技术](../b-developers/) · [Path C 管理](../c-managers/) · [Path D 多平台](../d-platforms/) · [Path E 社交媒体](../e-social-media/)

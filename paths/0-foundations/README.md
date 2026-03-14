@@ -44,6 +44,7 @@ flowchart LR
 | [F2. Prompt 工程](f2-prompt-engineering.md) | CRISP 框架 + 高级技巧 + 场景模板 | 如何系统性地写出高质量 Prompt | 3 小时 |
 | [F3. 知识库与 RAG](f3-rag-knowledge.md) | Embedding、向量数据库、RAG 架构 | 如何让 AI 理解你的私有数据 | 2 小时 |
 | [F4. 自动化与 Agent](f4-agent-automation.md) | 从脚本到 Agent 的三层自动化 | AI Agent 能做什么，怎么用 | 2 小时 |
+| [F5. RPA 与低代码自动化](f5-rpa-automation.md) 🆕 | n8n/Zapier/Make/Defy 实战 | 用具体工具搭建自动化工作流 | 2-3 小时 |
 
 ## 学习建议
 

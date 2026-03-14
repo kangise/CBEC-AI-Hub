@@ -182,6 +182,8 @@ flowchart TD
 | **[Path A: Operators](../paths/a-operators/)** | Product research / Operations / Ads / CS | No | 30 min/day, 2-4 weeks | A reusable AI workflow |
 | **[Path B: Developers](../paths/b-developers/)** | Dev / Data / BI roles | Python required | 1 hr/day, 4-8 weeks | A deployable AI tool |
 | **[Path C: Managers](../paths/c-managers/)** | Team leads / Founders | No | 3-5 hours total | An AI implementation plan |
+| **[Path D: Multi-Platform](../paths/d-platforms/)** | Multi-platform sellers | No | As needed | Multi-platform AI operations |
+| **[Path E: Social Media](../paths/e-social-media/)** 🆕 | Brand marketing / Content ops | No | 30 min/day, 2-3 weeks | Social media AI traffic system |
 
 > 🗺️ **Recommended**: After completing Path 0, before diving into a specific path, check out the [AI Application Landscape Assessment](../paths/0-foundations/ai-landscape.md) — 30 minutes to understand what AI can do at each stage and how to prioritize.
 
@@ -270,17 +272,49 @@ flowchart LR
 
 ## Path D: Multi-Platform — Beyond Amazon
 
-> 🆕 Extend your AI capabilities from Amazon to Shopify, TikTok Shop, and more.
+> Extend your AI capabilities from Amazon to 13 e-commerce platforms worldwide.
 >
 > Prerequisite: Recommended to complete Path A core modules first
 
-📖 [View full Path D content →](../paths/d-platforms/)
+📖 [View full Path D content →](../paths/d-platforms/) · 📊 [Platform Comparison](../paths/d-platforms/platform-comparison.md)
 
 | Module | Platform | Core Content |
 |--------|----------|-------------|
 | [D1. Shopify AI Guide](../paths/d-platforms/shopify-ai-guide.md) | Shopify | Full pipeline: Product research → Product page → Ads → Email → CS → Analytics |
-| D2. TikTok Shop AI Guide | TikTok Shop | Short video generation, creator matching, livestream scripts (coming soon) |
-| D3. Cross-Platform AI Strategy | Multi-platform | Amazon + DTC store + social commerce synergy (coming soon) |
+| [D2. TikTok Shop AI Guide](../paths/d-platforms/tiktok-shop-ai-guide.md) | TikTok Shop | Short video generation, creator matching, livestream scripts |
+| [D3. Cross-Platform AI Strategy](../paths/d-platforms/cross-platform-strategy.md) | Multi-platform | Amazon + DTC store + social commerce synergy |
+| [D4. Walmart Marketplace](../paths/d-platforms/d4-walmart-ai-guide.md) 🆕 | Walmart | Amazon sellers' natural second platform, Walmart Connect ads |
+| [D5. Temu Seller Strategy](../paths/d-platforms/d5-temu-seller-guide.md) 🆕 | Temu | Competitive analysis + entry decision framework |
+| [D6. Southeast Asia](../paths/d-platforms/d6-southeast-asia-ai-guide.md) 🆕 | Shopee + Lazada | Multi-language localization + livestream commerce |
+| [D7. Latin America](../paths/d-platforms/d7-mercado-libre-ai-guide.md) 🆕 | Mercado Libre | Spanish/Portuguese localization + LatAm market |
+| [D8. Japan](../paths/d-platforms/d8-rakuten-japan-ai-guide.md) 🆕 | Rakuten | Store customization + points ecosystem + email marketing |
+| [D9. eBay](../paths/d-platforms/d9-ebay-ai-guide.md) 🆕 | eBay | Pre-owned/refurbished + auction strategy |
+| [D10. AliExpress](../paths/d-platforms/d10-aliexpress-ai-guide.md) 🆕 | AliExpress | Fully managed model + Southern Europe market |
+| [D11. Korea](../paths/d-platforms/d11-coupang-korea-ai-guide.md) 🆕 | Coupang | Korean market entry + Korean Listing |
+| [D12. Faire Wholesale](../paths/d-platforms/d12-faire-wholesale-ai-guide.md) 🆕 | Faire | B2B wholesale + brand story |
+| [D13. Europe](../paths/d-platforms/d13-europe-marketplaces-guide.md) 🆕 | Otto + Zalando | German market + EU compliance |
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## Path E: Social Media AI Operations 🆕
+
+> Use AI to systematically operate social media channels, turning "posting" into a scalable traffic system.
+>
+> Prerequisite: Recommended to complete Path A core modules first
+
+📖 [View full Path E content →](../paths/e-social-media/)
+
+| Module | Channel | Core Content |
+|--------|---------|-------------|
+| [E1. Instagram + Facebook](../paths/e-social-media/e1-instagram-facebook-ai-guide.md) | Meta Ecosystem | Reels creation + Advantage+ ads + Shopping |
+| [E2. YouTube](../paths/e-social-media/e2-youtube-ai-guide.md) | YouTube | Long-form reviews + Shorts + Shopping + Affiliate |
+| [E3. Xiaohongshu](../paths/e-social-media/e3-xiaohongshu-ai-guide.md) | RedNote | Seeding notes + KOL/KOC + China market entry |
+| [E4. Pinterest](../paths/e-social-media/e4-pinterest-ai-guide.md) | Pinterest | Visual search engine + Shopping Ads |
+| [E5. WhatsApp Business](../paths/e-social-media/e5-whatsapp-business-ai-guide.md) | WhatsApp | AI Chatbot + conversational commerce |
+| [E6. Reddit](../paths/e-social-media/e6-reddit-ai-guide.md) | Reddit | Community marketing + product discovery |
+| [E7. Cross-Channel Strategy](../paths/e-social-media/e7-social-media-cross-channel.md) | Multi-channel | One content, multi-platform adaptation + attribution + budget allocation |
 
 [Back to Table of Contents](#-table-of-contents)
 

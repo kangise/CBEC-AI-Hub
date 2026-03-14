@@ -155,3 +155,94 @@ Amazon USでポータブルネックファン（Neck Fan）を販売したいと
 | 48 | AI ツール ROI 計算 | 月額$20の ChatGPT は本当に価値がある？定量化フレームワーク | [AI 全景](../paths/0-foundations/ai-landscape.md#効率変化総覧)
 
 [目次に戻る](#-目次)
+
+---
+
+## 学習パスを選ぶ
+
+> 🌟 **推奨前提**：どのパスを選んでも、まず [Path 0: AI 基礎](../paths/0-foundations/) を完了し、AI の基礎知識（LLM の原理、プロンプトエンジニアリング、RAG、Agent）を身につけることをお勧めします。
+
+| パス | 対象者 | コーディング必要？ | 時間投資 | 成果物 |
+|------|--------|------------------|----------|--------|
+| **[Path 0: AI 基礎](../paths/0-foundations/)** 🌟 | 全員（推奨） | 不要 | 毎日30分、1週間 | AI 基礎知識 |
+| **[Path A: 運営担当者](../paths/a-operators/)** | 商品リサーチ/運営/広告/CS | 不要 | 毎日30分、2-4週間 | 再利用可能な AI ワークフロー |
+| **[Path B: 技術者](../paths/b-developers/)** | 開発/データ/BI | Python 必要 | 毎日1時間、4-8週間 | デプロイ可能な AI ツール |
+| **[Path C: マネージャー](../paths/c-managers/)** | チームリーダー/創業者 | 不要 | 集中3-5時間 | AI 導入計画書 |
+| **[Path D: マルチプラットフォーム](../paths/d-platforms/)** | 複数プラットフォーム販売者 | 不要 | 必要に応じて | マルチプラットフォーム AI 運営体系 |
+| **[Path E: ソーシャルメディア](../paths/e-social-media/)** 🆕 | ブランドマーケティング/コンテンツ運営 | 不要 | 毎日30分、2-3週間 | ソーシャルメディア AI 集客体系 |
+
+[目次に戻る](#-目次)
+
+---
+
+## Path A: 運営担当者 — AI 業務効率化実践
+
+> 目標：コードを一行も書かずに、AI ツールで日常運営効率を 3-10 倍に向上
+>
+> 前提：基本的な EC 運営経験（ASIN、PPC、FBA が何かを知っている）
+>
+> 時間：毎日 30 分、2-4 週間で全モジュール完了
+
+📖 [Path A 全内容を見る →](../paths/a-operators/)
+
+| モジュール | テーマ | 学べること |
+|-----------|--------|-----------|
+| [A1. 商品リサーチ](../paths/a-operators/a1-product-research.md) | 競合分析、市場評価 | AI で商品実現可能性分析レポートを完成 |
+| [A2. リスティング作成](../paths/a-operators/a2-listing-optimization.md) | リスティング生成、多言語翻訳 | AI で完全な多言語リスティングを生成 |
+| [A3. 広告最適化](../paths/a-operators/a3-advertising.md) | 検索語分析、コピーテスト | AI で検索語レポートを分析し最適化 |
+| [A4. カスタマーサービス](../paths/a-operators/a4-customer-service.md) | 低評価分析、申立書作成 | 多言語 CS 返信テンプレートライブラリを構築 |
+| [A5. 在庫・サプライチェーン](../paths/a-operators/a5-inventory.md) | 補充予測、安全在庫 | AI で補充意思決定モデルを構築 |
+| [A6. コンプライアンス](../paths/a-operators/a6-compliance.md) | 多市場コンプライアンス | 完全な多市場コンプライアンスチェックリストを生成 |
+
+[目次に戻る](#-目次)
+
+---
+
+## Path D: マルチプラットフォーム — Amazon を超えて
+
+> AI 能力を Amazon から世界 13 の EC プラットフォームに拡張。
+
+📖 [Path D 全内容を見る →](../paths/d-platforms/) · 📊 [プラットフォーム比較](../paths/d-platforms/platform-comparison.md)
+
+| モジュール | プラットフォーム | 核心内容 |
+|-----------|----------------|----------|
+| [D1. Shopify AI ガイド](../paths/d-platforms/shopify-ai-guide.md) | Shopify | 商品リサーチ→商品ページ→広告→メール→CS→分析 |
+| [D2. TikTok Shop AI ガイド](../paths/d-platforms/tiktok-shop-ai-guide.md) | TikTok Shop | ショート動画生成、クリエイターマッチング、ライブスクリプト |
+| [D4. Walmart Marketplace](../paths/d-platforms/d4-walmart-ai-guide.md) 🆕 | Walmart | Amazon セラーの自然な第二プラットフォーム |
+| [D5. Temu セラー戦略](../paths/d-platforms/d5-temu-seller-guide.md) 🆕 | Temu | 競争分析 + 参入判断フレームワーク |
+| [D6. 東南アジア EC](../paths/d-platforms/d6-southeast-asia-ai-guide.md) 🆕 | Shopee + Lazada | 多言語ローカライゼーション + ライブコマース |
+| [D7. ラテンアメリカ EC](../paths/d-platforms/d7-mercado-libre-ai-guide.md) 🆕 | Mercado Libre | スペイン語/ポルトガル語ローカライゼーション |
+| [D8. 日本 EC](../paths/d-platforms/d8-rakuten-japan-ai-guide.md) 🆕 | Rakuten | 店舗カスタマイズ + ポイントエコシステム |
+| [D9. eBay](../paths/d-platforms/d9-ebay-ai-guide.md) 🆕 | eBay | 中古/リファービッシュ + オークション戦略 |
+
+[目次に戻る](#-目次)
+
+---
+
+## Path E: ソーシャルメディア AI 運営 🆕
+
+> AI でソーシャルメディアチャネルを体系的に運営し、「投稿」を再現可能な集客システムに。
+
+📖 [Path E 全内容を見る →](../paths/e-social-media/)
+
+| モジュール | チャネル | 核心内容 |
+|-----------|---------|----------|
+| [E1. Instagram + Facebook](../paths/e-social-media/e1-instagram-facebook-ai-guide.md) | Meta エコシステム | Reels 制作 + Advantage+ 広告 + Shopping |
+| [E2. YouTube](../paths/e-social-media/e2-youtube-ai-guide.md) | YouTube | 長尺動画レビュー + Shorts + Shopping |
+| [E3. 小紅書](../paths/e-social-media/e3-xiaohongshu-ai-guide.md) | 小紅書 | 種まきノート + KOL/KOC + 中国市場 |
+| [E4. Pinterest](../paths/e-social-media/e4-pinterest-ai-guide.md) | Pinterest | ビジュアル検索エンジン + Shopping Ads |
+| [E5. WhatsApp Business](../paths/e-social-media/e5-whatsapp-business-ai-guide.md) | WhatsApp | AI チャットボット + 会話型コマース |
+| [E6. Reddit](../paths/e-social-media/e6-reddit-ai-guide.md) | Reddit | コミュニティマーケティング |
+| [E7. クロスチャネル戦略](../paths/e-social-media/e7-social-media-cross-channel.md) | マルチチャネル | 1コンテンツ多プラットフォーム展開 |
+
+[目次に戻る](#-目次)
+
+---
+
+## ライセンス
+
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) — 自由に使用可能、帰属表示不要。
+
+---
+
+*An AAAI China Chapter Initiative | Maintained by the CBEC-AI community*

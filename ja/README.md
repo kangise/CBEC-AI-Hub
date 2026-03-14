@@ -69,98 +69,65 @@ Amazon USでポータブルネックファン（Neck Fan）を販売したいと
 > シナリオ別に詳細コンテンツへ直接アクセス。人気度は2026年3月の業界データに基づき、定期的に更新されます。
 > 最終更新: 2026-03-14 | 更新サイクル: 毎月、外部トレンドデータに基づきランキング更新
 
-**商品リサーチ・市場調査**
-
-| # | シナリオ | 概要 | リンク |
-|---|----------|------|--------|
-| 1 | 競合レビューのペインポイント抽出 | 低評価50件 → ペインポイントランキング + 改善方向 | [A1 Prompt](../paths/a-operators/a1-product-research.md) · [Before/After](../paths/0-foundations/ai-landscape.md#選品与市場調研----成熟度-35) |
-| 2 | 市場実現可能性 5次元スコアリング | 需要/競争/利益/サプライチェーン/コンプライアンス、Go or No-Go | [A1 Prompt](../paths/a-operators/a1-product-research.md) |
-| 3 | Google Trends トレンド検証 | 商品リサーチの方向性をクロス検証、偽需要を回避 | [A1 方法論](../paths/a-operators/a1-product-research.md) |
-| 4 | サプライヤー評価・コスト比較 | AI で 1688/Alibaba サプライヤーデータを分析 | [A1 方法論](../paths/a-operators/a1-product-research.md) |
-
-**リスティング・コンテンツ最適化**
-
-| # | シナリオ | 概要 | リンク |
-|---|----------|------|--------|
-| 5 | Rufus/COSMO セマンティック最適化 | キーワードマッチングからインテントマッチングへ — 2026年最重要のリスティング変化 | [A2 方法論 1.1](../paths/a-operators/a2-listing-optimization.md#11-amazon-搜索算法演進从-a9-到-cosmo--rufus) |
-| 6 | リスティング一括生成 | タイトル+バレットポイント+説明+Search Terms、45分で完了 | [A2 Prompt](../paths/a-operators/a2-listing-optimization.md) · [Before/After](../paths/0-foundations/ai-landscape.md#listing-文案創作----成熟度-55) |
-| 7 | 多言語ローカライゼーション | 翻訳ではなく、文化適応+現地キーワード+単位変換 | [A2 Prompt](../paths/a-operators/a2-listing-optimization.md) · [D1 ch25](../paths/d-platforms/shopify-ai-guide.md#25-shopify-多語言本地化方法論-不只是翻訳) |
-| 8 | A+ Content コピーライティング | ブランドストーリー+商品比較+使用シーンのレイアウト | [A2 方法論](../paths/a-operators/a2-listing-optimization.md) |
-| 9 | 競合リスティング戦略分析 | 比較分析で差別化ポジショニングとキーワードギャップを発見 | [A2 Prompt](../paths/a-operators/a2-listing-optimization.md) |
-| 10 | Q&A 事前設定（Rufus 最適化） | Rufus が Q&A を読んでユーザーの質問に回答 — 高頻度質問を事前設定 | [A2 上級](../paths/a-operators/a2-listing-optimization.md) |
-
-**広告最適化**
-
-| # | シナリオ | 概要 | リンク |
-|---|----------|------|--------|
-| 11 | 検索語レポート AI 分析 | 高ROAS語/無駄な支出/隠れたロングテール機会、50分で完了 | [A3 Prompt](../paths/a-operators/a3-advertising.md) · [Before/After](../paths/0-foundations/ai-landscape.md#広告管理与優化----成熟度-45) |
-| 12 | 広告コピー A/B テスト | 5種類のヘッドラインスタイルバリエーションを一括生成 | [A3 Prompt](../paths/a-operators/a3-advertising.md) |
-| 13 | 新商品 30日間広告ローンチプラン | Auto → Manual キーワードハーベスティングの完全ワークフロー | [A3 ワークフロー](../paths/a-operators/a3-advertising.md) |
-| 14 | ACOS/TACOS 診断 | 広告健全性評価と予算再配分 | [A3 方法論](../paths/a-operators/a3-advertising.md) |
-| 15 | Amazon Canvas AI | 2026.3 新機能 — AI リアルタイムデータ可視化とシナリオシミュレーション | [AI 全景](../paths/0-foundations/ai-landscape.md) |
-
-**カスタマーサービス・アフターサービス**
-
-| # | シナリオ | 概要 | リンク |
-|---|----------|------|--------|
-| 16 | 低評価レビュー一括分析 | 問題分類+頻度統計+改善プラン+優先度 | [A4 Prompt](../paths/a-operators/a4-customer-service.md) · [Before/After](../paths/0-foundations/ai-landscape.md#客服与售後----成熟度-45) |
-| 17 | 多言語カスタマーサービス返信 | AI 生成+人間確認、1件あたり1-2分 | [A4 Prompt](../paths/a-operators/a4-customer-service.md) |
-| 18 | アカウント申立 Plan of Action | Root Cause + Actions + Prevention、35分で初稿完成 | [A6 Prompt 3.6](../paths/a-operators/a6-compliance.md#36-amazon-政策違規応対) · [A6 SOP 4.3](../paths/a-operators/a6-compliance.md#43-合規事件応急響応-sop) |
-| 19 | A-to-Z Claim 対応 | 原因分析+返信生成+予防措置 | [A4 方法論](../paths/a-operators/a4-customer-service.md) |
-
-**コンプライアンス・リスク管理**
-
-| # | シナリオ | 概要 | リンク |
-|---|----------|------|--------|
-| 20 | マルチマーケットコンプライアンス比較表 | CE/FCC/PSE/UKCA 一覧比較、30分でチェックリスト完成 | [A6 Prompt 3.1](../paths/a-operators/a6-compliance.md#31-多市場合規対比深化版) · [Before/After](../paths/0-foundations/ai-landscape.md#合規文書準備----成熟度-45) |
-| 21 | コンプライアンスコスト見積もり | 認証費+テスト費+ラベル費+年間維持費、価格モデルに組み込み | [A6 Prompt 3.3](../paths/a-operators/a6-compliance.md#33-合規成本估算) |
-| 22 | 知的財産リスク評価 | 特許/商標/著作権スクリーニング、商品リサーチ段階でリスク特定 | [A6 Prompt 3.4](../paths/a-operators/a6-compliance.md#34-知識産権風険評估) |
-| 23 | BSA AI Agent コンプライアンス | 2026.3 新規制 — AI ツールが Amazon 要件を満たしていることを確認 | [A6 上級 6.1](../paths/a-operators/a6-compliance.md#61-2026-新趨勢amazon-ai-agent-合規要求bsa-更新) |
-
-**Shopify（独立サイト）**
-
-| # | シナリオ | 概要 | リンク |
-|---|----------|------|--------|
-| 24 | GEO 最適化 | ChatGPT/Perplexity に商品を推薦させる — 2026年最注目トレンド | [D1 ch21.3](../paths/d-platforms/shopify-ai-guide.md#213-geo-優化実操-讓-ai-推薦你的産品) |
-| 25 | Agentic Storefronts | ChatGPT/Gemini/Copilot 内で直接販売 | [D1 ch21.2](../paths/d-platforms/shopify-ai-guide.md#212-agentic-storefronts-与-ucp-協議-在-ai-平台内直接売貨) |
-| 26 | Shopify Audiences | AI 駆動の広告オーディエンス生成、CAC 20-50%削減 | [D1 ch21.4](../paths/d-platforms/shopify-ai-guide.md#214-shopify-audiences-ai-駆動的広告受衆工具) |
-| 27 | Klaviyo メールパーソナライゼーション | 送信時間最適化+LTV 予測+離脱アラート | [D1 ch23](../paths/d-platforms/shopify-ai-guide.md#23-shopify-邮件営銷深度方法論-从-klaviyo-到-ai-個性化) · [Before/After](../paths/0-foundations/ai-landscape.md#邮件営銷shopify---成熟度-45) |
-| 28 | Amazon から Shopify への移行 | 6段階移行方法論、5つのよくある間違いを回避 | [D1 ch28](../paths/d-platforms/shopify-ai-guide.md#28-从-amazon-遷移到-shopify-的完整方法論) |
-| 29 | コンバージョンファネル診断 | カート追加率/チェックアウト率/決済率を段階別に分析 | [D1 ch24](../paths/d-platforms/shopify-ai-guide.md#24-shopify-転化率優化-cro-深度指南) |
-| 30 | Schema/FAQ コード | Product Schema + FAQ Schema — GEO 最適化の基盤 | [D1 ch27](../paths/d-platforms/shopify-ai-guide.md#27-shopify-liquid-与技術-seo-実操) |
-
-**TikTok Shop**
-
-| # | シナリオ | 概要 | リンク |
-|---|----------|------|--------|
-| 31 | Hook フォーミュラ集 | 情報ギャップ理論に基づく Hook デザイン方法論 | [D2 ch15.2](../paths/d-platforms/tiktok-shop-ai-guide.md#152-hook-設計方法論-不是吸引注意力而是製造信息缺口) |
-| 32 | 3幕構成ビデオスクリプト | ニーズ構築→ソリューション提示→アクション促進、コンバージョン率 3-5倍 | [D2 ch15.3](../paths/d-platforms/tiktok-shop-ai-guide.md#153-視頻脚本的3-幕結構) |
-| 33 | クリエイタースコアリングモデル | 100点制の定量スコアリング — 感覚に頼らないクリエイター選定 | [D2 ch16.2](../paths/d-platforms/tiktok-shop-ai-guide.md#162-ai-達人篩選的量化評分模型) |
-| 34 | パーソナライズドクリエイターアウトリーチ | クリエイターの最近のコンテンツに基づくカスタマイズ、返信率 3-5倍 | [D2 ch16.3](../paths/d-platforms/tiktok-shop-ai-guide.md#163-達人邀約的-ai-自動化工作流) |
-| 35 | ライブコマース分単位スクリプト | 留める→種まき→転換→インタラクション→アンコールのリズム設計 | [D2 ch17.3](../paths/d-platforms/tiktok-shop-ai-guide.md#173-直播脚本的節奏設計) |
-| 36 | GMV Max 最適化 | 2025.9 強制化後：クリエイティブ/Feed/SPS — 3つのコントロール可能な変数 | [D2 ch14.2](../paths/d-platforms/tiktok-shop-ai-guide.md#142-gmv-max-強制化-2025-年-9-月起的重大変化) · [D2 ch6.3](../paths/d-platforms/tiktok-shop-ai-guide.md#63-gmv-max-深度解析) |
-| 37 | TikTok アプリ内検索 SEO | Z世代の40%以上が TikTok で商品を先に検索 | [D2 ch19](../paths/d-platforms/tiktok-shop-ai-guide.md#19-tiktok-shop-站内搜索-seo) |
-| 38 | Spark Ads 選定基準 | 完視聴率>40% + エンゲージメント率>5% + 商品クリック率>3% | [D2 ch23.1](../paths/d-platforms/tiktok-shop-ai-guide.md#231-spark-ads-tiktok-最独特的広告形式) |
-
-**クロスプラットフォーム連携**
-
-| # | シナリオ | 概要 | リンク |
-|---|----------|------|--------|
-| 39 | 1ドキュメント3プラットフォーム対応 | 1つのコアドキュメント → Amazon+Shopify+TikTok コンテンツ | [D3 ch3](../paths/d-platforms/cross-platform-strategy.md#3-跨平台内容協同) |
-| 40 | レビューデータ駆動の Hook 作成 | Amazon 低評価のペインポイント → TikTok 動画 Hook のインスピレーション | [D1 ch22.1](../paths/d-platforms/shopify-ai-guide.md#221-amazon-review-数据駆動-shopify-優化的具体方法) · [D2 ch20](../paths/d-platforms/tiktok-shop-ai-guide.md#20-tiktok-shop-x-amazon-双渠道協同) |
-| 41 | TikTok 種まきアトリビューション | TikTok の Amazon ブランド検索量への間接貢献を定量化 | [D3 ch4.2](../paths/d-platforms/cross-platform-strategy.md#42-跨平台帰因-量化-tiktok-種草対-amazon-的影響) |
-| 42 | 3プラットフォーム広告予算配分 | 限界 ROAS 均衡原則 + 間接効果補正 | [D3 ch5](../paths/d-platforms/cross-platform-strategy.md#5-跨平台広告協同) |
-| 43 | クロスプラットフォーム在庫 MCF/FBT | FBA+FBT+3PL の動的配分戦略 | [D3 ch6](../paths/d-platforms/cross-platform-strategy.md#6-庫存与物流協同) |
-
-**データ分析・AI トレンド**
-
-| # | シナリオ | 概要 | リンク |
-|---|----------|------|--------|
-| 44 | 週次レポート自動生成 | 異常検知+トレンド分析+最適化提案、週35分 | [Before/After](../paths/0-foundations/ai-landscape.md#数据分析与決策----成熟度-45) |
-| 45 | Amazon Canvas AI | 2026.3 新機能 — Seller Central 内の AI データ分析 | [AI 全景](../paths/0-foundations/ai-landscape.md) |
-| 46 | Seller Assistant Agentic | Amazon 公式 AI アシスタントのアップグレード — セラーに代わって操作を実行 | 近日更新予定 |
-| 47 | OpenClaw Agent 自動化 | AI Agent による日常運営タスクの自動化 | [D1 ch10](../paths/d-platforms/shopify-ai-guide.md) · [D2 ch12](../paths/d-platforms/tiktok-shop-ai-guide.md) |
-| 48 | AI ツール ROI 計算 | 月額$20の ChatGPT は本当に価値がある？定量化フレームワーク | [AI 全景](../paths/0-foundations/ai-landscape.md#効率変化総覧)
+| # | 分類 | シナリオ | 概要 | リンク |
+|---|------|----------|------|--------|
+| | **🔍 商品リサーチ・市場調査** | | | |
+| 1 | リサーチ | 競合レビューのペインポイント抽出 | 低評価50件 → ペインポイントランキング + 改善方向 | [A1 Prompt](../paths/a-operators/a1-product-research.md) · [Before/After](../paths/0-foundations/ai-landscape.md#選品与市場調研----成熟度-35) |
+| 2 | リサーチ | 市場実現可能性 5次元スコアリング | 需要/競争/利益/サプライチェーン/コンプライアンス、Go or No-Go | [A1 Prompt](../paths/a-operators/a1-product-research.md) |
+| 3 | リサーチ | Google Trends トレンド検証 | 商品リサーチの方向性をクロス検証、偽需要を回避 | [A1 方法論](../paths/a-operators/a1-product-research.md) |
+| 4 | リサーチ | サプライヤー評価・コスト比較 | AI で 1688/Alibaba サプライヤーデータを分析 | [A1 方法論](../paths/a-operators/a1-product-research.md) |
+| | **✍️ リスティング・コンテンツ最適化** | | | |
+| 5 | リスティング | Rufus/COSMO セマンティック最適化 | キーワードマッチングからインテントマッチングへ — 2026年最重要のリスティング変化 | [A2 方法論 1.1](../paths/a-operators/a2-listing-optimization.md#11-amazon-搜索算法演進从-a9-到-cosmo--rufus) |
+| 6 | リスティング | リスティング一括生成 | タイトル+バレットポイント+説明+Search Terms、45分で完了 | [A2 Prompt](../paths/a-operators/a2-listing-optimization.md) · [Before/After](../paths/0-foundations/ai-landscape.md#listing-文案創作----成熟度-55) |
+| 7 | リスティング | 多言語ローカライゼーション | 翻訳ではなく、文化適応+現地キーワード+単位変換 | [A2 Prompt](../paths/a-operators/a2-listing-optimization.md) · [D1 ch25](../paths/d-platforms/shopify-ai-guide.md#25-shopify-多語言本地化方法論-不只是翻訳) |
+| 8 | リスティング | A+ Content コピーライティング | ブランドストーリー+商品比較+使用シーンのレイアウト | [A2 方法論](../paths/a-operators/a2-listing-optimization.md) |
+| 9 | リスティング | 競合リスティング戦略分析 | 比較分析で差別化ポジショニングとキーワードギャップを発見 | [A2 Prompt](../paths/a-operators/a2-listing-optimization.md) |
+| 10 | リスティング | Q&A 事前設定（Rufus 最適化） | Rufus が Q&A を読んでユーザーの質問に回答 — 高頻度質問を事前設定 | [A2 上級](../paths/a-operators/a2-listing-optimization.md) |
+| | **📢 広告最適化** | | | |
+| 11 | 広告 | 検索語レポート AI 分析 | 高ROAS語/無駄な支出/隠れたロングテール機会、50分で完了 | [A3 Prompt](../paths/a-operators/a3-advertising.md) · [Before/After](../paths/0-foundations/ai-landscape.md#広告管理与優化----成熟度-45) |
+| 12 | 広告 | 広告コピー A/B テスト | 5種類のヘッドラインスタイルバリエーションを一括生成 | [A3 Prompt](../paths/a-operators/a3-advertising.md) |
+| 13 | 広告 | 新商品 30日間広告ローンチプラン | Auto → Manual キーワードハーベスティングの完全ワークフロー | [A3 ワークフロー](../paths/a-operators/a3-advertising.md) |
+| 14 | 広告 | ACOS/TACOS 診断 | 広告健全性評価と予算再配分 | [A3 方法論](../paths/a-operators/a3-advertising.md) |
+| 15 | 広告 | Amazon Canvas AI | 2026.3 新機能 — AI リアルタイムデータ可視化とシナリオシミュレーション | [AI 全景](../paths/0-foundations/ai-landscape.md) |
+| | **💬 カスタマーサービス・アフターサービス** | | | |
+| 16 | CS | 低評価レビュー一括分析 | 問題分類+頻度統計+改善プラン+優先度 | [A4 Prompt](../paths/a-operators/a4-customer-service.md) · [Before/After](../paths/0-foundations/ai-landscape.md#客服与售後----成熟度-45) |
+| 17 | CS | 多言語カスタマーサービス返信 | AI 生成+人間確認、1件あたり1-2分 | [A4 Prompt](../paths/a-operators/a4-customer-service.md) |
+| 18 | CS | アカウント申立 Plan of Action | Root Cause + Actions + Prevention、35分で初稿完成 | [A6 Prompt 3.6](../paths/a-operators/a6-compliance.md#36-amazon-政策違規応対) · [A6 SOP 4.3](../paths/a-operators/a6-compliance.md#43-合規事件応急響応-sop) |
+| 19 | CS | A-to-Z Claim 対応 | 原因分析+返信生成+予防措置 | [A4 方法論](../paths/a-operators/a4-customer-service.md) |
+| | **🛡️ コンプライアンス・リスク管理** | | | |
+| 20 | コンプライアンス | マルチマーケットコンプライアンス比較表 | CE/FCC/PSE/UKCA 一覧比較、30分でチェックリスト完成 | [A6 Prompt 3.1](../paths/a-operators/a6-compliance.md#31-多市場合規対比深化版) · [Before/After](../paths/0-foundations/ai-landscape.md#合規文書準備----成熟度-45) |
+| 21 | コンプライアンス | コンプライアンスコスト見積もり | 認証費+テスト費+ラベル費+年間維持費、価格モデルに組み込み | [A6 Prompt 3.3](../paths/a-operators/a6-compliance.md#33-合規成本估算) |
+| 22 | コンプライアンス | 知的財産リスク評価 | 特許/商標/著作権スクリーニング、商品リサーチ段階でリスク特定 | [A6 Prompt 3.4](../paths/a-operators/a6-compliance.md#34-知識産権風険評估) |
+| 23 | コンプライアンス | BSA AI Agent コンプライアンス | 2026.3 新規制 — AI ツールが Amazon 要件を満たしていることを確認 | [A6 上級 6.1](../paths/a-operators/a6-compliance.md#61-2026-新趨勢amazon-ai-agent-合規要求bsa-更新) |
+| | **🏪 Shopify（独立サイト）** | | | |
+| 24 | Shopify | GEO 最適化 | ChatGPT/Perplexity に商品を推薦させる — 2026年最注目トレンド | [D1 ch21.3](../paths/d-platforms/shopify-ai-guide.md#213-geo-優化実操-讓-ai-推薦你的産品) |
+| 25 | Shopify | Agentic Storefronts | ChatGPT/Gemini/Copilot 内で直接販売 | [D1 ch21.2](../paths/d-platforms/shopify-ai-guide.md#212-agentic-storefronts-与-ucp-協議-在-ai-平台内直接売貨) |
+| 26 | Shopify | Shopify Audiences | AI 駆動の広告オーディエンス生成、CAC 20-50%削減 | [D1 ch21.4](../paths/d-platforms/shopify-ai-guide.md#214-shopify-audiences-ai-駆動的広告受衆工具) |
+| 27 | Shopify | Klaviyo メールパーソナライゼーション | 送信時間最適化+LTV 予測+離脱アラート | [D1 ch23](../paths/d-platforms/shopify-ai-guide.md#23-shopify-邮件営銷深度方法論-从-klaviyo-到-ai-個性化) · [Before/After](../paths/0-foundations/ai-landscape.md#邮件営銷shopify---成熟度-45) |
+| 28 | Shopify | Amazon から Shopify への移行 | 6段階移行方法論、5つのよくある間違いを回避 | [D1 ch28](../paths/d-platforms/shopify-ai-guide.md#28-从-amazon-遷移到-shopify-的完整方法論) |
+| 29 | Shopify | コンバージョンファネル診断 | カート追加率/チェックアウト率/決済率を段階別に分析 | [D1 ch24](../paths/d-platforms/shopify-ai-guide.md#24-shopify-転化率優化-cro-深度指南) |
+| 30 | Shopify | Schema/FAQ コード | Product Schema + FAQ Schema — GEO 最適化の基盤 | [D1 ch27](../paths/d-platforms/shopify-ai-guide.md#27-shopify-liquid-与技術-seo-実操) |
+| | **🎵 TikTok Shop** | | | |
+| 31 | TikTok | Hook フォーミュラ集 | 情報ギャップ理論に基づく Hook デザイン方法論 | [D2 ch15.2](../paths/d-platforms/tiktok-shop-ai-guide.md#152-hook-設計方法論-不是吸引注意力而是製造信息缺口) |
+| 32 | TikTok | 3幕構成ビデオスクリプト | ニーズ構築→ソリューション提示→アクション促進、コンバージョン率 3-5倍 | [D2 ch15.3](../paths/d-platforms/tiktok-shop-ai-guide.md#153-視頻脚本的3-幕結構) |
+| 33 | TikTok | クリエイタースコアリングモデル | 100点制の定量スコアリング — 感覚に頼らないクリエイター選定 | [D2 ch16.2](../paths/d-platforms/tiktok-shop-ai-guide.md#162-ai-達人篩選的量化評分模型) |
+| 34 | TikTok | パーソナライズドクリエイターアウトリーチ | クリエイターの最近のコンテンツに基づくカスタマイズ、返信率 3-5倍 | [D2 ch16.3](../paths/d-platforms/tiktok-shop-ai-guide.md#163-達人邀約的-ai-自動化工作流) |
+| 35 | TikTok | ライブコマース分単位スクリプト | 留める→種まき→転換→インタラクション→アンコールのリズム設計 | [D2 ch17.3](../paths/d-platforms/tiktok-shop-ai-guide.md#173-直播脚本的節奏設計) |
+| 36 | TikTok | GMV Max 最適化 | 2025.9 強制化後：クリエイティブ/Feed/SPS — 3つのコントロール可能な変数 | [D2 ch14.2](../paths/d-platforms/tiktok-shop-ai-guide.md#142-gmv-max-強制化-2025-年-9-月起的重大変化) · [D2 ch6.3](../paths/d-platforms/tiktok-shop-ai-guide.md#63-gmv-max-深度解析) |
+| 37 | TikTok | TikTok アプリ内検索 SEO | Z世代の40%以上が TikTok で商品を先に検索 | [D2 ch19](../paths/d-platforms/tiktok-shop-ai-guide.md#19-tiktok-shop-站内搜索-seo) |
+| 38 | TikTok | Spark Ads 選定基準 | 完視聴率>40% + エンゲージメント率>5% + 商品クリック率>3% | [D2 ch23.1](../paths/d-platforms/tiktok-shop-ai-guide.md#231-spark-ads-tiktok-最独特的広告形式) |
+| | **🔗 クロスプラットフォーム連携** | | | |
+| 39 | クロスプラットフォーム | 1ドキュメント3プラットフォーム対応 | 1つのコアドキュメント → Amazon+Shopify+TikTok コンテンツ | [D3 ch3](../paths/d-platforms/cross-platform-strategy.md#3-跨平台内容協同) |
+| 40 | クロスプラットフォーム | レビューデータ駆動の Hook 作成 | Amazon 低評価のペインポイント → TikTok 動画 Hook のインスピレーション | [D1 ch22.1](../paths/d-platforms/shopify-ai-guide.md#221-amazon-review-数据駆動-shopify-優化的具体方法) · [D2 ch20](../paths/d-platforms/tiktok-shop-ai-guide.md#20-tiktok-shop-x-amazon-双渠道協同) |
+| 41 | クロスプラットフォーム | TikTok 種まきアトリビューション | TikTok の Amazon ブランド検索量への間接貢献を定量化 | [D3 ch4.2](../paths/d-platforms/cross-platform-strategy.md#42-跨平台帰因-量化-tiktok-種草対-amazon-的影響) |
+| 42 | クロスプラットフォーム | 3プラットフォーム広告予算配分 | 限界 ROAS 均衡原則 + 間接効果補正 | [D3 ch5](../paths/d-platforms/cross-platform-strategy.md#5-跨平台広告協同) |
+| 43 | クロスプラットフォーム | クロスプラットフォーム在庫 MCF/FBT | FBA+FBT+3PL の動的配分戦略 | [D3 ch6](../paths/d-platforms/cross-platform-strategy.md#6-庫存与物流協同) |
+| | **📊 データ分析・AI トレンド** | | | |
+| 44 | データ/AI | 週次レポート自動生成 | 異常検知+トレンド分析+最適化提案、週35分 | [Before/After](../paths/0-foundations/ai-landscape.md#数据分析与決策----成熟度-45) |
+| 45 | データ/AI | Amazon Canvas AI | 2026.3 新機能 — Seller Central 内の AI データ分析 | [AI 全景](../paths/0-foundations/ai-landscape.md) |
+| 46 | データ/AI | Seller Assistant Agentic | Amazon 公式 AI アシスタントのアップグレード — セラーに代わって操作を実行 | 近日更新予定 |
+| 47 | データ/AI | OpenClaw Agent 自動化 | AI Agent による日常運営タスクの自動化 | [D1 ch10](../paths/d-platforms/shopify-ai-guide.md) · [D2 ch12](../paths/d-platforms/tiktok-shop-ai-guide.md) |
+| 48 | データ/AI | AI ツール ROI 計算 | 月額$20の ChatGPT は本当に価値がある？定量化フレームワーク | [AI 全景](../paths/0-foundations/ai-landscape.md#効率変化総覧)
 
 [目次に戻る](#-目次)
 

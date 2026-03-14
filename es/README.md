@@ -41,12 +41,47 @@ Presenta las comparaciones de datos clave en formato de tabla.
 
 ## 📋 Tabla de Contenidos
 
-- [Acceso rápido a temas populares (48 escenarios)](#acceso-rápido-a-temas-populares)
+- [Acceso rápido a temas populares](#acceso-rápido-a-temas-populares)
 - [Elige tu camino](#elige-tu-camino)
 - [Path A: Operadores — IA para operaciones diarias](#path-a-operadores)
 - [Path D: Multiplataforma — Más allá de Amazon](#path-d-multiplataforma)
 - [Path E: Redes sociales — IA para marketing](#path-e-redes-sociales)
 - [Licencia](#licencia)
+
+---
+
+## Acceso rápido a temas populares
+
+> Accede directamente al contenido detallado por escenario. Los 15 escenarios más importantes para empezar.
+> Última actualización: 2026-03-14
+
+| # | Categoría | Escenario | Descripción | Enlace |
+|---|-----------|-----------|-------------|--------|
+| | **🔍 Investigación de productos** | | | |
+| 1 | Investigación | Extracción de puntos de dolor de reseñas | 50 reseñas negativas → ranking de problemas + direcciones de mejora | [A1 Prompt](../paths/a-operators/a1-product-research.md) |
+| 2 | Investigación | Evaluación de viabilidad de mercado | Demanda/Competencia/Margen/Cadena de suministro/Cumplimiento | [A1 Prompt](../paths/a-operators/a1-product-research.md) |
+| | **✍️ Listing y contenido** | | | |
+| 3 | Listing | Optimización semántica Rufus/COSMO | De coincidencia de palabras clave a coincidencia de intención — el cambio más importante en 2026 | [A2 Metodología](../paths/a-operators/a2-listing-optimization.md) |
+| 4 | Listing | Generación completa de Listing | Título + Viñetas + Descripción + Search Terms, listo en 45 minutos | [A2 Prompt](../paths/a-operators/a2-listing-optimization.md) |
+| 5 | Listing | Localización multilingüe | No es traducción — adaptación cultural + palabras clave locales + conversión de unidades | [A2 Prompt](../paths/a-operators/a2-listing-optimization.md) |
+| | **📢 Publicidad** | | | |
+| 6 | Publicidad | Análisis IA de informes de términos de búsqueda | Términos alto ROAS / gasto desperdiciado / oportunidades long-tail ocultas | [A3 Prompt](../paths/a-operators/a3-advertising.md) |
+| 7 | Publicidad | Plan de lanzamiento de anuncios 30 días | Flujo completo Auto → Manual de cosecha de palabras clave | [A3 Workflow](../paths/a-operators/a3-advertising.md) |
+| | **💬 Servicio al cliente** | | | |
+| 8 | CS | Análisis masivo de reseñas negativas | Clasificar problemas + estadísticas de frecuencia + plan de mejora | [A4 Prompt](../paths/a-operators/a4-customer-service.md) |
+| 9 | CS | Plan of Action para apelaciones | Root Cause + Actions + Prevention, borrador en 35 min | [A6 Prompt](../paths/a-operators/a6-compliance.md) |
+| | **🛡️ Cumplimiento normativo** | | | |
+| 10 | Cumplimiento | Comparación de cumplimiento multimercado | CE/FCC/PSE/UKCA lado a lado, checklist en 30 min | [A6 Prompt](../paths/a-operators/a6-compliance.md) |
+| | **🏪 Shopify** | | | |
+| 11 | Shopify | Optimización GEO | Que ChatGPT/Perplexity recomienden tus productos — tendencia más caliente en 2026 | [D1 Guía](../paths/d-platforms/shopify-ai-guide.md) |
+| 12 | Shopify | Migración de Amazon a Shopify | Metodología de migración en 6 fases | [D1 Guía](../paths/d-platforms/shopify-ai-guide.md) |
+| | **🎵 TikTok Shop** | | | |
+| 13 | TikTok | Biblioteca de fórmulas Hook | Metodología de diseño de Hook basada en teoría de brecha de información | [D2 Guía](../paths/d-platforms/tiktok-shop-ai-guide.md) |
+| 14 | TikTok | Script de video estructura 3 actos | Crear necesidad → Mostrar solución → Impulsar acción, tasa de conversión 3-5x | [D2 Guía](../paths/d-platforms/tiktok-shop-ai-guide.md) |
+| | **🔗 Multiplataforma** | | | |
+| 15 | Multiplataforma | Un documento, tres plataformas | Un documento central → contenido para Amazon + Shopify + TikTok | [D3 Estrategia](../paths/d-platforms/cross-platform-strategy.md) |
+
+[Volver a la tabla de contenidos](#-tabla-de-contenidos)
 
 ---
 

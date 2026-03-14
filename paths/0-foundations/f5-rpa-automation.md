@@ -351,6 +351,251 @@ AI 增强版：
 └── 恶意差评 → 标记 + 生成申诉草稿
 ```
 
+### 7.2 n8n AI Agent 节点详解
+
+n8n 内置了完整的 AI 节点体系，可以在工作流中直接调用 AI：
+
+```
+n8n AI 节点类型：
+
+1. OpenAI Chat Model — 调用 GPT-4/GPT-4o
+   ├── 用途：文本生成、分析、翻译
+   ├── 配置：API Key + Model + Temperature
+   └── 电商用法：Listing 生成、Review 分析、客服回复
+
+2. AI Agent — 让 AI 自主决策下一步操作
+   ├── 用途：复杂任务的自主执行
+   ├── 配置：System Prompt + Tools + Memory
+   └── 电商用法：自动分析数据并决定优化方向
+
+3. AI Chain — 多步 AI 处理链
+   ├── 用途：需要多步 AI 处理的任务
+   ├── 配置：多个 AI 节点串联
+   └── 电商用法：Review → 翻译 → 分析 → 生成报告
+
+4. AI Memory — 给 AI 添加记忆
+   ├── 用途：跨次调用保持上下文
+   ├── 配置：Buffer Memory / Vector Store Memory
+   └── 电商用法：客服 Chatbot 记住之前的对话
+
+5. AI Tool — 让 AI 调用外部工具
+   ├── 用途：AI 决定何时调用什么工具
+   ├── 配置：定义可用工具列表
+   └── 电商用法：AI 决定是否需要查询库存、发送通知等
+```
+
+### 7.3 实战：n8n + OpenAI 构建 Review 智能分析系统
+
+这是一个完整的、可直接部署的工作流：
+
+```
+工作流详细设计：
+
+节点 1: Schedule Trigger
+├── 频率：每 2 小时执行一次
+└── 配置：Cron Expression: 0 */2 * * *
+
+节点 2: HTTP Request（获取 Review 数据）
+├── 方法：GET
+├── URL：你的 Review 数据源（SP-API 或第三方工具 API）
+├── 认证：Bearer Token
+└── 输出：JSON 格式的 Review 列表
+
+节点 3: IF（过滤新 Review）
+├── 条件：Review 日期 > 上次检查时间
+└── 输出：只保留新 Review
+
+节点 4: Loop Over Items（逐条处理）
+
+节点 5: OpenAI Chat Model（AI 分析）
+├── Model：gpt-4o-mini（成本低，速度快）
+├── System Prompt：
+│   "你是一个电商 Review 分析专家。分析以下 Review 并输出 JSON：
+│   {
+│     "sentiment": "positive/neutral/negative",
+│     "category": "product_quality/shipping/usage/price/other",
+│     "key_issue": "一句话总结核心问题",
+│     "severity": 1-5,
+│     "suggested_reply": "建议的回复草稿",
+│     "action_needed": "none/monitor/respond/escalate"
+│   }"
+├── User Message：{{$json.review_text}}
+└── Temperature：0.3（低温度，输出更稳定）
+
+节点 6: Switch（根据 AI 分析结果分流）
+├── action_needed == "escalate" → 节点 7a
+├── action_needed == "respond" → 节点 7b
+├── action_needed == "monitor" → 节点 7c
+└── action_needed == "none" → 节点 7d
+
+节点 7a: Slack（紧急通知）
+├── Channel：#urgent-reviews
+├── Message：🚨 紧急差评需要处理
+│   产品：{{product_name}}
+│   评分：{{rating}} 星
+│   问题：{{key_issue}}
+│   建议回复：{{suggested_reply}}
+└── Mention：@运营负责人
+
+节点 7b: Google Sheets（记录+生成回复）
+├── 添加到"待回复"Sheet
+└── 包含 AI 生成的回复草稿
+
+节点 7c: Google Sheets（记录到监控表）
+
+节点 7d: Google Sheets（记录到好评统计表）
+
+节点 8: 汇总统计
+├── 本次新增 Review 数量
+├── 正面/中性/负面比例
+├── 需要处理的数量
+└── 发送日报到 Slack/Email
+```
+
+**成本估算**：
+- n8n 自托管：$0（Docker）
+- OpenAI API：~$0.01/条 Review（gpt-4o-mini）
+- 每天 50 条 Review：~$0.50/天 = ~$15/月
+- 节省的人工时间：~10 小时/周 × $25/小时 = $250/周
+
+### 7.4 实战：多语言 Listing 批量生成工作流
+
+```
+工作流设计：
+
+节点 1: Google Sheets Trigger
+├── 监控"待翻译"Sheet
+└── 新行添加时触发
+
+节点 2: 获取产品信息
+├── 从 Sheet 读取：英文标题、Bullet Points、描述、关键词
+└── 目标语言列表：[日语, 德语, 西班牙语, 法语, 意大利语]
+
+节点 3: Loop Over Languages
+
+节点 4: OpenAI Chat Model（翻译+本地化）
+├── System Prompt：
+│   "你是一个 Amazon Listing 本地化专家。
+│   不是直译，是本地化：
+│   - 使用目标市场消费者的搜索习惯
+│   - 适配当地的度量单位
+│   - 调整文化表达方式
+│   - 保持 SEO 关键词密度
+│   目标语言：{{target_language}}"
+├── User Message：{{product_info}}
+└── Temperature：0.5
+
+节点 5: Google Sheets（写入翻译结果）
+├── 每种语言一列
+└── 标注翻译状态
+
+节点 6: Slack 通知
+└── "产品 {{product_name}} 的 5 种语言 Listing 已生成，请人工审核"
+```
+
+### 7.5 Amazon BSA AI Agent 合规要求（2026.3 新规）
+
+> ⚠️ **重要**：2026 年 3 月 4 日起，Amazon 更新了 BSA（Business Solutions Agreement），对 AI Agent 和自动化工具提出了正式要求（[PPC Land](https://ppc.land/amazons-new-ai-agent-rules-shake-up-sellers-before-march-4-deadline/)）。
+
+**新规要求**：
+- AI Agent 必须在所有时间明确标识为自动化系统
+- 必须持续遵守 Amazon 的 Agent Policy
+- Amazon 要求停止访问时必须立即停止
+- 第三方工具开发者也受此约束
+
+**对自动化工作流的影响**：
+- 使用 RPA 工具操作 Seller Central 需要更加谨慎
+- 通过 SP-API 的自动化不受影响（API 本身就是授权的）
+- 浏览器自动化（Defy/Bardeen）操作 Seller Central 可能违规
+- 建议：优先使用 SP-API，避免直接模拟浏览器操作 Seller Central
+
+Content rephrased for compliance with licensing restrictions.
+
+---
+
+## 7.6 10 个电商自动化工作流的详细实现方案
+
+### 工作流 1：新差评实时通知（5 分钟搭建）
+
+```
+工具：Zapier（最简单）
+触发：第三方 Review 监控工具（如 FeedbackWhiz）→ 新 Review
+过滤：评分 ≤ 3 星
+动作 1：Slack 发送消息（含 Review 内容+产品链接）
+动作 2：Google Sheets 添加一行
+预估节省：2 小时/周
+```
+
+### 工作流 2：库存低预警（10 分钟搭建）
+
+```
+工具：n8n 或 Zapier
+触发：Schedule（每天早上 9 点）
+步骤 1：SP-API 获取库存数据
+步骤 2：Code 节点计算：当前库存 / 日均销量 = 可售天数
+步骤 3：IF 可售天数 < 14 天
+步骤 4：Slack/Email 通知 + Google Sheets 记录
+预估节省：3 小时/周
+```
+
+### 工作流 3：竞品价格监控（30 分钟搭建）
+
+```
+工具：Browse AI + n8n
+步骤 1：Browse AI 每天抓取 5 个竞品的价格
+步骤 2：n8n Webhook 接收 Browse AI 数据
+步骤 3：Code 节点对比昨天的价格
+步骤 4：IF 价格变化 > 5%
+步骤 5：Slack 通知 + Google Sheets 记录价格历史
+步骤 6：（可选）OpenAI 分析价格趋势并建议调价策略
+预估节省：5 小时/周
+```
+
+### 工作流 4：广告报告自动下载+AI 分析（1 小时搭建）
+
+```
+工具：n8n + OpenAI API
+触发：Schedule（每周一早上 9 点）
+步骤 1：SP-API 下载过去 7 天的搜索词报告
+步骤 2：Code 节点数据清洗（去重、格式化、计算 ROAS/ACOS）
+步骤 3：OpenAI 分析报告
+  Prompt："分析以下搜索词数据，找出：
+  1. 高 ROAS 词（应提高出价）
+  2. 浪费词（应否定）
+  3. 新发现的长尾机会
+  4. 预算重新分配建议"
+步骤 4：Google Docs 生成周报
+步骤 5：Gmail 发送给团队
+预估节省：4 小时/周
+```
+
+### 工作流 5：社交媒体内容自动排期（20 分钟搭建）
+
+```
+工具：Zapier 或 Make
+触发：Google Sheets 新行（内容日历）
+步骤 1：读取内容（文案+图片链接+发布时间+平台）
+步骤 2：Switch 按平台分流
+  ├── Instagram → Later/Buffer API
+  ├── Facebook → Meta API
+  ├── TikTok → 手动（API 限制）
+  └── Pinterest → Pinterest API
+步骤 3：确认发布成功 → 更新 Sheet 状态
+预估节省：5 小时/周
+```
+
+### 工作流 6-10 简要方案
+
+| # | 工作流 | 工具 | 核心逻辑 | 节省 |
+|---|--------|------|---------|------|
+| 6 | 多平台库存同步 | n8n | Shopify Webhook → 更新 Amazon/Walmart 库存 | 3h/周 |
+| 7 | 客服自动回复 | n8n + OpenAI | 新消息 → AI 分类 → 自动回复/转人工 | 10h/周 |
+| 8 | 月度报告生成 | n8n + Google Sheets | 汇总各平台数据 → AI 生成分析 → PDF 报告 | 8h/月 |
+| 9 | 多语言 Listing 生成 | n8n + OpenAI | 英文 Listing → AI 翻译 5 种语言 → 人工审核 | 10h/批 |
+| 10 | Review 情感趋势 | n8n + OpenAI | 每日 Review → AI 分析 → 趋势图表 → 周报 | 5h/周 |
+└── 恶意差评 → 标记 + 生成申诉草稿
+```
+
 ### 7.2 n8n + OpenAI API 集成
 
 n8n 内置了 OpenAI 节点，可以直接在工作流中调用 AI：

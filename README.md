@@ -44,9 +44,12 @@
 
 ## 🆕 What's New
 
+- 📅 2026-03-14: 🆕 新增 [Path E: 社交媒体 AI 运营](paths/e-social-media/)（7 篇指南：Instagram/YouTube/小红书/Pinterest/WhatsApp/Reddit/跨渠道）
+- 📅 2026-03-14: 🆕 Path D 扩展至 [13 个电商平台](paths/d-platforms/)（新增 Walmart/Temu/Shopee/Mercado Libre/Rakuten/eBay/AliExpress/Coupang/Faire/Otto/Zalando）
+- 📅 2026-03-14: 🆕 新增 [平台全景对比页](paths/d-platforms/platform-comparison.md) — 14 个平台 + 7 个社交渠道的完整对比
+- 📅 2026-03-14: 🆕 多语言支持：[English](en/README.md) · [日本語](ja/README.md) · [Español](es/README.md)
 - 📅 2025-06-20: 新增 [Notebook 实验室](notebooks/) — 首个 Notebook: Amazon 报告数据处理 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b1-data-pipeline.ipynb)
 - 📅 2025-06-20: 新增 2 个实战案例: [AI Listing 生成](docs/case-studies/ai-listing-generation.md)、[自动化 Review 分析](docs/case-studies/automated-review-analysis.md)
-- 📅 2025-06-20: 新增 [README_EN.md](README_EN.md) 英文完整版 + 社区基础设施（Issue 模板、CODEOWNERS、CHANGELOG）
 
 ---
 

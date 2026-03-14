@@ -57,6 +57,8 @@
 
 ## 2. Walmart SEO 与 Listing 优化
 
+> 📎 **相关阅读**: [A2 Listing 优化](../a-operators/a2-listing-optimization.md) — Amazon Listing 的通用优化方法论可参考 A2，70% 可直接复用到 Walmart。
+
 ### 2.1 Listing Quality Score
 
 Walmart 有一个可见的 Listing Quality Score（Amazon 没有），直接影响搜索排名：
@@ -174,6 +176,8 @@ Walmart 的 Rich Media 功能允许在描述区域添加增强内容：
 
 ## 3. Walmart Connect 广告
 
+> 📎 **相关阅读**: [A3 广告优化](../a-operators/a3-advertising.md) — 搜索词报告分析的通用方法论可直接复用到 Walmart Connect。
+
 ### 3.1 广告类型详解
 
 | 广告类型 | 版位 | 计费 | 最低竞价 | 适合 |
@@ -276,6 +280,8 @@ Week 4: 规模化
 ---
 
 ## 4. WFS 物流决策
+
+> 📎 **相关阅读**: [A5 库存管理](../a-operators/a5-inventory.md) — 库存管理和补货决策的通用方法论参考 A5。
 
 ### 4.1 WFS vs FBA 详细对比
 
@@ -470,6 +476,8 @@ Walmart Buy Box 算法因素（按权重排序）：
 ├── 品牌注册状态
 └── 违规记录
 ```
+
+> 📎 **相关阅读**: [D1 Shopify](shopify-ai-guide.md) — 如果你同时做独立站，Shopify 的品牌建设和 DTC 策略参考 D1。
 
 ### Buy Box 监控与优化 AI Prompt
 

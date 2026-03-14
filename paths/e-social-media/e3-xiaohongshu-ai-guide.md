@@ -196,6 +196,8 @@
 
 ## 4. KOL/KOC 合作 AI 方法论
 
+> 📎 **相关阅读**: [E1 Instagram](e1-instagram-facebook-ai-guide.md) — Instagram 达人合作方法论参考 E1，达人筛选评分模型和 Creative Brief 模板可互相借鉴。
+
 ### 4.1 小红书达人层级
 
 | 层级 | 粉丝量 | 特点 | 合作方式 | 预算 |
@@ -269,6 +271,8 @@
 - 费用：600 元/年
 
 ### 6.2 内容本地化策略
+
+> 📎 **相关阅读**: [A2 Listing 优化](../a-operators/a2-listing-optimization.md) — 多语言本地化方法论参考 A2，跨境品牌的内容本地化框架可复用。
 
 > **核心原则**：不是翻译，是重新创作。
 

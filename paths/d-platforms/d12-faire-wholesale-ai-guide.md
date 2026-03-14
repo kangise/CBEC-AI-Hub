@@ -101,6 +101,8 @@ Collections 是 Faire 站内搜索的 SEO。分两类创建：
 
 ### 2.3 品牌故事 AI 生成（基于 Faire 最佳实践）
 
+> 📎 **相关阅读**: [D1 Shopify](shopify-ai-guide.md) — 品牌建设也可参考 D1 Shopify 独立站，DTC 品牌策略和品牌故事方法论可复用。
+
 Faire 官方建议品牌故事聚焦 USP（独特卖点），而不是个人经历。零售商不需要你的创业故事——他们需要知道你的产品为什么能在他们的店里卖得好。
 
 ```
@@ -168,6 +170,8 @@ Faire Ads 最佳实践：
 Content rephrased for compliance with licensing restrictions.
 
 ### 2.5 批发定价深度策略
+
+> 📎 **相关阅读**: [A1 选品与市场调研](../a-operators/a1-product-research.md) — 选品和定价方法论参考 A1，市场调研框架可帮助确定批发定价策略。
 
 Faire 的费用结构（[B2Bridge](https://b2bridge.io/blog/faire-wholesale-pricing/)）：
 

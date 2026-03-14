@@ -15,6 +15,8 @@
 
 ### 1.1 AliExpress vs Temu
 
+> 📎 **相关阅读**: [D5 Temu 卖家策略](d5-temu-seller-guide.md) — Temu 详细分析参考 D5，包括全托管/半托管模式对比和入驻决策框架。
+
 | 维度 | AliExpress | Temu |
 |------|-----------|------|
 | 模式 | 卖家自主运营 | 平台控价控流量 |
@@ -46,6 +48,8 @@ AliExpress Choice 是 AliExpress 对标 Temu 的全托管模式：
 | 适合 | 有一定品牌的卖家 | 纯供应链卖家 | 运营能力强的卖家 |
 
 ### 2.2 多语言 Listing 优化
+
+> 📎 **相关阅读**: [A2 Listing 优化](../a-operators/a2-listing-optimization.md) — 多语言本地化方法论参考 A2，Listing 优化框架可适配到 AliExpress 多语言版本。
 
 AliExpress 覆盖全球，多语言是核心需求。AliExpress 在南欧市场（西班牙、法国、葡萄牙）排名前列（[Marketplace Universe](https://marketplace-universe.com/aliexpress-europe/)），这些市场是重点优化方向。
 

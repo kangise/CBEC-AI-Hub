@@ -47,6 +47,8 @@ Rakuten Points 是日本最大的积分生态之一：
 
 ### 2.3 R-Mail 邮件营销
 
+> 📎 **相关阅读**: [D1 Shopify](shopify-ai-guide.md) — Shopify 的 Klaviyo 邮件营销方法论可参考 D1，邮件自动化和个性化策略可复用到 R-Mail。
+
 Amazon 禁止卖家直接联系买家，但 Rakuten 鼓励：
 - R-Mail：卖家可以给购买过的用户发邮件
 - 邮件内容：新品通知、促销活动、积分活动、使用教程
@@ -89,6 +91,8 @@ Amazon 禁止卖家直接联系买家，但 Rakuten 鼓励：
 
 ### 2.5 YouTube Shopping × Rakuten（2026 新功能）
 
+> 📎 **相关阅读**: [E2 YouTube AI 运营](../e-social-media/e2-youtube-ai-guide.md) — YouTube 运营方法论参考 E2，达人合作和视频内容策略可直接复用。
+
 2026 年 2 月，Rakuten 与 Google 合作，在日本推出 YouTube Shopping 功能（[IT Business Today](https://itbusinesstoday.com/martech/marketing/youtube-and-rakuten-team-up-to-revolutionize-social-commerce-in-japan/)）：
 
 - 用户可以在 YouTube 视频中直接点击购买 Rakuten 商品
@@ -104,6 +108,8 @@ Amazon 禁止卖家直接联系买家，但 Rakuten 鼓励：
 Content rephrased for compliance with licensing restrictions.
 
 ## 3. 日语 Listing AI 优化
+
+> 📎 **相关阅读**: [A2 Listing 优化](../a-operators/a2-listing-optimization.md) — Listing 优化通用方法论参考 A2，核心优化框架可适配到日语 Listing。
 
 ### 3.1 日本消费者文案偏好
 

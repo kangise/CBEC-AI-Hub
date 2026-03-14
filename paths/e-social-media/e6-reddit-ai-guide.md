@@ -29,6 +29,8 @@
 
 ### 1.1 "Reddit before buying" 趋势
 
+> 📎 **相关阅读**: [A1 选品与市场调研](../a-operators/a1-product-research.md) — 选品调研方法论参考 A1，Reddit 上的用户讨论是产品需求和痛点的重要数据来源。
+
 越来越多消费者在购买前搜索 "[产品] reddit" 来获取真实评价：
 - Google 搜索 "best [品类] reddit" 的搜索量持续增长
 - Reddit 帖子在 Google 搜索结果中排名越来越高
@@ -120,6 +122,8 @@ AMA 是 Reddit 上品牌与用户直接对话的最佳方式：
 ---
 
 ## 4. 品牌口碑监控
+
+> 📎 **相关阅读**: [A4 客服与售后](../a-operators/a4-customer-service.md) — 客户反馈分析方法论参考 A4，情感分析和负面评价应对策略可复用到 Reddit 口碑管理。
 
 ### 4.1 AI 监控方案
 

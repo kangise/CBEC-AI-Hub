@@ -61,6 +61,8 @@ Content rephrased for compliance with licensing restrictions.
 
 ## 4. 德语 Listing AI 优化
 
+> 📎 **相关阅读**: [A2 Listing 优化](../a-operators/a2-listing-optimization.md) — Listing 优化通用方法论参考 A2，核心优化框架可适配到德语 Listing。
+
 ```
 你是一个德国电商本地化专家。
 
@@ -82,6 +84,8 @@ Content rephrased for compliance with licensing restrictions.
 ```
 
 ## 5. 欧洲合规要求（详细）
+
+> 📎 **相关阅读**: [A6 合规与风控](../a-operators/a6-compliance.md) — 详细的多市场合规方法论参考 A6，CE 认证、EPR、VAT 等通用合规框架可直接复用。
 
 这是进入欧洲市场最大的门槛，必须在入驻前完成：
 

@@ -49,6 +49,8 @@
 
 ## 3. 韩语 Listing AI 优化（增强版）
 
+> 📎 **相关阅读**: [A2 Listing 优化](../a-operators/a2-listing-optimization.md) — Listing 优化通用方法论参考 A2，核心优化框架可适配到韩语 Listing。
+
 ```
 你是一个韩国电商 Listing 优化专家，精通韩语电商文案。
 
@@ -154,6 +156,8 @@ Content rephrased for compliance with licensing restrictions.
 ```
 
 ### 4.3 KC 认证要求
+
+> 📎 **相关阅读**: [A6 合规与风控](../a-operators/a6-compliance.md) — 多市场合规方法论参考 A6，认证和合规框架可复用到韩国 KC 认证。
 
 韩国对进口产品有严格的认证要求：
 

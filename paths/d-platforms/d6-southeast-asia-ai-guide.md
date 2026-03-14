@@ -150,6 +150,8 @@ Shopee 搜索排名因素：
 
 ## 3. 多语言 Listing AI 优化
 
+> 📎 **相关阅读**: [A2 Listing 优化](../a-operators/a2-listing-optimization.md) — 多语言本地化的通用方法论参考 A2，核心优化框架可复用到东南亚各语言版本。
+
 ### 3.1 东南亚多语言挑战
 
 东南亚 6 个主要市场有 6 种语言，AI 翻译+本地化是核心需求：
@@ -228,6 +230,8 @@ E. 本地化注意事项
 
 > **COD（货到付款）特别提醒**：印尼、越南、菲律宾的 COD 比例极高（40-60%）。COD 订单的拒收率也高（5-15%）。需要在定价中考虑 COD 拒收的成本。
 
+> 📎 **相关阅读**: [E5 WhatsApp Business](../e-social-media/e5-whatsapp-business-ai-guide.md) — 东南亚客服可以结合 WhatsApp Business，特别是印尼和菲律宾市场。
+
 ---
 
 ## 4. 东南亚广告与直播
@@ -241,6 +245,8 @@ E. 本地化注意事项
 | Shopee Live Ads | 直播间推广 | CPC | 因国家而异 | 直播带货 |
 
 **Shopee Ads 优化 Prompt：**
+
+> 📎 **相关阅读**: [A3 广告优化](../a-operators/a3-advertising.md) — 广告优化通用方法论参考 A3，搜索词分析框架可复用到 Shopee Ads。
 
 ```
 你是一个 Shopee Ads 优化专家。
@@ -259,6 +265,8 @@ E. 本地化注意事项
 ```
 
 ### 4.2 东南亚直播带货深度指南
+
+> 📎 **相关阅读**: [D2 TikTok Shop](tiktok-shop-ai-guide.md) — 直播脚本方法论参考 D2 TikTok Shop，可适配到 Shopee Live 和 Lazada Live。
 
 东南亚直播渗透率远高于欧美，是重要的销售渠道：
 

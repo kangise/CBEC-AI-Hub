@@ -245,6 +245,8 @@ X:XX - [章节名]
 
 ## 4. YouTube Shorts 电商化
 
+> 📎 **相关阅读**: [D2 TikTok Shop](../d-platforms/tiktok-shop-ai-guide.md) — TikTok 短视频方法论参考 D2，Shorts 和 TikTok 内容可互相适配。
+
 ### 4.1 Shorts vs TikTok vs Reels 的算法差异
 
 | 维度 | YouTube Shorts | TikTok | Instagram Reels |
@@ -286,6 +288,8 @@ X:XX - [章节名]
 
 ## 5. YouTube Shopping 与 Affiliate
 
+> 📎 **相关阅读**: [D8 Rakuten 日本电商](../d-platforms/d8-rakuten-japan-ai-guide.md) — YouTube Shopping × Rakuten 合作详情参考 D8，日本市场可直接从 YouTube 购买 Rakuten 商品。
+
 ### 5.1 YouTube Shopping 功能（2026）
 
 - 产品标记：在视频中标记产品，观众可直接点击查看
@@ -294,6 +298,8 @@ X:XX - [章节名]
 - 2026 年与 Rakuten 合作：日本市场可直接从 YouTube 购买 Rakuten 商品
 
 ### 5.2 YouTube Affiliate Program
+
+> 📎 **相关阅读**: [D1 Shopify](../d-platforms/shopify-ai-guide.md) — Shopify Collabs 达人合作方法论参考 D1，Affiliate 管理和达人筛选策略可复用。
 
 YouTube 的 Affiliate 功能让达人合作更标准化：
 

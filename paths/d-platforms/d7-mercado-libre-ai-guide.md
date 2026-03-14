@@ -41,6 +41,8 @@
 
 ### 2.2 Mercado Libre 标题优化
 
+> 📎 **相关阅读**: [A2 Listing 优化](../a-operators/a2-listing-optimization.md) — 多语言本地化通用方法论参考 A2，Listing 优化框架可适配到西语/葡语。
+
 Mercado Libre 标题格式与 Amazon 不同：
 
 | 维度 | Amazon | Mercado Libre |
@@ -108,6 +110,8 @@ Mercado Libre 标题格式与 Amazon 不同：
 | MercadoLíder Gold | 更高销量+更高好评率 | 最多曝光+最低佣金+专属客服 |
 
 ### 3.3 Mercado Ads 广告系统
+
+> 📎 **相关阅读**: [A3 广告优化](../a-operators/a3-advertising.md) — 广告优化通用方法论参考 A3，CPC 广告优化框架可复用到 Mercado Ads。
 
 | 广告类型 | 说明 | 计费 |
 |----------|------|------|
@@ -202,6 +206,8 @@ Step 3: 物流选择
 Content rephrased for compliance with licensing restrictions. Sources: [Morningstar](https://www.morningstar.com/news/business-wire/20260224265595/), [Finimize](https://finimize.com/content/meli-asset-snapshot).
 
 ### 4.3 拉美市场特有挑战
+
+> 📎 **相关阅读**: [A6 合规与风控](../a-operators/a6-compliance.md) — 多市场合规方法论参考 A6，拉美各国税务和认证要求可参考通用合规框架。
 
 | 挑战 | 说明 | 应对策略 |
 |------|------|----------|

@@ -25,6 +25,8 @@
 
 ### 1.1 核心内容 → 多平台变体
 
+> 📎 **相关阅读**: [E1 Instagram](e1-instagram-facebook-ai-guide.md) 和 [E2 YouTube](e2-youtube-ai-guide.md) — 各平台内容创作详细方法论参考 E1（Instagram Reels/Carousel）和 E2（YouTube 长视频/Shorts）。
+
 ```
 一个产品评测的核心素材可以变成：
 
@@ -84,6 +86,8 @@ Reddit：使用体验分享帖
 ## 2. 社交媒体→电商平台归因
 
 ### 2.1 归因追踪方法
+
+> 📎 **相关阅读**: [D3 跨平台协同策略](../d-platforms/cross-platform-strategy.md) — 跨平台协同策略参考 D3，多平台归因和数据整合方法论可互相补充。
 
 | 方法 | 适用平台 | 追踪内容 |
 |------|----------|----------|
@@ -162,6 +166,8 @@ utm_content = 具体内容标识
 ---
 
 ## 4. 预算分配框架
+
+> 📎 **相关阅读**: [A3 广告优化](../a-operators/a3-advertising.md) — 广告预算优化方法论参考 A3，ROAS 分析和预算分配框架可复用到跨渠道预算规划。
 
 ### 4.1 各渠道 CAC 对比（参考值）
 

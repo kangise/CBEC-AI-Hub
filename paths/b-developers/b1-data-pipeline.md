@@ -49,7 +49,7 @@ flowchart LR
 
 ## 1. 数据工程方法论
 
-> 📎 **相关阅读**: [A3 广告优化](../a-operators/a3-advertising.md) — 广告报告分析应用详见 A3 · [F4 自动化与 Agent](../0-foundations/f4-agent-automation.md) — Agent 自动化基础详见 F4
+> 📎 **相关阅读**: [A3 广告优化](../a-operators/a3-advertising.md) — 広告報告分析応用详见 A3 · [F4 自動化与 Agent](../0-foundations/f4-agent-automation.md) — 数据处理自动化的 Agent 基础理论详见 F4。
 
 ### 1.1 电商数据管道的第一性原理
 

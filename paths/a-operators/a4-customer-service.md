@@ -47,7 +47,7 @@ flowchart LR
 
 ## 1. 客服方法论：AI 之前你需要理解的基础
 
-> 📎 **相关阅读**: [E5 WhatsApp Business AI 指南](../e-social-media/e5-whatsapp-business-ai-guide.md) — WhatsApp AI 客服详见 E5 · [D9 eBay AI 指南](../d-platforms/d9-ebay-ai-guide.md) — eBay 二手品品相描述 AI 生成详见 D9 · [E1 Instagram/Facebook AI 指南](../e-social-media/e1-instagram-facebook-ai-guide.md) — Instagram DM 自动回复详见 E1
+> 📎 **相关阅读**: [E5 WhatsApp Business AI 指南](../e-social-media/e5-whatsapp-business-ai-guide.md) — WhatsApp AI Chatbot 客服自动化详见 E5。 · [D9 eBay AI 指南](../d-platforms/d9-ebay-ai-guide.md) — eBay 二手品品相描述 AI 生成详见 D9 · [E1 Instagram/Facebook AI 指南](../e-social-media/e1-instagram-facebook-ai-guide.md) — Instagram/Facebook DM 和评论自动回复策略详见 E1。
 
 ### 1.1 Amazon 客服的第一性原理
 

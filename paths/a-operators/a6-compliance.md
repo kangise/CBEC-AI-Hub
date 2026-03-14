@@ -78,7 +78,7 @@ flowchart LR
 
 ### 1.2 主要市场的合规框架对比
 
-> 📎 **相关阅读**: [D13 欧洲市场指南](../d-platforms/d13-europe-marketplaces-guide.md) — 欧洲合规（CE/EPR/VAT/VerpackG）详见 D13 · [D11 Coupang 韩国 AI 指南](../d-platforms/d11-coupang-korea-ai-guide.md) — 韩国 KC 认证详见 D11 · [E1 Instagram/Facebook AI 指南](../e-social-media/e1-instagram-facebook-ai-guide.md) — 社交平台广告合规详见 E1
+> 📎 **相关阅读**: [D13 欧洲平台](../d-platforms/d13-europe-marketplaces-guide.md) — 欧洲合规要求（CE/EPR/VAT/VerpackG/GPSR）详见 D13。 · [D11 Coupang 韩国](../d-platforms/d11-coupang-korea-ai-guide.md) — 韩国 KC 认证要求详见 D11。 · [E1 Instagram/Facebook AI 指南](../e-social-media/e1-instagram-facebook-ai-guide.md) — 社交平台广告合规详见 E1
 
 以下是跨境电商四大主要市场的合规要求对比。这是一个**概览性参考**，具体要求因产品品类而异。
 

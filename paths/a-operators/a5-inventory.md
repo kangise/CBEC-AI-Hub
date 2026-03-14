@@ -47,7 +47,7 @@ flowchart LR
 
 ## 1. 库存方法论：AI 之前你需要理解的基础
 
-> 📎 **相关阅读**: [D4 Walmart AI 指南](../d-platforms/d4-walmart-ai-guide.md) — WFS vs FBA 物流对比详见 D4 · [D3 跨平台 AI 协同策略](../d-platforms/cross-platform-strategy.md) — 跨平台库存协同详见 D3
+> 📎 **相关阅读**: [D4 Walmart AI 指南](../d-platforms/d4-walmart-ai-guide.md) — WFS vs FBA 物流成本对比和库存分配策略详见 D4。 · [D3 跨平台 AI 协同策略](../d-platforms/cross-platform-strategy.md) — 跨平台库存协同详见 D3
 
 ### 1.1 库存管理的第一性原理
 

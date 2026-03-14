@@ -44,7 +44,7 @@ flowchart LR
 
 ## 1. ROI 评估方法论
 
-> 📎 **相关阅读**: [A3 广告优化](../a-operators/a3-advertising.md) — 广告 ROAS 计算详见 A3 · [AI 应用全景评估](../0-foundations/ai-landscape.md) — AI 工具 ROI 量化框架详见 AI 全景
+> 📎 **相关阅读**: [A3 广告优化](../a-operators/a3-advertising.md) — 广告 ROAS 计算和优化的实操方法论详见 A3。 · [AI 应用全景评估](../0-foundations/ai-landscape.md) — AI 工具 ROI 量化框架详见 AI 全景
 
 ### 1.1 为什么大多数 AI ROI 评估都不靠谱
 

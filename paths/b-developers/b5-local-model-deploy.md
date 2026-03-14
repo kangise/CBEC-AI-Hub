@@ -49,7 +49,7 @@ flowchart LR
 
 ## 1. 本地部署方法论
 
-> 📎 **相关阅读**: [B3 RAG 知识库系统](b3-rag-knowledge-base.md) — RAG 系统可作为微调的替代方案 · [F1 AI 的前世今生](../0-foundations/f1-ai-evolution.md) — AI 模型演进详见 F1
+> 📎 **相关阅读**: [B3 RAG 知识库系统](b3-rag-knowledge-base.md) — RAG 系统可作为模型微调的轻量替代方案，详见 B3。 · [F1 AI 的前世今生](../0-foundations/f1-ai-evolution.md) — AI 模型演进详见 F1
 
 ### 1.1 为什么要在本地运行 LLM
 

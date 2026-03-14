@@ -279,7 +279,7 @@ AI 基于检索内容回答：
 
 ### 4.3 RAG 在跨境电商中的应用场景
 
-> 📎 **相关阅读**: [B3 RAG 知识库系统](../b-developers/b3-rag-knowledge-base.md) — RAG 系统构建实操详见 B3 · [A4 客服与售后](../a-operators/a4-customer-service.md) — 客服 AI 应用详见 A4
+> 📎 **相关阅读**: [B3 RAG 知识库系统](../b-developers/b3-rag-knowledge-base.md) — RAG 系统构建实操详见 B3 · [A4 客服与售后](../a-operators/a4-customer-service.md) — RAG 在客服 FAQ 自动回答中的应用场景详见 A4。
 
 | 场景 | 知识库内容 | 用户问题示例 | 价值 |
 |------|----------|------------|------|

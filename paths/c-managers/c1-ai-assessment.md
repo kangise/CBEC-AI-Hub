@@ -38,7 +38,7 @@ flowchart LR
 
 ## 1. AI 落地方法论：先想清楚再动手
 
-> 📎 **相关阅读**: [AI 应用全景评估](../0-foundations/ai-landscape.md) — 各环节 AI 成熟度详见 AI 全景 · [平台全景对比](../d-platforms/platform-comparison.md) — 各平台 AI 应用优先级详见平台对比
+> 📎 **相关阅读**: [AI 应用全景评估](../0-foundations/ai-landscape.md) — 各环节 AI 成熟度详见 AI 全景 · [平台全景对比](../d-platforms/platform-comparison.md) — 各平台 AI 应用成熟度和优先级排序详见平台全景对比。
 
 ### 1.1 AI 不是万能的
 

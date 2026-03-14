@@ -348,6 +348,8 @@ flowchart LR
 | [广告分析与优化](prompts/advertising.md) | 2 | 搜索词报告分析、广告文案 A/B 测试 |
 | [客服与售后](prompts/customer-service.md) | 2 | 差评批量分析、账号申诉信 |
 | [合规与风控](prompts/compliance.md) | 1 | 多市场合规对比 |
+| [社交媒体运营](prompts/social-media.md) 🆕 | 5 | Instagram Reels 脚本、Meta Ads 文案、YouTube 评测脚本、小红书种草笔记、跨平台内容适配 |
+| [多平台运营](prompts/multi-platform.md) 🆕 | 5 | Amazon→Walmart 转换、Walmart 广告分析、Temu 入驻评估、东南亚本地化、多平台品类分析 |
 
 > 欢迎贡献你验证过的 Prompt 模板！详见 [贡献指南](#贡献指南)。
 

@@ -14,8 +14,10 @@
 | [advertising.md](advertising.md) | 广告优化 | 2 | 搜索词报告分析、广告文案 A/B 测试 | ✅ 已验证 |
 | [customer-service.md](customer-service.md) | 客服与售后 | 2 | 差评批量分析、账号申诉信 (Plan of Action) | ✅ 已验证 |
 | [compliance.md](compliance.md) | 合规风控与库存管理 | 2 | 多市场合规对比、补货决策分析 | ✅ 已验证 |
+| [social-media.md](social-media.md) 🆕 | 社交媒体运营 | 5 | Instagram Reels 脚本、Meta Ads 文案、YouTube 评测脚本、小红书种草笔记、跨平台内容适配 | ✅ 已验证 |
+| [multi-platform.md](multi-platform.md) 🆕 | 多平台运营 | 5 | Amazon→Walmart 转换、Walmart 广告分析、Temu 入驻评估、东南亚本地化、多平台品类分析 | ✅ 已验证 |
 
-**总计: 12 个模板 · 5 个分类**
+**总计: 22 个模板 · 7 个分类**
 
 ---
 

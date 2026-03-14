@@ -986,9 +986,75 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 
 ---
 
-## 9. 完成标志
+## 8.5 补充：AI 广告素材批量生成与跨渠道归因
 
-- [ ] 用 AI 分析一份真实的搜索词报告（≥30 天数据），并执行优化建议（调整出价、添加否定词）
+> 🆕 本节补充跨平台通用的广告素材 AI 生成方法论和归因体系。具体平台的差异化应用请参考 [E1 Meta Ads](../e-social-media/e1-instagram-facebook-ai-guide.md#6-meta-advantage-ai-广告深度指南)、[E2 YouTube Ads](../e-social-media/e2-youtube-ai-guide.md#6-youtube-ads-ai-优化)、[D4 Walmart Connect](../d-platforms/d4-walmart-ai-guide.md#3-walmart-connect-广告)。
+
+### AI 广告素材批量生成工作流（通用）
+
+不管是 Amazon PPC、Meta Ads、Google Ads 还是 TikTok Ads，广告素材的 AI 生成流程是通用的：
+
+```
+Step 1: 素材库准备
+├── 产品图片（白底+场景，至少 5 张）
+├── 产品视频素材（15-60 秒原始素材）
+├── UGC 素材（客户评价截图、使用视频）
+└── 品牌素材（logo、品牌色、字体）
+
+Step 2: AI 生成文案变体
+├── 5 个痛点导向标题
+├── 5 个社会证明标题
+├── 5 个限时优惠标题
+├── 每个标题配 3 种长度的正文（短/中/长）
+└── 输出格式：按平台分类，可直接粘贴
+
+Step 3: AI 生成视觉素材
+├── 产品+场景合成图（Midjourney/DALL-E）
+├── 数据/卖点信息图（Canva AI）
+├── 视频广告（CapCut AI 剪辑）
+└── 适配各平台尺寸（1:1 / 9:16 / 16:9）
+
+Step 4: 上传并测试
+├── 每个平台上传 10-20 个素材组合
+├── 让平台 AI 自动测试最佳组合
+└── 7 天后复盘，淘汰表现差的素材
+```
+
+### AI 广告素材批量生成 Prompt
+
+```
+你是一个跨平台电商广告素材专家。
+
+产品：[名称]，价格 $[X]
+核心卖点：[3 个]
+目标受众：[描述]
+
+请为以下平台生成广告文案：
+
+1. Amazon Sponsored Brands（标题 ≤50 字符，简洁直接）
+2. Meta Ads（Primary Text + Headline + Description）
+3. Google Ads（Headline 30 字符 x3 + Description 90 字符 x2）
+
+每个平台生成 5 组变体，角度分别是：
+痛点、社会证明、限时优惠、功能亮点、情感连接。
+```
+
+### 跨渠道广告归因方法论
+
+当你同时在 Amazon PPC + Meta Ads + Google Ads 投放时，需要理解各渠道的贡献：
+
+| 归因工具 | 追踪路径 | 设置方式 |
+|----------|----------|----------|
+| Amazon Attribution | 社交/搜索 → Amazon 购买 | Amazon Brand Registry 后台开通 |
+| Meta Pixel + CAPI | Meta 广告 → Shopify 购买 | Shopify 后台一键集成 |
+| Google Analytics 4 | Google/YouTube → Shopify 购买 | GA4 + Shopify 集成 |
+| UTM 参数 | 所有渠道 → 所有落地页 | 手动添加到每个链接 |
+
+> 详细的跨渠道归因和预算分配框架请参考 [E7 跨渠道协同](../e-social-media/e7-social-media-cross-channel.md) 和 [D3 跨平台策略](../d-platforms/cross-platform-strategy.md)。
+
+---
+
+## 9. 完成标志
 - [ ] 用 AI 生成至少 3 种风格的 Sponsored Brands 广告文案
 - [ ] 理解 ACOS/TACOS/ROAS 的关系，能手动计算并解释含义
 - [ ] 用 AI 制定一份新品 30 天广告启动计划

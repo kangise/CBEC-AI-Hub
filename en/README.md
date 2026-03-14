@@ -1,0 +1,426 @@
+[🇨🇳 中文](../README.md) | 🇺🇸 English | [🇯🇵 日本語](../ja/README.md) | [🇪🇸 Español](../es/README.md)
+
+# ecommerce-ai-roadmap: AI Prompts & Strategies for Amazon Sellers, Shopify & TikTok Shop
+
+> The Definitive AI Playbook for Cross-Border E-Commerce — Amazon Seller AI Tools, Listing Optimization, Advertising, TikTok Shop, Shopify, Multi-Platform Strategy
+
+[![AAAI China Chapter](https://img.shields.io/badge/AAAI_China_Chapter-Initiative-blue)](https://github.com/kangise/ecommerce-ai-roadmap)
+[![Stars](https://img.shields.io/github/stars/kangise/ecommerce-ai-roadmap?style=social)](https://github.com/kangise/ecommerce-ai-roadmap)
+[![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+48 AI use cases with deep-dive guides · Amazon / Shopify / TikTok Shop · Rufus/COSMO/GEO optimization · Ready-to-use ChatGPT prompts
+
+---
+
+### 🚀 Try AI Product Research in 30 Seconds
+
+Copy the prompt below into [ChatGPT](https://chat.openai.com/) or [Claude](https://claude.ai/) and get an instant market analysis:
+
+```
+You are a senior cross-border e-commerce expert with deep knowledge of the Amazon platform.
+I want to sell a portable neck fan on Amazon US.
+Please provide a quick market feasibility analysis including:
+1. Category characteristics (seasonality, competition level, price range)
+2. Top 3 competitors' key selling points and main pain points from negative reviews
+3. 3 potential differentiation angles
+4. Risk alerts (compliance, patents, seasonal inventory risk)
+Please present key data comparisons in table format.
+```
+
+👆 You'll get a market analysis in 30 seconds. More prompts → [Prompt Library](../prompts/)
+
+---
+
+## 🆕 What's New
+
+- 📅 2025-06-20: New [Notebook Lab](../notebooks/) — First notebook: Amazon report data processing [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b1-data-pipeline.ipynb)
+- 📅 2025-06-20: 2 new case studies: [AI Listing Generation](../docs/case-studies/ai-listing-generation.md), [Automated Review Analysis](../docs/case-studies/automated-review-analysis.md)
+- 📅 2025-06-20: Added [README_EN.md](../README_EN.md) full English version + community infrastructure (Issue templates, CODEOWNERS, CHANGELOG)
+
+---
+
+## 📋 Table of Contents
+
+- [🆕 What's New](#-whats-new)
+- [Quick Access to Popular Topics (48 Scenarios)](#quick-access-to-popular-topics)
+- [Choose Your Path](#choose-your-path)
+- [Path A: Operators — AI-Powered Daily Operations](#path-a-operators--ai-powered-daily-operations)
+- [Path B: Developers — Building AI Systems](#path-b-developers--building-ai-systems)
+- [Path C: Managers — AI Strategy Implementation](#path-c-managers--ai-strategy-implementation)
+- [Prompt Library](#prompt-library)
+- [Notebook Lab](#notebook-lab)
+- [Learning Progress Tracker](#learning-progress-tracker)
+- [AAAI China Chapter Community](#aaai-china-chapter-community)
+- [Contributors](#contributors)
+- [Contributing Guide](#contributing-guide)
+
+---
+
+## Quick Access to Popular Topics
+
+> Jump directly to in-depth content by scenario. Popularity based on March 2026 industry data, updated regularly.
+> Last updated: 2026-03-14 | Update cycle: Monthly refresh based on external trend data
+
+**Product Research & Market Analysis**
+
+| # | Scenario | One-Liner | Link |
+|---|----------|-----------|------|
+| 1 | Competitor review pain point extraction | 50 negative reviews → pain point ranking + improvement directions | [A1 Prompt](../paths/a-operators/a1-product-research.md) · [Before/After](../paths/0-foundations/ai-landscape.md#选品与市场调研----成熟度-35) |
+| 2 | Market feasibility 5-dimension scoring | Demand/Competition/Profit/Supply Chain/Compliance, Go or No-Go | [A1 Prompt](../paths/a-operators/a1-product-research.md) |
+| 3 | Google Trends validation | Cross-validate product direction, avoid false demand | [A1 Methodology](../paths/a-operators/a1-product-research.md) |
+| 4 | Supplier evaluation & cost comparison | AI analysis of 1688/Alibaba supplier data | [A1 Methodology](../paths/a-operators/a1-product-research.md) |
+
+**Listing & Content Optimization**
+
+| # | Scenario | One-Liner | Link |
+|---|----------|-----------|------|
+| 5 | Rufus/COSMO semantic optimization | From keyword matching to intent matching — the most important Listing change in 2026 | [A2 Methodology 1.1](../paths/a-operators/a2-listing-optimization.md#11-amazon-搜索算法演进从-a9-到-cosmo--rufus) |
+| 6 | Full Listing one-click generation | Title + Bullet Points + Description + Search Terms, done in 45 minutes | [A2 Prompt](../paths/a-operators/a2-listing-optimization.md) · [Before/After](../paths/0-foundations/ai-landscape.md#listing-文案创作----成熟度-55) |
+| 7 | Multi-language localization | Not just translation — cultural adaptation + local keywords + unit conversion | [A2 Prompt](../paths/a-operators/a2-listing-optimization.md) · [D1 ch25](../paths/d-platforms/shopify-ai-guide.md#25-shopify-多语言本地化方法论-不只是翻译) |
+| 8 | A+ Content copywriting | Brand story + product comparison + usage scenario layout | [A2 Methodology](../paths/a-operators/a2-listing-optimization.md) |
+| 9 | Competitor Listing strategy breakdown | Comparative analysis for differentiated positioning and keyword gaps | [A2 Prompt](../paths/a-operators/a2-listing-optimization.md) |
+| 10 | Q&A seeding (Rufus optimization) | Rufus reads Q&A to answer customer questions — seed high-frequency questions | [A2 Advanced](../paths/a-operators/a2-listing-optimization.md) |
+
+**Advertising Optimization**
+
+| # | Scenario | One-Liner | Link |
+|---|----------|-----------|------|
+| 11 | Search term report AI analysis | High-ROAS terms / wasted spend / hidden long-tail opportunities, done in 50 min | [A3 Prompt](../paths/a-operators/a3-advertising.md) · [Before/After](../paths/0-foundations/ai-landscape.md#广告管理与优化----成熟度-45) |
+| 12 | Ad copy A/B testing | Batch-generate 5 headline style variants | [A3 Prompt](../paths/a-operators/a3-advertising.md) |
+| 13 | New product 30-day ad launch plan | Complete Auto → Manual keyword harvesting workflow | [A3 Workflow](../paths/a-operators/a3-advertising.md) |
+| 14 | ACOS/TACOS diagnostics | Ad health assessment and budget reallocation | [A3 Methodology](../paths/a-operators/a3-advertising.md) |
+| 15 | Amazon Canvas AI | New feature (2026.3) — AI real-time data visualization and scenario simulation | [AI Landscape](../paths/0-foundations/ai-landscape.md) |
+
+**Customer Service & After-Sales**
+
+| # | Scenario | One-Liner | Link |
+|---|----------|-----------|------|
+| 16 | Negative review batch analysis | Categorize issues + frequency stats + improvement plan + priority | [A4 Prompt](../paths/a-operators/a4-customer-service.md) · [Before/After](../paths/0-foundations/ai-landscape.md#客服与售后----成熟度-45) |
+| 17 | Multi-language customer service replies | AI-generated + human-reviewed, 1-2 min per reply | [A4 Prompt](../paths/a-operators/a4-customer-service.md) |
+| 18 | Account appeal Plan of Action | Root Cause + Actions + Prevention, first draft in 35 min | [A6 Prompt 3.6](../paths/a-operators/a6-compliance.md#36-amazon-政策违规应对) · [A6 SOP 4.3](../paths/a-operators/a6-compliance.md#43-合规事件应急响应-sop) |
+| 19 | A-to-Z Claim response | Analyze cause + generate reply + prevention measures | [A4 Methodology](../paths/a-operators/a4-customer-service.md) |
+
+**Compliance & Risk Management**
+
+| # | Scenario | One-Liner | Link |
+|---|----------|-----------|------|
+| 20 | Multi-market compliance comparison | CE/FCC/PSE/UKCA side-by-side, checklist in 30 min | [A6 Prompt 3.1](../paths/a-operators/a6-compliance.md#31-多市场合规对比深化版) · [Before/After](../paths/0-foundations/ai-landscape.md#合规文档准备----成熟度-45) |
+| 21 | Compliance cost estimation | Certification + testing + labeling + annual maintenance, built into pricing model | [A6 Prompt 3.3](../paths/a-operators/a6-compliance.md#33-合规成本估算) |
+| 22 | IP risk assessment | Patent/trademark/copyright screening at the product selection stage | [A6 Prompt 3.4](../paths/a-operators/a6-compliance.md#34-知识产权风险评估) |
+| 23 | BSA AI Agent compliance | New regulation (2026.3) — ensure your AI tools meet Amazon requirements | [A6 Advanced 6.1](../paths/a-operators/a6-compliance.md#61-2026-新趋势amazon-ai-agent-合规要求bsa-更新) |
+
+**Shopify (DTC Store)**
+
+| # | Scenario | One-Liner | Link |
+|---|----------|-----------|------|
+| 24 | GEO optimization | Get your products recommended by ChatGPT/Perplexity — hottest trend in 2026 | [D1 ch21.3](../paths/d-platforms/shopify-ai-guide.md#213-geo-优化实操-让-ai-推荐你的产品) |
+| 25 | Agentic Storefronts | Sell directly inside ChatGPT/Gemini/Copilot | [D1 ch21.2](../paths/d-platforms/shopify-ai-guide.md#212-agentic-storefronts-与-ucp-协议-在-ai-平台内直接卖货) |
+| 26 | Shopify Audiences | AI-powered ad audience generation, CAC reduced 20-50% | [D1 ch21.4](../paths/d-platforms/shopify-ai-guide.md#214-shopify-audiences-ai-驱动的广告受众工具) |
+| 27 | Klaviyo email personalization | Send-time optimization + LTV prediction + churn alerts | [D1 ch23](../paths/d-platforms/shopify-ai-guide.md#23-shopify-邮件营销深度方法论-从-klaviyo-到-ai-个性化) · [Before/After](../paths/0-foundations/ai-landscape.md#邮件营销shopify---成熟度-45) |
+| 28 | Amazon to Shopify migration | 6-phase migration methodology, avoid 5 common mistakes | [D1 ch28](../paths/d-platforms/shopify-ai-guide.md#28-从-amazon-迁移到-shopify-的完整方法论) |
+| 29 | Conversion funnel diagnostics | Add-to-cart / checkout / payment rate layer-by-layer analysis | [D1 ch24](../paths/d-platforms/shopify-ai-guide.md#24-shopify-转化率优化-cro-深度指南) |
+| 30 | Schema/FAQ code | Product Schema + FAQ Schema — the foundation of GEO optimization | [D1 ch27](../paths/d-platforms/shopify-ai-guide.md#27-shopify-liquid-与技术-seo-实操) |
+
+**TikTok Shop**
+
+| # | Scenario | One-Liner | Link |
+|---|----------|-----------|------|
+| 31 | Hook formula library | Information gap theory-based Hook design methodology | [D2 ch15.2](../paths/d-platforms/tiktok-shop-ai-guide.md#152-hook-设计方法论-不是吸引注意力而是制造信息缺口) |
+| 32 | 3-act video script structure | Build need → Show solution → Drive action, 3-5x conversion rate | [D2 ch15.3](../paths/d-platforms/tiktok-shop-ai-guide.md#153-视频脚本的3-幕结构) |
+| 33 | Creator scoring model | 100-point quantitative scoring — no more gut-feeling creator selection | [D2 ch16.2](../paths/d-platforms/tiktok-shop-ai-guide.md#162-ai-达人筛选的量化评分模型) |
+| 34 | Personalized creator outreach | Customized based on creator's recent content, 3-5x reply rate | [D2 ch16.3](../paths/d-platforms/tiktok-shop-ai-guide.md#163-达人邀约的-ai-自动化工作流) |
+| 35 | Livestream minute-by-minute script | Retain → Seed → Convert → Engage → Encore rhythm design | [D2 ch17.3](../paths/d-platforms/tiktok-shop-ai-guide.md#173-直播脚本的节奏设计) |
+| 36 | GMV Max optimization | After mandatory rollout (2025.9): creative/Feed/SPS — 3 controllable variables | [D2 ch14.2](../paths/d-platforms/tiktok-shop-ai-guide.md#142-gmv-max-强制化-2025-年-9-月起的重大变化) · [D2 ch6.3](../paths/d-platforms/tiktok-shop-ai-guide.md#63-gmv-max-深度解析) |
+| 37 | TikTok in-app search SEO | 40%+ Gen Z search for products on TikTok first | [D2 ch19](../paths/d-platforms/tiktok-shop-ai-guide.md#19-tiktok-shop-站内搜索-seo) |
+| 38 | Spark Ads selection criteria | Watch-through >40% + engagement >5% + product click >3% | [D2 ch23.1](../paths/d-platforms/tiktok-shop-ai-guide.md#231-spark-ads-tiktok-最独特的广告形式) |
+
+**Cross-Platform Synergy**
+
+| # | Scenario | One-Liner | Link |
+|---|----------|-----------|------|
+| 39 | One document, three platforms | One core document → Amazon + Shopify + TikTok content | [D3 ch3](../paths/d-platforms/cross-platform-strategy.md#3-跨平台内容协同) |
+| 40 | Review-driven Hook creation | Amazon negative review pain points → TikTok video Hook inspiration | [D1 ch22.1](../paths/d-platforms/shopify-ai-guide.md#221-amazon-review-数据驱动-shopify-优化的具体方法) · [D2 ch20](../paths/d-platforms/tiktok-shop-ai-guide.md#20-tiktok-shop-x-amazon-双渠道协同) |
+| 41 | TikTok seeding attribution | Quantify TikTok's indirect contribution to Amazon branded search volume | [D3 ch4.2](../paths/d-platforms/cross-platform-strategy.md#42-跨平台归因-量化-tiktok-种草对-amazon-的影响) |
+| 42 | Three-platform ad budget allocation | Marginal ROAS equilibrium + indirect effect correction | [D3 ch5](../paths/d-platforms/cross-platform-strategy.md#5-跨平台广告协同) |
+| 43 | Cross-platform inventory MCF/FBT | FBA + FBT + 3PL dynamic allocation strategy | [D3 ch6](../paths/d-platforms/cross-platform-strategy.md#6-库存与物流协同) |
+
+**Data Analysis & AI Trends**
+
+| # | Scenario | One-Liner | Link |
+|---|----------|-----------|------|
+| 44 | Auto-generated weekly reports | Anomaly detection + trend analysis + optimization suggestions, 35 min/week | [Before/After](../paths/0-foundations/ai-landscape.md#数据分析与决策----成熟度-45) |
+| 45 | Amazon Canvas AI | New feature (2026.3) — AI data analysis inside Seller Central | [AI Landscape](../paths/0-foundations/ai-landscape.md) |
+| 46 | Seller Assistant Agentic | Amazon's official AI assistant upgrade — can execute actions on behalf of sellers | Coming soon |
+| 47 | OpenClaw Agent automation | AI Agent for automating daily operations tasks | [D1 ch10](../paths/d-platforms/shopify-ai-guide.md) · [D2 ch12](../paths/d-platforms/tiktok-shop-ai-guide.md) |
+| 48 | AI tool ROI calculation | Is $20/month for ChatGPT worth it? A quantification framework | [AI Landscape](../paths/0-foundations/ai-landscape.md#效率变化总览)
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## Choose Your Path
+
+> 🌟 **Recommended prerequisite**: Regardless of which path you choose, we suggest completing [Path 0: AI Foundations](../paths/0-foundations/) first to build a solid understanding of AI concepts (LLM principles, Prompt engineering, RAG, Agents).
+
+```mermaid
+flowchart TD
+    P0["🌟 Path 0: AI Foundations<br/>(Recommended prerequisite)"] --> Q1
+    Q1{"What's your daily role?"}
+    
+    Q1 -->|"Product research / Operations / Ads / CS"| A["Path A: Operators"]
+    Q1 -->|"Coding / Data / System building"| B["Path B: Developers"]
+    Q1 -->|"Team lead / Strategy / Budget"| C["Path C: Managers"]
+    
+    A --> A_DESC["Goal: Boost daily operations with AI tools\nNo coding required\nEstimated time: 2-4 weeks"]
+    B --> B_DESC["Goal: Build AI-powered e-commerce systems\nPython basics required\nEstimated time: 4-8 weeks"]
+    C --> C_DESC["Goal: Define team AI transformation strategy\nNo technical background needed\nEstimated time: 1-2 weeks"]
+```
+
+| Path | Who It's For | Coding Required? | Time Investment | Core Output |
+|------|-------------|-----------------|----------------|-------------|
+| **[Path 0: AI Foundations](../paths/0-foundations/)** 🌟 | Everyone (recommended) | No | 30 min/day, 1 week | AI knowledge foundation |
+| **[Path A: Operators](../paths/a-operators/)** | Product research / Operations / Ads / CS | No | 30 min/day, 2-4 weeks | A reusable AI workflow |
+| **[Path B: Developers](../paths/b-developers/)** | Dev / Data / BI roles | Python required | 1 hr/day, 4-8 weeks | A deployable AI tool |
+| **[Path C: Managers](../paths/c-managers/)** | Team leads / Founders | No | 3-5 hours total | An AI implementation plan |
+
+> 🗺️ **Recommended**: After completing Path 0, before diving into a specific path, check out the [AI Application Landscape Assessment](../paths/0-foundations/ai-landscape.md) — 30 minutes to understand what AI can do at each stage and how to prioritize.
+
+> Not sure which path to pick? All three paths can be mixed. Operators who finish Path A and want to go deeper can move to Path B; Managers who want details can explore Path A modules.
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## Path A: Operators — AI-Powered Daily Operations
+
+> Goal: Without writing a single line of code, boost daily operations efficiency 3-10x with AI tools
+>
+> Prerequisites: Basic e-commerce operations experience (you know what ASIN, PPC, FBA mean)
+>
+> Time: 30 minutes/day, complete all modules in 2-4 weeks
+
+📖 [View full Path A content →](../paths/a-operators/)
+
+| Module | Topic | What You'll Learn |
+|--------|-------|-------------------|
+| [A1. Product Research & Market Insights](../paths/a-operators/a1-product-research.md) | Competitor analysis, market assessment | Complete a product feasibility analysis with AI |
+| [A2. Listing & Content Creation](../paths/a-operators/a2-listing-optimization.md) | Listing generation, multi-language translation | Generate a complete multi-language Listing with AI |
+| [A3. Advertising Optimization](../paths/a-operators/a3-advertising.md) | Search term analysis, copy testing | Analyze search term reports and optimize with AI |
+| [A4. Customer Service & After-Sales](../paths/a-operators/a4-customer-service.md) | Negative review analysis, appeal letters | Build a multi-language CS reply template library |
+| [A5. Inventory & Supply Chain](../paths/a-operators/a5-inventory.md) | Restock forecasting, safety stock | Build an AI-powered restock decision model |
+| [A6. Compliance & Risk Management](../paths/a-operators/a6-compliance.md) | Multi-market compliance, certification lookup | Generate a complete multi-market compliance checklist |
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## Path B: Developers — Building AI Systems
+
+> Goal: Build AI-powered e-commerce tools and systems, from scripts to production-grade applications
+>
+> Prerequisites: Python basics (or willingness to learn as you go — AI will help you write code)
+>
+> Time: 1 hour/day, master the system in 4-8 weeks
+
+📖 [View full Path B content →](../paths/b-developers/)
+
+```mermaid
+flowchart LR
+    B1["B1 Data Collection\n& Processing"] --> B2["B2 Prediction Models\n& Decisions"]
+    B2 --> B3["B3 RAG\nKnowledge Base"]
+    B3 --> B4["B4 AI Agent\n& Automation"]
+    B4 --> B5["B5 Local Model\nDeployment & Fine-tuning"]
+```
+
+| Module | Topic | What You'll Build |
+|--------|-------|-------------------|
+| [B1. Data Collection & Processing](../paths/b-developers/b1-data-pipeline.md) | pandas, SP-API, automation | Script to auto-merge Amazon reports |
+| [B2. Prediction Models & Decisions](../paths/b-developers/b2-prediction-models.md) | Prophet, AutoGluon | SKU 90-day sales forecast model |
+| [B3. RAG Knowledge Base](../paths/b-developers/b3-rag-knowledge-base.md) | LlamaIndex, Chroma | Product FAQ AI Q&A system |
+| [B4. AI Agent & Automation](../paths/b-developers/b4-agent-workflow.md) | LangGraph, CrewAI | Automated operations monitoring Agent |
+| [B5. Local Model Deployment](../paths/b-developers/b5-local-model-deploy.md) | Ollama, LoRA fine-tuning | Locally-running e-commerce LLM (elective) |
+
+> Complete at least 3 of B1-B4 and you'll have the skills to build AI e-commerce tools. B5 is an advanced elective.
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## Path C: Managers — AI Strategy Implementation
+
+> Goal: Understand what AI can do for your team and create an actionable AI implementation plan
+>
+> Prerequisites: No technical background needed, but deep business understanding required
+>
+> Time: 3-5 focused hours to complete assessment and planning
+
+📖 [View full Path C content →](../paths/c-managers/)
+
+| Module | Topic | What You'll Produce |
+|--------|-------|---------------------|
+| [C1. AI Capability Assessment & Planning](../paths/c-managers/c1-ai-assessment.md) | Priority matrix, planning prompts | Team AI capability assessment and priority ranking |
+| [C2. Team AI Skill Building](../paths/c-managers/c2-team-building.md) | Training plan, habit formation | 80%+ of team using AI tools daily |
+| [C3. AI Project ROI Evaluation](../paths/c-managers/c3-roi-evaluation.md) | ROI calculation framework, impact measurement | ROI evaluation report for at least one AI project |
+
+> Complete all 3 modules to produce a comprehensive team AI implementation plan (including priorities, timeline, budget, KPIs).
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## Path D: Multi-Platform — Beyond Amazon
+
+> 🆕 Extend your AI capabilities from Amazon to Shopify, TikTok Shop, and more.
+>
+> Prerequisite: Recommended to complete Path A core modules first
+
+📖 [View full Path D content →](../paths/d-platforms/)
+
+| Module | Platform | Core Content |
+|--------|----------|-------------|
+| [D1. Shopify AI Guide](../paths/d-platforms/shopify-ai-guide.md) | Shopify | Full pipeline: Product research → Product page → Ads → Email → CS → Analytics |
+| D2. TikTok Shop AI Guide | TikTok Shop | Short video generation, creator matching, livestream scripts (coming soon) |
+| D3. Cross-Platform AI Strategy | Multi-platform | Amazon + DTC store + social commerce synergy (coming soon) |
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## Prompt Library
+
+All prompt templates are organized in the [`prompts/`](../prompts/) directory by scenario, ready to copy and use.
+
+📖 [View full Prompt Library →](../prompts/README.md)
+
+| Template Set | Count | Scenarios |
+|-------------|-------|-----------|
+| [Product Research & Market Analysis](../prompts/product-research.md) | 3 | Competitor review analysis, market assessment, keyword clustering |
+| [Listing Generation & Optimization](../prompts/listing-optimization.md) | 3 | Full Listing generation, multi-language localization, competitor strategy breakdown |
+| [Advertising Analysis & Optimization](../prompts/advertising.md) | 2 | Search term report analysis, ad copy A/B testing |
+| [Customer Service & After-Sales](../prompts/customer-service.md) | 2 | Negative review batch analysis, account appeal letter |
+| [Compliance & Risk Management](../prompts/compliance.md) | 1 | Multi-market compliance comparison |
+
+> We welcome contributions of your battle-tested prompt templates! See [Contributing Guide](#contributing-guide).
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## Notebook Lab
+
+Jupyter Notebooks that run directly in Google Colab — zero setup required.
+
+📋 Planned topics (in development, contributions welcome):
+
+- Amazon report automated processing (beginner)
+- Prophet sales forecasting (intermediate)
+- BERTopic review topic analysis (intermediate)
+- Product FAQ knowledge base (intermediate)
+- Daily operations report auto-generation Agent (advanced)
+
+> Follow the [Roadmap](../roadmap/README.md) for the latest progress.
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## Learning Progress Tracker
+
+Copy the checklist below to your note-taking tool to track your progress.
+
+### Path A Progress (Operators)
+
+```
+[ ] A1. Product Research: Complete a full product feasibility analysis report with AI
+[ ] A2. Listing: Generate a complete multi-language Listing with AI
+[ ] A3. Advertising: Analyze a real search term report with AI and execute optimizations
+[ ] A4. Customer Service: Build a multi-language CS reply template library
+[ ] A5. Inventory: Build an AI-powered restock decision model for one product
+[ ] A6. Compliance: Generate a complete multi-market compliance checklist for one product
+```
+
+### Path B Progress (Developers)
+
+```
+[ ] B1. Data: Write a script to auto-merge multiple Amazon reports
+[ ] B2. Prediction: Use Prophet to forecast 90-day sales for a real SKU
+[ ] B3. RAG: Build a RAG system that can answer product questions
+[ ] B4. Agent: Deploy an automated operations monitoring Agent
+[ ] B5. Deployment: Run an LLM locally with Ollama (elective)
+```
+
+### Path C Progress (Managers)
+
+```
+[ ] C1. Assessment: Complete team AI capability assessment and priority ranking
+[ ] C2. Building: 80%+ of team members using AI tools daily
+[ ] C3. ROI: Complete an ROI evaluation report for at least one AI project
+```
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## AAAI China Chapter Community
+
+ecommerce-ai-roadmap is one of the open-source projects of the **AAAI China Chapter**. We are dedicated to promoting the practical application of AI technology in cross-border e-commerce.
+
+### What You Get by Joining
+
+- **Monthly AI Workshop** — One online hands-on workshop per month, building a complete AI e-commerce project together
+- **Prompt template co-creation** — Community members collaboratively maintain and optimize the prompt template library
+- **Case sharing** — Frontline operators share real-world AI application cases and lessons learned
+- **Technical Q&A** — Get help from the community when you encounter problems
+- **Industry news** — First-hand information on AI tool updates and platform policy changes
+
+### How to Participate
+
+- Star this repo to stay updated
+- [Submit an Issue](https://github.com/kangise/ecommerce-ai-roadmap/issues) for feedback or suggestions
+- [Submit a PR](https://github.com/kangise/ecommerce-ai-roadmap/pulls) to contribute prompt templates, notebooks, or case studies
+- Follow AAAI China Chapter for event information
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## Contributors
+
+Thanks to everyone who has contributed to ecommerce-ai-roadmap!
+
+<!-- ALL-CONTRIBUTORS-LIST:START -->
+<a href="https://github.com/kangise"><img src="https://github.com/kangise.png" width="60px" alt="kangise" /></a>
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+> 🎯 Want to join the contributor wall? [Submit a prompt template](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=prompt_submission.md) — that's all it takes! No PR experience needed.
+
+[Back to Table of Contents](#-table-of-contents)
+
+---
+
+## Contributing Guide
+
+We especially welcome the following types of contributions:
+
+1. **Prompt templates** — Prompts you've validated in real work with proven results
+2. **Notebooks** — Hands-on tutorials that run in Colab
+3. **Case studies** — What e-commerce problem did you solve with AI? What were the results?
+4. **Tool reviews** — AI tools you've tried — what are the pros and cons?
+5. **Bug fixes** — Found a broken link or outdated content? Help us fix it
+
+When contributing, please note:
+- Prefer recommending free or open-source tools and resources
+- Prompt templates should note which AI tool you tested with and the results
+- Notebooks should run on Google Colab free tier
+
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for details.
+
+---
+
+## License
+
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) — Free to use, no attribution required.
+
+---
+
+*An AAAI China Chapter Initiative | Maintained by the CBEC-AI community*

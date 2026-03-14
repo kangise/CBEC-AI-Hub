@@ -1053,6 +1053,47 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 
 ---
 
+## 8.5 补充：AI 视频脚本生成通用方法论
+
+> 🆕 本节补充跨平台通用的视频脚本 AI 生成方法论。具体平台的差异化应用请参考 [E1 Instagram](../e-social-media/e1-instagram-facebook-ai-guide.md)、[E2 YouTube](../e-social-media/e2-youtube-ai-guide.md)、[D2 TikTok Shop](../d-platforms/tiktok-shop-ai-guide.md)。
+
+### 为什么 Listing 运营人需要懂视频脚本
+
+2026 年，产品内容不再只是图文 Listing。Amazon 产品视频、社交媒体引流视频、达人合作视频都需要脚本。AI 可以帮你从 Listing 卖点直接生成视频脚本。
+
+### 通用视频脚本框架
+
+```
+所有电商视频的底层结构：
+
+Hook（前 3 秒）→ 问题/场景（5-10 秒）→ 产品展示（10-20 秒）→ 社会证明（5 秒）→ CTA（3 秒）
+
+不同平台调整：
+- Amazon 产品视频：偏功能展示，30-60 秒，无需 Hook（用户已在产品页）
+- TikTok/Reels：偏娱乐/种草，15-30 秒，Hook 是生死线
+- YouTube：偏深度评测，8-15 分钟，Hook + 章节结构
+```
+
+### AI 从 Listing 卖点生成视频脚本 Prompt
+
+```
+你是一个电商视频脚本专家。
+
+以下是我的 Amazon Listing 卖点：
+- 标题：[标题]
+- 五点：[5 个 Bullet Points]
+
+请基于这些卖点，生成 3 个视频脚本：
+
+1. Amazon 产品视频（45 秒，功能展示型）
+2. 社交媒体短视频（15 秒，种草型，适合 TikTok/Reels）
+3. YouTube Shorts（30 秒，教育型）
+
+每个脚本包含：分镜描述、口播/字幕文字、时长标注。
+```
+
+---
+
 ## 9. 完成标志
 
 - [ ] 用 AI 生成一套完整的 Listing（标题 + 五点 + 描述 + Search Terms），并完成人工优化

@@ -51,6 +51,7 @@
 - [Path B: 技术人 — AI 系统构建](#path-b-技术人--ai-系统构建)
 - [Path C: 管理者 — AI 战略落地](#path-c-管理者--ai-战略落地)
 - [Prompt 模板库](#prompt-模板库)
+- [Path E: 社交媒体 AI 运营](#path-e-社交媒体-ai-运营-)
 - [Notebook 实验室](#notebook-实验室)
 - [学习路径追踪](#学习路径追踪)
 - [AAAI China Chapter 社群](#aaai-china-chapter-社群)
@@ -185,6 +186,8 @@ flowchart TD
 | **[Path A: 运营人](paths/a-operators/)** | 选品/运营/广告/客服岗 | 不需要 | 每天30分钟，2-4周 | 一套可复用的 AI 工作流 |
 | **[Path B: 技术人](paths/b-developers/)** | 开发/数据/BI 岗 | 需要 Python | 每天1小时，4-8周 | 一个可部署的 AI 工具 |
 | **[Path C: 管理者](paths/c-managers/)** | 团队负责人/创始人 | 不需要 | 集中3-5小时 | 一份 AI 落地规划书 |
+| **[Path D: 多平台](paths/d-platforms/)** | 多平台卖家 | 不需要 | 按需选择 | 多平台 AI 运营体系 |
+| **[Path E: 社交媒体](paths/e-social-media/)** 🆕 | 品牌营销/内容运营 | 不需要 | 每天30分钟，2-3周 | 社交媒体 AI 引流体系 |
 
 > 🗺️ **推荐**：完成 Path 0 后、进入具体路径前，先看 [AI 应用全景评估](paths/0-foundations/ai-landscape.md) — 30 分钟了解每个环节 AI 能做到什么程度、优先级如何排序。
 
@@ -273,7 +276,7 @@ flowchart LR
 
 ## Path D: 多平台 — 超越 Amazon
 
-> 🆕 把 AI 能力从 Amazon 扩展到 Shopify 独立站、TikTok Shop 等平台。
+> 把 AI 能力从 Amazon 扩展到全球 13 个电商平台。
 >
 > 前置：建议先完成 Path A 的核心模块
 
@@ -282,8 +285,40 @@ flowchart LR
 | 模块 | 平台 | 核心内容 |
 |------|------|----------|
 | [D1. Shopify AI 指南](paths/d-platforms/shopify-ai-guide.md) | Shopify | 选品→产品页→广告→邮件→客服→数据分析全链路 |
-| D2. TikTok Shop AI 指南 | TikTok Shop | 短视频生成、达人匹配、直播脚本（即将发布） |
-| D3. 跨平台 AI 策略 | 多平台 | Amazon + 独立站 + 社交电商协同（即将发布） |
+| [D2. TikTok Shop AI 指南](paths/d-platforms/tiktok-shop-ai-guide.md) | TikTok Shop | 短视频生成、达人匹配、直播脚本 |
+| [D3. 跨平台 AI 策略](paths/d-platforms/cross-platform-strategy.md) | 多平台 | Amazon + 独立站 + 社交电商协同 |
+| [D4. Walmart Marketplace](paths/d-platforms/d4-walmart-ai-guide.md) 🆕 | Walmart | Amazon 卖家第二平台，Walmart Connect 广告 |
+| [D5. Temu 卖家策略](paths/d-platforms/d5-temu-seller-guide.md) 🆕 | Temu | 竞争分析 + 入驻决策框架 |
+| [D6. 东南亚电商](paths/d-platforms/d6-southeast-asia-ai-guide.md) 🆕 | Shopee + Lazada | 多语言本地化 + 直播带货 |
+| [D7. 拉美电商](paths/d-platforms/d7-mercado-libre-ai-guide.md) 🆕 | Mercado Libre | 西语/葡语本地化 + 拉美市场 |
+| [D8. 日本电商](paths/d-platforms/d8-rakuten-japan-ai-guide.md) 🆕 | Rakuten | 店铺自定义 + 积分生态 + 邮件营销 |
+| [D9. eBay](paths/d-platforms/d9-ebay-ai-guide.md) 🆕 | eBay | 二手/翻新品 + 拍卖策略 |
+| [D10. AliExpress](paths/d-platforms/d10-aliexpress-ai-guide.md) 🆕 | AliExpress | 全托管模式 + 南欧市场 |
+| [D11. 韩国电商](paths/d-platforms/d11-coupang-korea-ai-guide.md) 🆕 | Coupang | 韩国市场入门 + 韩语 Listing |
+| [D12. Faire 批发](paths/d-platforms/d12-faire-wholesale-ai-guide.md) 🆕 | Faire | B2B 批发 + 品牌故事 |
+| [D13. 欧洲平台](paths/d-platforms/d13-europe-marketplaces-guide.md) 🆕 | Otto + Zalando | 德国市场 + 欧洲合规 |
+
+[回到目录](#-目录--table-of-contents)
+
+---
+
+## Path E: 社交媒体 AI 运营 🆕
+
+> 用 AI 系统化运营社交媒体渠道，把"发帖"变成可复制的引流体系。
+>
+> 前置：建议先完成 Path A 的核心模块
+
+📖 [查看 Path E 完整内容 →](paths/e-social-media/)
+
+| 模块 | 渠道 | 核心内容 |
+|------|------|----------|
+| [E1. Instagram + Facebook](paths/e-social-media/e1-instagram-facebook-ai-guide.md) | Meta 生态 | Reels 创作 + Advantage+ 广告 + Shopping |
+| [E2. YouTube](paths/e-social-media/e2-youtube-ai-guide.md) | YouTube | 长视频评测 + Shorts + Shopping + Affiliate |
+| [E3. 小红书](paths/e-social-media/e3-xiaohongshu-ai-guide.md) | 小红书 | 种草笔记 + KOL/KOC + 中国市场入口 |
+| [E4. Pinterest](paths/e-social-media/e4-pinterest-ai-guide.md) | Pinterest | 视觉搜索引擎 + Shopping Ads |
+| [E5. WhatsApp Business](paths/e-social-media/e5-whatsapp-business-ai-guide.md) | WhatsApp | AI Chatbot + 对话式商务 |
+| [E6. Reddit](paths/e-social-media/e6-reddit-ai-guide.md) | Reddit | 口碑营销 + 产品发现 |
+| [E7. 跨渠道协同](paths/e-social-media/e7-social-media-cross-channel.md) | 多渠道 | 一个内容多平台适配 + 归因 + 预算分配 |
 
 [回到目录](#-目录--table-of-contents)
 

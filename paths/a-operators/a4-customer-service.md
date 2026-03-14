@@ -977,9 +977,65 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 
 ---
 
-## 9. 完成标志
+## 8.5 补充：AI Chatbot 与社交媒体客服自动化
 
-- [ ] 用 AI 批量分析一批真实差评（≥20 条），生成问题分类和优先级排序
+> 🆕 本节补充跨平台通用的 AI 客服自动化方法论。具体平台实操请参考 [E5 WhatsApp Business](../e-social-media/e5-whatsapp-business-ai-guide.md)、[E1 Instagram DM 自动化](../e-social-media/e1-instagram-facebook-ai-guide.md)。
+
+### AI Chatbot 通用搭建方法论
+
+不管是 Amazon 买家消息、Shopify Chat、WhatsApp 还是 Instagram DM，AI 客服的底层逻辑是一样的：
+
+```
+AI 客服工作流通用框架：
+
+用户消息 → AI 意图识别
+├── 售前咨询（产品问题/尺寸/兼容性）
+│   └── AI 从产品知识库中检索答案 → 自动回复
+├── 订单问题（物流/发货/修改）
+│   └── AI 查询订单系统 → 返回状态
+├── 售后问题（退换/维修/投诉）
+│   ├── 简单问题 → AI 自动处理
+│   └── 复杂问题 → 转人工（附带 AI 摘要）
+└── 无法识别
+    └── 转人工
+```
+
+### 社交媒体评论/DM 自动回复策略
+
+```
+你是一个电商社交媒体客服专家。
+
+我的品牌在 Instagram 和 TikTok 上收到大量评论和 DM。
+
+请帮我设计自动回复策略：
+
+1. 评论自动回复模板（5 种场景）
+   - 正面评价感谢
+   - 产品咨询引导 DM
+   - 价格询问
+   - 负面评价安抚
+   - 购买意向引导下单
+
+2. DM 自动回复流程
+   - 欢迎消息
+   - 产品推荐（基于用户提问）
+   - 下单引导（链接到 Shop/网站）
+   - 售后问题处理
+
+每个模板提供英语和中文版本。
+语气要求：友好、快速、不像机器人。
+```
+
+### AI 情绪检测与升级机制
+
+所有客服渠道都应该有 AI 情绪检测：
+- 正面/中性 → 继续自动处理
+- 轻度不满 → 提供解决方案 + 小额补偿（优惠券）
+- 强烈不满 → 立即转人工 + 标记优先处理 + AI 生成问题摘要
+
+---
+
+## 9. 完成标志
 - [ ] 建立一套多语言客服回复模板库（至少覆盖 5 个常见场景 × 3 种语言）
 - [ ] 用 AI 撰写一封完整的 Plan of Action 申诉信（含 Root Cause + Immediate Actions + Preventive Measures）
 - [ ] 为你的产品生成 FAQ（至少 10 个问题），并更新到 Listing 或 A+ Content

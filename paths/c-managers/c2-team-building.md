@@ -43,6 +43,8 @@ flowchart LR
 
 ## 1. 培训方法论：为什么大多数 AI 培训都失败了
 
+> 📎 **相关阅读**: [F2 Prompt 工程](../0-foundations/f2-prompt-engineering.md) — 团队 Prompt 工程培训详见 F2 · [A2 Listing 与内容创作](../a-operators/a2-listing-optimization.md) — Listing AI 工作流示例详见 A2
+
 ### 1.1 传统培训的三大问题
 
 根据 PwC 的调查，67% 的员工认为自己没有准备好使用 AI 技术。但问题不在于缺少培训，而在于培训方式错了。

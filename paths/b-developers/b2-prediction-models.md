@@ -47,6 +47,8 @@ flowchart LR
 
 ## 1. 预测方法论
 
+> 📎 **相关阅读**: [A5 库存与供应链](../a-operators/a5-inventory.md) — 库存补货决策应用详见 A5 · [D3 跨平台 AI 协同策略](../d-platforms/cross-platform-strategy.md) — 跨平台需求预测详见 D3
+
 ### 1.1 时间序列预测的第一性原理
 
 任何时间序列数据都可以分解为三个成分：

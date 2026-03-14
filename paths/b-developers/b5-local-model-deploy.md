@@ -49,6 +49,8 @@ flowchart LR
 
 ## 1. 本地部署方法论
 
+> 📎 **相关阅读**: [B3 RAG 知识库系统](b3-rag-knowledge-base.md) — RAG 系统可作为微调的替代方案 · [F1 AI 的前世今生](../0-foundations/f1-ai-evolution.md) — AI 模型演进详见 F1
+
 ### 1.1 为什么要在本地运行 LLM
 
 电商数据包含大量商业机密：产品成本、供应商信息、销量数据、利润率、客户信息。把这些数据发送到 OpenAI/Claude 的服务器，存在数据泄露风险。

@@ -45,6 +45,8 @@ flowchart LR
 
 ## 1. 选品方法论：AI 之前你需要理解的基础
 
+> 📎 **相关阅读**: [AI 应用全景评估](../0-foundations/ai-landscape.md) — AI 在选品环节的成熟度评估 · [D4 Walmart AI 指南](../d-platforms/d4-walmart-ai-guide.md) — Walmart 品类机会分析 · [E4 Pinterest AI 指南](../e-social-media/e4-pinterest-ai-guide.md) — Pinterest 趋势数据可辅助选品验证
+
 ### 1.1 选品的第一性原理
 
 选品的本质是在"需求"和"供给"之间找到不对称 — 需求大但供给不足（或供给质量差）的品类就是机会。

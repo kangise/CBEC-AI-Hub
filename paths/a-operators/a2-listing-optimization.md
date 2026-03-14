@@ -49,6 +49,8 @@ flowchart LR
 
 ### 1.1 Amazon 搜索算法演进：从 A9 到 COSMO + Rufus
 
+> 📎 **相关阅读**: [AI 应用全景评估](../0-foundations/ai-landscape.md) — Rufus/COSMO 对 Listing 的影响全景分析 · [D4 Walmart AI 指南](../d-platforms/d4-walmart-ai-guide.md) — Walmart Rich Media（类似 A+）详见 D4
+
 Listing 的本质是在"被搜索到"和"被点击购买"之间找到平衡。但 2024-2026 年，Amazon 的搜索系统经历了三次重大升级，Listing 优化策略也必须跟着变：
 
 **算法演进时间线：**
@@ -290,6 +292,8 @@ Content rephrased for compliance with licensing restrictions. Sources: [amazonfb
 ---
 
 ### 3.2 多语言本地化（不是直译）
+
+> 📎 **相关阅读**: [D6 东南亚 AI 指南](../d-platforms/d6-southeast-asia-ai-guide.md) — 东南亚 6 语言本地化详见 D6
 
 **为什么这个 Prompt 有效：** 它明确告诉 AI "不是逐字翻译"，并要求 AI 标注做了哪些本地化调整。关键设计点：
 - "替换为当地市场常用的搜索关键词" — 直译的关键词往往不是当地消费者实际搜索的词

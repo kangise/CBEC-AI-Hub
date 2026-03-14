@@ -310,6 +310,8 @@ Transformer 架构
 
 ## 4. 大语言模型：从 GPT 到多模态
 
+> 📎 **相关阅读**: [F2 Prompt 工程](f2-prompt-engineering.md) — Prompt 工程实操详见 F2
+
 ### 4.1 GPT 系列演进
 
 GPT（Generative Pre-trained Transformer）是 OpenAI 的系列模型，也是"大语言模型"概念的推动者。
@@ -499,6 +501,8 @@ A: 需要多步计算：
 ---
 
 ## 6. Agent 时代：从对话到行动
+
+> 📎 **相关阅读**: [F4 Agent 自动化](f4-agent-automation.md) — Agent 实操详见 F4
 
 ### 6.1 什么是 AI Agent
 

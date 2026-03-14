@@ -44,6 +44,8 @@ flowchart LR
 
 ## 1. ROI 评估方法论
 
+> 📎 **相关阅读**: [A3 广告优化](../a-operators/a3-advertising.md) — 广告 ROAS 计算详见 A3 · [AI 应用全景评估](../0-foundations/ai-landscape.md) — AI 工具 ROI 量化框架详见 AI 全景
+
 ### 1.1 为什么大多数 AI ROI 评估都不靠谱
 
 根据 S&P Global 的数据，2025 年有 42% 的公司放弃了大部分 AI 项目，主要原因是成本和价值不清晰。MIT 的研究更指出 95% 的 AI 项目未能达到预期的财务回报。

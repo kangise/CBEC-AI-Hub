@@ -49,6 +49,8 @@ flowchart LR
 
 ## 1. 数据工程方法论
 
+> 📎 **相关阅读**: [A3 广告优化](../a-operators/a3-advertising.md) — 广告报告分析应用详见 A3 · [F4 自动化与 Agent](../0-foundations/f4-agent-automation.md) — Agent 自动化基础详见 F4
+
 ### 1.1 电商数据管道的第一性原理
 
 数据管道的本质是把"散落在各处的原始数据"变成"可以直接用于决策的信息"。

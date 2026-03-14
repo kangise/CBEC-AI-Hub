@@ -47,6 +47,8 @@ flowchart LR
 
 ## 1. 广告方法论：AI 之前你需要理解的基础
 
+> 📎 **相关阅读**: [D4 Walmart AI 指南](../d-platforms/d4-walmart-ai-guide.md) — Walmart Connect 广告（第一价格竞价）详见 D4 · [E1 Instagram/Facebook AI 指南](../e-social-media/e1-instagram-facebook-ai-guide.md) — Meta Ads 素材生成详见 E1 · [E7 跨渠道策略](../e-social-media/e7-social-media-cross-channel.md) — 跨渠道广告归因和预算分配详见 E7
+
 ### 1.1 Amazon 广告的第一性原理
 
 Amazon PPC 广告的本质是"花钱买精准流量，用转化率把流量变成利润"。

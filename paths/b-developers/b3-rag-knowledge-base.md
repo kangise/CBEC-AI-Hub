@@ -48,6 +48,8 @@ flowchart LR
 
 ## 1. RAG 方法论
 
+> 📎 **相关阅读**: [A4 客服与售后](../a-operators/a4-customer-service.md) — 客服 FAQ 应用场景详见 A4 · [F3 知识库与 RAG](../0-foundations/f3-rag-knowledge.md) — RAG 基础理论详见 F3
+
 ### 1.1 什么是 RAG
 
 RAG（Retrieval-Augmented Generation，检索增强生成）是让 LLM 基于你的私有数据回答问题的技术。

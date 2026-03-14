@@ -326,6 +326,8 @@ Content rephrased for compliance with licensing restrictions. Source: [MCP vs A2
 
 ### 4.3 LangGraph：最灵活的 Agent 框架
 
+> 📎 **相关阅读**: [B4 AI Agent 与工作流自动化](../b-developers/b4-agent-workflow.md) — Agent 系统构建实操详见 B4
+
 LangGraph 是 LangChain 团队推出的 Agent 框架，核心思想是把 Agent 的行为建模为一个**状态图（State Graph）**。
 
 ```
@@ -447,6 +449,8 @@ Content rephrased for compliance with licensing restrictions. Sources: [OpenClaw
 ---
 
 ## 5. 10 个跨境电商 Agent 场景
+
+> 📎 **相关阅读**: [D2 TikTok Shop AI 指南](../d-platforms/tiktok-shop-ai-guide.md) — TikTok Shop 自动化运营详见 D2
 
 ### 5.1 场景总览
 

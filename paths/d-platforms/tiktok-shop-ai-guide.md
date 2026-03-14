@@ -78,6 +78,8 @@ Content rephrased for compliance with licensing restrictions. Sources: [TikTok S
 
 ## 2. AI 短视频内容创作
 
+> 📎 **相关阅读**: [E1 Instagram/Facebook AI 指南](../e-social-media/e1-instagram-facebook-ai-guide.md) — Instagram Reels 短视频方法论对比详见 E1
+
 ### 2.1 TikTok 爆款视频的结构公式
 
 ```
@@ -188,6 +190,8 @@ Content rephrased for compliance with licensing restrictions. Sources: [ECompose
 
 ## 3. 达人合作与 AI 匹配
 
+> 📎 **相关阅读**: [E3 小红书 AI 指南](../e-social-media/e3-xiaohongshu-ai-guide.md) — 小红书 KOL/KOC 合作方法论详见 E3
+
 ### 3.1 达人合作模式
 
 | 模式 | 说明 | 适合谁 | AI 辅助 |
@@ -281,6 +285,8 @@ Content rephrased for compliance with licensing restrictions. Sources: [ECompose
 ---
 
 ## 4. 直播电商与 AI
+
+> 📎 **相关阅读**: [D6 东南亚 AI 指南](d6-southeast-asia-ai-guide.md) — 东南亚直播带货详见 D6
 
 ### 4.1 为什么直播是 TikTok Shop GMV 的主要来源
 
@@ -521,6 +527,8 @@ Content rephrased for compliance with licensing restrictions. Source: [Benly Tik
 ---
 
 ## 7. 数据分析与运营优化
+
+> 📎 **相关阅读**: [E7 跨渠道策略](../e-social-media/e7-social-media-cross-channel.md) — 跨渠道内容复用详见 E7
 
 ### 7.1 TikTok Shop 关键指标
 

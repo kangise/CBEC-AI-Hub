@@ -260,6 +260,8 @@ Shopify 支持通过 App 做产品页 A/B 测试。AI 可以：
 
 ## 4. 广告与获客
 
+> 📎 **相关阅读**: [E1 Instagram/Facebook AI 指南](../e-social-media/e1-instagram-facebook-ai-guide.md) — Instagram Shopping 与 Shopify 集成详见 E1 · [D4 Walmart AI 指南](d4-walmart-ai-guide.md) — Amazon→Walmart 迁移方法论详见 D4
+
 > Amazon 广告优化见 [A3 广告优化](../a-operators/a3-advertising.md)。Shopify 的广告生态完全不同 — 核心是 Facebook/Google/TikTok 站外广告。
 
 ### 4.1 Shopify 广告 vs Amazon 广告
@@ -363,6 +365,8 @@ Step 4：规模化（AI 自动化）
 ---
 
 ## 5. 邮件营销自动化
+
+> 📎 **相关阅读**: [D8 Rakuten 日本 AI 指南](d8-rakuten-japan-ai-guide.md) — Rakuten R-Mail 邮件营销对比详见 D8
 
 > 这是 Shopify 相比 Amazon 最大的 AI 应用差异 — Amazon 卖家几乎无法做邮件营销，Shopify 卖家拥有完整的客户邮箱数据。
 
@@ -838,6 +842,8 @@ Content rephrased for compliance with licensing restrictions. Sources cited inli
 ---
 
 ## 14. Shopify SEO 深度指南（AI 驱动）
+
+> 📎 **相关阅读**: [E4 Pinterest AI 指南](../e-social-media/e4-pinterest-ai-guide.md) — Pinterest SEO 与 Shopify 集成详见 E4
 
 ### 14.1 Shopify SEO vs Amazon SEO
 

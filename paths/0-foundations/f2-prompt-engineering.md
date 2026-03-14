@@ -391,6 +391,8 @@ C. 情感诉求（享受音乐、专注工作）"
 
 ## 4. 跨境电商场景 Prompt 模板库（20+）
 
+> 📎 **相关阅读**: [A2 Listing 与内容创作](../a-operators/a2-listing-optimization.md) — 电商 Listing Prompt 模板详见 A2
+
 > 完整的标准化模板存放在 [prompts/](../../prompts/) 目录。本节提供快速参考版本。
 
 ### 4.1 选品与市场分析（5 个）
@@ -478,6 +480,8 @@ C. 情感诉求（享受音乐、专注工作）"
 ```
 
 ### 4.3 广告与营销（4 个）
+
+> 📎 **相关阅读**: [A3 广告优化](../a-operators/a3-advertising.md) — 广告分析 Prompt 模板详见 A3
 
 **模板 11：搜索词报告分析**
 ```
@@ -666,6 +670,8 @@ C. 情感诉求（享受音乐、专注工作）"
 ---
 
 ## 6. 进阶：从 Prompt Engineering 到 Context Engineering
+
+> 📎 **相关阅读**: [D6 东南亚 AI 指南](../d-platforms/d6-southeast-asia-ai-guide.md) — 多语言 Prompt 应用详见 D6
 
 ### 6.1 2026 年的趋势：Context Engineering
 

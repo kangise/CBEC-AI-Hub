@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="ogbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F172A"/>
+      <stop offset="100%" style="stop-color:#1E3A5F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogbg)"/>
+  <!-- Accent line -->
+  <rect x="0" y="0" width="1200" height="4" fill="#2563EB"/>
+  <!-- Title -->
+  <text x="600" y="200" text-anchor="middle" fill="white" font-family="Inter,system-ui,sans-serif" font-size="48" font-weight="800">ecommerce-ai-roadmap</text>
+  <!-- Subtitle -->
+  <text x="600" y="270" text-anchor="middle" fill="#94A3B8" font-family="Inter,system-ui,sans-serif" font-size="22">AI Prompts &amp; Strategies for Amazon Sellers,</text>
+  <text x="600" y="305" text-anchor="middle" fill="#94A3B8" font-family="Inter,system-ui,sans-serif" font-size="22">Shopify &amp; TikTok Shop</text>
+  <!-- Stats -->
+  <text x="250" y="410" text-anchor="middle" fill="#F59E0B" font-family="Inter,system-ui,sans-serif" font-size="40" font-weight="700">48</text>
+  <text x="250" y="445" text-anchor="middle" fill="#64748B" font-family="Inter,system-ui,sans-serif" font-size="15">AI Use Cases</text>
+  <text x="480" y="410" text-anchor="middle" fill="#10B981" font-family="Inter,system-ui,sans-serif" font-size="40" font-weight="700">13</text>
+  <text x="480" y="445" text-anchor="middle" fill="#64748B" font-family="Inter,system-ui,sans-serif" font-size="15">Platforms</text>
+  <text x="720" y="410" text-anchor="middle" fill="#3B82F6" font-family="Inter,system-ui,sans-serif" font-size="40" font-weight="700">22</text>
+  <text x="720" y="445" text-anchor="middle" fill="#64748B" font-family="Inter,system-ui,sans-serif" font-size="15">Prompts</text>
+  <text x="950" y="410" text-anchor="middle" fill="#EC4899" font-family="Inter,system-ui,sans-serif" font-size="40" font-weight="700">4</text>
+  <text x="950" y="445" text-anchor="middle" fill="#64748B" font-family="Inter,system-ui,sans-serif" font-size="15">Languages</text>
+  <!-- Footer -->
+  <text x="600" y="560" text-anchor="middle" fill="#475569" font-family="Inter,system-ui,sans-serif" font-size="16">AAAI China Chapter · CC0 License · github.com/kangise/ecommerce-ai-roadmap</text>
+</svg>

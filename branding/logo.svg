@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E3A5F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#grad1)" />
+  <!-- Globe lines -->
+  <ellipse cx="100" cy="100" rx="55" ry="55" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <ellipse cx="100" cy="100" rx="30" ry="55" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <line x1="45" y1="100" x2="155" y2="100" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <ellipse cx="100" cy="100" rx="55" ry="20" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <!-- AI nodes -->
+  <circle cx="70" cy="70" r="8" fill="#F59E0B" opacity="0.9"/>
+  <circle cx="130" cy="65" r="6" fill="#10B981" opacity="0.9"/>
+  <circle cx="100" cy="45" r="7" fill="#EC4899" opacity="0.9"/>
+  <circle cx="60" cy="120" r="5" fill="#8B5CF6" opacity="0.9"/>
+  <circle cx="140" cy="115" r="7" fill="#3B82F6" opacity="0.9"/>
+  <!-- Node connections -->
+  <line x1="70" y1="70" x2="130" y2="65" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <line x1="70" y1="70" x2="100" y2="45" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <line x1="130" y1="65" x2="100" y2="45" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <line x1="130" y1="65" x2="140" y2="115" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <line x1="70" y1="70" x2="60" y2="120" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <!-- Arrow up -->
+  <path d="M100 155 L100 105 L85 120 M100 105 L115 120" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Text -->
+  <text x="100" y="180" text-anchor="middle" fill="white" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700" letter-spacing="1">AI ROADMAP</text>
+</svg>

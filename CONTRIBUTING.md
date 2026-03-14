@@ -23,6 +23,37 @@ Welcome to ecommerce-ai-roadmap! Here's how you can contribute.
 3. 提交 Issue，维护者会审核并转化为正式模板文件
 4. 你会被标注为贡献者 ✨
 
+当前 Prompt 模板库覆盖 7 个分类、22 个模板，详见 [prompts/](prompts/README.md)。
+
+### 🌐 多平台运营经验（🆕 新增方向）
+
+我们刚扩展了 13 个电商平台和 7 个社交媒体渠道的指南，特别欢迎以下贡献：
+
+| 贡献方向 | 说明 | 提交方式 |
+|----------|------|----------|
+| **平台实操经验** | 你在 Walmart/Shopee/Mercado Libre/Rakuten/Coupang 等平台的运营经验 | Issue 或 PR |
+| **社交媒体案例** | Instagram/YouTube/小红书/Pinterest 的成功引流案例（含数据） | Issue |
+| **多语言 Prompt** | 西语/葡语/日语/韩语/泰语等语言的电商 Prompt 模板 | Issue 或 PR |
+| **平台数据更新** | 佣金率变化、新功能上线、政策更新等 | Issue |
+| **合规信息更新** | 各国认证要求变化（KC/CE/EPR 等） | Issue |
+| **Fact-check 修正** | 发现数据不准确？帮忙修正并提供来源 | Issue 或 PR |
+
+### 📱 社交媒体内容（🆕 新增方向）
+
+Path E 社交媒体指南特别需要：
+- 各平台的算法变化和最新最佳实践
+- 达人合作的真实案例和 ROI 数据
+- 各平台广告投放的实操经验和基准数据
+- 跨平台内容复用的工作流分享
+
+### 🌍 翻译贡献（🆕 新增方向）
+
+我们正在建设多语言版本（[翻译架构](/.translation/ARCHITECTURE.md)），欢迎：
+- 英文翻译：paths/ 下的核心模块
+- 日文翻译：特别是 Amazon JP 和 Rakuten 相关内容
+- 西班牙语翻译：特别是 Mercado Libre 相关内容
+- 翻译质量审核：检查现有翻译的准确性
+
 ### 📓 提交 Notebook
 
 通过 [Notebook 提交模板](https://github.com/kangise/ecommerce-ai-roadmap/issues/new?template=notebook_submission.md) 提交，要求：
@@ -42,7 +73,8 @@ Welcome to ecommerce-ai-roadmap! Here's how you can contribute.
 
 - **补充学习资源** — 发现好的课程、视频、工具？提交 PR
 - **修正内容** — 信息过时或描述不准确？帮忙修正
-- **翻译** — 帮助完善英文版内容
+- **翻译** — 帮助完善英文/日文/西班牙文版本（详见 [翻译架构](/.translation/ARCHITECTURE.md)）
+- **数据验证** — 帮忙验证平台费率、市场数据等数字的准确性
 
 ---
 

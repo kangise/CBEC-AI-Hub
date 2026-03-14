@@ -472,6 +472,8 @@ ecommerce-ai-roadmap 是 **AAAI China Chapter (AAAI 中国分会)** 的开源项
 
 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) -- 自由使用，无需署名。
 
+📋 [免责声明](DISCLAIMER.md) -- 第三方商标、数据引用、AI 生成内容声明
+
 ---
 
 *An AAAI China Chapter Initiative | Maintained by the CBEC-AI community*

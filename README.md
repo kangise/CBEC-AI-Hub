@@ -1,13 +1,15 @@
-# ecommerce-ai-roadmap: AI × Cross-Border E-Commerce Knowledge Hub
+# ecommerce-ai-roadmap: AI Prompts & Strategies for Amazon Sellers, Shopify & TikTok Shop
 
-> 跨境电商 AI 实战知识库 | The Definitive AI Guide for Cross-Border E-Commerce
+> 跨境电商 AI 实战知识库 -- Amazon Listing 优化 / Rufus & COSMO 语义 SEO / PPC 广告分析 / TikTok Shop 视频脚本 / Shopify GEO 优化 / ChatGPT Prompts for E-Commerce
+>
+> The Definitive AI Playbook for Cross-Border E-Commerce -- Amazon Seller AI Tools, Listing Optimization, Advertising, TikTok Shop, Shopify, Multi-Platform Strategy
 
 [![AAAI China Chapter](https://img.shields.io/badge/AAAI_China_Chapter-Initiative-blue)](https://github.com/kangise/ecommerce-ai-roadmap)
 [![Stars](https://img.shields.io/github/stars/kangise/ecommerce-ai-roadmap?style=social)](https://github.com/kangise/ecommerce-ai-roadmap)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**原创实战内容，不是链接聚合。** 12 个可直接复制的 Prompt 模板 · 3 条学习路径 · 实战案例
-**Original hands-on content, not a link aggregator.** 12 ready-to-use prompts · 3 learning paths · real-world case studies
+48 个 AI 实战场景直达 · Amazon / Shopify / TikTok Shop 三平台覆盖 · Rufus/COSMO/GEO 优化方法论 · 可直接复制的 Prompt 模板
+48 AI use cases with deep-dive guides · Amazon / Shopify / TikTok Shop · Rufus/COSMO/GEO optimization · Ready-to-use ChatGPT prompts
 
 🇨🇳 中文 | 🇺🇸 [English](README_EN.md)
 

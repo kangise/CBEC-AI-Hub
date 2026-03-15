@@ -3,7 +3,7 @@
 > 可在 Google Colab 免费版直接运行的 Jupyter Notebook，零配置上手。
 > Ready-to-run Jupyter Notebooks on Google Colab free tier — zero setup required.
 
-最后更新: 2025-06-20
+最后更新: 2026-03-15
 
 ---
 
@@ -11,10 +11,15 @@
 
 | Notebook | 内容 Content | 难度 Difficulty | 预计时间 Time | Colab |
 |----------|-------------|----------------|--------------|-------|
-| [a1-product-research.ipynb](a1-product-research.ipynb) | 竞品 Review 批量分析 + AI Prompt 生成 | ⭐ 入门 Beginner | 20 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/a1-product-research.ipynb) |
-| [a3-advertising.ipynb](a3-advertising.ipynb) 🆕 | 搜索词报告四象限分析 + 否定词 + 出价优化 | ⭐ 入门 Beginner | 25 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/a3-advertising.ipynb) |
-| [b1-data-pipeline.ipynb](b1-data-pipeline.ipynb) | Amazon 报告数据处理 — 用 pandas 读取、清洗、计算核心指标 | ⭐ 入门 Beginner | 30 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b1-data-pipeline.ipynb) |
-| [c3-roi-evaluation.ipynb](c3-roi-evaluation.ipynb) 🆕 | AI 工具 ROI 计算 — 量化每个工具的投资回报 | ⭐ 入门 Beginner | 15 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/c3-roi-evaluation.ipynb) |
+| [a1-product-research.ipynb](a1-product-research.ipynb) | 竞品 Review 批量分析 + AI Prompt 生成 | ⭐ 入门 | 20 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/a1-product-research.ipynb) |
+| [a3-advertising.ipynb](a3-advertising.ipynb) | 搜索词报告四象限分析 + 否定词 + 出价优化 | ⭐ 入门 | 25 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/a3-advertising.ipynb) |
+| [a9-geo-audit.ipynb](a9-geo-audit.ipynb) 🆕 | GEO 审计 — AI 搜索可见度自动测试 | ⭐⭐ 中级 | 15 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/a9-geo-audit.ipynb) |
+| [b1-data-pipeline.ipynb](b1-data-pipeline.ipynb) | Amazon 报告数据处理 — pandas 读取、清洗、计算 | ⭐ 入门 | 30 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b1-data-pipeline.ipynb) |
+| [b7-review-analysis.ipynb](b7-review-analysis.ipynb) 🆕 | Review NLP — BERTopic 主题建模 + 情感分析 | ⭐⭐ 中级 | 30 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b7-review-analysis.ipynb) |
+| [b8-dashboard-demo.ipynb](b8-dashboard-demo.ipynb) 🆕 | 电商 Dashboard — 多平台数据 + KPI + 异常检测 | ⭐⭐ 中级 | 25 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b8-dashboard-demo.ipynb) |
+| [c3-roi-evaluation.ipynb](c3-roi-evaluation.ipynb) | AI 工具 ROI 计算 — 量化每个工具的投资回报 | ⭐ 入门 | 15 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/c3-roi-evaluation.ipynb) |
+
+**总计: 7 个 Notebook · 覆盖选品/广告/GEO/数据处理/Review NLP/Dashboard/ROI**
 
 ---
 

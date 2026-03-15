@@ -16,7 +16,9 @@
 [![Stars](https://img.shields.io/github/stars/kangise/ecommerce-ai-roadmap?style=social)](https://github.com/kangise/ecommerce-ai-roadmap)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-48 casos de uso de IA con guías detalladas · Amazon / Shopify / TikTok Shop · Optimización Rufus/COSMO/GEO · Prompts de ChatGPT listos para usar
+48+ casos de uso de IA con guías detalladas · Amazon / Shopify / TikTok Shop + 13 plataformas · Optimización Rufus/COSMO/GEO/Agentic Commerce · Prompts de ChatGPT listos para usar
+
+> **📊 Escala del proyecto (marzo 2026)**: 62 archivos guía · 42,000+ líneas · 6 rutas de aprendizaje · 13 plataformas de e-commerce · 7 canales de redes sociales · 4 idiomas
 
 ---
 

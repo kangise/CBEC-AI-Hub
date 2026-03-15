@@ -16,7 +16,9 @@
 [![Stars](https://img.shields.io/github/stars/kangise/ecommerce-ai-roadmap?style=social)](https://github.com/kangise/ecommerce-ai-roadmap)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-48の AI 実践シナリオ · Amazon / Shopify / TikTok Shop 3プラットフォーム対応 · Rufus/COSMO/GEO 最適化手法 · そのまま使える ChatGPT プロンプトテンプレート
+48+ AI 実践シナリオ · Amazon / Shopify / TikTok Shop + 13プラットフォーム対応 · Rufus/COSMO/GEO/Agentic Commerce · そのまま使える ChatGPT プロンプトテンプレート
+
+> **📊 プロジェクト規模（2026年3月）**: ガイド62ファイル · 42,000行以上 · 6つの学習パス（0/A/B/C/D/E） · 13のECプラットフォーム · 7つのSNSチャネル · 4言語対応
 
 ---
 

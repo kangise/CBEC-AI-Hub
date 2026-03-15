@@ -585,39 +585,247 @@ class ReviewAnalysisPipeline:
         return df.groupby('month')['rating'].mean()
 ```
 
-### 7.2 Streamlit Dashboard
+### 7.2 Streamlit Dashboard（完整实现）
 
 ```python
-# app.py — Review 分析 Dashboard
+# review_dashboard.py — Review 智能分析 Dashboard
 import streamlit as st
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+from collections import Counter
+import numpy as np
 
+st.set_page_config(page_title="Review 智能分析", layout="wide")
 st.title("📊 Review 智能分析系统")
 
-uploaded_file = st.file_uploader("上传 Review CSV", type="csv")
+# === 侧边栏 ===
+with st.sidebar:
+    st.header("📁 数据上传")
+    uploaded_file = st.file_uploader("上传 Review CSV", type="csv")
+    
+    if uploaded_file:
+        st.header("🔧 分析设置")
+        min_rating = st.slider("最低评分筛选", 1, 5, 1)
+        max_rating = st.slider("最高评分筛选", 1, 5, 5)
+        num_topics = st.slider("主题数量", 5, 30, 10)
+        analysis_type = st.selectbox(
+            "分析类型",
+            ["全部 Review", "仅差评 (1-2星)", "仅好评 (4-5星)", "中评 (3星)"]
+        )
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
-    pipeline = ReviewAnalysisPipeline()
+    df = preprocess_reviews(df)
     
-    with st.spinner("分析中..."):
-        results = pipeline.run(df)
+    # 筛选
+    df_filtered = df[(df['rating'] >= min_rating) & (df['rating'] <= max_rating)]
     
-    # 概览
-    col1, col2, col3 = st.columns(3)
-    col1.metric("总 Review 数", results['total_reviews'])
-    col2.metric("平均评分", f"{results['avg_rating']:.1f} ⭐")
-    col3.metric("差评率", f"{results['sentiment_dist'].get('negative', 0)/results['total_reviews']*100:.1f}%")
+    # === Tab 1: 概览 ===
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+        "📊 概览", "😊 情感分析", "🏷️ 主题建模", "📈 趋势", "🤖 AI 洞察"
+    ])
     
-    # 主题分布
-    st.subheader("差评核心问题")
-    st.bar_chart(results['negative_topics'])
+    with tab1:
+        # KPI 卡片
+        col1, col2, col3, col4, col5 = st.columns(5)
+        col1.metric("总 Review", f"{len(df_filtered):,}")
+        col2.metric("平均评分", f"{df_filtered['rating'].mean():.2f} ⭐")
+        col3.metric("差评率", f"{(df_filtered['rating'] <= 2).mean()*100:.1f}%")
+        col4.metric("好评率", f"{(df_filtered['rating'] >= 4).mean()*100:.1f}%")
+        col5.metric("验证购买", f"{df_filtered['verified'].mean()*100:.0f}%")
+        
+        # 评分分布
+        col1, col2 = st.columns(2)
+        with col1:
+            rating_dist = df_filtered['rating'].value_counts().sort_index()
+            fig = px.bar(x=rating_dist.index, y=rating_dist.values,
+                        labels={'x': '评分', 'y': '数量'},
+                        title="评分分布",
+                        color=rating_dist.index,
+                        color_continuous_scale=['red', 'orange', 'yellow', 'lightgreen', 'green'])
+            st.plotly_chart(fig, use_container_width=True)
+        
+        with col2:
+            # 词云
+            all_text = ' '.join(df_filtered['full_text'].tolist())
+            wc = WordCloud(width=800, height=400, background_color='white',
+                          max_words=100, colormap='viridis').generate(all_text)
+            fig_wc, ax = plt.subplots(figsize=(10, 5))
+            ax.imshow(wc, interpolation='bilinear')
+            ax.axis('off')
+            st.pyplot(fig_wc)
     
-    # AI 洞察
-    st.subheader("AI 分析洞察")
-    st.markdown(results['insights'])
+    with tab2:
+        st.subheader("😊 情感分析")
+        
+        # 运行情感分析
+        with st.spinner("正在分析情感..."):
+            sentiments = bert_sentiment(df_filtered['full_text'].tolist())
+            df_filtered['sentiment'] = [s['label'] for s in sentiments]
+            df_filtered['sentiment_score'] = [s['score'] for s in sentiments]
+        
+        # 情感分布
+        col1, col2 = st.columns(2)
+        with col1:
+            sent_dist = df_filtered['sentiment'].value_counts()
+            fig = px.pie(values=sent_dist.values, names=sent_dist.index,
+                        title="情感分布",
+                        color_discrete_map={'positive': 'green', 'negative': 'red', 'neutral': 'gray'})
+            st.plotly_chart(fig, use_container_width=True)
+        
+        with col2:
+            # 情感 vs 评分的关系
+            fig = px.box(df_filtered, x='rating', y='sentiment_score',
+                        title="情感得分 vs 评分",
+                        labels={'rating': '评分', 'sentiment_score': '情感得分'})
+            st.plotly_chart(fig, use_container_width=True)
+        
+        # 情感最极端的 Review
+        st.subheader("最正面的 Review")
+        top_positive = df_filtered.nlargest(3, 'sentiment_score')
+        for _, row in top_positive.iterrows():
+            st.success(f"⭐{row['rating']} | {row['full_text'][:200]}...")
+        
+        st.subheader("最负面的 Review")
+        top_negative = df_filtered.nsmallest(3, 'sentiment_score')
+        for _, row in top_negative.iterrows():
+            st.error(f"⭐{row['rating']} | {row['full_text'][:200]}...")
+    
+    with tab3:
+        st.subheader("🏷️ 主题建模 (BERTopic)")
+        
+        with st.spinner("正在提取主题..."):
+            topic_model = BERTopic(
+                embedding_model=embedding_model,
+                nr_topics=num_topics,
+                min_topic_size=5
+            )
+            topics, probs = topic_model.fit_transform(df_filtered['full_text'].tolist())
+            df_filtered['topic'] = topics
+        
+        # 主题概览
+        topic_info = topic_model.get_topic_info()
+        st.dataframe(topic_info[['Topic', 'Count', 'Name']].head(20),
+                     use_container_width=True)
+        
+        # 主题可视化
+        try:
+            fig = topic_model.visualize_barchart(top_n_topics=10)
+            st.plotly_chart(fig, use_container_width=True)
+        except:
+            pass
+        
+        # 差评专项主题
+        st.subheader("🔴 差评核心问题")
+        neg_df = df_filtered[df_filtered['rating'] <= 2]
+        if len(neg_df) > 10:
+            neg_topic_counts = neg_df.groupby('topic').size().sort_values(ascending=False)
+            for topic_id in neg_topic_counts.head(5).index:
+                if topic_id == -1:
+                    continue
+                keywords = topic_model.get_topic(topic_id)
+                keyword_str = ", ".join([w for w, _ in keywords[:5]])
+                count = neg_topic_counts[topic_id]
+                st.warning(f"**Topic {topic_id}** ({count} 条差评): {keyword_str}")
+                
+                # 显示该主题的示例 Review
+                examples = neg_df[neg_df['topic'] == topic_id]['full_text'].head(2)
+                for ex in examples:
+                    st.caption(f"  → {ex[:150]}...")
+    
+    with tab4:
+        st.subheader("📈 趋势分析")
+        
+        df_filtered['month'] = pd.to_datetime(df_filtered['date']).dt.to_period('M').astype(str)
+        
+        # 月度评分趋势
+        monthly = df_filtered.groupby('month').agg({
+            'rating': 'mean',
+            'full_text': 'count'
+        }).reset_index()
+        monthly.columns = ['月份', '平均评分', 'Review 数量']
+        
+        fig = go.Figure()
+        fig.add_trace(go.Bar(x=monthly['月份'], y=monthly['Review 数量'], name='Review 数量'))
+        fig.add_trace(go.Scatter(x=monthly['月份'], y=monthly['平均评分'], 
+                                 name='平均评分', yaxis='y2', mode='lines+markers'))
+        fig.update_layout(
+            title="月度 Review 趋势",
+            yaxis=dict(title='Review 数量'),
+            yaxis2=dict(title='平均评分', overlaying='y', side='right', range=[1, 5])
+        )
+        st.plotly_chart(fig, use_container_width=True)
+    
+    with tab5:
+        st.subheader("🤖 AI 洞察")
+        
+        if st.button("生成 AI 分析报告"):
+            with st.spinner("AI 正在分析..."):
+                insights = generate_review_insights({
+                    'total_reviews': len(df_filtered),
+                    'avg_rating': df_filtered['rating'].mean(),
+                    'negative_topics': str(neg_topic_counts.head(5).to_dict()) if 'neg_topic_counts' in dir() else "N/A",
+                    'positive_topics': "N/A",
+                    'date_range': f"{df_filtered['date'].min()} to {df_filtered['date'].max()}"
+                }, df_filtered[df_filtered['rating'] <= 2].head(10).to_dict())
+                
+                st.markdown(insights)
+                
+                # 下载报告
+                st.download_button(
+                    "📥 下载分析报告",
+                    insights,
+                    file_name=f"review_analysis_{datetime.now().strftime('%Y%m%d')}.md",
+                    mime="text/markdown"
+                )
+
+else:
+    st.info("👆 请在左侧上传 Review CSV 文件开始分析")
+    st.markdown("""
+    **CSV 文件格式要求：**
+    - `rating`: 评分 (1-5)
+    - `title`: Review 标题
+    - `body`: Review 正文
+    - `date`: 日期
+    - `verified`: 是否验证购买 (True/False)
+    - `helpful_votes`: 有用投票数（可选）
+    """)
 ```
 
-运行：`streamlit run app.py`
+运行：`streamlit run review_dashboard.py`
+
+### 7.3 导出分析结果
+
+```python
+def export_analysis_results(df: pd.DataFrame, topic_model, output_dir: str = "output"):
+    """导出完整的分析结果"""
+    from pathlib import Path
+    Path(output_dir).mkdir(exist_ok=True)
+    
+    # 1. 导出带标注的 Review 数据
+    df.to_csv(f"{output_dir}/reviews_analyzed.csv", index=False)
+    
+    # 2. 导出主题摘要
+    topic_info = topic_model.get_topic_info()
+    topic_info.to_csv(f"{output_dir}/topics_summary.csv", index=False)
+    
+    # 3. 导出差评主题详情
+    neg_df = df[df['rating'] <= 2]
+    neg_topics = neg_df.groupby('topic').agg({
+        'full_text': 'count',
+        'rating': 'mean'
+    }).sort_values('full_text', ascending=False)
+    neg_topics.to_csv(f"{output_dir}/negative_topics.csv")
+    
+    # 4. 生成 HTML 报告
+    html_report = topic_model.visualize_topics()
+    html_report.write_html(f"{output_dir}/topic_visualization.html")
+    
+    print(f"分析结果已导出到 {output_dir}/")
+```
 
 ---
 

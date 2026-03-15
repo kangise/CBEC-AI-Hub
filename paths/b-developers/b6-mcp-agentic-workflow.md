@@ -492,74 +492,310 @@ if __name__ == "__main__":
 Orchestrator 根据任务类型分配给对应 Agent
 ```
 
-### 6.2 每日自动化运营 Agent
+### 6.2 每日自动化运营 Agent（完整实现）
 
 ```python
-# 概念代码：每日运营自动化 Agent
+# daily_ops_agent.py — 完整的每日运营自动化 Agent
 # 使用 LangGraph + MCP
 
-from langgraph.graph import StateGraph
-from typing import TypedDict
+from langgraph.graph import StateGraph, END
+from typing import TypedDict, Annotated, Literal
+import operator
+import json
+from datetime import datetime, timedelta
 
 class DailyOpsState(TypedDict):
+    """Agent 状态定义"""
     sales_data: dict
     ad_alerts: list
     inventory_alerts: list
-    customer_issues: list
+    review_alerts: list
     daily_report: str
+    actions_taken: Annotated[list, operator.add]
+    errors: Annotated[list, operator.add]
 
-def check_sales(state: DailyOpsState) -> DailyOpsState:
-    """Step 1: 通过 MCP 获取销售数据"""
-    # 调用自定义 MCP Server
-    sales = mcp_call("my-ecommerce", "get_daily_sales", {
-        "start_date": yesterday(),
-        "end_date": today()
-    })
-    state["sales_data"] = sales
-    return state
-
-def check_ads(state: DailyOpsState) -> DailyOpsState:
-    """Step 2: 通过 Amazon Ads MCP 检查广告"""
-    alerts = mcp_call("amazon-ads", "get_acos_alerts", {
-        "threshold": 30
-    })
-    state["ad_alerts"] = alerts
-    return state
-
-def check_inventory(state: DailyOpsState) -> DailyOpsState:
-    """Step 3: 通过 Shopify MCP 检查库存"""
-    alerts = mcp_call("shopify", "get_inventory_alerts", {
-        "days_threshold": 14
-    })
-    state["inventory_alerts"] = alerts
-    return state
-
-def generate_report(state: DailyOpsState) -> DailyOpsState:
-    """Step 4: AI 生成每日运营报告"""
-    report = llm_generate(f"""
-    基于以下数据生成每日运营报告：
-    销售: {state['sales_data']}
-    广告预警: {state['ad_alerts']}
-    库存预警: {state['inventory_alerts']}
+# === Step 1: 销售数据检查 ===
+async def check_sales(state: DailyOpsState) -> DailyOpsState:
+    """通过 MCP 获取昨日销售数据"""
+    try:
+        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+        today = datetime.now().strftime("%Y-%m-%d")
+        
+        # 调用自定义 MCP Server
+        sales = await mcp_call("my-ecommerce", "get_daily_sales", {
+            "start_date": yesterday,
+            "end_date": today,
+            "marketplace": "US"
+        })
+        
+        # 计算关键指标
+        prev_week = await mcp_call("my-ecommerce", "get_daily_sales", {
+            "start_date": (datetime.now() - timedelta(days=8)).strftime("%Y-%m-%d"),
+            "end_date": (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
+        })
+        
+        sales_data = {
+            "date": yesterday,
+            "revenue": sales["total_revenue"],
+            "orders": sales["total_orders"],
+            "units": sales["total_units"],
+            "wow_change": (sales["total_revenue"] - prev_week["total_revenue"]) 
+                         / prev_week["total_revenue"] * 100,
+            "top_products": sales.get("top_products", [])[:5],
+            "anomalies": []
+        }
+        
+        # 异常检测
+        if abs(sales_data["wow_change"]) > 30:
+            sales_data["anomalies"].append(
+                f"收入周环比变化 {sales_data['wow_change']:+.1f}%（阈值 ±30%）"
+            )
+        
+        state["sales_data"] = sales_data
+        state["actions_taken"] = [f"✅ 获取销售数据: ${sales_data['revenue']:,.0f}"]
+        
+    except Exception as e:
+        state["errors"] = [f"❌ 销售数据获取失败: {str(e)}"]
     
-    报告格式：摘要 + 需要行动的事项 + 优先级排序
-    """)
-    state["daily_report"] = report
     return state
 
-# 构建工作流
+# === Step 2: 广告检查 ===
+async def check_ads(state: DailyOpsState) -> DailyOpsState:
+    """通过 Amazon Ads MCP 检查广告表现"""
+    try:
+        # 获取 ACOS 超标的 Campaign
+        campaigns = await mcp_call("amazon-ads", "list_campaigns", {
+            "status": "ENABLED"
+        })
+        
+        alerts = []
+        for campaign in campaigns:
+            perf = await mcp_call("amazon-ads", "get_performance", {
+                "campaign_id": campaign["id"],
+                "days": 7
+            })
+            
+            acos = perf["spend"] / max(perf["sales"], 0.01) * 100
+            
+            if acos > 40:
+                alerts.append({
+                    "campaign": campaign["name"],
+                    "acos": acos,
+                    "spend": perf["spend"],
+                    "sales": perf["sales"],
+                    "severity": "high" if acos > 60 else "medium"
+                })
+            
+            # 检查预算耗尽
+            if perf.get("budget_utilization", 0) > 95:
+                alerts.append({
+                    "campaign": campaign["name"],
+                    "issue": "预算在下午前耗尽",
+                    "utilization": perf["budget_utilization"],
+                    "severity": "medium"
+                })
+        
+        state["ad_alerts"] = alerts
+        state["actions_taken"] = [
+            f"✅ 检查广告: {len(campaigns)} 个 Campaign, {len(alerts)} 个告警"
+        ]
+        
+    except Exception as e:
+        state["errors"] = [f"❌ 广告检查失败: {str(e)}"]
+    
+    return state
+
+# === Step 3: 库存检查 ===
+async def check_inventory(state: DailyOpsState) -> DailyOpsState:
+    """通过 Shopify/Amazon MCP 检查库存"""
+    try:
+        inventory = await mcp_call("shopify", "get_inventory_levels", {})
+        
+        alerts = []
+        for item in inventory:
+            days_of_supply = item["quantity"] / max(item["daily_sales"], 0.1)
+            
+            if days_of_supply < 14:
+                alerts.append({
+                    "sku": item["sku"],
+                    "product": item["title"],
+                    "quantity": item["quantity"],
+                    "days_of_supply": round(days_of_supply, 1),
+                    "daily_sales": item["daily_sales"],
+                    "severity": "high" if days_of_supply < 7 else "medium",
+                    "reorder_qty": int(item["daily_sales"] * 45)  # 45 天补货量
+                })
+        
+        state["inventory_alerts"] = alerts
+        state["actions_taken"] = [
+            f"✅ 检查库存: {len(alerts)} 个 SKU 需要补货"
+        ]
+        
+    except Exception as e:
+        state["errors"] = [f"❌ 库存检查失败: {str(e)}"]
+    
+    return state
+
+# === Step 4: Review 检查 ===
+async def check_reviews(state: DailyOpsState) -> DailyOpsState:
+    """检查新的差评"""
+    try:
+        new_reviews = await mcp_call("my-ecommerce", "get_recent_reviews", {
+            "days": 1,
+            "max_rating": 3
+        })
+        
+        alerts = []
+        for review in new_reviews:
+            alerts.append({
+                "asin": review["asin"],
+                "rating": review["rating"],
+                "title": review["title"][:50],
+                "severity": "high" if review["rating"] <= 2 else "low"
+            })
+        
+        state["review_alerts"] = alerts
+        state["actions_taken"] = [
+            f"✅ 检查 Review: {len(alerts)} 条新差评"
+        ]
+        
+    except Exception as e:
+        state["errors"] = [f"❌ Review 检查失败: {str(e)}"]
+    
+    return state
+
+# === Step 5: 生成报告 ===
+async def generate_report(state: DailyOpsState) -> DailyOpsState:
+    """用 LLM 生成每日运营报告"""
+    
+    report_data = {
+        "date": state.get("sales_data", {}).get("date", "N/A"),
+        "sales": state.get("sales_data", {}),
+        "ad_alerts": state.get("ad_alerts", []),
+        "inventory_alerts": state.get("inventory_alerts", []),
+        "review_alerts": state.get("review_alerts", []),
+        "actions": state.get("actions_taken", []),
+        "errors": state.get("errors", [])
+    }
+    
+    prompt = f"""
+你是一个电商运营 AI 助手。请基于以下数据生成简洁的每日运营报告。
+
+数据：
+{json.dumps(report_data, ensure_ascii=False, indent=2)}
+
+报告格式：
+# 📊 每日运营报告 - {{date}}
+
+## 销售概览
+（收入、订单、环比变化、异常）
+
+## ⚠️ 需要行动的事项（按优先级排序）
+（广告告警、库存告警、差评告警）
+
+## 📋 今日建议行动清单
+（具体的、可执行的行动，标注优先级 P0/P1/P2）
+
+## 系统状态
+（执行的检查、遇到的错误）
+"""
+    
+    report = await llm_call(prompt)
+    state["daily_report"] = report
+    
+    return state
+
+# === 决策路由 ===
+def should_auto_fix(state: DailyOpsState) -> Literal["auto_fix", "report"]:
+    """决定是否自动修复问题"""
+    high_severity = sum(
+        1 for a in state.get("ad_alerts", []) if a.get("severity") == "high"
+    )
+    if high_severity > 0:
+        return "auto_fix"
+    return "report"
+
+# === 自动修复 ===
+async def auto_fix_ads(state: DailyOpsState) -> DailyOpsState:
+    """自动修复高严重度的广告问题"""
+    for alert in state.get("ad_alerts", []):
+        if alert.get("severity") == "high" and alert.get("acos", 0) > 60:
+            # 自动降低出价 20%（需要人工确认）
+            state["actions_taken"] = [
+                f"🔧 建议: Campaign '{alert['campaign']}' ACOS={alert['acos']:.0f}%，"
+                f"建议降低出价 20%（需要人工确认）"
+            ]
+    return state
+
+# === 构建工作流 ===
 workflow = StateGraph(DailyOpsState)
+
+# 添加节点
 workflow.add_node("sales", check_sales)
 workflow.add_node("ads", check_ads)
 workflow.add_node("inventory", check_inventory)
+workflow.add_node("reviews", check_reviews)
+workflow.add_node("auto_fix", auto_fix_ads)
 workflow.add_node("report", generate_report)
 
+# 定义流程
 workflow.set_entry_point("sales")
 workflow.add_edge("sales", "ads")
 workflow.add_edge("ads", "inventory")
-workflow.add_edge("inventory", "report")
+workflow.add_edge("inventory", "reviews")
+workflow.add_conditional_edges("reviews", should_auto_fix)
+workflow.add_edge("auto_fix", "report")
+workflow.add_edge("report", END)
 
+# 编译
 app = workflow.compile()
+
+# === 运行 ===
+async def run_daily_ops():
+    """每天早上 8 点运行"""
+    initial_state = {
+        "sales_data": {},
+        "ad_alerts": [],
+        "inventory_alerts": [],
+        "review_alerts": [],
+        "daily_report": "",
+        "actions_taken": [],
+        "errors": []
+    }
+    
+    result = await app.ainvoke(initial_state)
+    
+    # 输出报告
+    print(result["daily_report"])
+    
+    # 发送到 Slack/邮件
+    # await send_to_slack(result["daily_report"])
+    
+    return result
+
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(run_daily_ops())
+```
+
+### 6.3 定时调度
+
+```python
+# 使用 APScheduler 定时运行
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+
+scheduler = AsyncIOScheduler()
+
+# 每天早上 8:00 运行每日报告
+scheduler.add_job(run_daily_ops, 'cron', hour=8, minute=0)
+
+# 每 4 小时检查一次广告异常
+scheduler.add_job(check_ads_only, 'interval', hours=4)
+
+# 每小时检查库存
+scheduler.add_job(check_inventory_only, 'interval', hours=1)
+
+scheduler.start()
 ```
 
 ---

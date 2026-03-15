@@ -111,60 +111,163 @@ python3 main.py
 
 ### 3.2 产品图生成工作流
 
-```
-ComfyUI 电商产品图工作流：
-
-输入节点：
-├── 产品实拍图（Load Image）
-├── Prompt（产品描述+场景描述）
-└── 负面 Prompt（排除不想要的元素）
-
-处理节点：
-├── IP-Adapter（保持产品外观一致）
-├── ControlNet（控制构图和姿态）
-├── KSampler（生成图片）
-└── VAE Decode（解码为图片）
-
-输出节点：
-├── Save Image（保存原图）
-├── 去背景（rembg 节点）
-└── 白底合成（Composite 节点）
-```
-
-> **真实案例**：ComfyUI 的产品图工作流可以实现自定义产品放置和细节保留，从一张产品图和简单的 Prompt 生成专业级产品照片（[MyAIForce](https://myaiforce.com/comfyui-product-photography/)）。运行本地 AI Pipeline 确保了成本效率、数据隐私和可扩展的生产级性能（[KeyValue Systems](https://www.keyvalue.systems/blog/webui-forge-evolution-automatic1111-to-comfyui-stable-diffusion/)）。
+> **真实案例：ComfyUI 产品图工作流实战**
+> MyAIForce 展示了一个完整的 ComfyUI 产品图工作流：输入一张护肤品图片和描述性 Prompt，工作流自动将产品无缝融入新背景，调整光照和阴影以匹配新环境，确保自然和谐的外观。工作流包含 7 个步骤：上传图片→设置背景→基础调整→产品定位→重新打光→重绘→恢复细节（[MyAIForce](https://myaiforce.com/comfyui-product-photography/)）。
 
 Content rephrased for compliance with licensing restrictions.
 
-### 3.3 电商场景 Prompt 模板
+> **真实案例：Midjourney + ComfyUI 组合工作流**
+> 另一个高级工作流将 Midjourney 和 ComfyUI 结合：先用 Midjourney 生成高质量的场景背景，再用 ComfyUI 的 ControlNet 和 IP-Adapter 将产品精确放置到场景中，同时调整光照和阴影以保留产品文字等关键细节（[MyAIForce](https://myaiforce.com/product-photography-comfyui-midjourney/)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+> **真实案例：ComfyUI 背景替换 V4 工作流**
+> 最新的 V4 背景替换工作流使用 SDXL checkpoints，仅需 10 个采样步骤和约 6GB VRAM 即可完成基础任务。使用 Flux 模型可以获得更高质量的效果，但需要更多 VRAM（[MyAIForce](https://myaiforce.com/flux-replace-background-v4/)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+```
+ComfyUI 电商产品图完整工作流（7 步）：
+
+Step 1: 上传图片和设置背景
+├── Load Image 节点：加载产品实拍图
+├── 背景选择：上传预设背景 或 用 Prompt 生成
+└── 参数设置：分辨率、采样步数
+
+Step 2: 基础调整
+├── 产品抠图（Florence2Run 或 rembg）
+├── 尺寸调整
+└── 初始合成
+
+Step 3: 产品定位
+├── 调整产品在画面中的位置
+├── 缩放比例
+└── 角度调整
+
+Step 4: 重新打光（Relighting）
+├── IC-Light 节点：根据背景调整产品光照
+├── 阴影方向匹配
+└── 高光调整
+
+Step 5: 生成背景
+├── Flux Fill + Redux：生成与产品匹配的背景
+├── 或 IP-Adapter：复制参考图片的风格
+└── KSampler：执行生成
+
+Step 6: 重绘（Inpainting）
+├── 修复产品与背景的接缝
+├── 添加自然阴影
+└── 细节融合
+
+Step 7: 恢复细节和颜色
+├── 恢复产品原始颜色
+├── 锐化细节
+├── 最终输出
+└── 保存为 PNG/JPEG
+```
+
+### 3.3 电商场景 Prompt 模板（40+ 测试过的模板）
+
+> **真实资源**：Apatero 整理了 40+ 经过测试的 AI 产品图 Prompt 模板，覆盖白底、场景、平铺、信息图等所有电商场景（[Apatero](https://www.apatero.com/blog/best-prompts-product-photography-ai-generation-2025)）。
+
+Content rephrased for compliance with licensing restrictions.
 
 ```python
-# 电商产品图 Prompt 模板库
+# 电商产品图 Prompt 模板库（扩展版）
 PROMPT_TEMPLATES = {
-    "white_background": {
-        "positive": "professional product photography, {product}, centered, pure white background, studio lighting, high resolution, 8k, sharp focus, commercial photography",
-        "negative": "blurry, low quality, text, watermark, logo, human, hand, shadow on background"
+    # === 主图系列 ===
+    "amazon_main": {
+        "positive": "professional product photography, {product}, centered on pure white background #FFFFFF, product fills 85 percent of frame, studio lighting with soft shadows, high resolution 8k, sharp focus, no text no logos no watermarks, commercial catalog style",
+        "negative": "blurry, low quality, text, watermark, logo, human, hand, colored background, shadow on background, props, accessories not part of product"
     },
-    "lifestyle": {
-        "positive": "lifestyle product photography, {product} in use, {scene}, natural lighting, warm tones, bokeh background, professional, editorial style",
-        "negative": "blurry, low quality, text, watermark, artificial looking, oversaturated"
+    "shopify_hero": {
+        "positive": "hero product shot, {product}, clean minimal background with subtle gradient, dramatic studio lighting, slight shadow underneath, premium feel, editorial quality, 4k",
+        "negative": "cluttered, busy background, text, watermark, low quality"
     },
-    "flat_lay": {
-        "positive": "flat lay photography, {product} with complementary items, top-down view, clean arrangement, soft shadows, minimalist, {color_scheme}",
-        "negative": "cluttered, messy, blurry, low quality, text"
+    
+    # === 场景图系列 ===
+    "lifestyle_home": {
+        "positive": "lifestyle product photography, {product} in modern minimalist home, natural window lighting, warm tones, shallow depth of field, bokeh background, editorial style, authentic feel",
+        "negative": "artificial, oversaturated, studio look, text, watermark"
     },
-    "infographic": {
-        "positive": "clean infographic background, {product}, {color_scheme}, modern design, space for text overlay, professional",
-        "negative": "text, numbers, charts, cluttered, busy"
+    "lifestyle_outdoor": {
+        "positive": "outdoor lifestyle photography, {product} in natural setting, golden hour lighting, vibrant colors, adventure feel, authentic, editorial quality",
+        "negative": "indoor, artificial lighting, text, watermark, studio"
+    },
+    "lifestyle_office": {
+        "positive": "modern office setting, {product} on clean desk, natural lighting from window, minimalist decor, professional atmosphere, shallow depth of field",
+        "negative": "cluttered, messy, dark, text, watermark"
+    },
+    "lifestyle_kitchen": {
+        "positive": "modern kitchen setting, {product} on marble countertop, natural lighting, fresh ingredients nearby, clean and bright, food photography style",
+        "negative": "dirty, cluttered, dark, text, watermark"
+    },
+    
+    # === 平铺图系列 ===
+    "flat_lay_minimal": {
+        "positive": "flat lay photography, {product} with complementary items, top-down view, clean arrangement on {surface}, soft shadows, minimalist, {color_scheme}",
+        "negative": "cluttered, messy, blurry, text, 3D perspective"
+    },
+    "flat_lay_seasonal": {
+        "positive": "seasonal flat lay, {product} surrounded by {season} elements, top-down view, cohesive color palette, editorial styling, natural textures",
+        "negative": "cluttered, artificial, text, watermark"
+    },
+    
+    # === 信息图背景系列 ===
+    "infographic_clean": {
+        "positive": "clean infographic background for {product}, {color_scheme} gradient, modern design, ample negative space for text overlay, professional, soft lighting on product",
+        "negative": "text, numbers, charts, cluttered, busy, distracting elements"
+    },
+    "infographic_comparison": {
+        "positive": "split comparison layout background, {product} centered, left side and right side clearly divided, clean modern design, space for before/after or feature comparison text",
+        "negative": "text, numbers, cluttered"
+    },
+    
+    # === 社交媒体系列 ===
+    "instagram_aesthetic": {
+        "positive": "instagram aesthetic product shot, {product}, trendy styling, {color_scheme} color palette, natural lighting, lifestyle feel, square format, influencer style",
+        "negative": "corporate, boring, text, watermark, low quality"
+    },
+    "tiktok_dynamic": {
+        "positive": "dynamic product shot, {product}, vibrant colors, energetic composition, slight motion blur on background, youth-oriented, vertical format 9:16",
+        "negative": "static, boring, corporate, text"
+    },
+    
+    # === A+ Content 系列 ===
+    "aplus_brand_story": {
+        "positive": "brand story photography, {product} in aspirational setting, warm emotional lighting, lifestyle context, premium quality, cinematic feel",
+        "negative": "cheap, low quality, text, watermark"
+    },
+    "aplus_feature_highlight": {
+        "positive": "close-up detail shot, {product} {feature} highlighted, macro photography style, sharp focus on detail, soft background, studio lighting",
+        "negative": "blurry, wide shot, text, watermark"
     }
 }
 
 def generate_prompt(template_name: str, product: str, **kwargs) -> dict:
     """生成产品图 Prompt"""
     template = PROMPT_TEMPLATES[template_name]
+    # 填充默认值
+    defaults = {
+        "surface": "white marble",
+        "color_scheme": "blue and white",
+        "season": "autumn",
+        "feature": "texture detail"
+    }
+    for k, v in defaults.items():
+        kwargs.setdefault(k, v)
+    
     return {
         "positive": template["positive"].format(product=product, **kwargs),
         "negative": template["negative"]
     }
+
+# 使用示例
+prompt = generate_prompt(
+    "lifestyle_home",
+    product="wireless bluetooth earbuds with charging case"
+)
+print(prompt["positive"])
 ```
 
 ---

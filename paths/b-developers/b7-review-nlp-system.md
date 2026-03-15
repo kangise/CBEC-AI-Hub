@@ -104,7 +104,25 @@ pip3 install openai anthropic
 
 ## 3. 数据采集与预处理
 
-### 3.1 Review 数据结构
+### 3.1 Review 数据获取方式
+
+| 方式 | 优点 | 缺点 | 适合 |
+|------|------|------|------|
+| Amazon SP-API | 官方 API，稳定合规 | 只能获取自己产品的 Review | 自有产品分析 |
+| 网页抓取 | 可获取竞品 Review | 需要处理反爬、合规风险 | 竞品分析 |
+| 第三方工具导出 | 简单快速 | 数据格式不统一 | 快速分析 |
+| 公开数据集 | 免费、大量 | 数据可能过时 | 学习和测试 |
+
+> **真实资源**：多个教程展示了如何用 Python 抓取 Amazon Review 数据，包括使用 BeautifulSoup、Scrapy 和专业 API 服务（[ScrapingBee](https://www.scrapingbee.com/blog/how-to-scrape-amazon-reviews/)，[Oxylabs](https://oxylabs.io/blog/how-to-scrape-amazon-reviews)）。抓取的数据通常包含评分、标题、正文、日期、验证购买状态和有用投票数。
+
+Content rephrased for compliance with licensing restrictions.
+
+> **真实案例：跨产品 Review 分析**
+> 学术研究展示了使用上下文主题建模（Contextual Topic Modeling）和关联规则挖掘对耳机品类的 Amazon Review 进行跨产品分析，发现不同产品之间共享的用户关注点和差异化特征（[MDPI](https://www.mdpi.com/0718-1876/19/4/170)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+### 3.2 Review 数据结构
 
 ```python
 import pandas as pd
@@ -320,6 +338,97 @@ fig.show()
 
 # 发现：某个质量问题的差评是否在增加？
 # 这可以作为产品改进的早期预警信号
+```
+
+### 5.4 高级 BERTopic 技巧
+
+> **真实案例：Amalytix 的 Amazon Review BERTopic 分析**
+> Amalytix 展示了如何用 BERTopic 分析 Amazon Review，自动发现产品的核心话题。BERTopic 使用基于 BERT 的方法和修改后的 TF-IDF 分析，能够从非结构化的 Review 文本中提取有意义的主题聚类（[Amalytix](https://www.amalytix.com/en/blog/analyze-reviews-bertopic/)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+```python
+# 高级技巧 1：按品类分组的主题分析
+def analyze_by_category(df: pd.DataFrame, categories: list):
+    """按品类分别做主题分析，发现品类特有的问题"""
+    results = {}
+    for cat in categories:
+        cat_df = df[df['category'] == cat]
+        if len(cat_df) < 50:
+            continue
+        
+        model = BERTopic(
+            embedding_model=embedding_model,
+            nr_topics=8,
+            min_topic_size=5
+        )
+        topics, _ = model.fit_transform(cat_df['full_text'].tolist())
+        results[cat] = {
+            'model': model,
+            'topics': model.get_topic_info(),
+            'negative_topics': cat_df[cat_df['rating'] <= 2].groupby(
+                pd.Series(topics)[cat_df['rating'] <= 2].values
+            ).size().sort_values(ascending=False)
+        }
+    return results
+
+# 高级技巧 2：多语言 Review 分析
+from sentence_transformers import SentenceTransformer
+
+# 使用多语言嵌入模型（支持 100+ 语言）
+multilingual_model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+
+multilingual_topic_model = BERTopic(
+    embedding_model=multilingual_model,
+    language="multilingual"
+)
+
+# 可以同时分析英语、德语、日语的 Review
+all_reviews = pd.concat([us_reviews, de_reviews, jp_reviews])
+topics, _ = multilingual_topic_model.fit_transform(all_reviews['full_text'].tolist())
+
+# 高级技巧 3：主题标签自动生成（用 LLM）
+def auto_label_topics(topic_model, top_n_topics=20):
+    """用 LLM 为 BERTopic 发现的主题生成人类可读的标签"""
+    labels = {}
+    for topic_id in range(top_n_topics):
+        keywords = topic_model.get_topic(topic_id)
+        if not keywords:
+            continue
+        
+        keyword_str = ", ".join([w for w, _ in keywords[:10]])
+        
+        prompt = f"""
+以下是从产品 Review 中提取的一个主题的关键词：
+{keyword_str}
+
+请用一个简短的中文标签（3-6 个字）描述这个主题。
+只返回标签，不要解释。
+"""
+        label = llm_call(prompt).strip()
+        labels[topic_id] = label
+    
+    return labels
+
+# 高级技巧 4：Review 质量评分
+def score_review_quality(df: pd.DataFrame) -> pd.DataFrame:
+    """评估 Review 的信息质量（用于筛选高价值 Review）"""
+    df['word_count'] = df['full_text'].str.split().str.len()
+    df['has_specific_detail'] = df['full_text'].str.contains(
+        r'\d+\s*(day|week|month|hour|minute|inch|cm|kg|lb|oz)',
+        case=False, regex=True
+    )
+    df['has_comparison'] = df['full_text'].str.contains(
+        r'(better than|worse than|compared to|vs|versus|unlike)',
+        case=False, regex=True
+    )
+    df['quality_score'] = (
+        (df['word_count'] > 30).astype(int) * 2 +
+        df['has_specific_detail'].astype(int) * 3 +
+        df['has_comparison'].astype(int) * 3 +
+        (df['helpful_votes'] > 0).astype(int) * 2
+    )
+    return df
 ```
 
 ---

@@ -120,15 +120,111 @@ Content rephrased for compliance with licensing restrictions.
 
 ### 3.2 Amazon Ads MCP 可用工具
 
-| 工具 | 功能 | 示例对话 |
-|------|------|---------|
-| get_campaigns | 获取 Campaign 列表 | "列出所有活跃的 SP Campaign" |
-| get_ad_groups | 获取广告组 | "显示 Campaign X 下的所有广告组" |
-| get_keywords | 获取关键词 | "哪些关键词的 ACOS > 30%？" |
-| get_search_terms | 搜索词报告 | "过去 30 天转化率最高的搜索词" |
-| update_bid | 调整出价 | "把关键词 X 的出价从 $1.5 调到 $1.2" |
-| create_negative | 添加否定词 | "把 'free' 添加为否定词" |
-| get_performance | 获取表现数据 | "过去 7 天的总花费和 ROAS" |
+Amazon Ads MCP Server 提供了完整的广告管理能力。根据 MarketplaceAdPros 的实现（[Playbooks.com](https://playbooks.com/mcp/marketplaceadpros-amazon-ads)），可用工具包括：
+
+| 工具类别 | 工具名 | 功能 | 示例对话 |
+|----------|--------|------|---------|
+| Campaign 管理 | list_campaigns | 获取 Campaign 列表 | "列出所有活跃的 SP Campaign" |
+| | create_campaign | 创建新 Campaign | "创建一个新的 SP Auto Campaign，日预算 $50" |
+| | update_campaign | 更新 Campaign 设置 | "把 Campaign X 的日预算从 $50 调到 $80" |
+| 广告组 | list_ad_groups | 获取广告组 | "显示 Campaign X 下的所有广告组" |
+| | create_ad_group | 创建广告组 | "在 Campaign X 下创建一个新广告组" |
+| 关键词 | list_keywords | 获取关键词列表 | "哪些关键词的 ACOS > 30%？" |
+| | update_bid | 调整出价 | "把关键词 X 的出价从 $1.5 调到 $1.2" |
+| | create_negative | 添加否定词 | "把 'free' 添加为 Campaign 级否定词" |
+| 搜索词 | get_search_terms | 搜索词报告 | "过去 30 天转化率最高的搜索词" |
+| 报告 | generate_report | 生成报告 | "生成过去 7 天的 SP Campaign 报告" |
+| | get_performance | 获取表现数据 | "过去 7 天的总花费和 ROAS" |
+| Profile | list_profiles | 获取广告账户 | "列出所有可用的广告 Profile" |
+| | get_regions | 获取区域信息 | "显示可用的市场区域" |
+
+Content rephrased for compliance with licensing restrictions. Source: [Playbooks.com](https://playbooks.com/mcp/marketplaceadpros-amazon-ads).
+
+> **真实案例：Amazon Ads MCP 2026.2 正式发布**
+> 2026 年 2 月 2 日，Amazon 宣布 Ads MCP Server 开放测试版。拥有 API 凭证的卖家可以通过 Claude、ChatGPT 或 Gemini 等工具，用简单的命令创建 Campaign、优化出价、拉取报告、跨市场扩展（[ClearAds Agency](https://clearadsagency.com/what-is-amazons-mcp-server-and-how-does-it-change-advertising-for-sellers/)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+### 3.3 5 大 MCP 广告自动化策略
+
+根据 Stormy.ai 的实战指南（[Stormy.ai](https://stormy.ai/blog/automating-amazon-ads-claude-mcp)），以下是用 Claude MCP 管理 Amazon 广告的 5 个核心策略：
+
+**策略 1：自动搜索词收割（Search Term Harvesting）**
+
+传统方式：手动扫描 Auto Campaign 的搜索词报告，找到高转化词，手动移到 Exact Match Campaign，再手动在原 Campaign 中否定。
+
+MCP 方式：
+```
+You: "分析过去 14 天 Auto Campaign 的搜索词报告。
+找出满足以下条件的搜索词：
+- 转化率 > 10%
+- 至少 3 次转化
+- 当前不在任何 Manual Campaign 中
+
+对于每个符合条件的词：
+1. 添加到 Manual Exact Match Campaign
+2. 在原 Auto Campaign 中添加为否定精确匹配
+3. 设置初始出价为该词在 Auto Campaign 中的平均 CPC 的 120%"
+
+Claude: [调用 get_search_terms → 分析 → create_keyword → create_negative]
+→ "已处理 12 个高转化搜索词，添加到 Manual Campaign，并在 Auto 中否定。"
+```
+
+**策略 2：浪费性支出自动清理**
+
+```
+You: "找出过去 30 天满足以下条件的关键词：
+- 花费 > $20
+- 0 转化
+- 或 ACOS > 100%
+
+列出这些词，并建议：暂停、降低出价 50%、或添加为否定词。"
+
+Claude: [分析数据] → 返回分类建议
+You: "执行所有建议"
+Claude: [批量执行] → "已暂停 8 个词，降低 15 个词的出价，添加 23 个否定词。预计每月节省 $340。"
+```
+
+**策略 3：竞品关键词发现**
+
+```
+You: "分析竞品 ASIN B0XXXXXXXX 的广告关键词。
+对比我的 Campaign 中已有的关键词。
+找出竞品在投但我没有覆盖的关键词。
+按预估搜索量排序。"
+
+Claude: [调用多个工具] → 返回关键词差距列表
+```
+
+**策略 4：日预算智能分配**
+
+```
+You: "分析所有 Campaign 的日预算消耗情况。
+哪些 Campaign 在下午 3 点前就花完了预算？（错过了晚间高转化时段）
+哪些 Campaign 预算利用率 < 50%？（预算浪费）
+建议重新分配预算。"
+
+Claude: [分析] → "Campaign A 每天 2PM 预算耗尽，建议增加 30%。
+Campaign B 利用率仅 35%，建议减少 20% 并转移到 Campaign A。"
+```
+
+**策略 5：周度自动化报告**
+
+```
+You: "生成本周广告优化报告，包含：
+1. 总花费/销售/ACOS/ROAS 及 vs 上周变化
+2. Top 5 表现最好的关键词
+3. Top 5 浪费最多的关键词
+4. 本周执行的优化操作汇总
+5. 下周建议的优化行动
+格式：Markdown，可以直接发给团队"
+
+Claude: [汇总所有数据] → 生成完整报告
+```
+
+> **真实数据**：PPC 管理平台的自动化可以每周节省 10+ 小时的手动工作（[Maxmerce](https://www.maxmerce.com/blog/how-to-improve-amazon-ppc-performance-campaign-opt/)）。Amazon PPC ACOS 优化可以在保持或增加销售的同时降低广告成本 30-50%（[Maxmerce](https://www.maxmerce.com/blog/amazon-ppc-acos-optimization-reduce-costs-boost-ro/)）。
+
+Content rephrased for compliance with licensing restrictions.
 
 ### 3.3 实战：用 Claude 对话管理 Amazon 广告
 
@@ -164,14 +260,30 @@ Content rephrased for compliance with licensing restrictions.
 
 ## 4. Shopify MCP 集成
 
-### 4.1 Shopify MCP 架构
+### 4.1 Shopify MCP 生态全景
 
-Shopify 的 MCP 生态包含两个官方 Server（[Shopify Dev](https://shopify.dev/docs/apps/build/storefront-mcp)）：
+Shopify 的 MCP 生态在 2026 年已经非常成熟，包含官方和社区两个层面：
 
-| Server | 用途 | 适合 |
+**官方 MCP Server**（[Shopify Dev](https://shopify.dev/docs/apps/build/storefront-mcp)）：
+
+| Server | 用途 | 能力 |
 |--------|------|------|
-| Storefront MCP | 产品、购物车、客户、订单的实时访问 | 运营自动化 |
-| Dev MCP | 搜索文档、API Schema、构建 Functions | 开发者 |
+| Storefront MCP | 面向买家的购物体验 | 产品浏览、购物车、结账、客户信息 |
+| Dev MCP | 面向开发者 | 搜索文档、API Schema、构建 Functions |
+
+**社区 MCP Server**：
+
+| Server | 作者 | 功能 | 来源 |
+|--------|------|------|------|
+| shopify-mcp | GeLi2001 | 产品/客户/订单管理（GraphQL） | [GitHub](https://github.com/GeLi2001/shopify-mcp) |
+| @cloud9-labs/mcp-shopify | Cloud9 Labs | 产品/订单/客户/库存/集合管理 | [LobeHub](https://lobehub.com/mcp/cloud9-labs-mcp-shopify) |
+| shopify-mcp-server | Ajackus | Claude Desktop 集成 | [LobeHub](https://lobehub.com/mcp/ajackus-shopify-mcp-server) |
+| shopify-storefront-mcp | QuentinCody | Storefront API 非官方实现 | [Hexmos](https://hexmos.com/freedevtools/mcp/other-tools-and-integrations/QuentinCody--shopify-storefront-mcp-server/) |
+
+Content rephrased for compliance with licensing restrictions.
+
+> **真实案例：Shopify MCP 成为 Agentic Commerce 的基础设施**
+> Shopify 的 MCP 生态被描述为"Agentic Commerce 的技术连接组织"——它允许 LLM（如 ChatGPT、Perplexity 或自定义 Agent）以机器和平台都能理解的语言"询问"你的店铺关于产品、库存和客户偏好的问题（[WeArePresta](https://wearepresta.com/shopify-mcp-server-the-standardized-interface-for-agentic-commerce-2026/)）。Shopify 官方 Storefront MCP Server 帮助客户通过 AI 代理浏览和购买商品（[Shopify Dev](https://www.shopify.dev/docs/apps/build/storefront-mcp/servers/storefront)）。
 
 Content rephrased for compliance with licensing restrictions.
 
@@ -464,14 +576,182 @@ app = workflow.compile()
 | Token 轮换 | 定期更换 API Token | 每 90 天轮换 |
 | 环境隔离 | 测试环境和生产环境分离 | 不同的 MCP 配置文件 |
 
-### 7.2 常见风险
+### 7.2 实现审计日志
 
-| 风险 | 说明 | 防范 |
-|------|------|------|
-| AI 误操作 | AI 错误理解指令，执行了错误操作 | 写操作必须人工确认 |
-| Token 泄露 | API Token 被暴露 | 使用环境变量，不硬编码 |
-| 过度授权 | MCP Server 权限过大 | 最小权限原则 |
-| 数据泄露 | 敏感数据通过 AI 模型传输 | 使用本地模型处理敏感数据 |
+```python
+import logging
+from datetime import datetime
+from functools import wraps
+
+# 配置审计日志
+audit_logger = logging.getLogger("mcp_audit")
+audit_logger.setLevel(logging.INFO)
+handler = logging.FileHandler("mcp_audit.log")
+handler.setFormatter(logging.Formatter(
+    "%(asctime)s | %(levelname)s | %(message)s"
+))
+audit_logger.addHandler(handler)
+
+def audit_mcp_call(func):
+    """MCP 调用审计装饰器"""
+    @wraps(func)
+    async def wrapper(name: str, arguments: dict, *args, **kwargs):
+        # 记录调用
+        audit_logger.info(f"CALL | tool={name} | args={arguments}")
+        
+        try:
+            result = await func(name, arguments, *args, **kwargs)
+            audit_logger.info(f"SUCCESS | tool={name} | result_size={len(str(result))}")
+            return result
+        except Exception as e:
+            audit_logger.error(f"ERROR | tool={name} | error={str(e)}")
+            raise
+    
+    return wrapper
+
+# 使用
+@audit_mcp_call
+async def call_tool(name: str, arguments: dict):
+    # ... MCP 调用逻辑
+    pass
+```
+
+### 7.3 人工确认机制
+
+```python
+class HumanInTheLoop:
+    """写操作的人工确认机制"""
+    
+    WRITE_OPERATIONS = {
+        "update_bid", "create_campaign", "create_negative",
+        "update_campaign", "delete_keyword",
+        "create_product", "update_order", "update_inventory"
+    }
+    
+    @staticmethod
+    async def confirm(tool_name: str, arguments: dict) -> bool:
+        """检查是否需要人工确认"""
+        if tool_name not in HumanInTheLoop.WRITE_OPERATIONS:
+            return True  # 读操作自动通过
+        
+        print(f"\n⚠️  写操作确认请求:")
+        print(f"   工具: {tool_name}")
+        print(f"   参数: {arguments}")
+        
+        response = input("   确认执行？(y/n): ").strip().lower()
+        
+        if response == 'y':
+            audit_logger.info(f"CONFIRMED | tool={tool_name}")
+            return True
+        else:
+            audit_logger.info(f"REJECTED | tool={tool_name}")
+            return False
+```
+
+### 7.4 常见风险与防范
+
+| 风险 | 说明 | 防范 | 严重度 |
+|------|------|------|--------|
+| AI 误操作 | AI 错误理解指令，执行了错误操作 | 写操作必须人工确认 | 🔴 高 |
+| Token 泄露 | API Token 被暴露在代码或日志中 | 使用环境变量，日志脱敏 | 🔴 高 |
+| 过度授权 | MCP Server 权限过大 | 最小权限原则，定期审查 | 🟡 中 |
+| 数据泄露 | 敏感数据通过 AI 模型传输 | 使用本地模型处理敏感数据 | 🟡 中 |
+| 速率限制 | API 调用超过限制 | 实现速率限制和重试逻辑 | 🟡 中 |
+| 成本失控 | AI 自动执行导致广告预算超支 | 设置预算上限和告警 | 🔴 高 |
+
+```python
+# 预算安全阀示例
+class BudgetSafetyValve:
+    """防止 AI 自动操作导致预算超支"""
+    
+    def __init__(self, max_daily_spend_change: float = 100.0,
+                 max_single_bid_change: float = 2.0):
+        self.max_daily_spend_change = max_daily_spend_change
+        self.max_single_bid_change = max_single_bid_change
+        self.daily_changes = 0.0
+    
+    def check_bid_change(self, current_bid: float, new_bid: float) -> bool:
+        """检查出价变更是否在安全范围内"""
+        change = abs(new_bid - current_bid)
+        
+        if change > self.max_single_bid_change:
+            audit_logger.warning(
+                f"BID_BLOCKED | change=${change:.2f} > max=${self.max_single_bid_change}"
+            )
+            return False
+        
+        self.daily_changes += change
+        if self.daily_changes > self.max_daily_spend_change:
+            audit_logger.warning(
+                f"DAILY_LIMIT | total_changes=${self.daily_changes:.2f}"
+            )
+            return False
+        
+        return True
+```
+
+---
+
+## 8. Meta Ads MCP 与多平台扩展
+
+### 8.1 Meta Ads MCP
+
+> **真实数据**：已有生产级 MCP Server 每月处理超过 $4500 万的广告支出，覆盖 10,000+ 企业。Google 也开源了自己的 MCP 实现（[HyperFX](https://www.hyperfx.ai/blog/meta-ads-mcp-guide-ai-advertising-agents)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+| 平台 MCP | 状态 | 核心能力 |
+|----------|------|---------|
+| Amazon Ads MCP | 官方开放测试 | SP/SB/SD Campaign 管理 |
+| Meta Ads MCP | 第三方成熟 | Campaign/AdSet/Ad 管理、受众、报告 |
+| Google Ads MCP | 第三方/官方 | Campaign/关键词/报告 |
+| TikTok Ads MCP | 社区开发中 | Campaign 管理 |
+| Shopify MCP | 官方支持 | 产品/订单/客户/库存 |
+
+### 8.2 多平台 MCP 统一管理
+
+```python
+# 概念代码：多平台广告统一管理
+class MultiPlatformAdManager:
+    """通过 MCP 统一管理多平台广告"""
+    
+    def __init__(self):
+        self.platforms = {
+            "amazon": AmazonAdsMCP(),
+            "meta": MetaAdsMCP(),
+            "google": GoogleAdsMCP()
+        }
+    
+    async def get_cross_platform_report(self, days: int = 7) -> dict:
+        """跨平台广告报告"""
+        reports = {}
+        for name, mcp in self.platforms.items():
+            reports[name] = await mcp.get_performance(days=days)
+        
+        # 统一格式
+        unified = {
+            "total_spend": sum(r["spend"] for r in reports.values()),
+            "total_revenue": sum(r["revenue"] for r in reports.values()),
+            "by_platform": reports,
+            "overall_roas": sum(r["revenue"] for r in reports.values()) / 
+                           sum(r["spend"] for r in reports.values())
+        }
+        return unified
+    
+    async def rebalance_budget(self, total_budget: float):
+        """基于 ROAS 自动重新分配跨平台预算"""
+        report = await self.get_cross_platform_report()
+        
+        # 按 ROAS 加权分配
+        total_roas = sum(
+            r["revenue"] / r["spend"] for r in report["by_platform"].values()
+        )
+        
+        for name, r in report["by_platform"].items():
+            platform_roas = r["revenue"] / r["spend"]
+            new_budget = total_budget * (platform_roas / total_roas)
+            await self.platforms[name].update_daily_budget(new_budget)
+```
 
 ---
 

@@ -228,7 +228,76 @@ def render_advertising_tab(df_ads: pd.DataFrame):
 
 ## 5. 多平台数据整合
 
-### 5.1 统一数据模型
+> **真实案例：AWS 电商流量异常检测架构**
+> AWS 官方博客展示了如何自动化电商流量模式的异常检测。早期发现网站页面访问和订单完成等指标的微小异常，帮助组织采取纠正措施，减少对业务 KPI 的负面影响（[AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/automating-anomaly-detection-in-ecommerce-traffic-patterns/)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+> **真实案例：Streamlit BI Dashboard 整合 GA4 + 电商数据**
+> Squadbase 展示了一个综合性的 Streamlit BI Dashboard，整合了 Google Analytics 4（GA4）分析和电商智能两个关键业务领域，提供网站流量、用户行为和转化模式的深度分析（[Squadbase](https://www.squadbase.dev/blog/showcase-streamlit-bi-dashboard-with-google-analytics-and-e-commerce)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+> **真实案例：Amazon SP-API Python 数据获取**
+> Andrew Kushnerov 的系列教程展示了如何用 Python 从 Amazon SP-API 获取订单数据和库存/价格数据。关键洞察：订单在创建后会持续更新（状态变化、金额变化），要构建高质量分析需要追踪订单的完整生命周期（[Medium - Orders](https://andrewkushnerov.medium.com/amazon-sp-api-get-orders-with-python-7b7e913d87ea)，[Medium - Inventory](https://andrewkushnerov.medium.com/amazon-sp-api-get-inventory-and-prices-with-python-3226b980bd79)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+### 5.1 Amazon SP-API 数据获取
+
+```python
+# Amazon SP-API 订单数据获取示例
+from sp_api.api import Orders, Reports
+from sp_api.base import Marketplaces
+from datetime import datetime, timedelta
+
+def get_amazon_orders(days_back: int = 30) -> pd.DataFrame:
+    """从 Amazon SP-API 获取订单数据"""
+    orders_api = Orders(marketplace=Marketplaces.US)
+    
+    created_after = (datetime.now() - timedelta(days=days_back)).isoformat()
+    
+    all_orders = []
+    response = orders_api.get_orders(
+        CreatedAfter=created_after,
+        OrderStatuses=["Shipped", "Unshipped"]
+    )
+    
+    all_orders.extend(response.payload.get("Orders", []))
+    
+    # 处理分页
+    while response.payload.get("NextToken"):
+        response = orders_api.get_orders(
+            CreatedAfter=created_after,
+            NextToken=response.payload["NextToken"]
+        )
+        all_orders.extend(response.payload.get("Orders", []))
+    
+    # 转换为 DataFrame
+    df = pd.DataFrame(all_orders)
+    df["OrderDate"] = pd.to_datetime(df["PurchaseDate"])
+    df["Revenue"] = df["OrderTotal"].apply(
+        lambda x: float(x["Amount"]) if isinstance(x, dict) else 0
+    )
+    
+    return df
+
+def get_amazon_inventory() -> pd.DataFrame:
+    """获取 FBA 库存数据"""
+    reports_api = Reports(marketplace=Marketplaces.US)
+    
+    # 请求 FBA 库存报告
+    report = reports_api.create_report(
+        reportType="GET_FBA_MYI_UNSUPPRESSED_INVENTORY_DATA"
+    )
+    
+    # 等待报告生成并下载
+    # ... (轮询 report status)
+    
+    return pd.read_csv(report_file, sep="\t")
+```
+
+### 5.2 统一数据模型
 
 ```python
 # 统一的跨平台销售数据模型
@@ -273,7 +342,28 @@ def merge_platforms(amazon_df, shopify_df, walmart_df=None):
 
 ## 6. AI 增强 Dashboard
 
-### 6.1 异常检测
+### 6.1 电商核心 KPI 体系
+
+根据行业最佳实践（[ThoughtSpot](https://www.thoughtspot.com/data-trends/ecommerce-kpis-metrics)，[Feedcast](https://feedcast.ai/en/blog/ultimate-guide-to-e-commerce-kpi-dashboards)），电商 Dashboard 应该追踪以下 KPI：
+
+| 类别 | KPI | 公式 | 健康范围 | 异常阈值 |
+|------|-----|------|---------|---------|
+| 销售 | 日收入 | 总销售额 | 因品类而异 | ±30% vs 7 日均值 |
+| 销售 | 转化率 | 订单/会话 | 8-15% (Amazon) | <5% 或 >25% |
+| 销售 | 客单价 | 收入/订单 | 因品类而异 | ±20% vs 均值 |
+| 广告 | ACOS | 广告花费/广告销售 | 15-25% | >40% |
+| 广告 | TACOS | 广告花费/总销售 | 8-15% | >20% |
+| 广告 | ROAS | 广告销售/广告花费 | 3-5x | <2x |
+| 库存 | 可售天数 | 库存/日均销量 | 30-60 天 | <14 天或 >90 天 |
+| 库存 | 库存周转率 | COGS/平均库存 | 6-12 次/年 | <4 次 |
+| 利润 | 毛利率 | (收入-COGS)/收入 | 50-70% | <40% |
+| 利润 | 净利率 | 净利润/收入 | 15-30% | <10% |
+| 客户 | 退货率 | 退货/订单 | 5-15% | >20% |
+| 客户 | Review 评分 | 平均星级 | 4.0-4.5 | <3.8 |
+
+Content rephrased for compliance with licensing restrictions.
+
+### 6.2 异常检测（多种方法）
 
 ```python
 def detect_anomalies(df: pd.DataFrame, metric: str, threshold: float = 2.0):
@@ -294,7 +384,191 @@ if len(anomalies) > 0:
     st.dataframe(anomalies[["date", "revenue", "direction"]])
 ```
 
-### 6.2 AI 自动洞察
+### 6.2 异常检测（多种方法）
+
+```python
+import numpy as np
+
+# 方法 1：Z-Score 异常检测（简单有效）
+def detect_zscore_anomalies(df: pd.DataFrame, metric: str, 
+                             window: int = 7, threshold: float = 2.0):
+    """基于滚动 Z-Score 的异常检测"""
+    mean = df[metric].rolling(window=window).mean()
+    std = df[metric].rolling(window=window).std()
+    z_score = (df[metric] - mean) / std
+    
+    anomalies = df[abs(z_score) > threshold].copy()
+    anomalies["z_score"] = z_score[abs(z_score) > threshold]
+    anomalies["direction"] = anomalies["z_score"].apply(
+        lambda x: "📈 异常高" if x > 0 else "📉 异常低"
+    )
+    return anomalies
+
+# 方法 2：IQR 异常检测（对非正态分布更稳健）
+def detect_iqr_anomalies(df: pd.DataFrame, metric: str, multiplier: float = 1.5):
+    """基于四分位距的异常检测"""
+    Q1 = df[metric].quantile(0.25)
+    Q3 = df[metric].quantile(0.75)
+    IQR = Q3 - Q1
+    
+    lower = Q1 - multiplier * IQR
+    upper = Q3 + multiplier * IQR
+    
+    anomalies = df[(df[metric] < lower) | (df[metric] > upper)].copy()
+    anomalies["direction"] = anomalies[metric].apply(
+        lambda x: "📈 异常高" if x > upper else "📉 异常低"
+    )
+    return anomalies
+
+# 方法 3：同比/环比异常检测（电商最实用）
+def detect_period_anomalies(df: pd.DataFrame, metric: str, 
+                             threshold_pct: float = 0.3):
+    """基于同比/环比变化的异常检测"""
+    df = df.copy()
+    df['wow_change'] = df[metric].pct_change(periods=7)  # 周环比
+    df['mom_change'] = df[metric].pct_change(periods=30)  # 月环比
+    
+    anomalies = df[
+        (abs(df['wow_change']) > threshold_pct) | 
+        (abs(df['mom_change']) > threshold_pct)
+    ].copy()
+    
+    return anomalies
+
+# 在 Dashboard 中整合
+def render_anomaly_alerts(df: pd.DataFrame):
+    """在 Dashboard 中显示异常告警"""
+    metrics_to_check = {
+        "revenue": {"threshold": 2.0, "label": "收入"},
+        "orders": {"threshold": 2.0, "label": "订单"},
+        "acos": {"threshold": 1.5, "label": "ACOS"},
+        "conversion_rate": {"threshold": 2.0, "label": "转化率"}
+    }
+    
+    all_anomalies = []
+    for metric, config in metrics_to_check.items():
+        if metric in df.columns:
+            anomalies = detect_zscore_anomalies(df, metric, threshold=config["threshold"])
+            for _, row in anomalies.iterrows():
+                all_anomalies.append({
+                    "日期": row["date"],
+                    "指标": config["label"],
+                    "方向": row["direction"],
+                    "值": row[metric],
+                    "Z-Score": f"{row['z_score']:.1f}"
+                })
+    
+    if all_anomalies:
+        st.warning(f"⚠️ 发现 {len(all_anomalies)} 个异常数据点")
+        st.dataframe(pd.DataFrame(all_anomalies), use_container_width=True)
+    else:
+        st.success("✅ 所有指标正常")
+```
+
+### 6.3 利润分析模块
+
+```python
+def render_profitability_tab(df: pd.DataFrame):
+    """利润分析 Tab"""
+    st.header("💵 利润分析")
+    
+    # SKU 级别利润计算
+    df['gross_profit'] = df['revenue'] - df['cogs'] - df['fba_fees'] - df['ad_spend']
+    df['gross_margin'] = df['gross_profit'] / df['revenue'] * 100
+    df['net_profit'] = df['gross_profit'] - df['other_costs']
+    df['net_margin'] = df['net_profit'] / df['revenue'] * 100
+    
+    # 利润瀑布图
+    st.subheader("利润瀑布图（单位经济模型）")
+    avg_price = df['revenue'].sum() / df['units'].sum()
+    avg_cogs = df['cogs'].sum() / df['units'].sum()
+    avg_fba = df['fba_fees'].sum() / df['units'].sum()
+    avg_ad = df['ad_spend'].sum() / df['units'].sum()
+    avg_other = df['other_costs'].sum() / df['units'].sum()
+    avg_profit = avg_price - avg_cogs - avg_fba - avg_ad - avg_other
+    
+    waterfall_data = pd.DataFrame({
+        'item': ['售价', 'COGS', 'FBA 费用', '广告费', '其他成本', '净利润'],
+        'amount': [avg_price, -avg_cogs, -avg_fba, -avg_ad, -avg_other, avg_profit]
+    })
+    
+    fig = px.bar(waterfall_data, x='item', y='amount', 
+                 color='amount', color_continuous_scale=['red', 'green'],
+                 title=f"单件利润分解（平均净利润: ${avg_profit:.2f}）")
+    st.plotly_chart(fig, use_container_width=True)
+    
+    # SKU 利润排名
+    st.subheader("SKU 利润排名")
+    sku_profit = df.groupby('sku').agg({
+        'revenue': 'sum',
+        'gross_profit': 'sum',
+        'net_profit': 'sum',
+        'units': 'sum'
+    }).reset_index()
+    sku_profit['margin'] = sku_profit['net_profit'] / sku_profit['revenue'] * 100
+    sku_profit = sku_profit.sort_values('net_profit', ascending=False)
+    
+    # 标记亏损 SKU
+    st.dataframe(
+        sku_profit.style.applymap(
+            lambda x: 'color: red' if isinstance(x, (int, float)) and x < 0 else '',
+            subset=['net_profit', 'margin']
+        ),
+        use_container_width=True
+    )
+```
+
+### 6.4 库存健康度模块
+
+```python
+def render_inventory_tab(df_inv: pd.DataFrame):
+    """库存健康度 Tab"""
+    st.header("📦 库存健康度")
+    
+    # 计算可售天数
+    df_inv['days_of_supply'] = df_inv['quantity'] / df_inv['daily_sales'].replace(0, 0.1)
+    
+    # 库存状态分类
+    def classify_inventory(days):
+        if days < 7:
+            return "🔴 紧急补货"
+        elif days < 14:
+            return "🟠 即将缺货"
+        elif days < 30:
+            return "🟡 需要关注"
+        elif days < 90:
+            return "🟢 健康"
+        else:
+            return "🔵 库存过多"
+    
+    df_inv['status'] = df_inv['days_of_supply'].apply(classify_inventory)
+    
+    # 状态分布
+    col1, col2 = st.columns(2)
+    with col1:
+        status_counts = df_inv['status'].value_counts()
+        fig = px.pie(values=status_counts.values, names=status_counts.index,
+                     title="库存状态分布")
+        st.plotly_chart(fig, use_container_width=True)
+    
+    with col2:
+        # 紧急补货列表
+        urgent = df_inv[df_inv['days_of_supply'] < 14].sort_values('days_of_supply')
+        st.subheader(f"⚠️ 需要补货的 SKU ({len(urgent)} 个)")
+        st.dataframe(urgent[['sku', 'product_name', 'quantity', 
+                            'daily_sales', 'days_of_supply', 'status']],
+                     use_container_width=True)
+    
+    # 长期仓储费预警
+    st.subheader("💸 长期仓储费预警")
+    long_storage = df_inv[df_inv['days_in_warehouse'] > 180]
+    if len(long_storage) > 0:
+        estimated_fee = long_storage['quantity'].sum() * 6.90  # $6.90/cubic foot/month
+        st.warning(f"⚠️ {len(long_storage)} 个 SKU 在仓超过 180 天，预估月仓储费: ${estimated_fee:,.0f}")
+        st.dataframe(long_storage[['sku', 'quantity', 'days_in_warehouse']])
+```
+
+### 6.5 AI 自动洞察
 
 ```python
 def generate_ai_insights(data_summary: dict) -> str:

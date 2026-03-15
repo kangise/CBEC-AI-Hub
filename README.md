@@ -249,6 +249,8 @@ flowchart LR
 | [B5. 本地模型部署](paths/b-developers/b5-local-model-deploy.md) | Ollama、LoRA 微调 | 本地运行的电商 LLM（选修） |
 | [B6. MCP 集成与 Agentic 工作流](paths/b-developers/b6-mcp-agentic-workflow.md) 🆕 | MCP、Amazon Ads、Shopify | 用 Claude 对话管理广告和产品 |
 | [B7. Review 智能分析系统](paths/b-developers/b7-review-nlp-system.md) 🆕 | BERTopic、情感分析 | Review 主题建模+洞察生成 |
+| [B8. 电商 Dashboard](paths/b-developers/b8-ecommerce-dashboard.md) 🆕 | Streamlit、Plotly | 多平台运营 Dashboard + AI 异常检测 |
+| [B9. AI 图片/视频生成](paths/b-developers/b9-ai-image-pipeline.md) 🆕 | ComfyUI、DALL-E、Flux | 产品图批量生成 Pipeline |
 
 > 完成 B1-B4 中至少 3 个模块，你已经具备构建 AI 电商工具的能力。B5-B7 为进阶选修。
 

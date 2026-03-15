@@ -32,6 +32,8 @@ flowchart LR
 | [B5. 本地模型部署与微调](b5-local-model-deploy.md) | 模型部署 | ⭐⭐⭐ 高级 | 4-6小时 | 本地运行 LLM，保护数据隐私 |
 | [B6. MCP 集成与 Agentic 工作流](b6-mcp-agentic-workflow.md) 🆕 | MCP/Agentic | ⭐⭐⭐ 高级 | 2-3周 | 用 MCP 连接 Amazon Ads/Shopify，对话式运营 |
 | [B7. Review 智能分析系统](b7-review-nlp-system.md) 🆕 | NLP/主题建模 | ⭐⭐ 中级 | 2周 | BERTopic 主题建模 + 情感分析 + LLM 洞察 |
+| [B8. 电商数据可视化 Dashboard](b8-ecommerce-dashboard.md) 🆕 | Streamlit/Plotly | ⭐⭐ 中级 | 1-2周 | 多平台运营 Dashboard + AI 异常检测 |
+| [B9. AI 产品图片/视频生成](b9-ai-image-pipeline.md) 🆕 | ComfyUI/DALL-E/Flux | ⭐⭐⭐ 高级 | 2-3周 | 产品图批量生成 Pipeline + 视频生成 |
 
 ---
 
@@ -45,6 +47,8 @@ flowchart LR
 [ ] B5. 部署：用 Ollama 在本地运行一个 LLM 并完成一个电商任务（选修）
 [ ] B6. MCP：配置 Amazon Ads MCP 并用 Claude 对话管理广告
 [ ] B7. NLP：用 BERTopic 对 1000+ 条 Review 做主题建模
+[ ] B8. Dashboard：构建包含 4+ 模块的 Streamlit 运营 Dashboard
+[ ] B9. 图片：为一个产品生成完整 AI 图片集并通过 Amazon 合规检查
 ```
 
 **Path B 总完成标志：** 完成 B1-B4 中至少 3 个模块，你已经具备构建 AI 电商工具的能力。B5 为进阶选修。

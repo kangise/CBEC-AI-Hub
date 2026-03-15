@@ -247,8 +247,10 @@ flowchart LR
 | [B3. RAG 知识库](paths/b-developers/b3-rag-knowledge-base.md) | LlamaIndex、Chroma | 产品 FAQ AI 问答系统 |
 | [B4. AI Agent 与自动化](paths/b-developers/b4-agent-workflow.md) | LangGraph、CrewAI | 自动化运营监控 Agent |
 | [B5. 本地模型部署](paths/b-developers/b5-local-model-deploy.md) | Ollama、LoRA 微调 | 本地运行的电商 LLM（选修） |
+| [B6. MCP 集成与 Agentic 工作流](paths/b-developers/b6-mcp-agentic-workflow.md) 🆕 | MCP、Amazon Ads、Shopify | 用 Claude 对话管理广告和产品 |
+| [B7. Review 智能分析系统](paths/b-developers/b7-review-nlp-system.md) 🆕 | BERTopic、情感分析 | Review 主题建模+洞察生成 |
 
-> 完成 B1-B4 中至少 3 个模块，你已经具备构建 AI 电商工具的能力。B5 为进阶选修。
+> 完成 B1-B4 中至少 3 个模块，你已经具备构建 AI 电商工具的能力。B5-B7 为进阶选修。
 
 [回到目录](#-目录--table-of-contents)
 

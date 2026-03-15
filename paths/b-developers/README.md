@@ -30,6 +30,8 @@ flowchart LR
 | [B3. RAG 知识库系统](b3-rag-knowledge-base.md) | 知识库 | ⭐⭐ 中级 | 6-8小时 | 基于内部文档的 AI 问答系统 |
 | [B4. AI Agent 与工作流自动化](b4-agent-workflow.md) | Agent | ⭐⭐⭐ 高级 | 8-10小时 | 自动执行多步骤运营任务 |
 | [B5. 本地模型部署与微调](b5-local-model-deploy.md) | 模型部署 | ⭐⭐⭐ 高级 | 4-6小时 | 本地运行 LLM，保护数据隐私 |
+| [B6. MCP 集成与 Agentic 工作流](b6-mcp-agentic-workflow.md) 🆕 | MCP/Agentic | ⭐⭐⭐ 高级 | 2-3周 | 用 MCP 连接 Amazon Ads/Shopify，对话式运营 |
+| [B7. Review 智能分析系统](b7-review-nlp-system.md) 🆕 | NLP/主题建模 | ⭐⭐ 中级 | 2周 | BERTopic 主题建模 + 情感分析 + LLM 洞察 |
 
 ---
 
@@ -41,6 +43,8 @@ flowchart LR
 [ ] B3. RAG：搭建一个可以回答产品相关问题的 RAG 系统
 [ ] B4. Agent：部署一个自动化运营监控 Agent
 [ ] B5. 部署：用 Ollama 在本地运行一个 LLM 并完成一个电商任务（选修）
+[ ] B6. MCP：配置 Amazon Ads MCP 并用 Claude 对话管理广告
+[ ] B7. NLP：用 BERTopic 对 1000+ 条 Review 做主题建模
 ```
 
 **Path B 总完成标志：** 完成 B1-B4 中至少 3 个模块，你已经具备构建 AI 电商工具的能力。B5 为进阶选修。

@@ -89,8 +89,41 @@
 | PatSnap | AI 专利分析平台 | 付费 |
 | Lens.org | 开放专利数据库 | 免费 |
 | ChatGPT/Claude | 专利文本解读和风险分析 | $20/月 |
+| TroHub | AI IP 风险检测平台（专利/商标/版权/TRO），集成 Amazon/Shopify/eBay 等平台（[TroHub](https://trohub.com/)） | 付费 |
+| Relaw.ai | AI 专利起草、商标注册、IP 组合管理（[DevOpsSchool](https://www.devopsschool.com/blog/top-10-ai-intellectual-property-tools-in-2025-features-pros-cons-comparison/)） | 付费 |
+| OmniPatent AI | AI 专利研究和自动化，先行技术搜索 | 付费 |
+| MorpheusMark | AI 品牌保护，监控 200+ 平台（[MorpheusMark](https://morpheusmark.com/)） | 付费 |
+
+Content rephrased for compliance with licensing restrictions.
 
 > **注意**：AI 可以辅助专利检索和初步分析，但不能替代专利律师的专业意见。涉及高风险产品，务必咨询专业律师。
+
+### 2.3 TRO（临时限制令）风险防范
+
+TRO 是跨境卖家面临的最严重 IP 风险之一。美国法院可以在不通知卖家的情况下冻结账户资金：
+
+| TRO 阶段 | 说明 | 应对 |
+|----------|------|------|
+| 预防 | 选品阶段排查专利/商标风险 | AI 工具扫描（TroHub 等） |
+| 发现 | 收到 TRO 通知 | 立即联系 IP 律师 |
+| 应对 | 30 天内回应法院 | 提供不侵权证据 |
+| 解冻 | 证明不侵权后解冻资金 | 律师协助 |
+
+```
+你是一个跨境电商 TRO 风险评估专家。
+
+我计划销售的产品：
+- 品类：[X]
+- 核心功能/设计：[描述]
+- 目标平台：[Amazon US/eBay/Walmart]
+
+请评估 TRO 风险：
+1. 这个品类历史上是否有频繁的 TRO 案件？
+2. 需要排查的高风险专利/商标
+3. 如何在选品阶段降低 TRO 风险
+4. 推荐的 IP 律师类型（专利律师 vs 商标律师 vs 综合 IP 律师）
+5. 预防性措施清单
+```
 
 ---
 
@@ -171,13 +204,72 @@
 
 ## 5. Amazon Brand Protection 工具
 
-| 工具 | 功能 | 要求 |
-|------|------|------|
-| Report a Violation | 举报侵权 Listing | Brand Registry |
-| Transparency | 产品防伪码 | Brand Registry + 付费 |
-| Project Zero | AI 自动移除仿冒 | Brand Registry + 邀请制 |
-| IP Accelerator | 加速商标注册 | 通过 Amazon 合作律所 |
-| Counterfeit Crimes Unit | 刑事打击假货 | 严重侵权案件 |
+> **真实案例：Project Zero 已有 10,000+ 品牌加入**
+> Amazon Project Zero 已有超过 10,000 个品牌加入，包括 Arduino、BMW、LifeProof、OtterBox、Salvatore Ferragamo 和 Veet 等（[MediaDale](http://www.mediadale.com/news/articleView.html?idxno=56862)）。Project Zero 的三大组件——自动保护（每天扫描 50 亿+ Listing）、品牌自助移除工具、产品序列化——共同构成了 Amazon 最强大的品牌保护体系。
+
+Content rephrased for compliance with licensing restrictions.
+
+> **真实案例：Amazon CCU 阻止 70 万+ 假冒账号**
+> Amazon 反假冒犯罪部门（CCU）成立于 2020 年 6 月，2023 年阻止了超过 70 万次不良行为者创建虚假卖家账号的尝试（[Retail TouchPoints](https://www.retailtouchpoints.com/features/how-amazons-anti-counterfeit-unit-keeps-fake-products-off-its-site/141899/)）。2024 年，Amazon 在全球识别、扣押并处置了超过 1500 万件假冒产品。
+
+Content rephrased for compliance with licensing restrictions.
+
+### 5.1 Amazon 品牌保护工具矩阵
+
+Amazon 在 2024 年识别、扣押并处置了全球超过 1500 万件假冒产品（[Amazon Trustworthy Shopping](https://trustworthyshopping.aboutamazon.com/resources)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+| 工具 | 功能 | 要求 | AI 能力 |
+|------|------|------|---------|
+| Report a Violation | 举报侵权 Listing | Brand Registry | 手动举报 |
+| Transparency | 产品防伪码（每件产品唯一码） | Brand Registry + 付费 | 自动验证 |
+| Project Zero | AI 自动移除仿冒（94% 检测率） | Brand Registry + 邀请制 | 神经网络扫描（[BareGold](https://baregold.ca/resources/advanced-ip-protection-strategies-for-amazon-brands-in-2026)） |
+| IP Accelerator | 加速商标注册 | 通过 Amazon 合作律所 | — |
+| Counterfeit Crimes Unit | 刑事打击假货 | 严重侵权案件 | — |
+| Brand Registry AI 数据库 | AI 品牌资产识别 | Brand Registry | 自动匹配 |
+
+Content rephrased for compliance with licensing restrictions.
+
+### 5.2 Amazon 2026 品牌保护新变化
+
+2026 年 3 月起，Amazon 终止产品混仓（Commingling），要求所有产品使用独立条形码（[WindowsNews](https://windowsnews.ai/article/amazon-ends-commingling-in-2026-new-barcode-rules-impact-windows-software-hardware-sellers.398059)）。这对品牌保护有重大影响：
+
+| 变化 | 说明 | 对品牌的影响 |
+|------|------|-------------|
+| 终止混仓 | 不同卖家的同一产品不再混合存储 | 减少假货混入正品的风险 |
+| 独立条形码 | 每个卖家的产品必须有独立标识 | 可追溯性提升 |
+| FNSKU 要求 | 所有 FBA 产品必须贴 FNSKU | 增加操作成本但提升品牌保护 |
+
+Content rephrased for compliance with licensing restrictions.
+
+### 5.3 多平台 IP 保护策略
+
+| 平台 | 品牌保护工具 | AI 能力 | 举报流程 |
+|------|------------|---------|---------|
+| Amazon | Brand Registry + Project Zero | AI 自动检测+移除 | Report a Violation |
+| eBay | VeRO Program | 基础 | VeRO 举报 |
+| Shopify | DMCA 投诉 | 无 | 联系 Shopify Trust & Safety |
+| AliExpress | IP Protection Platform | 基础 | 在线投诉 |
+| Walmart | Brand Portal | 基础 | Brand Portal 举报 |
+| TikTok Shop | IP 保护中心 | 基础 | 在线投诉 |
+
+```
+你是一个多平台 IP 保护专家。
+
+我的品牌在以下平台销售：[列出平台]
+已注册商标：[列出国家和类别]
+发现的侵权情况：[描述]
+
+请制定多平台 IP 保护行动计划：
+
+1. 各平台的举报流程和优先级
+2. 证据收集清单（截图、购买样品、公证）
+3. 是否需要律师介入
+4. 预防性措施（防止再次被侵权）
+5. 跨平台监控方案
+6. 预估时间和成本
+```
 
 ---
 

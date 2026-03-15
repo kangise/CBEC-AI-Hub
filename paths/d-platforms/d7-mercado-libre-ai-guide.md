@@ -183,6 +183,11 @@ Step 3: 物流选择
 
 ### 4.2 Mercado Libre 2025 Q4 关键数据
 
+> **真实案例：Mercado Libre 被称为"拉美的 Amazon"——但远不止于此**
+> 截至 2026 年 2 月，Mercado Libre 已经牢固确立了自己作为拉美不可或缺的数字基础设施的地位。"拉美的 Amazon"这个比喻越来越无法涵盖其生态系统的全部范围——它同时是支付平台（Mercado Pago）、物流网络（Mercado Envios）、信贷服务（Mercado Credito）和广告平台（[Financial Content](https://www.financialcontent.com/article/finterra-2026-2-27-the-latin-american-flywheel-a-2026-deep-dive-research-feature-on-mercadolibre-meli)）。
+
+Content rephrased for compliance with licensing restrictions.
+
 基于 Mercado Libre Q4 2025 财报（[Morningstar](https://www.morningstar.com/news/business-wire/20260224265595/)）：
 
 | 指标 | Q4 2025 数据 | YoY 变化 |
@@ -217,7 +222,109 @@ Content rephrased for compliance with licensing restrictions. Sources: [Mornings
 | 税务复杂 | 各国税制不同，巴西税务尤其复杂 | 使用 Mercado Libre 的税务计算工具 |
 | 假货/侵权 | 平台上假货问题严重 | 注册品牌保护，使用 Mercado Libre 品牌保护计划 |
 
-## 5. 完成标志
+## 5. Mercado Libre Global Selling 深度指南
+
+### 5.1 Global Selling 平台概览
+
+Mercado Libre Global Selling（[global-selling.mercadolibre.com](https://global-selling.mercadolibre.com/landing/about)）提供一站式跨境解决方案：
+
+| 数据 | 数值 |
+|------|------|
+| 覆盖国家 | 18 个 |
+| 买家数量 | 6500 万+ |
+| 卖家数量 | 1200 万+ |
+| 每秒访问 | 538+ |
+| 每秒订单 | 29 |
+| GMV | $25.5B（过去 12 个月平均） |
+
+Content rephrased for compliance with licensing restrictions. Source: [Mercado Libre Global Selling](https://global-selling.mercadolibre.com/landing/about).
+
+### 5.2 Global Selling 支持的市场
+
+通过单一账户可以管理 5 个拉美市场（[Mercado Libre](https://global-selling.mercadolibre.com/landing/how-it-works)）：
+
+| 市场 | 网址 | 货币 | 特点 |
+|------|------|------|------|
+| 墨西哥 | mercadolibre.com.mx | MXN | 第二大市场，增长快 |
+| 巴西 | mercadolivre.com.br | BRL | 最大市场，竞争激烈 |
+| 智利 | mercadolibre.cl | CLP | 中等规模 |
+| 哥伦比亚 | mercadolibre.com.co | COP | 增长快 |
+| 阿根廷 | mercadolibre.com.ar | ARS | 汇率波动大 |
+
+### 5.3 Global Selling 物流方案
+
+Mercado Envios 是 Mercado Libre 的物流解决方案（[Mercado Libre Shipping](https://global-selling.mercadolibre.com/landing/shipping-solutions)）：
+
+```
+Global Selling 物流流程：
+
+卖家备货
+    ↓
+发货到指定承运商（DHL/UPS）
+    ↓ 3 个工作日内交付承运商
+承运商运输到目的国
+    ↓ 标准运输时间
+最后一公里配送到买家
+    ↓
+买家签收
+
+关键要求：
+├── 3 个工作日内将包裹交付给指定承运商
+├── 使用 Mercado Libre 提供的物流标签
+├── 以 USD 收款，买家以当地货币支付
+└── 退货按平台政策处理
+```
+
+Content rephrased for compliance with licensing restrictions. Source: [Mercado Libre Learning Center](https://global-selling.mercadolibre.com/learning-center/news/how-to-ship-your-products-to-latin-america).
+
+### 5.4 拉美市场选品 AI 策略
+
+```
+你是一个拉美电商选品专家。
+
+我的供应链能力：[中国工厂/美国仓库]
+预算：$[X]
+目标市场：[巴西/墨西哥/全拉美]
+
+请帮我分析拉美市场选品机会：
+
+1. 高需求低竞争品类分析
+   - 巴西热门品类（电子、时尚、家居）
+   - 墨西哥热门品类（电子、汽配、家居）
+   - 中国供应链优势品类
+
+2. 定价策略
+   - 考虑关税和物流成本后的定价
+   - 分期付款对定价的影响
+   - 与本地卖家的价格竞争力
+
+3. 季节性分析
+   - 拉美主要购物节日
+   - 南半球季节差异（巴西/阿根廷/智利）
+   - 大促日历（Hot Sale/Buen Fin/Black Friday）
+
+4. 合规要求
+   - 各国进口限制品类
+   - 认证要求（INMETRO-巴西/NOM-墨西哥）
+   - 税务考虑
+
+5. 竞争分析
+   - 中国卖家在拉美的竞争格局
+   - 与 Amazon MX/BR 的差异化
+   - 本地品牌的竞争优势
+```
+
+### 5.5 Mercado Libre 数据分析工具
+
+| 工具 | 用途 | 价格 |
+|------|------|------|
+| Mercado Libre Analytics | 官方数据分析 | 免费（卖家后台） |
+| Nubimetrics | 拉美电商数据分析 | 付费 |
+| GoTrendier | 拉美市场趋势分析 | 付费 |
+| ChatGPT/Claude | 西语/葡语 Listing 生成 | $20/月 |
+| CrystalZoom | Mercado Libre 数据工具 | 付费 |
+
+## 6. 完成标志
 
 - [ ] 完成拉美市场分析和国家选择
 - [ ] 入驻 Mercado Libre（巴西和/或墨西哥）

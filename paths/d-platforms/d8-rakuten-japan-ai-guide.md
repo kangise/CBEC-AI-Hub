@@ -82,6 +82,11 @@ Amazon 禁止卖家直接联系买家，但 Rakuten 鼓励：
 
 ### 2.4 活动机制
 
+> **真实案例：Rakuten × YouTube Shopping 日本首发**
+> 2026 年 2 月 20 日，Google 和 Rakuten 宣布在日本推出 YouTube Shopping 服务。用户在观看 YouTube 视频时可以按下按钮，屏幕上显示产品名称和价格，然后跳转到 Rakuten 电商平台查看详情（[Japan Today](https://japantoday.com/category/tech/google-rakuten-to-provide-new-shopping-service-in-japan-on-youtube)）。这是日本首个与 YouTube Shopping 合作的电商平台，创作者可以通过推广 Rakuten 产品赚取佣金。
+
+Content rephrased for compliance with licensing restrictions.
+
 | 活动 | 频率 | 特点 | 卖家策略 |
 |------|------|------|----------|
 | Super Sale | 每季度 | 全站大促，流量最大 | 提前 4 周准备库存和活动页面 |
@@ -93,19 +98,120 @@ Amazon 禁止卖家直接联系买家，但 Rakuten 鼓励：
 
 > 📎 **相关阅读**: [E2 YouTube AI 运营](../e-social-media/e2-youtube-ai-guide.md) — YouTube 运营方法论参考 E2，达人合作和视频内容策略可直接复用。
 
-2026 年 2 月，Rakuten 与 Google 合作，在日本推出 YouTube Shopping 功能（[IT Business Today](https://itbusinesstoday.com/martech/marketing/youtube-and-rakuten-team-up-to-revolutionize-social-commerce-in-japan/)）：
+2026 年 2 月，Rakuten 与 Google 合作，在日本推出 YouTube Shopping 功能。这是日本首个与 YouTube Shopping 合作的电商平台。
 
-- 用户可以在 YouTube 视频中直接点击购买 Rakuten 商品
-- 创作者可以在视频中标记 Rakuten 产品
-- 这是日本首个与 YouTube Shopping 合作的电商平台
-- 对卖家的影响：YouTube 达人合作成为 Rakuten 的新流量入口
+根据多方报道（[Japan Today](https://japantoday.com/category/tech/google-rakuten-to-provide-new-shopping-service-in-japan-on-youtube)，[Marketech APAC](https://marketech-apac.com/rakuten-ichiba-taps-google-to-roll-out-youtube-shopping-affiliate-programme-in-japan/)，[Krows Digital](https://krows-digital.com/rakuten-youtube-shopping-japan-2026/)）：
+
+| 功能 | 说明 |
+|------|------|
+| 视频内购物 | 用户在 YouTube 视频中点击"View Products"按钮 |
+| 产品信息展示 | 屏幕上显示产品名称和价格 |
+| 无缝跳转 | 用户可以在继续观看视频的同时导航到 Rakuten 产品页面 |
+| 创作者佣金 | YouTube 创作者通过推广 Rakuten 产品赚取佣金 |
+| 联盟计划 | 基于 YouTube Shopping Affiliate Programme |
+
+Content rephrased for compliance with licensing restrictions.
+
+**对卖家的影响**：
+- YouTube 达人合作成为 Rakuten 的新流量入口
+- 需要准备适合视频展示的产品素材
+- 产品页面需要优化以承接 YouTube 流量
+- 与日本 YouTube 创作者的合作变得更有价值
 
 **AI 应用**：
 - AI 生成适合 YouTube 达人的产品介绍脚本（日语）
 - AI 筛选适合合作的日本 YouTube 达人
+- AI 分析 YouTube 流量转化数据
 - 与 [E2 YouTube AI 运营](../e-social-media/e2-youtube-ai-guide.md) 的方法论结合
 
+```
+你是一个 Rakuten × YouTube Shopping 策略专家。
+
+我的 Rakuten 店铺：[名称]
+品类：[X]
+月销：¥[X]
+
+请制定 YouTube Shopping 策略：
+
+1. 适合 YouTube 推广的产品选择
+   - 视觉吸引力强的产品
+   - 需要演示/教程的产品
+   - 价格适中（¥3,000-30,000）
+
+2. 日本 YouTube 达人合作方案
+   - 目标达人类型（レビュー系/生活系/美容系）
+   - 合作模式（商品提供/報酬/アフィリエイト）
+   - 预算分配
+
+3. 产品页面优化（承接 YouTube 流量）
+   - 着陆页设计
+   - 视频观看者专属优惠
+   - 积分倍率设置
+
+4. 效果追踪
+   - YouTube → Rakuten 的转化追踪
+   - 达人 ROI 分析
+   - 与其他流量渠道的对比
+```
+
+### 2.6 Rakuten 初始设置费
+
+根据行业资料（[NextLevel Global](https://nextlevel.global/blog/2025/10/22/japan-ecommerce-marketplace-comparison/)），Rakuten 入驻需要支付初始设置费 ¥60,000，加上月度订阅费 ¥19,500-¥100,000（取决于计划）。
+
 Content rephrased for compliance with licensing restrictions.
+
+| 费用项 | 金额 | 说明 |
+|--------|------|------|
+| 初始设置费 | ¥60,000 | 一次性 |
+| がんばれ！プラン月租 | ¥19,500/月 | 适合新卖家 |
+| スタンダードプラン月租 | ¥50,000/月 | 适合中等规模 |
+| メガショッププラン月租 | ¥100,000/月 | 适合大规模 |
+| 佣金 | 2-7%（按品类和计划） | 月租越高佣金越低 |
+| 系统利用费 | 月销的 0.1% | 额外费用 |
+
+### 2.7 Rakuten vs Amazon JP 选择决策框架
+
+```
+你是一个日本电商平台策略专家。
+
+我的产品：[名称]
+品类：[X]
+品牌定位：[高端/中端/性价比]
+月预算：¥[X]
+是否有日本法人：[是/否]
+
+请帮我决策 Rakuten vs Amazon JP：
+
+1. 品类适配度分析
+   - Rakuten 优势品类：食品、美妆、时尚、家居
+   - Amazon JP 优势品类：电子、书籍、日用品
+   - 我的品类在哪个平台更有优势？
+
+2. 成本对比
+   - Rakuten：月租+佣金+初始设置费
+   - Amazon JP：佣金+FBA 费用
+   - 哪个平台的总成本更低？
+
+3. 运营复杂度
+   - Rakuten：需要自定义店铺页面（HTML/CSS）
+   - Amazon JP：标准化 Listing
+   - 我的团队能力是否匹配？
+
+4. 流量获取
+   - Rakuten：积分生态+邮件营销+活动
+   - Amazon JP：搜索+广告+Prime
+   - 哪种流量获取方式更适合我？
+
+5. 品牌建设
+   - Rakuten：高度自定义，品牌展示空间大
+   - Amazon JP：标准化，品牌展示有限
+   - 品牌建设对我有多重要？
+
+6. 建议
+   - 先入驻哪个平台？
+   - 是否同时入驻两个平台？
+   - 资源分配建议
+```
 
 ## 3. 日语 Listing AI 优化
 
@@ -235,9 +341,7 @@ Rakuten 店铺页面结构建议：
 - [ ] 建立 R-Mail 邮件营销流程
 - [ ] 启动 RPP 广告
 - [ ] 参与首个 Super Sale 活动
-- [ ] 设置 Rakuten Points 策略
-- [ ] 建立 R-Mail 邮件营销流程
-- [ ] 参与首个 Super Sale 活动
+- [ ] 探索 YouTube Shopping × Rakuten 合作机会
 
 ---
 > 🏠 [Hub 首页](../../README.md) · 📋 [Path D 总览](README.md) · 📊 [平台对比](platform-comparison.md)

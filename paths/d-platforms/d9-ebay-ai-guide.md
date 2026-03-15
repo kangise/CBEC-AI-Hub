@@ -27,7 +27,12 @@
 
 ### 2.1 eBay Magical Listing（2026 新功能）
 
-eBay 在 2026 年推出了新一代 AI Listing 工具——Magical Listing（[Value Added Resource](https://www.valueaddedresource.net/ebay-ai-magical-listing-revisited/)）：
+> **真实案例：eBay CEO 建议新卖家创建全新账号体验 AI**
+> eBay 在 2026 年 Q4 财报电话会上，CEO Jamie Iannone 宣布了新一代 Magical Listing。eBay 高管甚至建议新卖家创建全新账号来体验完整的 AI Listing 流程（[eCommerce Bytes](https://www.ecommercebytes.com/C/blog/blog.pl?/comments/2026/3/1773172578.html)）。这不是在旧代码上加 AI，而是从零用 AI 重建 Listing 流程——手机摄像头充当 AI 代理，指导卖家拍摄特定产品的最佳照片，后台 AI 自动生成标题、品类和 Item Specifics（[Value Added Resource](https://www.valueaddedresource.net/ebay-ai-magical-listing-revisited/)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+eBay 在 2026 年推出了新一代 AI Listing 工具——Magical Listing：
 
 - 从图片自动生成完整 Listing（标题+描述+Item Specifics+品类分类）
 - 不是在旧代码上加 AI，而是从零用 AI 重建 Listing 流程
@@ -174,13 +179,143 @@ Content rephrased for compliance with licensing restrictions.
 
 | 工具 | 用途 | 价格 |
 |------|------|------|
-| eBay Magical Listing | AI 自动生成 Listing | 免费（eBay 内置） |
+| eBay Magical Listing | AI 自动生成 Listing（从图片生成标题+描述+Item Specifics） | 免费（eBay 内置） |
+| eBay AI Item Specifics | AI 批量建议 Item Specifics（[Value Added Resource](https://www.valueaddedresource.net/ebay-ai-suggested-item-specifics/)） | 免费（eBay 内置） |
+| eBay Background Enhancement | AI 产品图片背景优化 | 免费（eBay 内置） |
+| eBay AI Description Generator | AI 生成产品描述 | 免费（eBay 内置） |
 | Terapeak | 市场研究和定价 | 免费（eBay 内置） |
 | Spadeberry | AI 批量 Listing 自动化 | 付费 |
 | 3Dsellers | 多渠道管理+AI 描述 | $29/月起 |
 | Frooition | eBay 店铺设计+AI 工具 | 付费 |
 
-## 3. 完成标志
+### 2.7 eBay 2026 拍卖策略复兴
+
+2026 年 eBay 正在重新强化拍卖功能（[Ad-Hoc News](https://www.ad-hoc-news.de/news/ueberblick/ebay-auktion-2026-why-smart-sellers-are-winning-again/68676758)）：
+
+- AI 驱动的优化工具帮助卖家设置最优拍卖参数
+- 加强对虚假 Listing 的执法
+- 算法更新：奖励动态拍卖更多搜索可见度
+- 移动端体验大幅改善（欧洲大部分竞价来自手机）
+- AI 定价建议：基于历史成交数据建议起拍价和 Buy It Now 价格
+
+Content rephrased for compliance with licensing restrictions.
+
+| 拍卖策略 | 适合品类 | AI 辅助 |
+|----------|----------|---------|
+| 1 美元起拍 | 热门收藏品、有大量关注者 | AI 分析历史数据判断是否适合低起拍 |
+| Reserve Price 拍卖 | 高价值物品、不确定市场价 | AI 建议最低保留价 |
+| 7 天拍卖 | 大部分品类 | AI 建议最佳结束时间（周日晚上通常最佳） |
+| 3 天拍卖 | 时效性强的物品 | AI 分析短期 vs 长期拍卖的成交率差异 |
+| Best Offer | 高单价标品 | AI 建议自动接受/拒绝的价格阈值 |
+
+### 2.8 eBay Promoted Listings 预算超支问题
+
+2026 年卖家报告 Promoted Listings 的 PPC 选项（Priority Ads 和 Promoted Stores）存在日预算超支问题，有时超支达 2 倍（[Value Added Resource](https://www.valueaddedresource.net/ebay-promoted-stores-priority-ads-overspending-daily-budgets/)）。这是因为 eBay 在 2024 年引入了"动态目标日预算"机制。
+
+Content rephrased for compliance with licensing restrictions.
+
+应对策略：
+- 设置保守的日预算（预期花费的 50-70%）
+- 每日监控实际花费
+- 优先使用 Promoted Listings Standard（按成交付费，风险更低）
+- 对高价值 Listing 使用 Advanced（CPC），但密切监控
+
+### 2.9 eBay 跨境销售策略
+
+```
+你是一个 eBay 跨境销售专家。
+
+我的产品：[名称]
+品类：[X]
+当前市场：[US]
+月销量：[X] 单
+
+请制定 eBay 跨境扩展策略：
+
+1. Global Shipping Program (GSP) vs 国际直邮
+   - GSP：发到 eBay 美国仓，eBay 负责国际配送
+   - 直邮：卖家自行发国际快递
+   - 各自的优劣势和成本对比
+
+2. eBay 各站点机会分析
+   - eBay.co.uk（英国，脱欧后独立市场）
+   - eBay.de（德国，欧洲最大 eBay 市场）
+   - eBay.com.au（澳大利亚）
+   - eBay.ca（加拿大）
+
+3. 多语言 Listing 策略
+   - eBay 自动翻译质量评估
+   - 是否需要人工/AI 翻译
+   - 各站点标题优化差异
+
+4. 跨境定价策略
+   - 汇率考虑
+   - 各市场竞争价格
+   - 运费策略（包邮 vs 买家付费）
+
+5. 退货处理
+   - 国际退货政策设置
+   - 退货成本控制
+```
+
+## 3. eBay 品类深度策略
+
+### 3.1 收藏品与稀缺品策略
+
+eBay 在收藏品领域有独特优势（eBay Vault、Authenticity Guarantee）：
+
+| 品类 | eBay 优势 | AI 应用 |
+|------|----------|---------|
+| 球鞋 | Authenticity Guarantee 认证 | AI 定价（基于型号/尺码/品相） |
+| 手表 | Authenticity Guarantee 认证 | AI 鉴定辅助 |
+| 交易卡 | eBay Vault 存储+交易 | AI 评估卡片等级和价值 |
+| 古董/艺术品 | 全球买家网络 | AI 生成详细品相描述 |
+| 限量版商品 | 拍卖机制适合稀缺品 | AI 预测最佳拍卖时机 |
+
+### 3.2 翻新品/Recommerce 策略
+
+eBay 上 Recommerce（二手/翻新）占 GMV 40%+，这是 eBay 最独特的市场：
+
+> **真实案例：欧洲 Recommerce 市场达 €120B**
+> 根据 Cross-Border Commerce Europe 的数据，欧洲 Recommerce 市场预计 2025 年达到 €1200 亿，其中 75% 的二手商品交易已超越服装品类，覆盖电子产品、家具和汽车等（[UK Entrepreneur](https://uk.entrepreneur.com/technology/refurbished-tech-gains-traction-on-temu-as-recommerce/495821)）。eBay 在 Q4 2025 财报中强调了 C2C 市场和 Recommerce 的强劲增长（[Bitget](https://www.bitget.com/news/detail/12560605218758)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+```
+你是一个 eBay Recommerce 策略专家。
+
+我计划在 eBay 上销售翻新 [品类]。
+
+请帮我制定策略：
+
+1. 供应链
+   - 翻新品货源渠道（清仓/退货/翻新工厂）
+   - 质检标准和流程
+   - 品相分级标准（eBay 的 Condition 等级）
+
+2. Listing 优化
+   - 翻新品标题关键词策略
+   - 品相描述最佳实践
+   - 图片要求（必须是实物图）
+   - 保修/售后承诺
+
+3. 定价策略
+   - 翻新品 vs 全新品的定价比例
+   - 不同品相的定价差异
+   - 拍卖 vs 固定价格的选择
+
+4. 信任建设
+   - eBay Seller Ratings 维护
+   - 退货政策设置
+   - 买家沟通策略
+
+5. 规模化
+   - 批量采购和翻新流程
+   - 库存管理
+   - 多 SKU 管理
+```
+
+## 4. 完成标志
 
 - [ ] 评估 eBay 品类机会（特别是二手/翻新/收藏品）
 - [ ] 优化 Listing（适配 eBay 风格）

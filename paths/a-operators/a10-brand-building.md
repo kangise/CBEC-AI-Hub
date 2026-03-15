@@ -56,9 +56,35 @@
 | 利润率 | 10-20% | 25-50% | +100-200% |
 | 被 AI 推荐概率 | 低 | 高 | 显著差距 |
 
+### 1.3 2026 年 DTC 品牌趋势
+
+2026 年 DTC 品牌面临新的挑战和机遇（[Criteo](https://www.criteo.com/blog/from-sameness-to-standout-the-next-era-of-dtc-brands/)，[ChannelEngine](https://www.channelengine.com/en/blog/ecommerce-predictions)）：
+
+| 趋势 | 说明 | 对品牌建设的影响 |
+|------|------|-----------------|
+| 获客成本上升 | 传统社交媒体触达下降，CAC 持续上升 | 品牌忠诚度比获客更重要 |
+| AI 可发现性 | AI 搜索引擎偏好推荐有品牌的产品 | GEO 优化成为品牌建设的一部分 |
+| 退货经济学 | 退货成为利润的关键战场 | 品牌信任减少退货率 |
+| 第一方数据 | 第三方 Cookie 消亡 | 品牌需要建立自己的数据资产 |
+| 运营卓越 | "增长至上"时代结束 | 品牌需要在效率和增长间平衡 |
+
+Content rephrased for compliance with licensing restrictions.
+
+> 📎 **相关阅读**: [A9 SEO/GEO](a9-seo-geo.md) — AI 搜索优化（GEO）是 2026 年品牌建设的关键组成部分，详见 A9。
+
 ---
 
 ## 2. AI 品牌故事生成
+
+> **真实案例：Revelyst 用 AI 跨部门提升品牌运营**
+> 户外装备公司 Revelyst（旗下拥有头盔品牌 Bell、户外装备 CamelBak、极限运动品牌 Fox）在 eTail Palm Springs 分享了 AI 品牌建设经验。公司从早期就让各部门团队参与 AI 工具测试，消除恐惧并确保所有人达成共识。Revelyst 已将内部 AI 测试和工具扩展到各个部门（[Modern Retail](https://www.modernretail.co/technology/brands-at-etail-palm-springs-share-lessons-on-the-messy-middle-of-building-ai-tools/)）。
+
+Content rephrased for compliance with licensing restrictions.
+
+> **真实案例：AI 广告优化提升 ROAS 20-30%**
+> 根据 Entrepreneur 的报道，AI 广告和个性化工具可以将 ROAS（广告支出回报率）提升 20% 到 30%。预测工具帮助卖家防止缺货并率先发现趋势，统一的跨渠道数据提升了营销智能（[Entrepreneur](https://www.entrepreneur.com/growing-a-business/how-to-use-ai-to-grow-your-amazon-sales-rankings-and/499421)）。
+
+Content rephrased for compliance with licensing restrictions.
 
 ### 2.1 品牌故事框架
 
@@ -254,6 +280,96 @@
 | 包装 | ✅ Logo | ✅ 包装配色 | ✅ 包装文案 | ✅ 包装设计 | ✅ 品牌卡片 |
 
 > 📎 **相关阅读**: [A7 视觉内容](a7-visual-content.md) — AI 图片/视频生成保持品牌一致性 · [E7 跨渠道协同](../e-social-media/e7-social-media-cross-channel.md) — 跨平台内容一致性
+
+### 6.2 AI 品牌一致性自动化
+
+```
+你是一个品牌一致性审计专家。
+
+我的品牌：[名称]
+品牌指南：
+- 主色：[色号]
+- 辅色：[色号]
+- 字体：[名称]
+- 语气：[描述]
+
+请审计以下平台的品牌一致性：
+
+Amazon Listing:
+[粘贴标题+Bullet Points]
+
+Shopify 产品页:
+[粘贴产品描述]
+
+Instagram Bio + 最近 3 条 Caption:
+[粘贴]
+
+请分析：
+1. 语气一致性评分（1-10）
+2. 信息一致性评分（1-10）
+3. 不一致的具体位置
+4. 统一修改建议
+5. 品牌声音模板（确保未来内容一致）
+```
+
+### 6.3 品牌资产管理
+
+| 资产类型 | 管理工具 | AI 辅助 |
+|----------|---------|---------|
+| Logo 文件 | Google Drive / Dropbox | — |
+| 品牌指南文档 | Notion / Google Docs | AI 生成品牌指南 |
+| 图片素材库 | Canva Brand Kit / DAM | AI 标签和搜索 |
+| 文案模板库 | Notion / Airtable | AI 生成各平台文案 |
+| 视频素材库 | Google Drive | AI 视频剪辑 |
+| 社交媒体模板 | Canva / Figma | AI 批量生成 |
+
+### 6.4 品牌建设 AI 工具矩阵
+
+| 工具 | 功能 | 价格 | 适合 |
+|------|------|------|------|
+| Looka | AI Logo 设计 | $20 起 | Logo 设计 |
+| Canva Brand Kit | 品牌资产管理+模板 | $13/月（Pro） | 全面品牌管理 |
+| Coolors | AI 配色方案生成 | 免费/付费 | 配色设计 |
+| Midjourney | AI 品牌图片生成 | $10/月起 | 视觉内容 |
+| Copy.ai | AI 品牌文案生成 | $49/月起 | 文案创作 |
+| Brandwatch | 品牌监控和分析 | 付费 | 品牌口碑 |
+| ChatGPT/Claude | 通用品牌策略辅助 | $20/月 | 所有场景 |
+
+### 6.5 品牌建设路线图
+
+```
+品牌建设分阶段路线图：
+
+Phase 1: 基础建设（第 1-2 周）
+├── 定义品牌定位（差异化+目标客户）
+├── 创建品牌故事（使命+价值观+Tagline）
+├── 设计视觉系统（Logo+配色+字体）
+├── 定义品牌声音（各平台语气规范）
+└── 产出：品牌指南文档
+
+Phase 2: 平台落地（第 3-4 周）
+├── Amazon Brand Registry 注册
+├── Amazon Brand Store 设计
+├── A+ Content 创建
+├── Shopify About 页面
+├── 社交媒体 Profile 统一
+└── 产出：所有平台品牌一致
+
+Phase 3: 内容建设（第 5-8 周）
+├── 品牌内容日历
+├── 社交媒体内容创作
+├── 邮件营销模板
+├── 包装设计（品牌卡片/包装盒）
+└── 产出：持续的品牌内容输出
+
+Phase 4: 品牌增长（持续）
+├── KOL/KOC 合作
+├── 用户生成内容（UGC）
+├── 品牌社区建设
+├── GEO 优化（AI 搜索可见度）
+├── 品牌口碑监控
+└── 产出：品牌知名度和忠诚度提升
+```
 
 ---
 

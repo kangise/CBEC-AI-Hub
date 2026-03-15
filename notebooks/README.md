@@ -21,13 +21,16 @@
 | [a9-geo-audit.ipynb](a9-geo-audit.ipynb) 🆕 | GEO 审计 — AI 搜索可见度自动测试 | ⭐⭐ 中级 | 15 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/a9-geo-audit.ipynb) |
 | [a11-profit-calculator.ipynb](a11-profit-calculator.ipynb) 🆕 | SKU 真实利润计算器 — 成本分解 + 敏感度分析 | ⭐ 入门 | 15 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/a11-profit-calculator.ipynb) |
 | [a10-brand-audit.ipynb](a10-brand-audit.ipynb) 🆕 | 品牌一致性审计 — AI 跨平台内容对比 + 评分 | ⭐⭐ 中级 | 10 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/a10-brand-audit.ipynb) |
+| [a12-ip-patent-search.ipynb](a12-ip-patent-search.ipynb) 🆕 | 专利/商标风险排查 — Google Patents + AI 风险评估 | ⭐⭐ 中级 | 10 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/a12-ip-patent-search.ipynb) |
 | [b1-data-pipeline.ipynb](b1-data-pipeline.ipynb) | Amazon 报告数据处理 — pandas 读取、清洗、计算 | ⭐ 入门 | 30 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b1-data-pipeline.ipynb) |
 | [b2-sales-forecast.ipynb](b2-sales-forecast.ipynb) 🆕 | Prophet 销量预测 — 90 天预测 + 季节性 + 补货建议 | ⭐⭐ 中级 | 25 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b2-sales-forecast.ipynb) |
 | [b7-review-analysis.ipynb](b7-review-analysis.ipynb) 🆕 | Review NLP — BERTopic 主题建模 + 情感分析 | ⭐⭐ 中级 | 30 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b7-review-analysis.ipynb) |
 | [b8-dashboard-demo.ipynb](b8-dashboard-demo.ipynb) 🆕 | 电商 Dashboard — 多平台数据 + KPI + 异常检测 | ⭐⭐ 中级 | 25 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/b8-dashboard-demo.ipynb) |
 | [c3-roi-evaluation.ipynb](c3-roi-evaluation.ipynb) | AI 工具 ROI 计算 — 量化每个工具的投资回报 | ⭐ 入门 | 15 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/c3-roi-evaluation.ipynb) |
+| [d3-cross-platform-content.ipynb](d3-cross-platform-content.ipynb) 🆕 | 跨平台内容适配 — Amazon→Shopify/TikTok/IG/Walmart/Pinterest | ⭐⭐ 中级 | 15 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/d3-cross-platform-content.ipynb) |
+| [e1-social-content-calendar.ipynb](e1-social-content-calendar.ipynb) 🆕 | 30 天社交媒体内容日历 — AI 生成跨平台发布计划 | ⭐ 入门 | 10 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kangise/ecommerce-ai-roadmap/blob/main/notebooks/e1-social-content-calendar.ipynb) |
 
-**总计: 15 个 Notebook · 覆盖选品/Listing/广告/差评/库存/合规/定价/品牌/利润/GEO/数据处理/预测/Review NLP/Dashboard/ROI**
+**总计: 18 个 Notebook · 覆盖 Path A(11) + Path B(4) + Path C(1) + Path D(1) + Path E(1)**
 
 ---
 

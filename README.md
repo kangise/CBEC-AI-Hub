@@ -152,6 +152,7 @@
 | 56 | IP | AI 专利/商标风险排查 | 选品阶段就识别 IP 风险 | [A12 IP](paths/a-operators/a12-ip-protection.md) |
 | 57 | 增长 | AI Growth Hack 飞轮 | 从选品到规模化的 5 阶段 AI 增长系统 | [A13 Growth](paths/a-operators/a13-ai-growth-hack.md) |
 | 58 | 增长 | AI Agent 每日运营工作流 | 2 小时/天完成全部运营工作 | [A13 工作流](paths/a-operators/a13-ai-growth-hack.md#7-ai-agent-工作流实战) |
+| 59 | 工具 | 🔌 Awesome MCP & Agent 工具集 | 30+ 电商 MCP Server + 7 大 Agent 框架 + 外部资源 | [工具集](docs/awesome-mcp-agents.md) |
 
 [回到目录](#-目录--table-of-contents)
 

@@ -273,8 +273,10 @@ flowchart LR
 | [C1. AI 能力评估与规划](paths/c-managers/c1-ai-assessment.md) | 落地优先级矩阵、规划 Prompt | 团队 AI 能力评估和优先级排序 |
 | [C2. 团队 AI 技能建设](paths/c-managers/c2-team-building.md) | 培训计划、习惯养成 | 团队 80%+ 每天使用 AI 工具 |
 | [C3. AI 项目 ROI 评估](paths/c-managers/c3-roi-evaluation.md) | ROI 计算框架、效果衡量 | 至少一个 AI 项目的 ROI 评估报告 |
+| [C4. AI 风险管理与治理](paths/c-managers/c4-ai-risk-governance.md) 🆕 | AI 幻觉、隐私、合规 | AI 治理政策和风险评估报告 |
+| [C5. AI 竞争情报](paths/c-managers/c5-competitive-intelligence.md) 🆕 | 竞品监控、AI 可见度 | 竞争格局分析和战略决策 |
 
-> 完成以上 3 个模块，输出一份完整的团队 AI 落地规划书（包含优先级、时间线、预算、KPI）。
+> 完成 C1-C3 输出 AI 落地规划书，C4-C5 为进阶模块（风险管理和竞争战略）。
 
 [回到目录](#-目录--table-of-contents)
 

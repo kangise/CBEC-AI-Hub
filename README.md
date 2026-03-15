@@ -47,6 +47,8 @@
 - 📅 2026-03-15: 🆕 新增 [A13 AI Growth Hack](paths/a-operators/a13-ai-growth-hack.md) — AI 全栈增长飞轮，从选品到规模化的 5 阶段方法论
 - 📅 2026-03-15: 📈 12 个文件内容密度深化（基于网络搜索真实数据+案例），总计 +2000 行
 - 📅 2026-03-15: 📈 Path A 扩展至 13 个模块（A7 视觉→A13 Growth Hack）
+- 📅 2026-03-15: 🆕 新增 [A13 AI Growth Hack](paths/a-operators/a13-ai-growth-hack.md) — AI 全栈增长飞轮（选品→上架→流量→转化→规模化）
+- 📅 2026-03-15: 📈 12 个文件内容深化（基于网络搜索真实数据+案例），Path A 扩展至 13 个模块（A7-A12 + A13）
 - 📅 2026-03-14: 🆕 新增 [Path E: 社交媒体 AI 运营](paths/e-social-media/)（7 篇指南：Instagram/YouTube/小红书/Pinterest/WhatsApp/Reddit/跨渠道）
 - 📅 2026-03-14: 🆕 Path D 扩展至 [13 个电商平台](paths/d-platforms/)（新增 Walmart/Temu/Shopee/Mercado Libre/Rakuten/eBay/AliExpress/Coupang/Faire/Otto/Zalando）
 - 📅 2026-03-14: 🆕 新增 [平台全景对比页](paths/d-platforms/platform-comparison.md) — 14 个平台 + 7 个社交渠道的完整对比
@@ -208,6 +210,13 @@ flowchart TD
 | [A4. 客服与售后](paths/a-operators/a4-customer-service.md) | 差评分析、申诉信撰写 | 建立多语言客服回复模板库 |
 | [A5. 库存与供应链](paths/a-operators/a5-inventory.md) | 补货预测、安全库存 | 用 AI 建立补货决策模型 |
 | [A6. 合规与风控](paths/a-operators/a6-compliance.md) | 多市场合规、认证查询 | 生成完整的多市场合规清单 |
+| [A7. 视觉内容](paths/a-operators/a7-visual-content.md) 🆕 | AI 图片/视频生成 | AI 产品图、视频、品牌视觉一致性 |
+| [A8. 定价策略](paths/a-operators/a8-pricing-strategy.md) 🆕 | 智能定价 | AI 竞品价格监控、动态定价 |
+| [A9. SEO/GEO](paths/a-operators/a9-seo-geo.md) 🆕 | 搜索优化 | Amazon SEO + GEO（让 AI 推荐你的产品） |
+| [A10. 品牌建设](paths/a-operators/a10-brand-building.md) 🆕 | 品牌策略 | AI 品牌故事、视觉系统、跨平台一致性 |
+| [A11. 财务分析](paths/a-operators/a11-financial-analysis.md) 🆕 | 财务管理 | AI 利润计算、现金流预测 |
+| [A12. 知识产权](paths/a-operators/a12-ip-protection.md) 🆕 | IP 保护 | AI 专利检索、商标监控、品牌保护 |
+| [A13. AI Growth Hack](paths/a-operators/a13-ai-growth-hack.md) 🆕 | 全栈增长 | AI 增长飞轮、Agentic Commerce |
 | [A7. 视觉内容](paths/a-operators/a7-visual-content.md) | AI 图片/视频生成 | 用 AI 生成产品图和视频素材 |
 | [A8. 定价策略](paths/a-operators/a8-pricing-strategy.md) | 智能定价、竞品监控 | 建立 AI 动态定价模型 |
 | [A9. SEO/GEO](paths/a-operators/a9-seo-geo.md) | 搜索优化、AI 搜索 | 让 ChatGPT/Perplexity 推荐你的产品 |
@@ -382,6 +391,8 @@ flowchart LR
 [ ] A9. SEO/GEO：在 ChatGPT/Perplexity 测试产品是否被推荐
 [ ] A10. 品牌：用 AI 生成完整品牌故事和视觉系统
 [ ] A11. 财务：用 AI 计算至少 5 个 SKU 的真实利润
+[ ] A12. IP：完成至少 1 个产品的专利/商标风险排查
+[ ] A13. Growth Hack：建立 AI 驱动的每日运营工作流
 [ ] A12. IP：完成至少 1 个产品的专利/商标风险排查
 [ ] A13. Growth Hack：建立每日 AI 运营工作流并扩展到 2+ 平台
 ```

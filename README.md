@@ -217,13 +217,6 @@ flowchart TD
 | [A11. 财务分析](paths/a-operators/a11-financial-analysis.md) 🆕 | 财务管理 | AI 利润计算、现金流预测 |
 | [A12. 知识产权](paths/a-operators/a12-ip-protection.md) 🆕 | IP 保护 | AI 专利检索、商标监控、品牌保护 |
 | [A13. AI Growth Hack](paths/a-operators/a13-ai-growth-hack.md) 🆕 | 全栈增长 | AI 增长飞轮、Agentic Commerce |
-| [A7. 视觉内容](paths/a-operators/a7-visual-content.md) | AI 图片/视频生成 | 用 AI 生成产品图和视频素材 |
-| [A8. 定价策略](paths/a-operators/a8-pricing-strategy.md) | 智能定价、竞品监控 | 建立 AI 动态定价模型 |
-| [A9. SEO/GEO](paths/a-operators/a9-seo-geo.md) | 搜索优化、AI 搜索 | 让 ChatGPT/Perplexity 推荐你的产品 |
-| [A10. 品牌建设](paths/a-operators/a10-brand-building.md) | 品牌故事、视觉一致性 | 用 AI 建立完整品牌体系 |
-| [A11. 财务分析](paths/a-operators/a11-financial-analysis.md) | 利润计算、现金流 | 用 AI 精确计算每个 SKU 真实利润 |
-| [A12. 知识产权](paths/a-operators/a12-ip-protection.md) | 专利/商标/版权 | 用 AI 识别和防范 IP 风险 |
-| [A13. AI Growth Hack](paths/a-operators/a13-ai-growth-hack.md) 🆕 | 全栈增长飞轮 | 用 AI 构建从选品到规模化的增长系统 |
 
 [回到目录](#-目录--table-of-contents)
 

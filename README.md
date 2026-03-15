@@ -8,16 +8,16 @@
 
 # ecommerce-ai-roadmap: AI Prompts & Strategies for Amazon Sellers, Shopify & TikTok Shop
 
-> 跨境电商 AI 实战知识库 -- Amazon Listing 优化 / Rufus & COSMO 语义 SEO / PPC 广告分析 / TikTok Shop 视频脚本 / Shopify GEO 优化 / ChatGPT Prompts for E-Commerce
+> 跨境电商 AI 实战知识库 -- Amazon Listing 优化 / Rufus & COSMO 语义 SEO / GEO & Agentic Commerce / PPC 广告分析 / TikTok Shop 视频脚本 / Shopify GEO 优化 / 13 平台 AI 运营 / ChatGPT Prompts for E-Commerce
 >
-> The Definitive AI Playbook for Cross-Border E-Commerce -- Amazon Seller AI Tools, Listing Optimization, Advertising, TikTok Shop, Shopify, Multi-Platform Strategy
+> The Definitive AI Playbook for Cross-Border E-Commerce -- Amazon Seller AI Tools, Listing Optimization, Advertising, TikTok Shop, Shopify, 13-Platform Strategy, GEO & Agentic Commerce
 
 [![AAAI China Chapter](https://img.shields.io/badge/AAAI_China_Chapter-Initiative-blue)](https://github.com/kangise/ecommerce-ai-roadmap)
 [![Stars](https://img.shields.io/github/stars/kangise/ecommerce-ai-roadmap?style=social)](https://github.com/kangise/ecommerce-ai-roadmap)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-48 个 AI 实战场景直达 · Amazon / Shopify / TikTok Shop 三平台覆盖 · Rufus/COSMO/GEO 优化方法论 · 可直接复制的 Prompt 模板
-48 AI use cases with deep-dive guides · Amazon / Shopify / TikTok Shop · Rufus/COSMO/GEO optimization · Ready-to-use ChatGPT prompts
+58 个 AI 实战场景直达 · Amazon / Shopify / TikTok Shop + 13 平台覆盖 · Rufus/COSMO/GEO 优化方法论 · 可直接复制的 Prompt 模板
+58 AI use cases · Amazon / Shopify / TikTok Shop + 13 platforms · Rufus/COSMO/GEO/Agentic Commerce · Ready-to-use ChatGPT prompts
 
 🇨🇳 中文（当前） | 🇺🇸 [English](en/README.md) | 🇯🇵 [日本語](ja/README.md) | 🇪🇸 [Español](es/README.md)
 
@@ -44,6 +44,9 @@
 
 ## 🆕 What's New
 
+- 📅 2026-03-15: 🆕 新增 [A13 AI Growth Hack](paths/a-operators/a13-ai-growth-hack.md) — AI 全栈增长飞轮，从选品到规模化的 5 阶段方法论
+- 📅 2026-03-15: 📈 12 个文件内容密度深化（基于网络搜索真实数据+案例），总计 +2000 行
+- 📅 2026-03-15: 📈 Path A 扩展至 13 个模块（A7 视觉→A13 Growth Hack）
 - 📅 2026-03-14: 🆕 新增 [Path E: 社交媒体 AI 运营](paths/e-social-media/)（7 篇指南：Instagram/YouTube/小红书/Pinterest/WhatsApp/Reddit/跨渠道）
 - 📅 2026-03-14: 🆕 Path D 扩展至 [13 个电商平台](paths/d-platforms/)（新增 Walmart/Temu/Shopee/Mercado Libre/Rakuten/eBay/AliExpress/Coupang/Faire/Otto/Zalando）
 - 📅 2026-03-14: 🆕 新增 [平台全景对比页](paths/d-platforms/platform-comparison.md) — 14 个平台 + 7 个社交渠道的完整对比
@@ -74,7 +77,7 @@
 ## 热门内容直通车
 
 > 按场景直达深度内容。热度基于 2026 年 3 月行业数据，定期更新。
-> 上次更新: 2026-03-14 | 更新机制: 每月基于外网热度数据刷新排序
+> 上次更新: 2026-03-15 | 更新机制: 每月基于外网热度数据刷新排序
 
 | # | 分类 | 场景 | 一句话说明 | 直达 |
 |---|------|------|----------|------|
@@ -135,6 +138,18 @@
 | 46 | 数据/AI | Seller Assistant Agentic | Amazon 官方 AI 助手升级，可代替卖家执行操作 | 即将更新 |
 | 47 | 数据/AI | OpenClaw Agent 自动化 | AI Agent 自动执行日常运营任务 | [D1 ch10](paths/d-platforms/shopify-ai-guide.md) · [D2 ch12](paths/d-platforms/tiktok-shop-ai-guide.md) |
 | 48 | 数据/AI | AI 工具 ROI 计算 | $20/月的 ChatGPT 到底值不值？量化框架 | [AI 全景](paths/0-foundations/ai-landscape.md#效率变化总览) |
+| | **🎨 视觉/定价/SEO** | | | |
+| 49 | 视觉 | AI 产品图片生成 | Midjourney/DALL-E 生成电商产品图 | [A7 方法论](paths/a-operators/a7-visual-content.md) |
+| 50 | 定价 | AI 动态定价策略 | 竞品价格监控+智能调价 | [A8 方法论](paths/a-operators/a8-pricing-strategy.md) |
+| 51 | SEO | GEO 优化（AI 搜索） | 让 ChatGPT/Perplexity/Gemini 推荐你的产品 | [A9 GEO](paths/a-operators/a9-seo-geo.md#4-geo-优化实操) |
+| 52 | SEO | Agentic Commerce | Shopify UCP 协议，在 AI 渠道内直接卖货 | [A9 Agentic](paths/a-operators/a9-seo-geo.md#44-agentic-commerceai-代理购物) |
+| | **🏗️ 品牌/财务/IP/增长** | | | |
+| 53 | 品牌 | AI 品牌故事生成 | 使命+价值观+Tagline+跨平台一致性 | [A10 品牌](paths/a-operators/a10-brand-building.md) |
+| 54 | 财务 | AI 利润计算器 | 含所有隐藏成本的真实利润计算 | [A11 财务](paths/a-operators/a11-financial-analysis.md) |
+| 55 | 财务 | AI 现金流预测 | 未来 6 个月现金流+备货建议 | [A11 现金流](paths/a-operators/a11-financial-analysis.md#4-ai-现金流预测) |
+| 56 | IP | AI 专利/商标风险排查 | 选品阶段就识别 IP 风险 | [A12 IP](paths/a-operators/a12-ip-protection.md) |
+| 57 | 增长 | AI Growth Hack 飞轮 | 从选品到规模化的 5 阶段 AI 增长系统 | [A13 Growth](paths/a-operators/a13-ai-growth-hack.md) |
+| 58 | 增长 | AI Agent 每日运营工作流 | 2 小时/天完成全部运营工作 | [A13 工作流](paths/a-operators/a13-ai-growth-hack.md#7-ai-agent-工作流实战) |
 
 [回到目录](#-目录--table-of-contents)
 
@@ -193,6 +208,13 @@ flowchart TD
 | [A4. 客服与售后](paths/a-operators/a4-customer-service.md) | 差评分析、申诉信撰写 | 建立多语言客服回复模板库 |
 | [A5. 库存与供应链](paths/a-operators/a5-inventory.md) | 补货预测、安全库存 | 用 AI 建立补货决策模型 |
 | [A6. 合规与风控](paths/a-operators/a6-compliance.md) | 多市场合规、认证查询 | 生成完整的多市场合规清单 |
+| [A7. 视觉内容](paths/a-operators/a7-visual-content.md) | AI 图片/视频生成 | 用 AI 生成产品图和视频素材 |
+| [A8. 定价策略](paths/a-operators/a8-pricing-strategy.md) | 智能定价、竞品监控 | 建立 AI 动态定价模型 |
+| [A9. SEO/GEO](paths/a-operators/a9-seo-geo.md) | 搜索优化、AI 搜索 | 让 ChatGPT/Perplexity 推荐你的产品 |
+| [A10. 品牌建设](paths/a-operators/a10-brand-building.md) | 品牌故事、视觉一致性 | 用 AI 建立完整品牌体系 |
+| [A11. 财务分析](paths/a-operators/a11-financial-analysis.md) | 利润计算、现金流 | 用 AI 精确计算每个 SKU 真实利润 |
+| [A12. 知识产权](paths/a-operators/a12-ip-protection.md) | 专利/商标/版权 | 用 AI 识别和防范 IP 风险 |
+| [A13. AI Growth Hack](paths/a-operators/a13-ai-growth-hack.md) 🆕 | 全栈增长飞轮 | 用 AI 构建从选品到规模化的增长系统 |
 
 [回到目录](#-目录--table-of-contents)
 
@@ -355,6 +377,13 @@ flowchart LR
 [ ] A4. 客服：建立一套多语言客服回复模板库
 [ ] A5. 库存：用 AI 建立一个产品的补货决策模型
 [ ] A6. 合规：为一个产品生成完整的多市场合规清单
+[ ] A7. 视觉：用 AI 生成一套产品图片和视频素材
+[ ] A8. 定价：建立 AI 竞品价格监控和动态定价模型
+[ ] A9. SEO/GEO：在 ChatGPT/Perplexity 测试产品是否被推荐
+[ ] A10. 品牌：用 AI 生成完整品牌故事和视觉系统
+[ ] A11. 财务：用 AI 计算至少 5 个 SKU 的真实利润
+[ ] A12. IP：完成至少 1 个产品的专利/商标风险排查
+[ ] A13. Growth Hack：建立每日 AI 运营工作流并扩展到 2+ 平台
 ```
 
 ### Path B 进度追踪（技术人）

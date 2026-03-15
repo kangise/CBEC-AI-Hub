@@ -16,8 +16,9 @@
 | [compliance.md](compliance.md) | 合规风控与库存管理 | 2 | 多市场合规对比、补货决策分析 | ✅ 已验证 |
 | [social-media.md](social-media.md) 🆕 | 社交媒体运营 | 5 | Instagram Reels 脚本、Meta Ads 文案、YouTube 评测脚本、小红书种草笔记、跨平台内容适配 | ✅ 已验证 |
 | [multi-platform.md](multi-platform.md) 🆕 | 多平台运营 | 5 | Amazon→Walmart 转换、Walmart 广告分析、Temu 入驻评估、东南亚本地化、多平台品类分析 | ✅ 已验证 |
+| [advanced-operations.md](advanced-operations.md) 🆕 | 高级运营 (A7-A13) | 8 | AI 产品图、动态定价、GEO 审计、品牌体系、利润计算、IP 评估、Growth Hack 选品、运营晨报 | ✅ 已验证 |
 
-**总计: 22 个模板 · 7 个分类**
+**总计: 30 个模板 · 8 个分类**
 
 ---
 
